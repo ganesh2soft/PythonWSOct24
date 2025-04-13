@@ -1,0 +1,68 @@
+{% include 'header.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+</head>
+
+<body>
+    
+
+    <h3 style="text-align: center;">Options Details</h3>
+      <!-- Button to redirect to /input_options.html -->
+      <a href="{{ url_for('input_opt') }}">
+        <button type="button">Change Expiry Date</button>
+    </a>
+
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>expiry</th>
+                <th>Call Writer OI</th>
+                <th>Call buyer/seller Volume</th>
+                <th>Call side LTP</th>
+                <th>Call side IV</th>
+                <th class="bg-warning text-dark">Strike Option</th>
+                <th>Put Writer OI</th>
+                <th>Put buyer/seller Volume</th>
+                <th>Put Side LTP</th>
+                <th>Put Side IV</th>
+                <th>Nifty Spot Price</th>
+                <th>PCR</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for op in optionb %}
+            <tr>
+                <td class="align-middle">{{ op.expiry }}</td>
+                <td class="align-middle">{{ op.call_options.market_data.oi }}</td>
+                <td class="align-middle">{{ op.call_options.market_data.volume}}</td>
+                <td class="align-middle">{{ op.call_options.market_data.ltp}}</td> 
+                <td class="align-middle">{{ op.call_options.option_greeks.iv}}</td>               
+                <td class="bg-warning text-dark align-middle">{{ op.strike_price }}</td> 
+                <td class="align-middle">{{ op.put_options.market_data.oi }}</td>
+                <td class="align-middle">{{ op.put_options.market_data.volume}}</td>
+                <td class="align-middle">{{ op.put_options.market_data.ltp}}</td>
+                <td class="align-middle">{{ op.put_options.option_greeks.iv}}</td>
+                <td class="align-middle">{{ op.underlying_spot_price}}</td>
+                <td class="align-middle">{{ op.pcr }}</td>
+                </tr>
+            {% else %}
+            <tr>
+                <td colspan="7" class="text-center">No Options available.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table> 
+
+</body>
+
+</html>
+
+
+{% include 'footer.html' %}

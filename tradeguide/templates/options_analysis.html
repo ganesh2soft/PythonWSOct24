@@ -1,0 +1,321 @@
+{% include 'header.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Options</title>
+    <!-- Include Bootstrap CSS (optional if you want to use Bootstrap) -->
+
+</head>
+
+<body>
+    <div class="container my-4">
+        <div class="row">
+            <!-- First Container (takes up full width) -->
+            <div class="col-12">
+                <div class="card d-flex flex-row">
+                    <!-- Expiry Title with Date -->
+                    <div class="card-header bg-primary text-white">
+                        <h6>Expiry Date 1: {{ expiry_date }}</h6>
+                        <p> {{nifty_spot_price}}</p>
+                    </div>
+                    
+                    <!-- Call Side Table -->
+                    <div class="card-body">
+                        <h5 class="card-title">Call Side</h5>
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>TimeStamp</th>
+                                    <th>strike_price</th>
+                                    <th>call_writer_oi</th>
+                                    <th>call_volume</th>
+                                    <th>call_ltp</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for tr1 in exp1_call_df %}
+                                <tr>
+                                    <td>{{ tr1.date_entry }}</td>
+                                    <td>{{ tr1.strike_price }}</td>
+                                    <td>{{ tr1.call_writer_oi }}</td>
+                                    <td>{{ tr1.call_volume}}</td>
+                                    <td>{{ tr1.call_ltp }}</td>
+                                </tr>
+                                {% else %}
+                                <tr>
+                                    <td colspan="5" class="text-center">No DATA found</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Put Side Table -->
+                    <div class="card-body">
+                        <h5 class="card-title">Put Side</h5>
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>TimeStamp</th>
+                                    <th>strike_price</th>
+                                    <th>put_writer_oi</th>
+                                    <th>put_volume</th>
+                                    <th>put_ltp</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for tr1 in exp1_put_df %}
+                                <tr>
+                                    <td>{{ tr1.date_entry }}</td>
+                                    <td>{{  tr1.strike_price }}</td>
+                                    <td>{{  tr1.put_writer_oi }}</td>
+                                    <td>{{  tr1.put_volume }}</td>
+                                    <td>{{  tr1.put_ltp }}</td>
+                                </tr>
+                                {% else %}
+                                <tr>
+                                    <td colspan="5" class="text-center">No DATA found</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- First Row -->
+        <div class="row">
+            <!-- First Container (takes up full width) -->
+            <div class="col-12">
+                <div class="card d-flex flex-row">
+                    <div class="card-header bg-primary text-white">
+                        <h6>Expiry Date 2: {{ expiry_date }}</h6>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Call Side</h4>
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>TIMESTAMP</th>
+                                    <th>Nifty Spot Price</th>
+                                    <th>trendonenow</th>
+                                    <th>trendonedir</th>
+                                    <th>calculatedpcr</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for trendone in trendones %}
+                                <tr>
+                                    <td>{{ trendone.trendonets }}</td>
+                                    <td>{{ trendone.underlying_spot_price }}</td>
+                                    <td>{{ trendone.trendonenow }}</td>
+                                    <td>{{ trendone.trendonedir }}</td>
+                                    <td>{{ trendone.calculatedpcr }}</td>
+                                </tr>
+                                {% else %}
+                                <tr>
+                                    <td colspan="5" class="text-center">No DATA found</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Put Side</h4>
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>TIMESTAMP</th>
+                                    <th>Nifty Spot Price</th>
+                                    <th>trendonenow</th>
+                                    <th>trendonedir</th>
+                                    <th>calculatedpcr</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for trendone in trendones %}
+                                <tr>
+                                    <td>{{ trendone.trendonets }}</td>
+                                    <td>{{ trendone.underlying_spot_price }}</td>
+                                    <td>{{ trendone.trendonenow }}</td>
+                                    <td>{{ trendone.trendonedir }}</td>
+                                    <td>{{ trendone.calculatedpcr }}</td>
+                                </tr>
+                                {% else %}
+                                <tr>
+                                    <td colspan="5" class="text-center">No DATA found</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- First Container (takes up full width) -->
+            <div class="col-12">
+                <div class="card d-flex flex-row">
+                    <div class="card-header bg-primary text-white">
+                        <h6>Expiry Date 3: {{ expiry_date }}</h6>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Call Side</h4>
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>TIMESTAMP</th>
+                                    <th>Nifty Spot Price</th>
+                                    <th>trendonenow</th>
+                                    <th>trendonedir</th>
+                                    <th>calculatedpcr</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for trendone in trendones %}
+                                <tr>
+                                    <td>{{ trendone.trendonets }}</td>
+                                    <td>{{ trendone.underlying_spot_price }}</td>
+                                    <td>{{ trendone.trendonenow }}</td>
+                                    <td>{{ trendone.trendonedir }}</td>
+                                    <td>{{ trendone.calculatedpcr }}</td>
+                                </tr>
+                                {% else %}
+                                <tr>
+                                    <td colspan="5" class="text-center">No DATA found</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Put Side</h4>
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>TIMESTAMP</th>
+                                    <th>Nifty Spot Price</th>
+                                    <th>trendonenow</th>
+                                    <th>trendonedir</th>
+                                    <th>calculatedpcr</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for trendone in trendones %}
+                                <tr>
+                                    <td>{{ trendone.trendonets }}</td>
+                                    <td>{{ trendone.underlying_spot_price }}</td>
+                                    <td>{{ trendone.trendonenow }}</td>
+                                    <td>{{ trendone.trendonedir }}</td>
+                                    <td>{{ trendone.calculatedpcr }}</td>
+                                </tr>
+                                {% else %}
+                                <tr>
+                                    <td colspan="5" class="text-center">No DATA found</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="container my-4">
+        <div class="row">
+            <!-- Fourth Container (takes up full width) -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h4>Futures Data</h4>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>TIMESTAMP</th>
+                                    <th>Last Price</th>
+                                    <th>Symbol</th>
+                                    <th>OI</th>
+                                    <th>Total Buy Quantity</th>
+                                    <th>Buy Arrow</th> <!-- New column for Buy Arrow -->
+                                    <th>Total Sell Quantity</th>
+                                    <th>Sell Arrow</th> <!-- New column for Sell Arrow -->
+                                    <th>Volume</th>
+                                    <th>Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for future in futurerows %}
+                                <tr>
+                                    <td>{{ future.ts }}</td>
+                                    <td>{{ future.last_price }}</td>
+                                    <td>{{ future.symbol }}</td>
+                                    <td>{{ future.oi }}</td>
+                                    <td>{{ future.total_buy_quantity }}</td>
+
+
+                                    <td class="arrow">
+                                        {% if loop.index > 1 %}
+                                        {% if future.total_buy_quantity > futurerows[loop.index - 2].total_buy_quantity
+                                        %}
+                                        <span class="text-primary">↑</span> <!-- Blue for UP -->
+                                        {% elif future.total_buy_quantity < futurerows[loop.index -
+                                            2].total_buy_quantity %} <span class="text-warning">↓</span>
+                                            <!-- Brownish for DOWN -->
+                                            {% else %}
+                                            <span class="text-muted">-</span> <!-- Gray for no change -->
+                                            {% endif %}
+                                            {% else %}
+                                            <span class="text-muted">-</span> <!-- Gray for first row -->
+                                            {% endif %}
+                                    </td>
+
+                                    <td>{{ future.total_sell_quantity }}</td>
+                                    <td class="arrow">
+                                        {% if loop.index > 1 %}
+                                        {% if future.total_sell_quantity > futurerows[loop.index -
+                                        2].total_sell_quantity %}
+                                        <span class="text-primary">↑</span> <!-- Blue for UP -->
+                                        {% elif future.total_sell_quantity < futurerows[loop.index -
+                                            2].total_sell_quantity %} <span class="text-warning">↓</span>
+                                            <!-- Brownish for DOWN -->
+                                            {% else %}
+                                            <span class="text-muted">-</span> <!-- Gray for no change -->
+                                            {% endif %}
+                                            {% else %}
+                                            <span class="text-muted">-</span> <!-- Gray for first row -->
+                                            {% endif %}
+                                    </td>
+                                    <td>{{ future.volume }}</td>
+                                    <td>{{ future.result }}</td>
+                                </tr>
+                                
+                               
+                                {% else %}
+                                <tr>
+                                    <td colspan="10" class="text-center">No DATA found</td>
+                                </tr>
+                                {% endfor %}
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+{% include 'footer.html' %}

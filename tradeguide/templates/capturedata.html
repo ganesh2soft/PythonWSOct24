@@ -1,0 +1,84 @@
+{% include 'header.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Options</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!-- First column -->
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h4>Select Option chain data</h4>
+                    </div>
+                    <div class="card-body">
+                        <!-- Content for Column 1 -->
+                        <div id="json-content">
+                            <h5>Already selected dates are </h5>
+                            <pre id="json-display">Loading...</pre> <!-- Placeholder while loading -->
+                        </div>
+                        <p>Please select 3 expiry date of Nifty 50</p>
+                        <form method="POST" action=" {{ url_for('capturedata') }}">
+                            <div class="form-group">
+                                <label for="expiry1">Choose Nifty Expiry 1 (Must be a Thursday)::</label>
+                                <input type="date" class="form-control" id="expiry1" name="expiry1" required>
+
+                                <label for="expiry2">Choose Nifty Expiry 2 (Must be a Thursday)::</label>
+                                <input type="date" class="form-control" id="expiry2" name="expiry2" required>
+
+                                <label for="expiry3">Choose Nifty Expiry 3 (Must be a Thursday)::</label>
+                                <input type="date" class="form-control" id="expiry3" name="expiry3" required>
+                                <p>Please select only one month Future data.</p>
+                                <label for="instrumentkey">Nifty Future Coming Expiry</label>
+                                <input type="text" class="form-control" id="instrumentkey" name="instrumentkey"
+                                    required>
+
+                                #Feb nifty fut= NSE_FO|35013
+                                #NSE_FO|35001	NIFTY25MARFUT	
+                                #NSE_FO|54452	NIFTY25APRFUT
+
+
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit ALL</button>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Local Bootstrap Bundle JS (includes Popper.js) -->
+    <!--<script src="path/to/your/bootstrap.bundle.min.js"></script> -->
+
+    <!-- JavaScript to fetch and display the JSON data -->
+    <script>
+        // Fetch the data.json file and display its contents
+        fetch('/data.json') 
+            .then(response => response.json()) // Parse JSON data
+            .then(data => {
+                const jsonDisplay = document.getElementById('json-display');
+                jsonDisplay.textContent = JSON.stringify(data, null, 2); // Format and display JSON
+            })
+            .catch(error => {
+                const jsonDisplay = document.getElementById('json-display');
+                jsonDisplay.textContent = 'Error loading data.json: ' + error.message;
+            });
+    </script>
+
+</body>
+
+</html>
+
+
+{% include 'footer.html' %}

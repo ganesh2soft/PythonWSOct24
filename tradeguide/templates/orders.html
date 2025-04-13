@@ -1,0 +1,54 @@
+{% include 'header.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders List</title>
+</head>
+
+<body>
+
+    <h3 style="text-align: center;">ORDERS LIST</h3>
+
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>Order Type</th>
+                <th>Symbol</th>
+                <th>Status</th>
+                <th>Side</th>
+                <th>Quantity</th>
+                <th>LTP</th>
+                <th>Average Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for order in orderb %}
+            <tr>
+                <td class="align-middle">{{ order.order_type }}</td>
+                <td class="align-middle">{{ order.trading_symbol }}</td>
+                <td class="align-middle">{{ order.status }}</td>
+                <td class="align-middle">{{ order.transaction_type }}</td> <!-- Side is mapped to transaction_type -->
+                <td class="align-middle">{{ order.quantity }}</td>
+                <td class="align-middle">{{ order.LTP if order.LTP else 'N/A' }}</td>
+                <!-- Default to 'N/A' if LTP is None -->
+                <td class="align-middle">{{ order.average_price }}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="7" class="text-center">No orders available.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+
+</html>
+
+
+{% include 'footer.html' %}

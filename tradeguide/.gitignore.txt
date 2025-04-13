@@ -1,0 +1,25 @@
+# Python bytecode
+*.pyc
+__pycache__/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Flask instance folder (if used)
+instance/
+
+# SQLite database files
+*.db
+
+# Log files
+*.log
+
+# Configuration files
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db

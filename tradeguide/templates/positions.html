@@ -1,0 +1,55 @@
+{% include 'header.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions List </title>
+</head>
+
+<body>
+
+    <h3 style="text-align: center;">POSITIONS</h3>
+
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>Symbol</th>
+                <th>Products</th>
+                <th>NetQty</th>
+                <th>Multiplier</th>
+                <th>AveragePrice</th>
+                <th>LTP</th>
+                <th>UnRealised</th>
+                <th>OverallPandL</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for position in positionb %}
+            <tr>
+                <td class="align-middle">{{ position.trading_symbol}}</td>
+                <td class="align-middle">{{ position.product}}</td>
+                <td class="align-middle">{{ position.quantity}}</td>
+                <td class="align-middle">{{ position.multiplier}}</td>
+                <td class="align-middle">{{ position.average_price}}</td>
+                <td class="align-middle">{{ position.last_price}}</td>
+                <td class="align-middle">{{ position.unrealised}}</td>
+                <td class="align-middle">{{ position.pnl}}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="7" class="text-center">No Positions taken.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+
+</body>
+
+</html>
+{% include 'footer.html' %}

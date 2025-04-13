@@ -1,0 +1,65 @@
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Application Home</title>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="my-4 text-center">
+            <h4 class="fs-3">Welcome to Automation Trading</h4>
+        </header>
+
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-12 p-4">
+                    <form method="POST" action="{{ url_for('authorize') }}">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Login for Upstox Users</h5>
+                                <form>
+                                    <div class="form-group">
+                                        
+                                        <input type="text" class="form-control" id="authcode" name="authcode"
+                                            placeholder="Enter your authorization code" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block mt-3">Submit AuthCode</button>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        
+                    <br />
+                    {% if generated_token %}
+
+                    <div class="col-md-12 p-4">
+                        <h6>Generated Token: </h6>
+                        <p>{{ generated_token }}</p>
+                    </div>
+                    {% endif %}
+                </div>
+                
+
+                <!-- Main Content -->
+                <div class="col-md-12 p-4">
+                    <p>place your main content</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br /><br /><br /><br /><br /><br /><br />
+</body>
+
+</html>
+{% include 'footer.html' %}

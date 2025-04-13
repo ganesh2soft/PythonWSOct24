@@ -1,0 +1,59 @@
+{% include 'header.html' %}
+
+<div class="container mt-4">
+    <!-- Card with title 'CPR Data' -->
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">Todays Input</h5>
+        </div>
+        <div class="card-body">
+            <form method="POST" action="{{ url_for('feedindicators') }}">
+                <div class="form-group row">
+                    
+                    <p>Today Pivot Data</p>
+
+                    <div class="col-3">
+                        <label for="R2">R2</label>
+                        <input type="number" class="form-control" id="R2" name="R2" required>
+                    </div>
+                    <div class="col-3">
+                        <label for="R1">R1</label>
+                        <input type="number" class="form-control" id="R1" name="R1" required>
+                    </div>
+                    <div class="col-3">
+                        <label for="Pivot">Pivot</label>
+                        <input type="number" class="form-control" id="Pivot" name="Pivot" required>
+                    </div>
+                    <div class="col-3">
+                        <label for="S1">S1</label>
+                        <input type="number" class="form-control" id="S1" name="S1" required>
+                    </div>
+                    <div class="col-3">
+                        <label for="S2">S2</label>
+                        <input type="number" class="form-control" id="S2" name="S2" required>
+                    </div>
+                    <div class="col-3">
+                        <label for="Niftynow">Niftynow</label>
+                        <input type="number" class="form-control" id="Niftynow" name="Niftynow" required>
+                    </div>
+                    
+                    <div class="col-3">
+                        <label for="dxynow">Dollar index</label>
+                        <input type="number" class="form-control" id="dxynow" name="dxynow" required step="any">
+                    </div>
+                    <div class="col-3">
+                        <label for="previousdxy">Previous Dollar Index </label>
+                        <input type="number" class="form-control" id="previousdxy" name="previousdxy" required step="any">
+                    </div>
+                    <div class="col-3">
+                        <label for="usbondyield">US Bond Yield </label>
+                        <input type="number" class="form-control" id="usbondyield" name="usbondyield" required step="any">
+                    </div>
+
+                    
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit ALL</button>
+            </form>
+        </div>
+    </div>
+</div>

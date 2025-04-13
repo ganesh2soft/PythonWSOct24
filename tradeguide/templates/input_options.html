@@ -1,0 +1,35 @@
+{% include 'header.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Options</title>
+</head>
+
+<body>
+
+   
+    
+    
+        <div class="container mt-5">
+        <h2 class="text-center">Select a Date</h2>
+        <form method="POST">
+            <div class="form-group">
+                <label for="date_input">Choose any date (Must be a Thursday)::</label>
+                <input type="date" class="form-control" id="date_input" name="date_input"   required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+{% include 'footer.html' %}

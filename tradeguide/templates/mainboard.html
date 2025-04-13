@@ -1,0 +1,88 @@
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainboard - Dashboard</title>
+    <style>
+        /* Additional custom styles for layout */
+       
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Welcome to Mainboard</h1>
+        <h2>User Profile</h2>
+        
+        <!-- Profile Card -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">User Information</h5>
+                <p><strong>User Name:</strong> {{ profile.user_name }}</p>
+                <p><strong>User ID:</strong> {{ profile.user_id }}</p>
+                <p><strong>Email:</strong> {{ profile.email }}</p>
+                <p><strong>Broker:</strong> {{ profile.broker }}</p>
+                <p><strong>User Type:</strong> {{ profile.user_type }}</p>
+                <p><strong>Is Active:</strong> {{ 'Yes' if profile.is_active else 'No' }}</p>
+            </div>
+        </div>
+
+        <!-- Exchanges Card -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Exchanges</h5>
+                <ul>
+                    {% for exchange in profile.exchanges %}
+                        <li>{{ exchange }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <!-- Order Types Card -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Order Types</h5>
+                <ul>
+                    {% for order_type in profile.order_types %}
+                        <li>{{ order_type }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <!-- Products Card -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Products</h5>
+                <ul>
+                    {% for product in profile.products %}
+                        <li>{{ product }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <!-- POA Card -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">POA Status</h5>
+                <p><strong>POA:</strong> {{ 'Yes' if profile.poa else 'No' }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+{% include 'footer.html' %}

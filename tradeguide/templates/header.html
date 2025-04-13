@@ -1,0 +1,66 @@
+{{ bootstrap.load_css() }} 
+
+<section class="welcome-section text-center py-5">
+    <div class="banner-image">
+        <img src="{{url_for('static',filename='pagehead.jpg')}}" alt="Welcome Image" style="height: 150px;width: 100%;">
+    </div>
+    
+
+</section>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand text-white" href="{{ url_for('home') }}">AynaTrade Helping Assistant</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- All nav-items pushed to the right -->
+
+        <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="{{ url_for('feedindicators') }}">Feed_Indicators_input</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="{{ url_for('mainboard') }}">My Mainboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="{{ url_for('capturedata') }}">Capture MarketData</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="{{ url_for('optionsanalysis') }}">Options Analysis</a>
+            </li>
+            <!-- Orders Link -->
+            <li class="nav-item">
+                <a class="nav-link text-white" href="{{ url_for('orders') }}">Orders</a>
+            </li>
+            
+            <!-- Positions Link -->
+            <li class="nav-item">
+                <a class="nav-link text-white" href="{{ url_for('positions') }}">Positions</a>
+            </li>
+            <!-- Options Link -->
+            <li class="nav-item">
+                <a class="nav-link text-white" href="{{ url_for('optionchainlive') }}">Nifty OptChainLive</a>
+            </li>
+            
+            <!-- Login Link - Only show if user is not logged in -->
+            {% if not session.get('access_token') %}
+            <!-- Upstox Login Link - Displayed when not logged in -->
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#" onclick="showLoginAlert()">Upstox Login</a>
+            </li>
+            {% endif %}
+
+            <!-- Logout Link - Only show if user is logged in -->
+            {% if session.get('access_token') %}
+            <li class="nav-item">
+                <a class="nav-link text-white" href="{{ url_for('logout_user') }}">Logout</a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+
+<!-- JavaScript for Alert -->
+<script type="text/javascript">
+    function showLoginAlert() {
+        alert('Please login first below using AuthCode only');
+    }
+</script>
