@@ -638,17 +638,19 @@ def findpremium(access_token):
         totputltp=0;
         # Extract the relevant data from each row in caplist
         for row in optbook.data:
+            call_ltp = row.call_options.market_data.ltp or 0
+            put_ltp = row.put_options.market_data.ltp or 0
+
             dataarray.append({
-                    'date_entry': current_timestamp,
-                    'call_ltp':row.call_options.market_data.ltp,
-                    'strike_price':row.strike_price ,
-                    'underlying_spot_price': row.underlying_spot_price,
-                    'put_ltp':row.put_options.market_data.ltp,
-                    
-            })  
-                
-            totcallltp=round(row.call_options.market_data.ltp+totcallltp)
-            totputltp=round(row.put_options.market_data.ltp+totputltp)
+                'date_entry': current_timestamp,
+                'call_ltp': call_ltp,
+                'strike_price': row.strike_price,
+                'underlying_spot_price': row.underlying_spot_price,
+                'put_ltp': put_ltp,
+            })
+
+            totcallltp = round(totcallltp + call_ltp)
+            totputltp = round(totputltp + put_ltp)
         print(f'Total Call premium {totcallltp}')
         print(f'Total Put Premium {totputltp}')
     else:
@@ -981,19 +983,21 @@ def processpcr(optdict,exp):
     tpcr=0
     # Extract the relevant data from each row in caplist
     for row in optdict:
+        calli=row.call_options.market_data.oi or 0
+        puti=row.put_options.market_data.oi or 0
         data.append({
             'expiry':row.expiry,
-            'call_oi':row.call_options.market_data.oi,
+            'call_oi':calli,
             'call_volume':row.call_options.market_data.volume,
             'strike_price':row.strike_price ,
             'underlying_spot_price': row.underlying_spot_price,
-            'put_oi':row.put_options.market_data.oi ,
+            'put_oi':puti ,
             'put_volume':row.put_options.market_data.volume,
             'nifty_spot_price':row.underlying_spot_price,
            
         })  
-        tcall=row.call_options.market_data.oi+tcall
-        tput=row.put_options.market_data.oi+tput
+        tcall=calli+tcall
+        tput=puti+tput
     #print(tcall,tput)
     tpcr = round(tput / tcall, 4)
     
