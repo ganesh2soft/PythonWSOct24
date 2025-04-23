@@ -731,6 +731,62 @@ def samplespremium(df):
     
     
 ############################################################################
+
+def mainindexfun(access_token):
+    from upstoxapiservices import mainindex
+    import json
+    import os
+    from datetime import datetime
+    try:
+        main_index=mainindex(access_token)
+        mainindexfile = 'mainindex.json'
+        # Load existing data or create new list
+        if os.path.exists('mainindex.json'):
+            with open('mainindex.json', 'r') as json_file:
+                existing_data = json.load(json_file)
+                if not isinstance(existing_data, list):
+                    existing_data = []
+        else:
+                existing_data = []
+
+            # Add timestamped result
+        current_timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        result = {
+                "timestamp": current_timestamp,
+                "main_index": main_index
+        }
+
+            # Append and save the updated list
+        existing_data.append(result)
+            
+        with open('mainindex.json', 'w') as json_file:
+            json.dump(existing_data, json_file, indent=4)
+
+    except Exception as e:
+        # Log or print the error
+        app.logger.error(f"Error occurred in findMain Indextop function: {str(e)}")
+        print(f"Error: {str(e)}")
+        return None
+    print('Main Index completed')
+    
+##################################################################################################
+@app.route('/api/getmainindex', methods=['GET'])
+def get_main_index_data():
+    try:
+        if not os.path.exists('mainindex.json'):
+            return jsonify({'error': 'File not found'}), 404
+            # If the file doesn't exist, create an empty list
+           
+        with open('mainindex.json', 'r') as json_file:
+                main_index = json.load(json_file)
+
+        return jsonify(main_index)
+
+    except Exception as e:
+        app.logger.error(f"Error occurred while reading midcaptop5.json: {str(e)}")
+        return jsonify({'error': 'Unable to Main Indics data'}), 500
+
+####################################################################################################
 @app.route('/api/gettopmidcap5', methods=['GET'])
 def midcaptop5tofrontend():
     try:
@@ -917,6 +973,7 @@ def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
         findniftytop(access_token)
         findmidcaptop(access_token)
         findpremium(access_token)
+        mainindexfun(access_token)
         
         expiry1=expiry1
         expiry2=expiry2

@@ -1,101 +1,101 @@
 [
     {
-        "timestamp": "2025-04-18 23:40:02",
+        "timestamp": "2025-04-24 00:15:02",
         "top_banks": [
             {
                 "symbol": "HDFC Bank Ltd.",
-                "ltp": 1907
+                "ltp": 1924
             },
             {
                 "symbol": "ICICI Bank Ltd.",
-                "ltp": 1407
+                "ltp": 1424
             },
             {
                 "symbol": "Axis Bank Ltd.",
-                "ltp": 1191
+                "ltp": 1207
             },
             {
                 "symbol": "SBI Bank",
-                "ltp": 2188
+                "ltp": 2227
             },
             {
                 "symbol": "Kotak M Bank Ltd.",
-                "ltp": 797
+                "ltp": 813
             }
         ]
     },
     {
-        "timestamp": "2025-04-18 23:45:01",
+        "timestamp": "2025-04-24 00:20:01",
         "top_banks": [
             {
                 "symbol": "HDFC Bank Ltd.",
-                "ltp": 1907
+                "ltp": 1924
             },
             {
                 "symbol": "ICICI Bank Ltd.",
-                "ltp": 1407
+                "ltp": 1424
             },
             {
                 "symbol": "Axis Bank Ltd.",
-                "ltp": 1191
+                "ltp": 1207
             },
             {
                 "symbol": "SBI Bank",
-                "ltp": 2188
+                "ltp": 2227
             },
             {
                 "symbol": "Kotak M Bank Ltd.",
-                "ltp": 797
+                "ltp": 813
             }
         ]
     },
     {
-        "timestamp": "2025-04-18 23:50:01",
+        "timestamp": "2025-04-24 00:25:01",
         "top_banks": [
             {
                 "symbol": "HDFC Bank Ltd.",
-                "ltp": 1907
+                "ltp": 1924
             },
             {
                 "symbol": "ICICI Bank Ltd.",
-                "ltp": 1407
+                "ltp": 1424
             },
             {
                 "symbol": "Axis Bank Ltd.",
-                "ltp": 1191
+                "ltp": 1207
             },
             {
                 "symbol": "SBI Bank",
-                "ltp": 2188
+                "ltp": 2227
             },
             {
                 "symbol": "Kotak M Bank Ltd.",
-                "ltp": 797
+                "ltp": 813
             }
         ]
     },
     {
-        "timestamp": "2025-04-18 23:55:03",
+        "timestamp": "2025-04-24 00:30:02",
         "top_banks": [
             {
                 "symbol": "HDFC Bank Ltd.",
-                "ltp": 1907
+                "ltp": 1924
             },
             {
                 "symbol": "ICICI Bank Ltd.",
-                "ltp": 1407
+                "ltp": 1424
             },
             {
                 "symbol": "Axis Bank Ltd.",
-                "ltp": 1191
+                "ltp": 1207
             },
             {
                 "symbol": "SBI Bank",
-                "ltp": 2188
+                "ltp": 2227
             },
             {
                 "symbol": "Kotak M Bank Ltd.",
-                "ltp": 797
+                "ltp": 813
             }
         ]
     }

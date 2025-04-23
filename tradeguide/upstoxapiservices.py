@@ -374,6 +374,50 @@ def getmidcaptop5(gtok):
     print('Midcap Upstox Service Completed')
     return midcap_data  # Return the list of responses for all symbols
 ###########################################################################################
+
+def mainindex(gtok):
+   
+    import upstox_client
+    configuration = upstox_client.Configuration()
+    configuration.access_token = gtok
+    
+    api_version = '2.0'
+    api_instance = upstox_client.MarketQuoteApi(upstox_client.ApiClient(configuration))
+
+    # Define symbol tokens for major indices
+    index_symbols = {
+        'NIFTY 50': 'NSE_INDEX|Nifty 50',
+        'NIFTY NEXT 50': 'NSE_INDEX|Nifty Next 50',
+        'MIDCAP': 'NSE_INDEX|NIFTY MID SELECT',
+        'SENSEX': 'BSE_INDEX|SENSEX',
+        'BANK NIFTY': 'NSE_INDEX|Nifty Bank',
+        'BANKEX': 'BSE_INDEX|BANKEX',
+        'FINNIFTY': 'NSE_INDEX|Nifty Fin Service'
+    }
+
+    index_data = []
+
+    for name, symbol in index_symbols.items():
+        try:
+            response = api_instance.ltp(symbol, api_version)
+            if isinstance(response, upstox_client.models.get_market_quote_last_traded_price_response.GetMarketQuoteLastTradedPriceResponse):
+                if response.data:
+                    for key, value in response.data.items():
+                        ltp = round(value.last_price)
+                        index_data.append({
+                            'index': name,
+                            'symbol': symbol,
+                            'ltp': ltp
+                        })
+        except Exception as e:
+            print(f"Error fetching data for {name} ({symbol}): {e}")
+
+    print("Main Indices Fetched Successfully")
+    return index_data
+
+
+
+############################################################################################
 def placeordersrv(inputitems):
     #print('Alert_____________Control reached placeordersrv')
     #print('inputitems as of placecorder service:',inputitems)

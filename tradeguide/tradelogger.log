@@ -153,3 +153,251 @@
 2025-04-18 23:55:32,357 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 23:55:32] "GET /api/options HTTP/1.1" 200 -
 2025-04-18 23:55:33,532 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 23:55:33] "GET /api/trend HTTP/1.1" 200 -
 2025-04-18 23:56:05,949 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODAyOTc5MTg1YTFiZDE3NzcwMDNhMjciLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzQ1MDAwMzM3LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NDUwMTM2MDB9.Kyj2K5UJgegHigN-QEMXB55fbN7Yr-AX54Pd9JJ6s3c'})"
+2025-04-19 00:08:08,457 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-19 00:08:08,457 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-19 00:08:13,003 - app - INFO - Options analysis visited
+2025-04-19 00:08:13,552 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:08:13] "GET /options_analysis.html HTTP/1.1" 200 -
+2025-04-19 00:08:13,609 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:08:13] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2025-04-19 00:10:00,583 - app - INFO - IVIX: 15.47, Nifty50: 23851.65, Nifty Futures: 23848.9
+2025-04-19 00:10:02,119 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 1907}, {'symbol': 'Reliance Industries.', 'ltp': 1274}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1407}, {'symbol': 'Infosys Ltd.', 'ltp': 1420}, {'symbol': 'ITC Ltd.', 'ltp': 427}, {'symbol': 'Tata TCS', 'ltp': 3299}, {'symbol': 'L&T  Ltd.', 'ltp': 3247}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1191}, {'symbol': 'Kotak M Bank Ltd.', 'ltp': 797}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1889}]
+2025-04-19 00:10:03,288 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:10:03,642 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:10:04,016 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:10:04,325 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODAyOTc5MTg1YTFiZDE3NzcwMDNhMjciLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzQ1MDAwMzM3LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NDUwMTM2MDB9.Kyj2K5UJgegHigN-QEMXB55fbN7Yr-AX54Pd9JJ6s3c'})"
+2025-04-19 00:10:34,239 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:10:34] "GET /api/getpremium HTTP/1.1" 200 -
+2025-04-19 00:11:23,280 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-19 00:11:23,280 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-19 00:11:27,515 - app - INFO - Options analysis visited
+2025-04-19 00:11:27,882 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:11:27] "GET /options_analysis.html HTTP/1.1" 200 -
+2025-04-19 00:11:27,933 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:11:27] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2025-04-19 00:13:32,168 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:13:32] "GET /api/gettopnifty10 HTTP/1.1" 200 -
+2025-04-19 00:13:32,170 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:13:32] "GET /api/gettopbank5 HTTP/1.1" 200 -
+2025-04-19 00:13:32,171 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:13:32] "GET /api/gettopmidcap5 HTTP/1.1" 200 -
+2025-04-19 00:13:33,393 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:13:33] "GET /api/getpremium HTTP/1.1" 200 -
+2025-04-19 00:15:01,173 - app - INFO - IVIX: 15.47, Nifty50: 23851.65, Nifty Futures: 23848.9
+2025-04-19 00:15:02,693 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 1907}, {'symbol': 'Reliance Industries.', 'ltp': 1274}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1407}, {'symbol': 'Infosys Ltd.', 'ltp': 1420}, {'symbol': 'ITC Ltd.', 'ltp': 427}, {'symbol': 'Tata TCS', 'ltp': 3299}, {'symbol': 'L&T  Ltd.', 'ltp': 3247}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1191}, {'symbol': 'Kotak M Bank Ltd.', 'ltp': 797}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1889}]
+2025-04-19 00:15:03,976 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:15:04,324 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:15:04,675 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:15:04,997 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODAyOTc5MTg1YTFiZDE3NzcwMDNhMjciLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzQ1MDAwMzM3LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NDUwMTM2MDB9.Kyj2K5UJgegHigN-QEMXB55fbN7Yr-AX54Pd9JJ6s3c'})"
+2025-04-19 00:15:52,381 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:15:52] "GET /api/gettopbank5 HTTP/1.1" 200 -
+2025-04-19 00:15:52,383 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:15:52] "GET /api/gettopnifty10 HTTP/1.1" 200 -
+2025-04-19 00:15:52,385 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:15:52] "GET /api/gettopmidcap5 HTTP/1.1" 200 -
+2025-04-19 00:15:52,817 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:15:52] "GET /api/getpremium HTTP/1.1" 200 -
+2025-04-19 00:15:56,815 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:15:56] "GET /api/gettopnifty10 HTTP/1.1" 200 -
+2025-04-19 00:15:56,819 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:15:56] "GET /api/gettopbank5 HTTP/1.1" 200 -
+2025-04-19 00:15:56,819 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:15:56] "GET /api/gettopmidcap5 HTTP/1.1" 200 -
+2025-04-19 00:15:58,510 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:15:58] "GET /api/options HTTP/1.1" 200 -
+2025-04-19 00:15:59,808 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:15:59] "GET /api/getniftyhl HTTP/1.1" 200 -
+2025-04-19 00:20:00,740 - app - INFO - IVIX: 15.47, Nifty50: 23851.65, Nifty Futures: 23848.9
+2025-04-19 00:20:02,377 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 1907}, {'symbol': 'Reliance Industries.', 'ltp': 1274}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1407}, {'symbol': 'Infosys Ltd.', 'ltp': 1420}, {'symbol': 'ITC Ltd.', 'ltp': 427}, {'symbol': 'Tata TCS', 'ltp': 3299}, {'symbol': 'L&T  Ltd.', 'ltp': 3247}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1191}, {'symbol': 'Kotak M Bank Ltd.', 'ltp': 797}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1889}]
+2025-04-19 00:20:03,726 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:20:04,082 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:20:04,415 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:20:04,751 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODAyOTc5MTg1YTFiZDE3NzcwMDNhMjciLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzQ1MDAwMzM3LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NDUwMTM2MDB9.Kyj2K5UJgegHigN-QEMXB55fbN7Yr-AX54Pd9JJ6s3c'})"
+2025-04-19 00:23:03,189 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:23:03] "GET /api/futures HTTP/1.1" 200 -
+2025-04-19 00:23:03,328 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:23:03] "GET /api/options HTTP/1.1" 200 -
+2025-04-19 00:23:04,430 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:23:04] "GET /api/options HTTP/1.1" 200 -
+2025-04-19 00:23:05,442 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:23:05] "GET /api/getniftyhl HTTP/1.1" 200 -
+2025-04-19 00:23:07,922 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2025 00:23:07] "GET /api/getpremium HTTP/1.1" 200 -
+2025-04-19 00:25:01,473 - app - INFO - IVIX: 15.47, Nifty50: 23851.65, Nifty Futures: 23848.9
+2025-04-19 00:25:02,990 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 1907}, {'symbol': 'Reliance Industries.', 'ltp': 1274}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1407}, {'symbol': 'Infosys Ltd.', 'ltp': 1420}, {'symbol': 'ITC Ltd.', 'ltp': 427}, {'symbol': 'Tata TCS', 'ltp': 3299}, {'symbol': 'L&T  Ltd.', 'ltp': 3247}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1191}, {'symbol': 'Kotak M Bank Ltd.', 'ltp': 797}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1889}]
+2025-04-19 00:25:04,214 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:25:04,606 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:25:04,968 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:25:05,285 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODAyOTc5MTg1YTFiZDE3NzcwMDNhMjciLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzQ1MDAwMzM3LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NDUwMTM2MDB9.Kyj2K5UJgegHigN-QEMXB55fbN7Yr-AX54Pd9JJ6s3c'})"
+2025-04-19 00:30:01,067 - app - INFO - IVIX: 15.47, Nifty50: 23851.65, Nifty Futures: 23848.9
+2025-04-19 00:30:02,635 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 1907}, {'symbol': 'Reliance Industries.', 'ltp': 1274}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1407}, {'symbol': 'Infosys Ltd.', 'ltp': 1420}, {'symbol': 'ITC Ltd.', 'ltp': 427}, {'symbol': 'Tata TCS', 'ltp': 3299}, {'symbol': 'L&T  Ltd.', 'ltp': 3247}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1191}, {'symbol': 'Kotak M Bank Ltd.', 'ltp': 797}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1889}]
+2025-04-19 00:30:03,876 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:30:04,272 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:30:04,606 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-19 00:30:04,947 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODAyOTc5MTg1YTFiZDE3NzcwMDNhMjciLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzQ1MDAwMzM3LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NDUwMTM2MDB9.Kyj2K5UJgegHigN-QEMXB55fbN7Yr-AX54Pd9JJ6s3c'})"
+2025-04-23 23:38:55,678 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-23 23:38:55,679 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-23 23:39:54,389 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:39:54] "GET / HTTP/1.1" 200 -
+2025-04-23 23:39:54,483 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:39:54] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2025-04-23 23:39:54,492 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:39:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-23 23:39:57,293 - app - INFO - Generated token is eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODA5MmNmNTkyYjAxNjYzNTNmM2M5MGUiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzQ1NDMxNzk3LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NDU0NDU2MDB9.R0wcqFCVJxQfNwkzZepYo-AvEJbm0BzqUODRda_F0_A
+2025-04-23 23:39:57,633 - app - INFO - Profile User:  {'data': {'broker': 'UPSTOX',
+          'email': 'smartganesh2022@gmail.com',
+          'exchanges': ['NFO', 'BCD', 'NSE', 'CDS', 'BFO', 'BSE'],
+          'is_active': True,
+          'order_types': ['MARKET', 'LIMIT', 'SL', 'SL-M'],
+          'poa': False,
+          'products': ['OCO', 'D', 'CO', 'I'],
+          'user_id': '2UCRRH',
+          'user_name': 'S Ganesh',
+          'user_type': 'individual'},
+ 'status': 'success'}
+2025-04-23 23:39:57,639 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:39:57] "POST /authorize HTTP/1.1" 200 -
+2025-04-23 23:39:57,647 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:39:57] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2025-04-23 23:39:59,063 - app - INFO - Options analysis visited
+2025-04-23 23:39:59,096 - app - ERROR - Exception on /options_analysis.html [GET]
+Traceback (most recent call last):
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\app.py", line 437, in optionsanalysis
+    call_df,put_df=findtrend()
+                   ^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\app.py", line 1257, in findtrend
+    opt1_arr = db_read.getopt(expiry1)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\db_read.py", line 44, in getopt
+    last_two_dates_result = Options.query.with_entities(func.date(Options.date_entry)).distinct().order_by(func.date(Options.date_entry).desc()).limit(2).all()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2237, in _execute_internal
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2106, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2025-04-23 23:39:59,151 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:39:59] "[35m[1mGET /options_analysis.html HTTP/1.1[0m" 500 -
+2025-04-23 23:40:00,468 - app - INFO - IVIX: 15.96, Nifty50: 24328.95, Nifty Futures: 24306.9
+2025-04-23 23:40:02,126 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 1924}, {'symbol': 'Reliance Industries.', 'ltp': 1300}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1424}, {'symbol': 'Infosys Ltd.', 'ltp': 1475}, {'symbol': 'ITC Ltd.', 'ltp': 431}, {'symbol': 'Tata TCS', 'ltp': 3413}, {'symbol': 'L&T  Ltd.', 'ltp': 3301}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1207}, {'symbol': 'Kotak M Bank Ltd.', 'ltp': 813}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1882}]
+2025-04-23 23:40:05,288 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-23 23:40:05,711 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-23 23:40:06,058 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-23 23:40:06,335 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODA5MmNmNTkyYjAxNjYzNTNmM2M5MGUiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzQ1NDMxNzk3LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NDU0NDU2MDB9.R0wcqFCVJxQfNwkzZepYo-AvEJbm0BzqUODRda_F0_A'})"
+2025-04-23 23:40:12,380 - app - INFO - Options analysis visited
+2025-04-23 23:40:13,006 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:40:13] "GET /options_analysis.html HTTP/1.1" 200 -
+2025-04-23 23:40:13,013 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:40:13] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2025-04-23 23:41:14,407 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:41:14] "GET /api/trend HTTP/1.1" 200 -
+2025-04-23 23:44:41,966 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:44:41] "GET /api/trend HTTP/1.1" 200 -
+2025-04-23 23:45:01,262 - app - INFO - IVIX: 15.96, Nifty50: 24328.95, Nifty Futures: 24306.9
+2025-04-23 23:45:02,812 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 1924}, {'symbol': 'Reliance Industries.', 'ltp': 1300}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1424}, {'symbol': 'Infosys Ltd.', 'ltp': 1475}, {'symbol': 'ITC Ltd.', 'ltp': 431}, {'symbol': 'Tata TCS', 'ltp': 3413}, {'symbol': 'L&T  Ltd.', 'ltp': 3301}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1207}, {'symbol': 'Kotak M Bank Ltd.', 'ltp': 813}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1882}]
+2025-04-23 23:45:04,683 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-23 23:45:05,100 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-23 23:45:05,449 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-23 23:45:05,758 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODA5MmNmNTkyYjAxNjYzNTNmM2M5MGUiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzQ1NDMxNzk3LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NDU0NDU2MDB9.R0wcqFCVJxQfNwkzZepYo-AvEJbm0BzqUODRda_F0_A'})"
+2025-04-23 23:46:25,111 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-23 23:46:25,111 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-23 23:46:31,138 - app - INFO - Options analysis visited
+2025-04-23 23:46:31,508 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:46:31] "GET /options_analysis.html HTTP/1.1" 200 -
+2025-04-23 23:46:31,562 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:46:31] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2025-04-23 23:47:23,318 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:47:23] "GET /api/getmainindex HTTP/1.1" 200 -
+2025-04-23 23:47:23,440 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:47:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-23 23:50:00,673 - app - INFO - IVIX: 15.96, Nifty50: 24328.95, Nifty Futures: 24306.9
+2025-04-23 23:50:02,615 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 1924}, {'symbol': 'Reliance Industries.', 'ltp': 1300}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1424}, {'symbol': 'Infosys Ltd.', 'ltp': 1475}, {'symbol': 'ITC Ltd.', 'ltp': 431}, {'symbol': 'Tata TCS', 'ltp': 3413}, {'symbol': 'L&T  Ltd.', 'ltp': 3301}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1207}, {'symbol': 'Kotak M Bank Ltd.', 'ltp': 813}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1882}]
+2025-04-23 23:50:04,406 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-23 23:50:04,857 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-23 23:50:05,260 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-23 23:50:05,560 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODA5MmNmNTkyYjAxNjYzNTNmM2M5MGUiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzQ1NDMxNzk3LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NDU0NDU2MDB9.R0wcqFCVJxQfNwkzZepYo-AvEJbm0BzqUODRda_F0_A'})"
+2025-04-23 23:55:01,495 - app - INFO - IVIX: 15.96, Nifty50: 24328.95, Nifty Futures: 24306.9
+2025-04-23 23:55:02,989 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 1924}, {'symbol': 'Reliance Industries.', 'ltp': 1300}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1424}, {'symbol': 'Infosys Ltd.', 'ltp': 1475}, {'symbol': 'ITC Ltd.', 'ltp': 431}, {'symbol': 'Tata TCS', 'ltp': 3413}, {'symbol': 'L&T  Ltd.', 'ltp': 3301}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1207}, {'symbol': 'Kotak M Bank Ltd.', 'ltp': 813}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1882}]
+2025-04-23 23:55:04,791 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-23 23:55:05,131 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-23 23:55:05,527 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-23 23:55:05,887 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODA5MmNmNTkyYjAxNjYzNTNmM2M5MGUiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzQ1NDMxNzk3LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NDU0NDU2MDB9.R0wcqFCVJxQfNwkzZepYo-AvEJbm0BzqUODRda_F0_A'})"
+2025-04-23 23:56:51,382 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-23 23:56:51,382 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-23 23:56:57,401 - app - INFO - Options analysis visited
+2025-04-23 23:56:57,802 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:56:57] "GET /options_analysis.html HTTP/1.1" 200 -
+2025-04-23 23:56:57,853 - werkzeug - INFO - 127.0.0.1 - - [23/Apr/2025 23:56:57] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2025-04-24 00:00:00,951 - app - INFO - IVIX: 15.96, Nifty50: 24328.95, Nifty Futures: 24306.9
+2025-04-24 00:00:02,546 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 1924}, {'symbol': 'Reliance Industries.', 'ltp': 1300}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1424}, {'symbol': 'Infosys Ltd.', 'ltp': 1475}, {'symbol': 'ITC Ltd.', 'ltp': 431}, {'symbol': 'Tata TCS', 'ltp': 3413}, {'symbol': 'L&T  Ltd.', 'ltp': 3301}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1207}, {'symbol': 'Kotak M Bank Ltd.', 'ltp': 813}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1882}]
+2025-04-24 00:00:04,377 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-24 00:00:04,719 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-24 00:00:05,109 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-24 00:00:05,403 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODA5MmNmNTkyYjAxNjYzNTNmM2M5MGUiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzQ1NDMxNzk3LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NDU0NDU2MDB9.R0wcqFCVJxQfNwkzZepYo-AvEJbm0BzqUODRda_F0_A'})"
+2025-04-24 00:05:01,036 - app - INFO - IVIX: 15.96, Nifty50: 24328.95, Nifty Futures: 24306.9
+2025-04-24 00:05:02,620 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 1924}, {'symbol': 'Reliance Industries.', 'ltp': 1300}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1424}, {'symbol': 'Infosys Ltd.', 'ltp': 1475}, {'symbol': 'ITC Ltd.', 'ltp': 431}, {'symbol': 'Tata TCS', 'ltp': 3413}, {'symbol': 'L&T  Ltd.', 'ltp': 3301}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1207}, {'symbol': 'Kotak M Bank Ltd.', 'ltp': 813}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1882}]
+2025-04-24 00:05:04,611 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-24 00:05:04,942 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-24 00:05:05,299 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-24 00:05:05,599 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODA5MmNmNTkyYjAxNjYzNTNmM2M5MGUiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzQ1NDMxNzk3LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NDU0NDU2MDB9.R0wcqFCVJxQfNwkzZepYo-AvEJbm0BzqUODRda_F0_A'})"
+2025-04-24 00:10:01,230 - app - INFO - IVIX: 15.96, Nifty50: 24328.95, Nifty Futures: 24306.9
+2025-04-24 00:10:02,730 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 1924}, {'symbol': 'Reliance Industries.', 'ltp': 1300}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1424}, {'symbol': 'Infosys Ltd.', 'ltp': 1475}, {'symbol': 'ITC Ltd.', 'ltp': 431}, {'symbol': 'Tata TCS', 'ltp': 3413}, {'symbol': 'L&T  Ltd.', 'ltp': 3301}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1207}, {'symbol': 'Kotak M Bank Ltd.', 'ltp': 813}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1882}]
+2025-04-24 00:10:04,593 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-24 00:10:04,997 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-24 00:10:05,320 - app - INFO - Processed PCR data and saved to JSON file
+2025-04-24 00:10:05,682 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODA5MmNmNTkyYjAxNjYzNTNmM2M5MGUiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzQ1NDMxNzk3LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NDU0NDU2MDB9.R0wcqFCVJxQfNwkzZepYo-AvEJbm0BzqUODRda_F0_A'})"
