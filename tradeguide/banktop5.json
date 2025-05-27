@@ -1,81 +1,1227 @@
 [
     {
-        "timestamp": "2025-04-24 00:15:02",
+        "timestamp": "2025-05-27 11:31:02",
         "top_banks": [
             {
                 "symbol": "HDFC Bank Ltd.",
-                "ltp": 1924
+                "ltp": 1947
             },
             {
                 "symbol": "ICICI Bank Ltd.",
-                "ltp": 1424
+                "ltp": 1462
             },
             {
                 "symbol": "Axis Bank Ltd.",
-                "ltp": 1207
-            },
-            {
-                "symbol": "SBI Bank",
-                "ltp": 2227
+                "ltp": 1215
             },
             {
                 "symbol": "Kotak M Bank Ltd.",
-                "ltp": 813
+                "ltp": 2098
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 801
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2057
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9289
             }
         ]
     },
     {
-        "timestamp": "2025-04-24 00:20:01",
+        "timestamp": "2025-05-27 11:36:01",
         "top_banks": [
             {
                 "symbol": "HDFC Bank Ltd.",
-                "ltp": 1924
+                "ltp": 1944
             },
             {
                 "symbol": "ICICI Bank Ltd.",
-                "ltp": 1424
+                "ltp": 1458
             },
             {
                 "symbol": "Axis Bank Ltd.",
-                "ltp": 1207
-            },
-            {
-                "symbol": "SBI Bank",
-                "ltp": 2227
+                "ltp": 1211
             },
             {
                 "symbol": "Kotak M Bank Ltd.",
-                "ltp": 813
+                "ltp": 2094
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 801
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2054
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9264
             }
         ]
     },
     {
-        "timestamp": "2025-04-24 00:25:01",
+        "timestamp": "2025-05-27 11:40:01",
         "top_banks": [
             {
                 "symbol": "HDFC Bank Ltd.",
-                "ltp": 1924
+                "ltp": 1942
             },
             {
                 "symbol": "ICICI Bank Ltd.",
-                "ltp": 1424
+                "ltp": 1456
             },
             {
                 "symbol": "Axis Bank Ltd.",
-                "ltp": 1207
-            },
-            {
-                "symbol": "SBI Bank",
-                "ltp": 2227
+                "ltp": 1211
             },
             {
                 "symbol": "Kotak M Bank Ltd.",
-                "ltp": 813
+                "ltp": 2092
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 800
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2050
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9264
             }
         ]
     },
     {
-        "timestamp": "2025-04-24 00:30:02",
+        "timestamp": "2025-05-27 11:46:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1940
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1454
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1209
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2090
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 799
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2049
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9248
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 11:51:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1934
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1451
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1206
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2085
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 798
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2043
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9228
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 11:56:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1940
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1454
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1210
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2090
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 799
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2046
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9246
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:01:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1936
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1452
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1208
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2086
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 798
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2043
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9240
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:06:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1941
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1454
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1208
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2088
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 799
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2046
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9257
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:11:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1940
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1453
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1208
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2087
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 798
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2044
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9246
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:16:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1940
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1450
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1208
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2087
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 801
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2044
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9242
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:21:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1937
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1450
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1207
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2087
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 800
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2042
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9242
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:26:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1935
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1449
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1206
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2084
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 800
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2037
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9220
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:31:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1928
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1444
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1202
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2074
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 798
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2031
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9196
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:36:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1931
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1448
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1204
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2078
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 799
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2034
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9207
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:41:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1931
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1447
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1204
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2079
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 798
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2034
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9208
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:46:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1934
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1448
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1206
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2081
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 799
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2035
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9209
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:51:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1930
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1445
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1203
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2078
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 798
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2032
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9200
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:56:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1930
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1445
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1203
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2076
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 798
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2033
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9208
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:01:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1928
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1444
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1203
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2075
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 798
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2031
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9190
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:06:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1926
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1444
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1202
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2076
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 798
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2030
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9187
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:11:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1929
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1445
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1203
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2078
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 797
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2031
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9180
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:16:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1930
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1445
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1203
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2077
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 796
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2033
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9186
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:21:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1928
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1443
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1200
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2073
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 795
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2031
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9176
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:26:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1928
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1442
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1200
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2072
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 795
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2030
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9172
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:31:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1930
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1442
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1201
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2075
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 795
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2033
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9172
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:36:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1928
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1444
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1201
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2076
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 795
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2032
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9169
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:41:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1930
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1445
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1200
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2077
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 796
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2033
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9176
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:46:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1933
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1447
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1202
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2080
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 796
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2035
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9183
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:51:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1930
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1447
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1201
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2078
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 796
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2033
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9184
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:56:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1928
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1446
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1200
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2077
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 796
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2031
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9178
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 14:01:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1922
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1441
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1197
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2073
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2027
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9166
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 14:06:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1922
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1441
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1197
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2073
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2029
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9168
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 14:16:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1922
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1443
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1197
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2074
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 795
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2025
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9168
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 14:56:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1926
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1440
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1195
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2069
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2020
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9168
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 15:11:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1927
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1447
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1196
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2079
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2029
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9171
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 15:16:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1928
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1448
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1197
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2080
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2029
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9170
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 15:21:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1926
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1447
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1195
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2077
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2032
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9170
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 15:26:02",
         "top_banks": [
             {
                 "symbol": "HDFC Bank Ltd.",
@@ -83,19 +1229,357 @@
             },
             {
                 "symbol": "ICICI Bank Ltd.",
-                "ltp": 1424
+                "ltp": 1446
             },
             {
                 "symbol": "Axis Bank Ltd.",
-                "ltp": 1207
-            },
-            {
-                "symbol": "SBI Bank",
-                "ltp": 2227
+                "ltp": 1195
             },
             {
                 "symbol": "Kotak M Bank Ltd.",
-                "ltp": 813
+                "ltp": 2073
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2031
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9179
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 15:31:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1927
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1445
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1198
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2075
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2035
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9174
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 15:35:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1927
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1445
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1198
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2075
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2035
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9174
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 15:51:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1926
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1446
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1196
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2077
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2030
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9171
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 16:05:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1926
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1446
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1196
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2077
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2030
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9171
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 16:10:03",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1926
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1446
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1196
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2077
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2030
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9171
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 16:15:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1926
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1446
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1196
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2077
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2030
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9171
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 16:20:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1926
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1446
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1196
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2077
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2030
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9171
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 16:30:02",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1926
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1446
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1196
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2077
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2030
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9171
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 16:35:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1926
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1446
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1196
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2077
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2030
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9171
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 16:40:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 1926
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1446
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1196
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 2077
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 794
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 2030
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 9171
             }
         ]
     }

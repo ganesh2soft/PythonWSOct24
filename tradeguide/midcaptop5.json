@@ -1,117 +1,1393 @@
 [
     {
-        "timestamp": "2025-04-24 00:15:03",
+        "timestamp": "2025-05-27 11:31:03",
         "top_midcaps": [
             {
                 "symbol": "Max Healthcare Institute Ltd.",
-                "ltp": 1130
+                "ltp": 1170
             },
             {
                 "symbol": "BSE Ltd.",
-                "ltp": 6439
+                "ltp": 2434
             },
             {
                 "symbol": "Persistent Systems Ltd.",
-                "ltp": 5164
+                "ltp": 5671
             },
             {
                 "symbol": "Coforge Ltd.",
-                "ltp": 7392
+                "ltp": 8456
             },
             {
                 "symbol": "PB Fintech Ltd.",
-                "ltp": 1665
+                "ltp": 1792
             },
             {
                 "symbol": "Dixon Technologies (India) Ltd.",
-                "ltp": 16607
+                "ltp": 15133
             }
         ]
     },
     {
-        "timestamp": "2025-04-24 00:20:03",
+        "timestamp": "2025-05-27 11:36:02",
         "top_midcaps": [
             {
                 "symbol": "Max Healthcare Institute Ltd.",
-                "ltp": 1130
+                "ltp": 1171
             },
             {
                 "symbol": "BSE Ltd.",
-                "ltp": 6439
+                "ltp": 2430
             },
             {
                 "symbol": "Persistent Systems Ltd.",
-                "ltp": 5164
+                "ltp": 5667
             },
             {
                 "symbol": "Coforge Ltd.",
-                "ltp": 7392
+                "ltp": 8442
             },
             {
                 "symbol": "PB Fintech Ltd.",
-                "ltp": 1665
+                "ltp": 1793
             },
             {
                 "symbol": "Dixon Technologies (India) Ltd.",
-                "ltp": 16607
+                "ltp": 15152
             }
         ]
     },
     {
-        "timestamp": "2025-04-24 00:25:03",
+        "timestamp": "2025-05-27 11:40:03",
         "top_midcaps": [
             {
                 "symbol": "Max Healthcare Institute Ltd.",
-                "ltp": 1130
+                "ltp": 1170
             },
             {
                 "symbol": "BSE Ltd.",
-                "ltp": 6439
+                "ltp": 2424
             },
             {
                 "symbol": "Persistent Systems Ltd.",
-                "ltp": 5164
+                "ltp": 5659
             },
             {
                 "symbol": "Coforge Ltd.",
-                "ltp": 7392
+                "ltp": 8442
             },
             {
                 "symbol": "PB Fintech Ltd.",
-                "ltp": 1665
+                "ltp": 1791
             },
             {
                 "symbol": "Dixon Technologies (India) Ltd.",
-                "ltp": 16607
+                "ltp": 15149
             }
         ]
     },
     {
-        "timestamp": "2025-04-24 00:30:03",
+        "timestamp": "2025-05-27 11:46:03",
         "top_midcaps": [
             {
                 "symbol": "Max Healthcare Institute Ltd.",
-                "ltp": 1130
+                "ltp": 1169
             },
             {
                 "symbol": "BSE Ltd.",
-                "ltp": 6439
+                "ltp": 2422
             },
             {
                 "symbol": "Persistent Systems Ltd.",
-                "ltp": 5164
+                "ltp": 5654
             },
             {
                 "symbol": "Coforge Ltd.",
-                "ltp": 7392
+                "ltp": 8451
             },
             {
                 "symbol": "PB Fintech Ltd.",
-                "ltp": 1665
+                "ltp": 1788
             },
             {
                 "symbol": "Dixon Technologies (India) Ltd.",
-                "ltp": 16607
+                "ltp": 15145
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 11:51:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1166
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2421
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5654
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8446
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1790
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15152
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 11:56:04",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1167
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2422
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5660
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8448
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1791
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15133
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:01:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1165
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2418
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5642
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8454
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1790
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15149
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:06:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1165
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2419
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5643
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8459
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1788
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15183
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:11:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1163
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2418
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5622
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8455
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1786
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15160
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:16:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1162
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2416
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5628
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8455
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1788
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15181
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:21:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1161
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2418
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5630
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8474
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1789
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15160
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:26:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1162
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2416
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5626
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8466
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1787
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15118
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:31:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1158
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2417
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5620
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8454
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1780
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15111
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:36:02",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1155
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2416
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5632
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8466
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1782
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15122
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:41:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1156
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2414
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5632
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8466
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1783
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15123
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:46:02",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1157
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2414
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5654
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8464
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1784
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15111
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:51:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1155
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2412
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5642
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8464
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1777
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15087
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 12:56:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1153
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2412
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5638
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8458
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1784
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15101
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:01:02",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1155
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2411
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5638
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8460
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1784
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15108
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:06:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1155
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2408
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5638
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8457
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1782
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15089
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:11:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1157
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2408
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5640
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8456
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1782
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15075
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:16:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1157
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2404
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5638
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8458
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1780
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15048
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:21:02",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1156
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2406
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5635
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8454
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1778
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15030
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:26:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1156
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2404
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5636
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8456
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1776
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15030
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:31:02",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1159
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2404
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5637
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8461
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1774
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15023
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:36:02",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1158
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2402
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5628
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8458
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1772
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15016
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:41:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1159
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2404
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5631
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8461
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1771
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15045
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:46:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1158
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2410
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5632
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8464
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1776
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15072
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:51:02",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1158
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2406
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5630
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8460
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1779
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15062
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 13:56:02",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1157
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2406
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5628
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8455
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1779
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15055
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 14:01:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1155
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2406
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5627
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8456
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1779
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15039
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 14:06:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1156
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2406
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5628
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8456
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1779
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15048
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 14:16:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1156
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2406
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5634
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8455
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1780
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15054
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 14:56:02",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1159
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2402
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5638
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8460
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1788
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15062
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 15:11:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1162
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2406
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5650
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8462
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1793
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15097
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 15:16:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1158
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2402
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5648
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8458
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1788
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15081
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 15:21:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1158
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2403
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5645
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8454
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1776
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15085
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 15:26:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1158
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2404
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5645
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8461
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1773
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15112
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 15:31:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1160
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2409
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5640
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8459
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1770
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15138
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 15:35:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1160
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2409
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5640
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8459
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1770
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15138
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 15:51:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1159
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2404
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5646
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8460
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1770
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15091
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 16:05:02",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1159
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2404
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5646
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8460
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1783
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15091
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 16:10:04",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1159
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2404
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5646
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8460
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1783
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15091
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 16:15:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1159
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2404
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5646
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8460
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1783
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15091
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 16:20:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1159
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2404
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5646
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8460
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1783
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15091
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 16:30:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1159
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2404
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5646
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8460
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1783
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15091
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 16:35:03",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1159
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2404
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5646
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8460
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1783
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15091
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-05-27 16:40:02",
+        "top_midcaps": [
+            {
+                "symbol": "Max Healthcare Institute Ltd.",
+                "ltp": 1159
+            },
+            {
+                "symbol": "BSE Ltd.",
+                "ltp": 2404
+            },
+            {
+                "symbol": "Persistent Systems Ltd.",
+                "ltp": 5646
+            },
+            {
+                "symbol": "Coforge Ltd.",
+                "ltp": 8460
+            },
+            {
+                "symbol": "PB Fintech Ltd.",
+                "ltp": 1783
+            },
+            {
+                "symbol": "Dixon Technologies (India) Ltd.",
+                "ltp": 15091
             }
         ]
     }

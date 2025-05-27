@@ -962,8 +962,65 @@ def niftytop10tofrontend():
         # Log and return error if there's an issue reading the file
         app.logger.error(f"Error occurred while reading niftytop10.json: {str(e)}")
         return jsonify({'error': 'Unable to fetch Nifty data'}), 500
-
-################################################################################################
+##############################################################################################
+###########To analyze options strike with LTP and volume##########
+def fewstrikes(access_token,expiry1):
+    options_status = upstoxapiservices.options_status(access_token, expiry1)
+    dataarr=[]
+    opt_df=pd.DataFrame(options_status.data)  
+    print('Inside Few Strikes Dataframe',opt_df)
+    print('Type of opt_df',type(opt_df))
+    print('Print columns of opt_df',opt_df.columns)
+    #nf_spot=opt_df.nifty_spot_price.iloc[0] if not opt_df.empty else 0
+    #print(f'Teseting before loop Underlying Spot Price for Nifty is {nf_spot}')  
+    
+    for row in options_status.data:
+        call_ltp = row.call_options.market_data.ltp or 0
+        put_ltp = row.put_options.market_data.ltp or 0
+        dataarr.append({
+            'expiry':row.expiry,            
+            'call_volume':row.call_options.market_data.volume,
+            'call_ltp': call_ltp,
+            'strike_price':row.strike_price ,
+            'underlying_spot_price': row.underlying_spot_price,            
+            'put_volume':row.put_options.market_data.volume,
+            'put_ltp': put_ltp          
+        })  
+    
+    df2=pd.DataFrame(dataarr)
+     # Example: Round the underlying spot price to the nearest 100
+    df2['rounded_spot_price'] = df2['underlying_spot_price'].apply(lambda x: round(x / 100) * 100)
+    roundsp= df2.iloc[0]['rounded_spot_price']
+    
+    sup01=roundsp - 100
+    sup02=roundsp - 200
+    sup03=roundsp - 300
+    sup04=roundsp - 400
+    res01=roundsp + 100
+    res02=roundsp + 200
+    res03=roundsp + 300
+    res04=roundsp + 400
+    print('!!!!!!!!!!!!!!!!!!!!!!!!!!')
+    print(sup04,sup03,sup02,sup01,roundsp,res01,res02,res03,res04)
+    
+   
+    strike_levels = set()
+    levels = {
+        'sup04': sup04,
+        'sup03': sup03,
+        'sup02': sup02,
+        'sup01': sup01,
+        'round_spot': roundsp,
+        'res01': res01,
+        'res02': res02,
+        'res03': res03,
+        'res04': res04
+    }
+    strike_levels.update(levels)
+    print('Strike Levels:', strike_levels)
+    
+    print('Dataframe columns',df2)
+        ################################################################################################
 def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
         
         ##### Call the below indiavixcalc  to record the vix
@@ -974,7 +1031,7 @@ def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
         findmidcaptop(access_token)
         findpremium(access_token)
         mainindexfun(access_token)
-        
+        fewstrikes(access_token,expiry1)
         expiry1=expiry1
         expiry2=expiry2
         expiry3=expiry3
