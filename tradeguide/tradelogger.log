@@ -2692,3 +2692,27 @@ RuntimeError: 'cryptography' package is required for sha256_password or caching_
 2025-05-27 16:40:04,616 - app - INFO - Processed PCR data and saved to JSON file
 2025-05-27 16:40:04,951 - app - INFO - Processed PCR data and saved to JSON file
 2025-05-27 16:40:05,242 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODM1NTBhMzY1ZGFlNzZmMjdjOGIwYWYiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc0ODMyNDUxNSwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzQ4MzgzMjAwfQ.SmkbebBoztnUHQ-vsFTtWKr9fdtxPF6DRzJwDpWEK8I'})"
+2025-05-27 17:05:58,962 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-27 17:05:58,962 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-27 17:06:11,442 - app - INFO - Options analysis visited
+2025-05-27 17:06:12,414 - werkzeug - INFO - 127.0.0.1 - - [27/May/2025 17:06:12] "GET /options_analysis.html HTTP/1.1" 200 -
+2025-05-27 17:06:12,493 - werkzeug - INFO - 127.0.0.1 - - [27/May/2025 17:06:12] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2025-05-27 17:10:01,080 - app - INFO - IVIX: 18.54, Nifty50: 24826.2, Nifty Futures: 24860.0
+2025-05-27 17:10:02,795 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 1926}, {'symbol': 'Reliance Industries.', 'ltp': 1422}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1446}, {'symbol': 'Infosys Ltd.', 'ltp': 1570}, {'symbol': 'ITC Ltd.', 'ltp': 434}, {'symbol': 'Tata TCS', 'ltp': 3499}, {'symbol': 'L&T  Ltd.', 'ltp': 3640}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1196}, {'symbol': 'SBI Bank', 'ltp': 794}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1844}]
+2025-05-27 17:10:04,923 - app - INFO - Processed PCR data and saved to JSON file
+2025-05-27 17:10:05,353 - app - INFO - Processed PCR data and saved to JSON file
+2025-05-27 17:10:05,704 - app - INFO - Processed PCR data and saved to JSON file
+2025-05-27 17:10:06,006 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODM1NTBhMzY1ZGFlNzZmMjdjOGIwYWYiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc0ODMyNDUxNSwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzQ4MzgzMjAwfQ.SmkbebBoztnUHQ-vsFTtWKr9fdtxPF6DRzJwDpWEK8I'})"
+2025-05-27 17:14:41,810 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-27 17:14:41,810 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-27 17:14:43,823 - app - INFO - Options analysis visited
+2025-05-27 17:14:44,757 - werkzeug - INFO - 127.0.0.1 - - [27/May/2025 17:14:44] "GET /options_analysis.html HTTP/1.1" 200 -
+2025-05-27 17:14:44,822 - werkzeug - INFO - 127.0.0.1 - - [27/May/2025 17:14:44] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2025-05-27 17:15:01,327 - app - INFO - IVIX: 18.54, Nifty50: 24826.2, Nifty Futures: 24860.0
+2025-05-27 17:15:03,069 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 1926}, {'symbol': 'Reliance Industries.', 'ltp': 1422}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1446}, {'symbol': 'Infosys Ltd.', 'ltp': 1570}, {'symbol': 'ITC Ltd.', 'ltp': 434}, {'symbol': 'Tata TCS', 'ltp': 3499}, {'symbol': 'L&T  Ltd.', 'ltp': 3640}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1196}, {'symbol': 'SBI Bank', 'ltp': 794}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1844}]
+2025-05-27 17:15:05,211 - app - INFO - Processed PCR data and saved to JSON file
+2025-05-27 17:15:05,565 - app - INFO - Processed PCR data and saved to JSON file
+2025-05-27 17:15:05,905 - app - INFO - Processed PCR data and saved to JSON file
+2025-05-27 17:15:06,222 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2ODM1NTBhMzY1ZGFlNzZmMjdjOGIwYWYiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc0ODMyNDUxNSwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzQ4MzgzMjAwfQ.SmkbebBoztnUHQ-vsFTtWKr9fdtxPF6DRzJwDpWEK8I'})"

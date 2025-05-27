@@ -992,34 +992,26 @@ def fewstrikes(access_token,expiry1):
     df2['rounded_spot_price'] = df2['underlying_spot_price'].apply(lambda x: round(x / 100) * 100)
     roundsp= df2.iloc[0]['rounded_spot_price']
     
-    sup01=roundsp - 100
-    sup02=roundsp - 200
-    sup03=roundsp - 300
-    sup04=roundsp - 400
-    res01=roundsp + 100
-    res02=roundsp + 200
-    res03=roundsp + 300
-    res04=roundsp + 400
+    sup01=int(roundsp - 100)
+    sup02=int(roundsp - 200)
+    sup03=int(roundsp - 300)
+    sup04=int(roundsp - 400)
+    res01=int(roundsp + 100)
+    res02=int(roundsp + 200)
+    res03=int(roundsp + 300)
+    res04=int(roundsp + 400)
     print('!!!!!!!!!!!!!!!!!!!!!!!!!!')
     print(sup04,sup03,sup02,sup01,roundsp,res01,res02,res03,res04)
     
    
     strike_levels = set()
     levels = {
-        'sup04': sup04,
-        'sup03': sup03,
-        'sup02': sup02,
-        'sup01': sup01,
-        'round_spot': roundsp,
-        'res01': res01,
-        'res02': res02,
-        'res03': res03,
-        'res04': res04
+        sup04,sup03,sup02,sup01,int(roundsp),res01, res02, res03,res04
     }
     strike_levels.update(levels)
     print('Strike Levels:', strike_levels)
-    
-    print('Dataframe columns',df2)
+    print('End of Few Strikes Dataframe')
+    #print('Dataframe columns',df2)
         ################################################################################################
 def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
         
