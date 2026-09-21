@@ -21949,3 +21949,668 @@ UnboundLocalError: cannot access local variable 'filtered_df' where it is not as
 2026-09-21 08:40:46,152 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 2026-09-21 08:40:46,152 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-09-21 08:53:15,190 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-09-21 08:53:15,191 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-09-21 08:53:18,937 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:53:18] "GET /capturedata.html HTTP/1.1" 200 -
+2026-09-21 08:53:19,046 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:53:19] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2026-09-21 08:53:19,062 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:53:19] "GET /data.json HTTP/1.1" 200 -
+2026-09-21 08:53:29,526 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:53:29] "[33mGET /api/trend HTTP/1.1[0m" 404 -
+2026-09-21 08:53:47,972 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:53:47] "GET /capturedata.html HTTP/1.1" 200 -
+2026-09-21 08:53:47,986 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:53:47] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2026-09-21 08:53:47,992 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:53:47] "[36mGET /data.json HTTP/1.1[0m" 304 -
+2026-09-21 08:53:49,499 - app - INFO - Options analysis visited
+2026-09-21 08:53:49,576 - app - ERROR - Exception on /options_analysis.html [GET]
+Traceback (most recent call last):
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\app.py", line 437, in optionsanalysis
+    call_df,put_df=findtrend()
+                   ~~~~~~~~~^^
+  File "D:\PythonWSOct24\tradeguide\app.py", line 1396, in findtrend
+    filtered_df.to_csv('filtered_df.csv', index=False)
+    ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'filtered_df' where it is not associated with a value
+2026-09-21 08:53:49,589 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:53:49] "[35m[1mGET /options_analysis.html HTTP/1.1[0m" 500 -
+2026-09-21 08:53:53,393 - app - INFO - Options analysis visited
+2026-09-21 08:53:53,399 - app - ERROR - Exception on /options_analysis.html [GET]
+Traceback (most recent call last):
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\app.py", line 437, in optionsanalysis
+    call_df,put_df=findtrend()
+                   ~~~~~~~~~^^
+  File "D:\PythonWSOct24\tradeguide\app.py", line 1396, in findtrend
+    filtered_df.to_csv('filtered_df.csv', index=False)
+    ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'filtered_df' where it is not associated with a value
+2026-09-21 08:53:53,403 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:53:53] "[35m[1mGET /options_analysis.html HTTP/1.1[0m" 500 -
+2026-09-21 08:53:55,240 - app - INFO - Options analysis visited
+2026-09-21 08:53:55,247 - app - ERROR - Exception on /options_analysis.html [GET]
+Traceback (most recent call last):
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PythonWSOct24\tradeguide\tg-flask-venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PythonWSOct24\tradeguide\app.py", line 437, in optionsanalysis
+    call_df,put_df=findtrend()
+                   ~~~~~~~~~^^
+  File "D:\PythonWSOct24\tradeguide\app.py", line 1396, in findtrend
+    filtered_df.to_csv('filtered_df.csv', index=False)
+    ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'filtered_df' where it is not associated with a value
+2026-09-21 08:53:55,249 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:53:55] "[35m[1mGET /options_analysis.html HTTP/1.1[0m" 500 -
+2026-09-21 08:54:02,739 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 731}, {'symbol': 'Reliance Industries.', 'ltp': 1226}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1339}, {'symbol': 'Infosys Ltd.', 'ltp': 1051}, {'symbol': 'ITC Ltd.', 'ltp': 262}, {'symbol': 'Tata TCS', 'ltp': 2105}, {'symbol': 'L&T  Ltd.', 'ltp': 3885}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1257}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1893}]
+2026-09-21 08:54:06,405 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 08:54:07,009 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 08:54:07,624 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 08:54:08,143 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 08:54:09,887 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:54:09] "GET /orders HTTP/1.1" 200 -
+2026-09-21 08:54:09,898 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:54:09] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2026-09-21 08:54:11,410 - app - INFO - Options analysis visited
+2026-09-21 08:54:11,631 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:54:11] "GET /options_analysis.html HTTP/1.1" 200 -
+2026-09-21 08:54:11,641 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:54:11] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2026-09-21 08:54:26,519 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:54:26] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 08:54:30,702 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:54:30] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 08:54:31,613 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:54:31] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 08:54:33,149 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:54:33] "GET /api/futures HTTP/1.1" 200 -
+2026-09-21 08:54:34,654 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:54:34] "GET /api/options HTTP/1.1" 200 -
+2026-09-21 08:54:36,354 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 08:54:36] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 08:55:02,333 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 731}, {'symbol': 'Reliance Industries.', 'ltp': 1226}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1339}, {'symbol': 'Infosys Ltd.', 'ltp': 1051}, {'symbol': 'ITC Ltd.', 'ltp': 262}, {'symbol': 'Tata TCS', 'ltp': 2105}, {'symbol': 'L&T  Ltd.', 'ltp': 3885}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1257}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1893}]
+2026-09-21 08:55:05,972 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 08:55:06,452 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 08:55:07,028 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 08:55:07,400 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 09:00:02,682 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 731}, {'symbol': 'Reliance Industries.', 'ltp': 1226}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1339}, {'symbol': 'Infosys Ltd.', 'ltp': 1051}, {'symbol': 'ITC Ltd.', 'ltp': 262}, {'symbol': 'Tata TCS', 'ltp': 2105}, {'symbol': 'L&T  Ltd.', 'ltp': 3885}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1257}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1893}]
+2026-09-21 09:00:06,040 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:00:06,514 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:00:06,965 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:00:07,346 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 09:12:02,910 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 731}, {'symbol': 'Reliance Industries.', 'ltp': 1234}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1348}, {'symbol': 'Infosys Ltd.', 'ltp': 1042}, {'symbol': 'ITC Ltd.', 'ltp': 264}, {'symbol': 'Tata TCS', 'ltp': 2090}, {'symbol': 'L&T  Ltd.', 'ltp': 3885}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 994}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1855}]
+2026-09-21 09:12:06,092 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:12:06,638 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:12:07,104 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:12:07,507 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 09:16:02,795 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 731}, {'symbol': 'Reliance Industries.', 'ltp': 1237}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1349}, {'symbol': 'Infosys Ltd.', 'ltp': 1043}, {'symbol': 'ITC Ltd.', 'ltp': 265}, {'symbol': 'Tata TCS', 'ltp': 2102}, {'symbol': 'L&T  Ltd.', 'ltp': 3897}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1249}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1847}]
+2026-09-21 09:16:05,826 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:16:06,285 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:16:06,804 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:16:07,219 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 09:21:02,476 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 735}, {'symbol': 'Reliance Industries.', 'ltp': 1243}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1348}, {'symbol': 'Infosys Ltd.', 'ltp': 1042}, {'symbol': 'ITC Ltd.', 'ltp': 264}, {'symbol': 'Tata TCS', 'ltp': 2117}, {'symbol': 'L&T  Ltd.', 'ltp': 3891}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 992}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1850}]
+2026-09-21 09:21:05,561 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:21:05,956 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:21:06,446 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:21:06,869 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 09:26:02,028 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 737}, {'symbol': 'Reliance Industries.', 'ltp': 1240}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1348}, {'symbol': 'Infosys Ltd.', 'ltp': 1034}, {'symbol': 'ITC Ltd.', 'ltp': 265}, {'symbol': 'Tata TCS', 'ltp': 2100}, {'symbol': 'L&T  Ltd.', 'ltp': 3891}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 992}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1850}]
+2026-09-21 09:26:05,073 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:26:05,555 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:26:06,026 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:26:06,508 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 09:31:02,811 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 737}, {'symbol': 'Reliance Industries.', 'ltp': 1242}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1347}, {'symbol': 'Infosys Ltd.', 'ltp': 1036}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2114}, {'symbol': 'L&T  Ltd.', 'ltp': 3892}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1249}, {'symbol': 'SBI Bank', 'ltp': 994}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1848}]
+2026-09-21 09:31:05,903 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:31:06,316 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:31:06,779 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:31:07,260 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 09:36:02,712 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 736}, {'symbol': 'Reliance Industries.', 'ltp': 1242}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1347}, {'symbol': 'Infosys Ltd.', 'ltp': 1032}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2106}, {'symbol': 'L&T  Ltd.', 'ltp': 3895}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1250}, {'symbol': 'SBI Bank', 'ltp': 994}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1850}]
+2026-09-21 09:36:05,776 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:36:06,287 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:36:06,676 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:36:07,121 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 09:41:02,366 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 735}, {'symbol': 'Reliance Industries.', 'ltp': 1240}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1032}, {'symbol': 'ITC Ltd.', 'ltp': 265}, {'symbol': 'Tata TCS', 'ltp': 2106}, {'symbol': 'L&T  Ltd.', 'ltp': 3893}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1848}]
+2026-09-21 09:41:05,504 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:41:06,107 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:41:06,550 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:41:06,972 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 09:46:02,314 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 737}, {'symbol': 'Reliance Industries.', 'ltp': 1239}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1032}, {'symbol': 'ITC Ltd.', 'ltp': 265}, {'symbol': 'Tata TCS', 'ltp': 2115}, {'symbol': 'L&T  Ltd.', 'ltp': 3893}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1249}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1847}]
+2026-09-21 09:46:05,391 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:46:06,026 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:46:06,566 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:46:07,036 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 09:51:02,338 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 736}, {'symbol': 'Reliance Industries.', 'ltp': 1240}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1034}, {'symbol': 'ITC Ltd.', 'ltp': 265}, {'symbol': 'Tata TCS', 'ltp': 2118}, {'symbol': 'L&T  Ltd.', 'ltp': 3895}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1848}]
+2026-09-21 09:51:05,059 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:51:05,513 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:51:05,996 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:51:06,403 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 09:56:02,914 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 736}, {'symbol': 'Reliance Industries.', 'ltp': 1238}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1034}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2118}, {'symbol': 'L&T  Ltd.', 'ltp': 3890}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1244}, {'symbol': 'SBI Bank', 'ltp': 992}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1848}]
+2026-09-21 09:56:05,766 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:56:06,168 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:56:06,655 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 09:56:07,034 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 10:01:02,250 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 736}, {'symbol': 'Reliance Industries.', 'ltp': 1237}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1346}, {'symbol': 'Infosys Ltd.', 'ltp': 1035}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2119}, {'symbol': 'L&T  Ltd.', 'ltp': 3888}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1244}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1844}]
+2026-09-21 10:01:05,355 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:01:05,859 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:01:06,388 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:01:06,820 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 10:06:02,173 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 736}, {'symbol': 'Reliance Industries.', 'ltp': 1237}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1346}, {'symbol': 'Infosys Ltd.', 'ltp': 1034}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2116}, {'symbol': 'L&T  Ltd.', 'ltp': 3891}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1243}, {'symbol': 'SBI Bank', 'ltp': 992}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1843}]
+2026-09-21 10:06:05,342 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:06:05,820 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:06:06,332 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:06:06,757 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 10:11:03,147 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 735}, {'symbol': 'Reliance Industries.', 'ltp': 1237}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1036}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2120}, {'symbol': 'L&T  Ltd.', 'ltp': 3892}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1242}, {'symbol': 'SBI Bank', 'ltp': 992}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1845}]
+2026-09-21 10:11:06,213 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:11:06,760 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:11:07,228 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:11:07,643 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 10:16:02,945 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 734}, {'symbol': 'Reliance Industries.', 'ltp': 1237}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1034}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2117}, {'symbol': 'L&T  Ltd.', 'ltp': 3887}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1243}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1845}]
+2026-09-21 10:16:06,135 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:16:06,592 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:16:07,056 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:16:07,500 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 10:21:02,775 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 734}, {'symbol': 'Reliance Industries.', 'ltp': 1236}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1034}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2117}, {'symbol': 'L&T  Ltd.', 'ltp': 3887}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1243}, {'symbol': 'SBI Bank', 'ltp': 994}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1843}]
+2026-09-21 10:21:05,848 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:21:06,348 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:21:06,798 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:21:07,296 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 10:26:02,535 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 733}, {'symbol': 'Reliance Industries.', 'ltp': 1236}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1034}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2116}, {'symbol': 'L&T  Ltd.', 'ltp': 3891}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1242}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1841}]
+2026-09-21 10:26:05,602 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:26:05,985 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:26:06,532 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:26:06,968 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 10:31:02,405 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 735}, {'symbol': 'Reliance Industries.', 'ltp': 1235}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1343}, {'symbol': 'Infosys Ltd.', 'ltp': 1034}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2119}, {'symbol': 'L&T  Ltd.', 'ltp': 3892}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1243}, {'symbol': 'SBI Bank', 'ltp': 992}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1841}]
+2026-09-21 10:31:05,529 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:31:05,946 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:31:06,437 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:31:06,882 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 10:36:02,226 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 735}, {'symbol': 'Reliance Industries.', 'ltp': 1233}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1342}, {'symbol': 'Infosys Ltd.', 'ltp': 1036}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2122}, {'symbol': 'L&T  Ltd.', 'ltp': 3886}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1243}, {'symbol': 'SBI Bank', 'ltp': 992}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1841}]
+2026-09-21 10:36:05,536 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:36:06,020 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:36:06,478 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:36:06,869 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 10:41:02,130 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 735}, {'symbol': 'Reliance Industries.', 'ltp': 1234}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1341}, {'symbol': 'Infosys Ltd.', 'ltp': 1036}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2123}, {'symbol': 'L&T  Ltd.', 'ltp': 3886}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1243}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1841}]
+2026-09-21 10:41:05,227 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:41:05,661 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:41:06,114 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:41:06,470 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 10:46:02,771 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 736}, {'symbol': 'Reliance Industries.', 'ltp': 1233}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1343}, {'symbol': 'Infosys Ltd.', 'ltp': 1037}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2125}, {'symbol': 'L&T  Ltd.', 'ltp': 3889}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1245}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1842}]
+2026-09-21 10:46:05,700 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:46:06,191 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:46:06,638 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:46:07,047 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 10:51:02,338 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 736}, {'symbol': 'Reliance Industries.', 'ltp': 1233}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1342}, {'symbol': 'Infosys Ltd.', 'ltp': 1034}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2122}, {'symbol': 'L&T  Ltd.', 'ltp': 3891}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1246}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1842}]
+2026-09-21 10:51:05,762 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:51:06,323 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:51:06,792 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:51:07,204 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 10:56:02,409 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 737}, {'symbol': 'Reliance Industries.', 'ltp': 1233}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1342}, {'symbol': 'Infosys Ltd.', 'ltp': 1035}, {'symbol': 'ITC Ltd.', 'ltp': 266}, {'symbol': 'Tata TCS', 'ltp': 2122}, {'symbol': 'L&T  Ltd.', 'ltp': 3889}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1246}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1842}]
+2026-09-21 10:56:05,363 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:56:05,918 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:56:06,351 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 10:56:06,714 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 11:01:02,899 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 738}, {'symbol': 'Reliance Industries.', 'ltp': 1233}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1342}, {'symbol': 'Infosys Ltd.', 'ltp': 1034}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2121}, {'symbol': 'L&T  Ltd.', 'ltp': 3888}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1842}]
+2026-09-21 11:01:06,112 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:01:06,684 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:01:07,209 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:01:07,625 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 11:06:03,001 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 737}, {'symbol': 'Reliance Industries.', 'ltp': 1233}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1032}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2119}, {'symbol': 'L&T  Ltd.', 'ltp': 3892}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1840}]
+2026-09-21 11:06:06,148 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:06:06,715 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:06:07,256 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:06:07,710 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 11:11:02,985 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 738}, {'symbol': 'Reliance Industries.', 'ltp': 1235}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1033}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2119}, {'symbol': 'L&T  Ltd.', 'ltp': 3892}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1249}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1839}]
+2026-09-21 11:11:06,063 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:11:06,514 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:11:06,936 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:11:07,297 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 11:16:02,547 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 739}, {'symbol': 'Reliance Industries.', 'ltp': 1234}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1034}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2120}, {'symbol': 'L&T  Ltd.', 'ltp': 3895}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 990}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1838}]
+2026-09-21 11:16:05,502 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:16:06,027 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:16:06,503 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:16:06,893 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 11:21:02,166 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1234}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1341}, {'symbol': 'Infosys Ltd.', 'ltp': 1034}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2120}, {'symbol': 'L&T  Ltd.', 'ltp': 3898}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1247}, {'symbol': 'SBI Bank', 'ltp': 990}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1837}]
+2026-09-21 11:21:05,463 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:21:05,968 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:21:06,446 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:21:06,936 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 11:26:02,162 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1235}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1341}, {'symbol': 'Infosys Ltd.', 'ltp': 1034}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2119}, {'symbol': 'L&T  Ltd.', 'ltp': 3902}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1837}]
+2026-09-21 11:26:05,342 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:26:05,863 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:26:06,427 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:26:06,831 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 11:31:02,137 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1235}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1342}, {'symbol': 'Infosys Ltd.', 'ltp': 1035}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2120}, {'symbol': 'L&T  Ltd.', 'ltp': 3901}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1249}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1837}]
+2026-09-21 11:31:05,344 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:31:05,814 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:31:06,312 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:31:06,794 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 11:36:03,091 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 739}, {'symbol': 'Reliance Industries.', 'ltp': 1235}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1341}, {'symbol': 'Infosys Ltd.', 'ltp': 1036}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2122}, {'symbol': 'L&T  Ltd.', 'ltp': 3902}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1836}]
+2026-09-21 11:36:06,479 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:36:06,959 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:36:07,416 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:36:07,861 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 11:41:02,359 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1235}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1342}, {'symbol': 'Infosys Ltd.', 'ltp': 1036}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2124}, {'symbol': 'L&T  Ltd.', 'ltp': 3895}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1836}]
+2026-09-21 11:41:05,506 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:41:05,918 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:41:06,379 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:41:06,864 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 11:46:02,065 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1235}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1342}, {'symbol': 'Infosys Ltd.', 'ltp': 1036}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2124}, {'symbol': 'L&T  Ltd.', 'ltp': 3895}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1836}]
+2026-09-21 11:46:05,252 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:46:05,690 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:46:06,158 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:46:06,601 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 11:51:02,808 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1235}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1342}, {'symbol': 'Infosys Ltd.', 'ltp': 1036}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2124}, {'symbol': 'L&T  Ltd.', 'ltp': 3891}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1247}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1835}]
+2026-09-21 11:51:05,813 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:51:06,303 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:51:06,823 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:51:07,233 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 11:56:02,682 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 739}, {'symbol': 'Reliance Industries.', 'ltp': 1239}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1343}, {'symbol': 'Infosys Ltd.', 'ltp': 1037}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2126}, {'symbol': 'L&T  Ltd.', 'ltp': 3894}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1247}, {'symbol': 'SBI Bank', 'ltp': 991}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1837}]
+2026-09-21 11:56:05,876 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:56:06,427 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:56:06,872 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 11:56:07,223 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 12:01:02,688 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1245}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2124}, {'symbol': 'L&T  Ltd.', 'ltp': 3894}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1247}, {'symbol': 'SBI Bank', 'ltp': 992}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1836}]
+2026-09-21 12:01:05,875 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:01:06,271 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:01:06,789 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:01:07,167 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 12:05:34,068 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:05:34] "GET /api/futures HTTP/1.1" 200 -
+2026-09-21 12:06:02,545 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1243}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2124}, {'symbol': 'L&T  Ltd.', 'ltp': 3896}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1246}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1834}]
+2026-09-21 12:06:06,226 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:06:06,711 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:06:07,253 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:06:07,646 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 12:08:30,006 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:08:30] "GET /api/futures HTTP/1.1" 200 -
+2026-09-21 12:08:34,499 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:08:34] "GET /api/options HTTP/1.1" 200 -
+2026-09-21 12:10:15,454 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:10:15] "GET /api/options HTTP/1.1" 200 -
+2026-09-21 12:11:03,093 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 739}, {'symbol': 'Reliance Industries.', 'ltp': 1242}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1342}, {'symbol': 'Infosys Ltd.', 'ltp': 1037}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2122}, {'symbol': 'L&T  Ltd.', 'ltp': 3894}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1244}, {'symbol': 'SBI Bank', 'ltp': 992}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1835}]
+2026-09-21 12:11:06,847 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:11:07,299 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:11:07,793 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:11:08,192 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 12:11:15,633 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:11:15] "GET /api/options HTTP/1.1" 200 -
+2026-09-21 12:11:21,249 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:11:21] "GET /api/futures HTTP/1.1" 200 -
+2026-09-21 12:11:24,045 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:11:24] "GET /api/gettopnifty10 HTTP/1.1" 200 -
+2026-09-21 12:11:24,046 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:11:24] "GET /api/gettopbank5 HTTP/1.1" 200 -
+2026-09-21 12:11:24,047 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:11:24] "GET /api/gettopmidcap5 HTTP/1.1" 200 -
+2026-09-21 12:16:02,745 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 738}, {'symbol': 'Reliance Industries.', 'ltp': 1242}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2126}, {'symbol': 'L&T  Ltd.', 'ltp': 3900}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1245}, {'symbol': 'SBI Bank', 'ltp': 994}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1833}]
+2026-09-21 12:16:05,721 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:16:06,278 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:16:06,747 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:16:07,168 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 12:21:02,622 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 738}, {'symbol': 'Reliance Industries.', 'ltp': 1242}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1342}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2127}, {'symbol': 'L&T  Ltd.', 'ltp': 3904}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1246}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1835}]
+2026-09-21 12:21:05,895 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:21:06,384 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:21:06,831 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:21:07,251 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 12:26:02,654 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 737}, {'symbol': 'Reliance Industries.', 'ltp': 1242}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1343}, {'symbol': 'Infosys Ltd.', 'ltp': 1037}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2125}, {'symbol': 'L&T  Ltd.', 'ltp': 3900}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1246}, {'symbol': 'SBI Bank', 'ltp': 992}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1835}]
+2026-09-21 12:26:05,830 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:26:06,317 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:26:06,771 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:26:07,162 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 12:31:02,700 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 738}, {'symbol': 'Reliance Industries.', 'ltp': 1242}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1036}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2123}, {'symbol': 'L&T  Ltd.', 'ltp': 3900}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1247}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1836}]
+2026-09-21 12:31:06,586 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:31:07,081 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:31:07,547 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:31:07,953 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 12:36:02,363 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 738}, {'symbol': 'Reliance Industries.', 'ltp': 1241}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1342}, {'symbol': 'Infosys Ltd.', 'ltp': 1037}, {'symbol': 'ITC Ltd.', 'ltp': 268}, {'symbol': 'Tata TCS', 'ltp': 2123}, {'symbol': 'L&T  Ltd.', 'ltp': 3895}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1836}]
+2026-09-21 12:36:05,565 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:36:06,083 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:36:06,568 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:36:07,016 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 12:41:02,427 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 738}, {'symbol': 'Reliance Industries.', 'ltp': 1241}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1343}, {'symbol': 'Infosys Ltd.', 'ltp': 1036}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2122}, {'symbol': 'L&T  Ltd.', 'ltp': 3901}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1250}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1836}]
+2026-09-21 12:41:06,111 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:41:06,549 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:41:06,970 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:41:07,410 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 12:46:02,693 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 738}, {'symbol': 'Reliance Industries.', 'ltp': 1240}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1036}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2124}, {'symbol': 'L&T  Ltd.', 'ltp': 3900}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1250}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1837}]
+2026-09-21 12:46:06,136 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:46:06,639 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:46:07,055 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:46:07,493 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 12:46:31,443 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:46:31] "GET /api/gettopnifty10 HTTP/1.1" 200 -
+2026-09-21 12:46:31,445 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:46:31] "GET /api/gettopbank5 HTTP/1.1" 200 -
+2026-09-21 12:46:31,448 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:46:31] "GET /api/gettopmidcap5 HTTP/1.1" 200 -
+2026-09-21 12:46:34,827 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:46:34] "GET /api/getmainindex HTTP/1.1" 200 -
+2026-09-21 12:51:01,872 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:51:01] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 12:51:03,045 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 738}, {'symbol': 'Reliance Industries.', 'ltp': 1242}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1037}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2127}, {'symbol': 'L&T  Ltd.', 'ltp': 3898}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1250}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1836}]
+2026-09-21 12:51:06,193 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:51:06,598 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:51:07,080 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:51:07,493 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 12:51:20,295 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:51:20] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 12:51:38,017 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:51:38] "GET /api/getniftyhl HTTP/1.1" 200 -
+2026-09-21 12:51:39,132 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:51:39] "GET /api/futures HTTP/1.1" 200 -
+2026-09-21 12:51:45,717 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:51:45] "GET /api/futures HTTP/1.1" 200 -
+2026-09-21 12:51:45,945 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:51:45] "GET /api/options HTTP/1.1" 200 -
+2026-09-21 12:51:47,498 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:51:47] "GET /api/getniftyhl HTTP/1.1" 200 -
+2026-09-21 12:52:05,904 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 12:52:05] "GET /api/futures HTTP/1.1" 200 -
+2026-09-21 12:56:02,948 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 739}, {'symbol': 'Reliance Industries.', 'ltp': 1241}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2130}, {'symbol': 'L&T  Ltd.', 'ltp': 3899}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1250}, {'symbol': 'SBI Bank', 'ltp': 992}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1835}]
+2026-09-21 12:56:06,073 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:56:06,683 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:56:07,198 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 12:56:07,628 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 13:01:02,951 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 738}, {'symbol': 'Reliance Industries.', 'ltp': 1241}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2131}, {'symbol': 'L&T  Ltd.', 'ltp': 3902}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1249}, {'symbol': 'SBI Bank', 'ltp': 992}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1835}]
+2026-09-21 13:01:06,361 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:01:06,842 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:01:07,301 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:01:07,683 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 13:06:03,076 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 739}, {'symbol': 'Reliance Industries.', 'ltp': 1240}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1343}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2130}, {'symbol': 'L&T  Ltd.', 'ltp': 3900}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1249}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1835}]
+2026-09-21 13:06:06,422 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:06:06,855 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:06:07,312 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:06:07,718 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 13:11:03,063 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1240}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1343}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2130}, {'symbol': 'L&T  Ltd.', 'ltp': 3900}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1249}, {'symbol': 'SBI Bank', 'ltp': 993}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1834}]
+2026-09-21 13:11:06,299 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:11:06,858 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:11:07,384 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:11:07,714 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 13:16:03,146 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1240}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1037}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2131}, {'symbol': 'L&T  Ltd.', 'ltp': 3901}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1250}, {'symbol': 'SBI Bank', 'ltp': 995}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1834}]
+2026-09-21 13:16:07,005 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:16:07,690 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:16:08,987 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:16:09,776 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 13:21:03,179 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 741}, {'symbol': 'Reliance Industries.', 'ltp': 1241}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2131}, {'symbol': 'L&T  Ltd.', 'ltp': 3903}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1252}, {'symbol': 'SBI Bank', 'ltp': 995}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1834}]
+2026-09-21 13:21:06,536 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:21:07,038 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:21:07,523 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:21:07,852 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 13:26:02,439 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1242}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1039}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2130}, {'symbol': 'L&T  Ltd.', 'ltp': 3902}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1252}, {'symbol': 'SBI Bank', 'ltp': 995}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1834}]
+2026-09-21 13:26:05,866 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:26:06,345 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:26:06,967 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:26:07,385 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 13:31:02,875 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 741}, {'symbol': 'Reliance Industries.', 'ltp': 1242}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1040}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2133}, {'symbol': 'L&T  Ltd.', 'ltp': 3899}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1252}, {'symbol': 'SBI Bank', 'ltp': 995}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1834}]
+2026-09-21 13:31:06,185 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:31:06,751 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:31:07,294 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:31:07,752 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 13:36:03,153 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1242}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1346}, {'symbol': 'Infosys Ltd.', 'ltp': 1039}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2132}, {'symbol': 'L&T  Ltd.', 'ltp': 3900}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1253}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1834}]
+2026-09-21 13:36:06,199 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:36:06,731 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:36:07,209 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:36:07,608 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 13:41:03,241 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1243}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1346}, {'symbol': 'Infosys Ltd.', 'ltp': 1039}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2134}, {'symbol': 'L&T  Ltd.', 'ltp': 3898}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1252}, {'symbol': 'SBI Bank', 'ltp': 995}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1832}]
+2026-09-21 13:41:06,611 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:41:07,144 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:41:07,733 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:41:08,128 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 13:46:02,539 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1245}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1039}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2130}, {'symbol': 'L&T  Ltd.', 'ltp': 3897}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1252}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1834}]
+2026-09-21 13:46:05,604 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:46:06,052 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:46:06,609 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:46:07,180 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 13:51:02,564 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1244}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2132}, {'symbol': 'L&T  Ltd.', 'ltp': 3898}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1253}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1833}]
+2026-09-21 13:51:05,701 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:51:06,215 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:51:06,761 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:51:07,138 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 13:56:02,669 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1243}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1039}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2132}, {'symbol': 'L&T  Ltd.', 'ltp': 3897}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1254}, {'symbol': 'SBI Bank', 'ltp': 995}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1832}]
+2026-09-21 13:56:06,220 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:56:06,826 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:56:07,413 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 13:56:07,832 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 14:01:01,972 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1244}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1346}, {'symbol': 'Infosys Ltd.', 'ltp': 1040}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2134}, {'symbol': 'L&T  Ltd.', 'ltp': 3900}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1254}, {'symbol': 'SBI Bank', 'ltp': 997}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1834}]
+2026-09-21 14:01:05,492 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:01:05,995 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:01:06,429 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:01:06,861 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 14:06:02,473 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1244}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1347}, {'symbol': 'Infosys Ltd.', 'ltp': 1040}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2134}, {'symbol': 'L&T  Ltd.', 'ltp': 3901}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1252}, {'symbol': 'SBI Bank', 'ltp': 997}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1834}]
+2026-09-21 14:06:05,907 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:06:06,439 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:06:07,040 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:06:07,518 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 14:11:03,087 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 741}, {'symbol': 'Reliance Industries.', 'ltp': 1244}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1347}, {'symbol': 'Infosys Ltd.', 'ltp': 1040}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2134}, {'symbol': 'L&T  Ltd.', 'ltp': 3901}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1252}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1834}]
+2026-09-21 14:11:06,845 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:11:07,437 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:11:08,062 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:11:08,522 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 14:16:03,109 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 741}, {'symbol': 'Reliance Industries.', 'ltp': 1244}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1346}, {'symbol': 'Infosys Ltd.', 'ltp': 1039}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2134}, {'symbol': 'L&T  Ltd.', 'ltp': 3900}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1251}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1833}]
+2026-09-21 14:16:06,430 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:16:06,917 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:16:07,386 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:16:07,716 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 14:21:03,058 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1244}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1347}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2136}, {'symbol': 'L&T  Ltd.', 'ltp': 3902}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1251}, {'symbol': 'SBI Bank', 'ltp': 997}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1837}]
+2026-09-21 14:21:06,224 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:21:06,725 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:21:07,257 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:21:07,719 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 14:26:03,159 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1244}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1346}, {'symbol': 'Infosys Ltd.', 'ltp': 1037}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2136}, {'symbol': 'L&T  Ltd.', 'ltp': 3903}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1250}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1837}]
+2026-09-21 14:26:06,960 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:26:07,394 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:26:07,865 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:26:08,322 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 14:31:02,779 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 741}, {'symbol': 'Reliance Industries.', 'ltp': 1246}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2136}, {'symbol': 'L&T  Ltd.', 'ltp': 3901}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1249}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1831}]
+2026-09-21 14:31:06,075 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:31:06,532 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:31:06,946 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:31:07,367 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 14:36:02,818 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1245}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1039}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2137}, {'symbol': 'L&T  Ltd.', 'ltp': 3899}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1249}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1830}]
+2026-09-21 14:36:06,070 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:36:06,625 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:36:07,108 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:36:07,502 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 14:40:03,054 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1245}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1040}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2139}, {'symbol': 'L&T  Ltd.', 'ltp': 3903}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1249}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1831}]
+2026-09-21 14:40:06,513 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:40:07,007 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:40:07,600 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:40:08,023 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 14:46:02,626 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1246}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1039}, {'symbol': 'ITC Ltd.', 'ltp': 268}, {'symbol': 'Tata TCS', 'ltp': 2138}, {'symbol': 'L&T  Ltd.', 'ltp': 3902}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 997}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1832}]
+2026-09-21 14:46:06,034 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:46:06,560 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:46:07,072 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:46:07,559 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 14:51:03,117 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1247}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1039}, {'symbol': 'ITC Ltd.', 'ltp': 268}, {'symbol': 'Tata TCS', 'ltp': 2138}, {'symbol': 'L&T  Ltd.', 'ltp': 3904}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1834}]
+2026-09-21 14:51:06,601 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:51:07,070 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:51:07,608 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:51:08,065 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 14:56:02,539 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1248}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1040}, {'symbol': 'ITC Ltd.', 'ltp': 268}, {'symbol': 'Tata TCS', 'ltp': 2140}, {'symbol': 'L&T  Ltd.', 'ltp': 3900}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1834}]
+2026-09-21 14:56:05,806 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:56:06,302 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:56:06,825 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 14:56:07,252 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 15:01:02,678 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1248}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1344}, {'symbol': 'Infosys Ltd.', 'ltp': 1040}, {'symbol': 'ITC Ltd.', 'ltp': 268}, {'symbol': 'Tata TCS', 'ltp': 2144}, {'symbol': 'L&T  Ltd.', 'ltp': 3901}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 997}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1832}]
+2026-09-21 15:01:05,812 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:01:06,314 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:01:06,864 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:01:07,276 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 15:06:03,010 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1247}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1346}, {'symbol': 'Infosys Ltd.', 'ltp': 1039}, {'symbol': 'ITC Ltd.', 'ltp': 268}, {'symbol': 'Tata TCS', 'ltp': 2139}, {'symbol': 'L&T  Ltd.', 'ltp': 3899}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 997}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1831}]
+2026-09-21 15:06:06,380 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:06:06,918 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:06:07,449 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:06:07,893 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 15:11:02,347 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 742}, {'symbol': 'Reliance Industries.', 'ltp': 1247}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 268}, {'symbol': 'Tata TCS', 'ltp': 2137}, {'symbol': 'L&T  Ltd.', 'ltp': 3896}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1830}]
+2026-09-21 15:11:05,679 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:11:06,119 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:11:06,607 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:11:07,108 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 15:16:02,656 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1246}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1346}, {'symbol': 'Infosys Ltd.', 'ltp': 1040}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2133}, {'symbol': 'L&T  Ltd.', 'ltp': 3896}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1831}]
+2026-09-21 15:16:05,993 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:16:06,561 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:16:07,126 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:16:07,569 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 15:21:02,966 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1246}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1346}, {'symbol': 'Infosys Ltd.', 'ltp': 1040}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2133}, {'symbol': 'L&T  Ltd.', 'ltp': 3896}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1831}]
+2026-09-21 15:21:06,106 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:21:06,775 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:21:07,334 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:21:07,749 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 15:26:03,266 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1246}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1346}, {'symbol': 'Infosys Ltd.', 'ltp': 1040}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2133}, {'symbol': 'L&T  Ltd.', 'ltp': 3896}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1248}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1831}]
+2026-09-21 15:26:06,537 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:26:07,120 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:26:07,655 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:26:08,055 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 15:31:02,761 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1247}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2129}, {'symbol': 'L&T  Ltd.', 'ltp': 3905}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1250}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1830}]
+2026-09-21 15:31:06,089 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:31:06,651 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:31:07,226 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:31:07,673 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 15:36:03,324 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1247}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2129}, {'symbol': 'L&T  Ltd.', 'ltp': 3905}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1250}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1830}]
+2026-09-21 15:36:06,623 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:36:07,087 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:36:07,584 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:36:08,003 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 15:41:02,522 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1247}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2129}, {'symbol': 'L&T  Ltd.', 'ltp': 3905}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1250}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1830}]
+2026-09-21 15:41:05,672 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:41:06,257 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:41:06,737 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 15:41:07,124 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIwOThhYzY2NGJmMzViNDEwZTEyN2YiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc4OTk1ODMxNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.gYuNHASEYs97sexOiMndseB5D04IXZFnS2UDnCqUZCA'})"
+2026-09-21 18:15:14,732 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 18:15:14] "GET /api/futures HTTP/1.1" 200 -
+2026-09-21 18:16:13,960 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 18:16:13] "GET /api/futures HTTP/1.1" 200 -
+2026-09-21 18:17:13,932 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 18:17:13] "GET /api/futures HTTP/1.1" 200 -
+2026-09-21 18:17:31,863 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 18:17:31] "GET /api/futures HTTP/1.1" 200 -
+2026-09-21 22:19:13,884 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:19:13] "GET /api/futures HTTP/1.1" 200 -
+2026-09-21 22:19:33,988 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:19:33] "GET /api/options HTTP/1.1" 200 -
+2026-09-21 22:19:44,315 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:19:44] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:22:13,548 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:22:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:23:13,545 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:23:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:24:25,170 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-09-21 22:24:25,170 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-09-21 22:24:32,442 - app - INFO - Options analysis visited
+2026-09-21 22:24:35,498 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:24:35] "GET /options_analysis.html HTTP/1.1" 200 -
+2026-09-21 22:24:35,608 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:24:35] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2026-09-21 22:24:54,493 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:24:54] "GET / HTTP/1.1" 200 -
+2026-09-21 22:24:54,544 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:24:54] "GET /static/pagehead.jpg HTTP/1.1" 200 -
+2026-09-21 22:24:54,711 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:24:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-21 22:25:07,932 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:07] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:08,987 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:08] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:14,618 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:14] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:17,009 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:17] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:17,895 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:17] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:24,814 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:24] "GET /api/futures HTTP/1.1" 200 -
+2026-09-21 22:25:27,169 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:27] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:35,467 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:35] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:38,091 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:38] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:40,721 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:40] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:41,469 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:41] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:42,192 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:42] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:48,544 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:48] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:50,777 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:50] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:51,674 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:51] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:52,348 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:52] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:52,940 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:52] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:25:53,535 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:25:53] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:28:40,328 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:28:40] "GET / HTTP/1.1" 200 -
+2026-09-21 22:28:40,341 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:28:40] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2026-09-21 22:28:43,327 - app - INFO - Generated token is eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIxNjI0MzY2NGJmMzViNDEwZTFjNmIiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc5MDAwOTkyMywiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.6pwyx_fW-O-HiTAib48S4-qew4GcS6Z3cqG7vGG6B8Q
+2026-09-21 22:28:43,698 - app - INFO - Profile User:  {'data': {'broker': 'UPSTOX',
+          'email': 'smartganesh2022@gmail.com',
+          'exchanges': ['NFO', 'BCD', 'NSE', 'CDS', 'BFO', 'BSE'],
+          'is_active': True,
+          'order_types': ['MARKET', 'LIMIT', 'SL', 'SL-M'],
+          'poa': False,
+          'products': ['OCO', 'D', 'CO', 'I'],
+          'user_id': '2UCRRH',
+          'user_name': 'S Ganesh',
+          'user_type': 'individual'},
+ 'status': 'success'}
+2026-09-21 22:28:43,717 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:28:43] "POST /authorize HTTP/1.1" 200 -
+2026-09-21 22:28:43,730 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:28:43] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2026-09-21 22:28:44,461 - app - INFO - Options analysis visited
+2026-09-21 22:28:47,161 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:28:47] "GET /options_analysis.html HTTP/1.1" 200 -
+2026-09-21 22:28:47,178 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:28:47] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2026-09-21 22:29:34,169 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:29:34] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:29:36,626 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:29:36] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:29:37,480 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:29:37] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:29:38,471 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:29:38] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:29:39,292 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:29:39] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:30:02,332 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1247}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2129}, {'symbol': 'L&T  Ltd.', 'ltp': 3905}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1250}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1830}]
+2026-09-21 22:30:05,099 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 22:30:05,527 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 22:30:05,889 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 22:30:06,203 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIxNjI0MzY2NGJmMzViNDEwZTFjNmIiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc5MDAwOTkyMywiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.6pwyx_fW-O-HiTAib48S4-qew4GcS6Z3cqG7vGG6B8Q'})"
+2026-09-21 22:30:21,306 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:30:21] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:30:24,191 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:30:24] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:30:26,085 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:30:26] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:30:26,850 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:30:26] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:30:27,554 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:30:27] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:30:28,137 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:30:28] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:30:28,663 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:30:28] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:30:28,914 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:30:28] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:30:29,121 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:30:29] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:30:29,327 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:30:29] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:34:56,844 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:34:56] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:35:02,617 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1247}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2129}, {'symbol': 'L&T  Ltd.', 'ltp': 3905}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1250}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1830}]
+2026-09-21 22:35:06,146 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 22:35:06,609 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 22:35:07,097 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 22:35:07,518 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIxNjI0MzY2NGJmMzViNDEwZTFjNmIiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc5MDAwOTkyMywiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.6pwyx_fW-O-HiTAib48S4-qew4GcS6Z3cqG7vGG6B8Q'})"
+2026-09-21 22:38:13,515 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:38:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:39:13,521 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:39:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:40:13,498 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:40:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:41:13,545 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:41:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:42:13,503 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:42:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:43:13,490 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:43:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:44:13,490 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:44:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:45:13,497 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:45:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:46:13,491 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:46:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:47:13,484 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:47:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:48:13,505 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:48:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:49:13,514 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:49:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:50:13,485 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:50:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:51:13,501 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:51:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:52:13,490 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:52:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:53:13,498 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:53:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:54:13,500 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:54:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:54:31,749 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:54:31] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:55:13,510 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:55:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:56:01,865 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:56:01] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:56:13,520 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:56:13] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:56:19,657 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:56:19] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 22:56:23,326 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 22:56:23] "GET /api/trend HTTP/1.1" 200 -
+2026-09-21 23:00:02,298 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1247}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2129}, {'symbol': 'L&T  Ltd.', 'ltp': 3905}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1250}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1830}]
+2026-09-21 23:00:04,929 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 23:00:05,267 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 23:00:05,614 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 23:00:05,931 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIxNjI0MzY2NGJmMzViNDEwZTFjNmIiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc5MDAwOTkyMywiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.6pwyx_fW-O-HiTAib48S4-qew4GcS6Z3cqG7vGG6B8Q'})"
+2026-09-21 23:05:02,392 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 740}, {'symbol': 'Reliance Industries.', 'ltp': 1247}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1345}, {'symbol': 'Infosys Ltd.', 'ltp': 1038}, {'symbol': 'ITC Ltd.', 'ltp': 267}, {'symbol': 'Tata TCS', 'ltp': 2129}, {'symbol': 'L&T  Ltd.', 'ltp': 3905}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1250}, {'symbol': 'SBI Bank', 'ltp': 996}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1830}]
+2026-09-21 23:05:06,087 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 23:05:06,713 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 23:05:07,213 - app - INFO - Processed PCR data and saved to JSON file
+2026-09-21 23:05:07,786 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIxNjI0MzY2NGJmMzViNDEwZTFjNmIiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc5MDAwOTkyMywiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.6pwyx_fW-O-HiTAib48S4-qew4GcS6Z3cqG7vGG6B8Q'})"
+2026-09-21 23:25:21,528 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-09-21 23:25:21,528 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-09-21 23:25:38,326 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 23:25:38] "GET /api/gettopbank5 HTTP/1.1" 200 -
+2026-09-21 23:25:38,331 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 23:25:38] "GET /api/gettopmidcap5 HTTP/1.1" 200 -
+2026-09-21 23:25:38,338 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 23:25:38] "GET /api/gettopnifty10 HTTP/1.1" 200 -
+2026-09-21 23:32:27,522 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 23:32:27] "GET / HTTP/1.1" 200 -
+2026-09-21 23:32:27,608 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 23:32:27] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2026-09-21 23:35:36,336 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-09-21 23:35:36,336 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-09-21 23:35:52,240 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 23:35:52] "GET / HTTP/1.1" 200 -
+2026-09-21 23:35:52,308 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 23:35:52] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2026-09-21 23:35:59,944 - app - INFO - Generated token is eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWIxNzIwNzZiN2ZkOTViMzg0MGFlMjgiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc5MDAxMzk1OSwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkwMDI4MDAwfQ.L1sEFFrM04oZRbZbtAB54-xo5KXh29wsDfaKWGYveBE
+2026-09-21 23:36:00,294 - app - INFO - Profile User:  {'data': {'broker': 'UPSTOX',
+          'email': 'smartganesh2022@gmail.com',
+          'exchanges': ['NFO', 'BCD', 'NSE', 'CDS', 'BFO', 'BSE'],
+          'is_active': True,
+          'order_types': ['MARKET', 'LIMIT', 'SL', 'SL-M'],
+          'poa': False,
+          'products': ['OCO', 'D', 'CO', 'I'],
+          'user_id': '2UCRRH',
+          'user_name': 'S Ganesh',
+          'user_type': 'individual'},
+ 'status': 'success'}
+2026-09-21 23:36:00,315 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 23:36:00] "POST /authorize HTTP/1.1" 200 -
+2026-09-21 23:36:00,326 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 23:36:00] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2026-09-21 23:36:01,313 - app - INFO - Options analysis visited
+2026-09-21 23:36:04,234 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 23:36:04] "GET /options_analysis.html HTTP/1.1" 200 -
+2026-09-21 23:36:04,260 - werkzeug - INFO - 127.0.0.1 - - [21/Sep/2026 23:36:04] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -

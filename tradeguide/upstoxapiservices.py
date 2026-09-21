@@ -171,8 +171,8 @@ def get_india_vix_spot_future(gtok):
        # print("Account ",api_response3)
         # Check if data exists for the future instrument
         # Check if data exists for the future instrument
-        if api_response3.data and 'NSE_FO:NIFTY25OCTFUT' in api_response3.data:
-            future_inst_price = api_response3.data['NSE_FO:NIFTY25OCTFUT'].last_price
+        if api_response3.data and 'NSE_FO:NIFTY26OCTFUT' in api_response3.data:
+            future_inst_price = api_response3.data['NSE_FO:NIFTY26OCTFUT'].last_price
             
             # Check if future_inst_price is None or if the data is missing
             if future_inst_price is not None:
@@ -232,7 +232,7 @@ def getniftytop10(gtok):
         'NSE_EQ|INE467B01029',  # Tata Consultancy Services Ltd.
         'NSE_EQ|INE018A01030',  # Larsen and Toubro Ltd.
         'NSE_EQ|INE238A01034',  # Axis Bank Ltd.
-        'NSE_EQ|INE062A01020',  # Kotak Mahindra Bank Ltd.
+        'NSE_EQ|INE062A01020',  # SBI Bank
         'NSE_EQ|INE397D01024'   # Bharti Airtel Ltd.
     ]
     
@@ -280,7 +280,7 @@ def getniftytop10(gtok):
 def getbanktop5(gtok):
     configuration = upstox_client.Configuration()
     configuration.access_token = gtok
-    banksymbols=['NSE_EQ|INE040A01034','NSE_EQ|INE090A01021','NSE_EQ|INE238A01034','NSE_EQ|INE237A01028','NSE_EQ|INE062A01020','NSE_EQ|INE918I01026', 'NSE_EQ|INE296A01024']
+    banksymbols=['NSE_EQ|INE040A01034','NSE_EQ|INE090A01021','NSE_EQ|INE238A01034','NSE_EQ|INE237A01028','NSE_EQ|INE062A01020','NSE_EQ|INE918I01026', 'NSE_EQ|INE296A01032']
     api_version = '2.0'
     # hdfc,icici,axis,kotak,sbi  
     
