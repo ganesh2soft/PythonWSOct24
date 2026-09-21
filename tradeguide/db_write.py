@@ -51,12 +51,12 @@ def fut_senti(longbuy,shortsell):
     # Calculate the ratio
     frefer = shortsell / longbuy
     
-    # "Strong Bearish" if frefer is greater than 4.1
-    if frefer > 4.1:
+    # "Strong Bearish" if frefer is greater than 3.1
+    if frefer > 3:
         return "Strong Bearish"
     
     # "Bear" if frefer is between 4 and 2
-    elif frefer >= 2 and frefer <= 4:
+    elif frefer >= 2 and frefer <= 3:
         return "Bear"
     
     # "Bear-to-SW" if frefer is between 1.9 and 1.1
@@ -69,11 +69,11 @@ def fut_senti(longbuy,shortsell):
         return "SW-to-Bull"
     
     # "Bull" if frefer is between 0.49 and 0.26
-    elif frefer > 0.26 and frefer <= 0.49:
+    elif frefer > 0.35 and frefer <= 0.49:
         return "Bull"
     
     # "Strong Bullish" if frefer is greater than 0.25
-    elif frefer <= 0.24:
+    elif frefer <= 0.35:
         return "Strong Bullish"
     
     # If no conditions match, return "Unknown"

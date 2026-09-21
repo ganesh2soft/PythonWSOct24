@@ -1,0 +1,30 @@
+{"weekly":false,"segment":"NSE_FO","name":"NIFTY","exchange":"NSE","expiry":1759256999000,
+"instrument_type":"FUT","asset_symbol":"NIFTY","underlying_symbol":"NIFTY",
+"instrument_key":"NSE_FO|53001","lot_size":75,"freeze_quantity":1800.0,"exchange_token":"53001",
+"minimum_lot":75,"asset_key":"NSE_INDEX|Nifty 50","underlying_key":"NSE_INDEX|Nifty 50",
+"tick_size":10.0,"asset_type":"INDEX","underlying_type":"INDEX","trading_symbol":"NIFTY FUT 30 SEP 25",
+"strike_price":0.0,"qty_multiplier":1.0}
+
+{
+  "weekly": false,
+  "segment": "NSE_FO",
+  "name": "NIFTY",
+  "exchange": "NSE",
+  "expiry": 1756405799000,
+  "instrument_type": "FUT",
+  "asset_symbol": "NIFTY",
+  "underlying_symbol": "NIFTY",
+  "instrument_key": "NSE_FO|64103",
+  "lot_size": 75,
+  "freeze_quantity": 1800.0,
+  "exchange_token": "64103",
+  "minimum_lot": 75,
+  "asset_key": "NSE_INDEX|Nifty 50",
+  "underlying_key": "NSE_INDEX|Nifty 50",
+  "tick_size": 10.0,
+  "asset_type": "INDEX",
+  "underlying_type": "INDEX",
+  "trading_symbol": "NIFTY FUT 28 AUG 25",
+  "strike_price": 0.0,
+  "qty_multiplier": 1.0
+}

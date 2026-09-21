@@ -977,14 +977,18 @@ def fewstrikes(access_token,expiry1):
     for row in options_status.data:
         call_ltp = row.call_options.market_data.ltp or 0
         put_ltp = row.put_options.market_data.ltp or 0
+        calli=row.call_options.market_data.oi or 0
+        puti=row.put_options.market_data.oi or 0
         dataarr.append({
             'expiry':row.expiry,            
             'call_volume':row.call_options.market_data.volume,
             'call_ltp': call_ltp,
+            'call_oi':calli,
             'strike_price':row.strike_price ,
             'underlying_spot_price': row.underlying_spot_price,            
             'put_volume':row.put_options.market_data.volume,
-            'put_ltp': put_ltp          
+            'put_ltp': put_ltp,
+            'put_oi':puti          
         })  
     
     df2=pd.DataFrame(dataarr)
@@ -1009,8 +1013,47 @@ def fewstrikes(access_token,expiry1):
         sup04,sup03,sup02,sup01,int(roundsp),res01, res02, res03,res04
     }
     strike_levels.update(levels)
-    print('Strike Levels:', strike_levels)
+    
+    sorted_strike_levels = sorted(strike_levels)
+    print('Sorted strike Levels:', sorted_strike_levels)
     print('End of Few Strikes Dataframe')
+    # Select relevant columns
+    filtered_df = df2[df2['strike_price'].isin(sorted_strike_levels)].copy()
+    result_df = filtered_df[[
+        'strike_price', 'call_oi', 'put_oi',
+        'call_volume', 'put_volume',
+        'call_ltp', 'put_ltp'
+    ]].sort_values(by='strike_price')
+
+    print('Filtered DataFrame with Relevant Data:\n', result_df)
+    print('End of Few Strikes Dataframe')
+    
+    # Create new entry
+    new_entry = {
+        "timestamp": datetime.now().isoformat(),
+        "quickdata": result_df.to_dict(orient='records')
+    }
+
+    # Load existing data or initialize
+    if os.path.exists("covering.json"):
+        with open("covering.json", "r") as json_file:
+            try:
+                existing_data = json.load(json_file)
+                if not isinstance(existing_data, list):
+                    existing_data = []
+            except json.JSONDecodeError:
+                existing_data = []
+    else:
+        existing_data = []
+
+    # Append new data
+    existing_data.append(new_entry)
+
+    # Save back to file
+    with open("covering.json", "w") as json_file:
+        json.dump(existing_data, json_file, indent=4)
+
+    print("✅ Appended to covering.json")
     #print('Dataframe columns',df2)
         ################################################################################################
 def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
@@ -1081,7 +1124,7 @@ def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
        
 ####################################################################################################
 def processpcr(optdict,exp):
-    tcall = 0
+    tcall = 0.1
     tput = 0
     #print(f'Inside process pcr fun, {type(optdict)}')
     # Create a list of dictionaries to hold the data for the DataFrame

@@ -11,7 +11,7 @@ def token_generate(code):
     data = {
         'code': code,
         'client_id': 'dd054851-b341-4bf6-89e4-924f9339c9cf',
-        'client_secret': '63nulahu1j',
+        'client_secret': 'w7ww4wxuyg',
         'redirect_uri': 'http://127.0.0.1',
         'grant_type': 'authorization_code',
     }

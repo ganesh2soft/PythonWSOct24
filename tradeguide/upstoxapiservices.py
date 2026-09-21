@@ -74,7 +74,9 @@ def symbol_pricedata(gtok,instrumentkey):
       
     try:
         api_response = api_instance.get_full_market_quote(instrument_key, api_version)
-        #print(api_response)
+        # Debugging: Print the entire API response  
+        print(f"Raw response for FUTURESSSSS {instrument_key}: {api_response}")  
+        # print(api_response)
         return api_response
     except ApiException as e:
         print("Exception MarketQuoteApi->get_full_market_quote %s\n" % e.body)
@@ -169,8 +171,8 @@ def get_india_vix_spot_future(gtok):
        # print("Account ",api_response3)
         # Check if data exists for the future instrument
         # Check if data exists for the future instrument
-        if api_response3.data and 'NSE_FO:NIFTY25MAYFUT' in api_response3.data:
-            future_inst_price = api_response3.data['NSE_FO:NIFTY25MAYFUT'].last_price
+        if api_response3.data and 'NSE_FO:NIFTY25OCTFUT' in api_response3.data:
+            future_inst_price = api_response3.data['NSE_FO:NIFTY25OCTFUT'].last_price
             
             # Check if future_inst_price is None or if the data is missing
             if future_inst_price is not None:
@@ -327,8 +329,7 @@ def getmidcaptop5(gtok):
     configuration.access_token = gtok
   
     # Define your Midcap symbols here (you can update this list as required)
-    midcapsymbols = ['NSE_EQ|INE027H01010', 'NSE_EQ|INE118H01025', 'NSE_EQ|INE262H01021', 'NSE_EQ|INE591G01017', 'NSE_EQ|INE417T01026','NSE_EQ|INE935N01020']
-    
+    midcapsymbols = ['NSE_EQ|INE027H01010', 'NSE_EQ|INE118H01025', 'NSE_EQ|INE262H01021', 'NSE_EQ|INE591G01017', 'NSE_EQ|INE417T01026','NSE_EQ|INE935N01020','NSE_EQ|INE121J01017']  
     api_version = '2.0'
     # Midcap symbols list for Midcap 5 (this is a placeholder, update accordingly)
     # midcap symbols: "Max Healthcare", "Persistent Systems", "Coforge", etc. (update your list here)
