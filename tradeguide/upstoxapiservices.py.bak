@@ -61,7 +61,6 @@ Note:
 
 import upstox_client
 from upstox_client.rest import ApiException
-import logging
 
 ### Below func is get Futures monthly, not particularly given for futures
 ### Use the same function to capture any stock
@@ -77,12 +76,10 @@ def symbol_pricedata(gtok,instrumentkey):
         api_response = api_instance.get_full_market_quote(instrument_key, api_version)
         # Debugging: Print the entire API response  
         print(f"Raw response for FUTURESSSSS {instrument_key}: {api_response}")  
-        logging.debug(f"Raw response for FUTURESSSSS {instrument_key}: {api_response}")
         # print(api_response)
         return api_response
     except ApiException as e:
         print("Exception MarketQuoteApi->get_full_market_quote %s\n" % e.body)
-        logging.error("Exception MarketQuoteApi->get_full_market_quote %s" % e.body)
 
 
 ### Below func is get options data, edate is expiry date of option chain
@@ -98,7 +95,6 @@ def options_status(gtok,edate):
         return(api_response)
     except ApiException as e:
         print("Exception when calling OrderApi->options apis: %s\n" % e.body)
-        logging.error("Exception when calling OrderApi->options apis: %s" % e.body)
 
 
 ###Below Function is to get orders equity
@@ -114,7 +110,6 @@ def order_details(gtok):
         return (api_response)
     except ApiException as e:
         print("Exception when calling OrderApi->get_order_book: %s\n" % e)
-        logging.error("Exception when calling OrderApi->get_order_book: %s" % e)
 
 
 ###Below Function is to get Positions       
@@ -129,7 +124,6 @@ def positions_status(gtok):
         return(api_response)
     except ApiException as e:
         print("Exception when calling ChargeApi->get_brokerage: %s\n" % e)
-        logging.error("Exception when calling ChargeApi->get_brokerage: %s" % e)
 
 
 ###Below Function is to get profile 
@@ -140,7 +134,6 @@ def profile_user(gtok):
 
     api_instance = upstox_client.UserApi(upstox_client.ApiClient(configuration))
     print('Profile Upstox Service progresses')
-    logging.info('Profile Upstox Service progresses')
     try:
         # Get User Fund And Margin
         profile_detail = api_instance.get_profile(api_version)
@@ -149,7 +142,6 @@ def profile_user(gtok):
         return(profile_detail)
     except ApiException as e:
         print("Exception when calling UserApi->get_user_fund_margin: %s\n" % e)
-        logging.error("Exception when calling UserApi->get_user_fund_margin: %s" % e)
         return f"Failed to fetch profile data: {e}", 500  # Handle API errors
        
 ### Function to get India VIX live data
@@ -185,37 +177,29 @@ def get_india_vix_spot_future(gtok):
             # Check if future_inst_price is None or if the data is missing
             if future_inst_price is not None:
                 print(f"Future Instrument Price: {future_inst_price}")
-                logging.info(f"Future Instrument Price: {future_inst_price}")
             else:
                 print(f"Error: 'last_price' not found for {future_inst}")
-                logging.warning(f"Error: 'last_price' not found for {future_inst}")
         else:
             print(f"Error: No data available for {future_inst}")
-            logging.warning(f"Error: No data available for {future_inst}")
         # Extract the India VIX value
         if api_response1.data and 'NSE_INDEX:India VIX' in api_response1.data:
             india_vix = api_response1.data['NSE_INDEX:India VIX'].last_price
             print(f"Current India VIX: {india_vix}")
-            logging.info(f"Current India VIX: {india_vix}")
         else:
             print("India VIX data not available in the response.")
-            logging.warning("India VIX data not available in the response.")
             india_vix = None
         if api_response2.data and 'NSE_INDEX:Nifty 50' in api_response2.data:
             nifty_spot = api_response2.data['NSE_INDEX:Nifty 50'].last_price
             #print(f"Nifty spot data: {nifty_spot}")
         else:
             print("Nifty data not available in the response.")
-            logging.warning("Nifty data not available in the response.")
               # Return None if the data is not available
             nifty_spot= None
         return india_vix ,nifty_spot,future_inst_price # Return the extracted value
                       
     except Exception as e:
         print("Error fetching data:", e)
-        logging.error(f"Error fetching data: {e}")
     print('India VIX Upstox Service Completed')
-    logging.info('India VIX Upstox Service Completed')
 ###################################################################################################
 ### Function to get Nifty OHLC
 def niftyohlcservice(gtok):
@@ -231,9 +215,7 @@ def niftyohlcservice(gtok):
         return api_response1
     except Exception as e:
         print("Error fetching data:", e)
-        logging.error(f"Error fetching data: {e}")
     print('Nifty 5 min OHLC Upstox Service Completed')
-    logging.info('Nifty 5 min OHLC Upstox Service Completed')
 
 #######################################################################################################
 def getniftytop10(gtok):  
@@ -281,30 +263,24 @@ def getniftytop10(gtok):
                                 nifty_data.append({"symbol": symbol, "ltp": last_price})
                             else:
                                 print(f"No LTP data for {symbol}")
-                                logging.warning(f"No LTP data for {symbol}")
                 else:
                     print(f"No 'data' field in the response for {symbol}")
-                    logging.warning(f"No 'data' field in the response for {symbol}")
             else:
                 print(f"Unexpected response format for {symbol}: {type(api_response)}")
-                logging.warning(f"Unexpected response format for {symbol}: {type(api_response)}")
 
         except Exception as e:
             print(f"Error fetching data for {symbol}: {e}")
-            logging.error(f"Error fetching data for {symbol}: {e}")
     
     if not nifty_data:
         print("No data available for the specified symbols.")
-        logging.warning("No data available for the specified symbols.")
         return None
     print('Nifty 50 top 10 Upstox Service Completed')
-    logging.info('Nifty 50 top 10 Upstox Service Completed')
     return nifty_data       
 ###########################################################################################
 def getbanktop5(gtok):
     configuration = upstox_client.Configuration()
     configuration.access_token = gtok
-    banksymbols=['NSE_EQ|INE040A01034','NSE_EQ|INE090A01021','NSE_EQ|INE238A01034','NSE_EQ|INE237A01036','NSE_EQ|INE062A01020','NSE_EQ|INE918I01026', 'NSE_EQ|INE296A01032']
+    banksymbols=['NSE_EQ|INE040A01034','NSE_EQ|INE090A01021','NSE_EQ|INE238A01034','NSE_EQ|INE237A01028','NSE_EQ|INE062A01020','NSE_EQ|INE918I01026', 'NSE_EQ|INE296A01032']
     api_version = '2.0'
     # hdfc,icici,axis,kotak,sbi  
     
@@ -333,25 +309,19 @@ def getbanktop5(gtok):
                                 bank_data.append({"symbol": symbol, "ltp": last_price})
                             else:
                                 print(f"No LTP data for {symbol}")
-                                logging.warning(f"No LTP data for {symbol}")
                 else:
                     print(f"No 'data' field in the response for {symbol}")
-                    logging.warning(f"No 'data' field in the response for {symbol}")
             else:
                 print(f"Unexpected response format for {symbol}: {type(api_response)}")
-                logging.warning(f"Unexpected response format for {symbol}: {type(api_response)}")
 
         except Exception as e:
             print(f"Error fetching data for {symbol}: {e}")
-            logging.error(f"Error fetching data for {symbol}: {e}")
     
     if not bank_data:
         print("No data available for the specified symbols.")
-        logging.warning("No data available for the specified symbols.")
         return None
     #print(f"Bank data: at Upstox Service level####################### {bank_data}")
     print('Bank Nifty top 5 Upstox Service Completed')
-    logging.info('Bank Nifty top 5 Upstox Service Completed')
     return bank_data  # Return the list of responses for all symbols
 ############################################################################################
 def getmidcaptop5(gtok):
@@ -359,7 +329,7 @@ def getmidcaptop5(gtok):
     configuration.access_token = gtok
   
     # Define your Midcap symbols here (you can update this list as required)
-    midcapsymbols = ['NSE_EQ|INE027H01010', 'NSE_EQ|INE118H01025', 'NSE_EQ|INE262H01021', 'NSE_EQ|INE591G01025', 'NSE_EQ|INE417T01026','NSE_EQ|INE935N01020','NSE_EQ|INE121J01017']  
+    midcapsymbols = ['NSE_EQ|INE027H01010', 'NSE_EQ|INE118H01025', 'NSE_EQ|INE262H01021', 'NSE_EQ|INE591G01017', 'NSE_EQ|INE417T01026','NSE_EQ|INE935N01020','NSE_EQ|INE121J01017']  
     api_version = '2.0'
     # Midcap symbols list for Midcap 5 (this is a placeholder, update accordingly)
     # midcap symbols: "Max Healthcare", "Persistent Systems", "Coforge", etc. (update your list here)
@@ -389,26 +359,20 @@ def getmidcaptop5(gtok):
                                 midcap_data.append({"symbol": symbol, "ltp": last_price})
                             else:
                                 print(f"No LTP data for {symbol}")
-                                logging.warning(f"No LTP data for {symbol}")
                 else:
                     print(f"No 'data' field in the response for {symbol}")
-                    logging.warning(f"No 'data' field in the response for {symbol}")
             else:
                 print(f"Unexpected response format for {symbol}: {type(api_response)}")
-                logging.warning(f"Unexpected response format for {symbol}: {type(api_response)}")
 
         except Exception as e:
             print(f"Error fetching data for {symbol}: {e}")
-            logging.error(f"Error fetching data for {symbol}: {e}")
     
     if not midcap_data:
         print("No data available for the specified symbols.")
-        logging.warning("No data available for the specified symbols.")
         return None
     
     #print(f"Midcap data: at Upstox Service level####################### {midcap_data}")
     print('Midcap Upstox Service Completed')
-    logging.info('Midcap Upstox Service Completed')
     return midcap_data  # Return the list of responses for all symbols
 ###########################################################################################
 
@@ -448,10 +412,8 @@ def mainindex(gtok):
                         })
         except Exception as e:
             print(f"Error fetching data for {name} ({symbol}): {e}")
-            logging.error(f"Error fetching data for {name} ({symbol}): {e}")
 
     print("Main Indices Fetched Successfully")
-    logging.info("Main Indices Fetched Successfully")
     return index_data
 
 
@@ -466,7 +428,6 @@ def placeordersrv(inputitems):
     
     if not gtok:
         print("Error: Access token is missing!")
-        logging.error("Error: Access token is missing!")
         return {"error": "Access token is missing"}
     configuration = upstox_client.Configuration()
     configuration.access_token = gtok
@@ -480,5 +441,4 @@ def placeordersrv(inputitems):
         return api_response
     except ApiException as e:
         print("Exception when calling OrderApi->place_order: %s\n" % e)
-        logging.error("Exception when calling OrderApi->place_order: %s" % e)
         return None

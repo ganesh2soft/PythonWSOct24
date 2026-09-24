@@ -6,5 +6,6 @@ del /f /q "niftytop10.json"
 del /f /q "premium.json"
 del /f /q "trend.json"
 del /f /q "mainindex.json"
+del /f /q "covering.json"
 echo All specified JSON files have been deleted.
 pause

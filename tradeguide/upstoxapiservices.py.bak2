@@ -304,7 +304,7 @@ def getniftytop10(gtok):
 def getbanktop5(gtok):
     configuration = upstox_client.Configuration()
     configuration.access_token = gtok
-    banksymbols=['NSE_EQ|INE040A01034','NSE_EQ|INE090A01021','NSE_EQ|INE238A01034','NSE_EQ|INE237A01036','NSE_EQ|INE062A01020','NSE_EQ|INE918I01026', 'NSE_EQ|INE296A01032']
+    banksymbols=['NSE_EQ|INE040A01034','NSE_EQ|INE090A01021','NSE_EQ|INE238A01034','NSE_EQ|INE237A01028','NSE_EQ|INE062A01020','NSE_EQ|INE918I01026', 'NSE_EQ|INE296A01032']
     api_version = '2.0'
     # hdfc,icici,axis,kotak,sbi  
     
@@ -359,7 +359,7 @@ def getmidcaptop5(gtok):
     configuration.access_token = gtok
   
     # Define your Midcap symbols here (you can update this list as required)
-    midcapsymbols = ['NSE_EQ|INE027H01010', 'NSE_EQ|INE118H01025', 'NSE_EQ|INE262H01021', 'NSE_EQ|INE591G01025', 'NSE_EQ|INE417T01026','NSE_EQ|INE935N01020','NSE_EQ|INE121J01017']  
+    midcapsymbols = ['NSE_EQ|INE027H01010', 'NSE_EQ|INE118H01025', 'NSE_EQ|INE262H01021', 'NSE_EQ|INE591G01017', 'NSE_EQ|INE417T01026','NSE_EQ|INE935N01020','NSE_EQ|INE121J01017']  
     api_version = '2.0'
     # Midcap symbols list for Midcap 5 (this is a placeholder, update accordingly)
     # midcap symbols: "Max Healthcare", "Persistent Systems", "Coforge", etc. (update your list here)
