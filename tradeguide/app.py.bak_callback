@@ -112,24 +112,6 @@ logger = logging.getLogger(__name__)
 
 
 
-@app.context_processor
-def inject_scheduler_status():
-    # Makes scheduler_running / next_job available to every template
-    try:
-        import scheduler as sched_mod
-        running = sched_mod.scheduler_running
-    except Exception:
-        running = False
-    next_job = None
-    try:
-        import schedule as sched_lib
-        if running and sched_lib.get_jobs():
-            nxt = sched_lib.next_run()
-            next_job = nxt.strftime('%H:%M') if nxt else None
-    except Exception:
-        next_job = None
-    return {'scheduler_running': running, 'next_job': next_job}
-
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -164,30 +146,6 @@ def authorize():
     # This will start the scheduler when the user logs in    
     return render_template('mainboard.html', profile=profile_user.data)
     
-@app.route('/callback')
-def callback():
-    # Upstox redirects here after login: http://127.0.0.1:5000/callback?code=...
-    app.logger.info('Reached callback')
-    authcode = request.args.get('code')
-    if not authcode:
-        app.logger.warning(f"Callback without code: {request.args.get('error', '')}")
-        return 'Upstox login did not return a code. Please open the Upstox login link again.', 400
-    gtok = tokengen.token_generate(authcode, redirect_uri='http://127.0.0.1:5000/callback')
-    if not gtok or gtok == 'no token found':
-        app.logger.error('Token exchange failed in callback')
-        return 'Token not received (code expired or redirect URL mismatch). Please log in again.', 400
-    session['access_token'] = gtok
-    profile_user = upstoxapiservices.profile_user(gtok)
-    app.logger.info('Login OK via callback')
-    # Start the scheduler here too (start_scheduler has its own already-running guard)
-    try:
-        from scheduler import start_scheduler
-        start_scheduler()
-        app.logger.info('Scheduler start requested from callback')
-    except Exception as e:
-        app.logger.error(f'Scheduler start failed in callback: {e}')
-    return render_template('mainboard.html', profile=profile_user.data)
-
 # Define a route for orders page
 @app.route('/orders')
 def orders():

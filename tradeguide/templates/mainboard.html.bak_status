@@ -23,16 +23,6 @@
     <!-- Main Content -->
     <div class="content">
         <h1>Welcome to Mainboard</h1>
-        <!-- Scheduler status -->
-        {% if scheduler_running %}
-        <div style="padding:10px 14px;margin-bottom:16px;border-radius:6px;background:#e3f5ec;border:1px solid #1baf7a;">
-            <strong>Scheduler: Running</strong> &#9989;{% if next_job %} &nbsp; Next job at {{ next_job }}{% endif %}
-        </div>
-        {% else %}
-        <div style="padding:10px 14px;margin-bottom:16px;border-radius:6px;background:#fdeaea;border:1px solid #e34948;">
-            <strong>Scheduler: Not running</strong> &#10060; &nbsp; Log in with the Upstox link (or click Options Analysis) to start it.
-        </div>
-        {% endif %}
         <h2>User Profile</h2>
         
         <!-- Profile Card -->

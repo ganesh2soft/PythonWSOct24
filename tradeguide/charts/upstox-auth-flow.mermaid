@@ -1,0 +1,19 @@
+flowchart TD
+    A([Morning: open tradeguide login link]) --> B[Upstox login page<br/>mobile + PIN + OTP]
+    B --> C{Allow access?}
+    C -- No --> X([Stop: no token today])
+    C -- Yes --> D[Upstox redirects browser to<br/>127.0.0.1:5000/callback?code=...]
+    D --> E[Flask /callback route<br/>reads the code automatically]
+    E --> F[Flask sends code + client_id + API secret<br/>to Upstox token API]
+    F --> G{Token received?}
+    G -- No: code expired or wrong --> H[Show error page:<br/>'Login again'] --> A
+    G -- Yes --> I[Save access token<br/>in tradeguide]
+    I --> J([Browser shows 'Login OK'])
+    J --> K[Scheduler jobs run all day<br/>futures, option chain, VIX, tradelogger.log]
+    K --> L([3:30 AM next day: token expires])
+    L -.-> A
+
+    classDef newStep fill:#e3f5ec,stroke:#1baf7a,color:#0b0b0b
+    classDef endStep fill:#fdeaea,stroke:#e34948,color:#0b0b0b
+    class D,E,F,G,H,I,J newStep
+    class X,L endStep

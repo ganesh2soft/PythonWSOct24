@@ -112,24 +112,6 @@ logger = logging.getLogger(__name__)
 
 
 
-@app.context_processor
-def inject_scheduler_status():
-    # Makes scheduler_running / next_job available to every template
-    try:
-        import scheduler as sched_mod
-        running = sched_mod.scheduler_running
-    except Exception:
-        running = False
-    next_job = None
-    try:
-        import schedule as sched_lib
-        if running and sched_lib.get_jobs():
-            nxt = sched_lib.next_run()
-            next_job = nxt.strftime('%H:%M') if nxt else None
-    except Exception:
-        next_job = None
-    return {'scheduler_running': running, 'next_job': next_job}
-
 @app.route('/')
 def home():
     return render_template('index.html')

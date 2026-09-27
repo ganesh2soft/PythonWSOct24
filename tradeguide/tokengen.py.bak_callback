@@ -1,6 +1,6 @@
 import requests
 
-def token_generate(code, redirect_uri='http://127.0.0.1'):
+def token_generate(code):
     url = 'https://api.upstox.com/v2/login/authorization/token'
     print(f'Auth code received is ',code)
     headers = {
@@ -12,7 +12,7 @@ def token_generate(code, redirect_uri='http://127.0.0.1'):
         'code': code,
         'client_id': 'dd054851-b341-4bf6-89e4-924f9339c9cf',
         'client_secret': 'w7ww4wxuyg',
-        'redirect_uri': redirect_uri,
+        'redirect_uri': 'http://127.0.0.1',
         'grant_type': 'authorization_code',
     }
 
