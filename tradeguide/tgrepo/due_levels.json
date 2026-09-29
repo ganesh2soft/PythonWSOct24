@@ -1,0 +1,317 @@
+{
+ "_note": "Copied from TRADEGUIDE2026 project docs tg-due-level-nifty / -bn / -mid (received 29 Sep 2026). Update both together.",
+ "NIFTY 50": [
+  {
+   "level": 24873.06,
+   "cat": "Pending"
+  },
+  {
+   "level": 24778.0,
+   "cat": "Pending"
+  },
+  {
+   "level": 24740.19,
+   "cat": "Pending"
+  },
+  {
+   "level": 24523.3,
+   "cat": "Pending"
+  },
+  {
+   "level": 24508.2,
+   "cat": "Important"
+  },
+  {
+   "level": 24435.34,
+   "cat": "Pending"
+  },
+  {
+   "level": 24426.3,
+   "cat": "Pending"
+  },
+  {
+   "level": 24413.32,
+   "cat": "Pending"
+  },
+  {
+   "level": 24398.91,
+   "cat": "Pending"
+  },
+  {
+   "level": 24262.4,
+   "cat": "Important"
+  },
+  {
+   "level": 24248.25,
+   "cat": "Pending"
+  },
+  {
+   "level": 24234.2,
+   "cat": "Pending"
+  },
+  {
+   "level": 24170.82,
+   "cat": "Pending"
+  },
+  {
+   "level": 24136.57,
+   "cat": "Pending"
+  },
+  {
+   "level": 24108.34,
+   "cat": "Pending"
+  },
+  {
+   "level": 24050.0,
+   "cat": "Important"
+  },
+  {
+   "level": 23958.45,
+   "cat": "Important"
+  },
+  {
+   "level": 23918.05,
+   "cat": "Important"
+  },
+  {
+   "level": 23886.63,
+   "cat": "Pending"
+  },
+  {
+   "level": 23859.33,
+   "cat": "Pending"
+  },
+  {
+   "level": 23815.13,
+   "cat": "Pending"
+  },
+  {
+   "level": 23734.71,
+   "cat": "Pending"
+  },
+  {
+   "level": 23648.36,
+   "cat": "Pending"
+  },
+  {
+   "level": 23601.75,
+   "cat": "Pending"
+  },
+  {
+   "level": 23486.0,
+   "cat": "Recent"
+  },
+  {
+   "level": 23470.82,
+   "cat": "Recent"
+  },
+  {
+   "level": 23378.62,
+   "cat": "Important"
+  },
+  {
+   "level": 23281.91,
+   "cat": "Recent"
+  },
+  {
+   "level": 23021.53,
+   "cat": "Yesterday"
+  }
+ ],
+ "BANK NIFTY": [
+  {
+   "level": 58874.0,
+   "cat": "Pending"
+  },
+  {
+   "level": 58639.37,
+   "cat": "Pending"
+  },
+  {
+   "level": 58587.2,
+   "cat": "Pending"
+  },
+  {
+   "level": 58131.88,
+   "cat": "Pending"
+  },
+  {
+   "level": 58119.86,
+   "cat": "Pending"
+  },
+  {
+   "level": 58099.18,
+   "cat": "Pending"
+  },
+  {
+   "level": 58088.17,
+   "cat": "Important"
+  },
+  {
+   "level": 57939.54,
+   "cat": "Pending"
+  },
+  {
+   "level": 57835.05,
+   "cat": "Important"
+  },
+  {
+   "level": 57793.31,
+   "cat": "Pending"
+  },
+  {
+   "level": 57747.06,
+   "cat": "Important"
+  },
+  {
+   "level": 57674.38,
+   "cat": "Pending"
+  },
+  {
+   "level": 57650.29,
+   "cat": "Important"
+  },
+  {
+   "level": 57634.72,
+   "cat": "Important"
+  },
+  {
+   "level": 57495.01,
+   "cat": "Important"
+  },
+  {
+   "level": 57172.39,
+   "cat": "Recent"
+  },
+  {
+   "level": 57158.68,
+   "cat": "Pending"
+  },
+  {
+   "level": 56837.67,
+   "cat": "Recent"
+  },
+  {
+   "level": 56800.37,
+   "cat": "Recent"
+  },
+  {
+   "level": 56757.0,
+   "cat": "Important"
+  },
+  {
+   "level": 56724.73,
+   "cat": "Recent"
+  },
+  {
+   "level": 56673.0,
+   "cat": "Recent"
+  },
+  {
+   "level": 56626.38,
+   "cat": "Recent"
+  },
+  {
+   "level": 56590.23,
+   "cat": "Important"
+  },
+  {
+   "level": 55115.22,
+   "cat": "Pending"
+  },
+  {
+   "level": 54877.0,
+   "cat": "Recent"
+  },
+  {
+   "level": 54830.61,
+   "cat": "Pending"
+  }
+ ],
+ "MIDCAP": [
+  {
+   "level": 15098.7,
+   "cat": "Pending"
+  },
+  {
+   "level": 15088.41,
+   "cat": "Pending"
+  },
+  {
+   "level": 15026.53,
+   "cat": "Pending"
+  },
+  {
+   "level": 14919.63,
+   "cat": "Important"
+  },
+  {
+   "level": 14845.75,
+   "cat": "Important"
+  },
+  {
+   "level": 14840.6,
+   "cat": "Pending"
+  },
+  {
+   "level": 14823.6,
+   "cat": "Important"
+  },
+  {
+   "level": 14776.23,
+   "cat": "Important"
+  },
+  {
+   "level": 14762.0,
+   "cat": "Pending"
+  },
+  {
+   "level": 14706.42,
+   "cat": "Pending"
+  },
+  {
+   "level": 14668.07,
+   "cat": "Pending"
+  },
+  {
+   "level": 14632.16,
+   "cat": "Recent"
+  },
+  {
+   "level": 14556.75,
+   "cat": "Important"
+  },
+  {
+   "level": 14536.23,
+   "cat": "Important"
+  },
+  {
+   "level": 14497.3,
+   "cat": "Important"
+  },
+  {
+   "level": 14443.26,
+   "cat": "Recent"
+  },
+  {
+   "level": 14438.38,
+   "cat": "Important"
+  },
+  {
+   "level": 14436.01,
+   "cat": "Pending"
+  },
+  {
+   "level": 14106.75,
+   "cat": "Important"
+  },
+  {
+   "level": 14045.25,
+   "cat": "Important"
+  },
+  {
+   "level": 13794.14,
+   "cat": "Yesterday"
+  }
+ ]
+}

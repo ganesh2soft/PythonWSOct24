@@ -172,20 +172,12 @@ def callback():
     if not authcode:
         app.logger.warning(f"Callback without code: {request.args.get('error', '')}")
         return 'Upstox login did not return a code. Please open the Upstox login link again.', 400
-    try:
-        gtok = tokengen.token_generate(authcode, redirect_uri='http://127.0.0.1:5000/callback')
-    except Exception as e:
-        app.logger.error(f'Callback could not reach Upstox (internet down?): {e}')
-        return 'Could not reach Upstox - check your internet connection, then open the Upstox login link again.', 503
+    gtok = tokengen.token_generate(authcode, redirect_uri='http://127.0.0.1:5000/callback')
     if not gtok or gtok == 'no token found':
         app.logger.error('Token exchange failed in callback')
         return 'Token not received (code expired or redirect URL mismatch). Please log in again.', 400
     session['access_token'] = gtok
-    try:
-        profile_user = upstoxapiservices.profile_user(gtok)
-    except Exception as e:
-        app.logger.error(f'Callback got token but profile fetch failed: {e}')
-        return 'Logged in, but Upstox profile could not be loaded (internet?). Open http://127.0.0.1:5000/mainboard in a minute.', 503
+    profile_user = upstoxapiservices.profile_user(gtok)
     app.logger.info('Login OK via callback')
     # Start the scheduler here too (start_scheduler has its own already-running guard)
     try:

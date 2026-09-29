@@ -3,8 +3,6 @@ import schedule
 import threading
 import os
 import json
-import logging
-import traceback
 from datetime import datetime, time as datetime_time
 from flask import session, current_app
 
@@ -35,18 +33,10 @@ def run_scheduler():
             # If the current time is later than the scheduled time for a job, run it
             if current_time > job_time:
                 print(f"Missed scheduled time {job_time.strftime('%H:%M')}. Running missed job.")
-                try:
-                    job.job_func()  # Execute the missed task
-                except Exception as e:
-                    # Safety net: never let one failed run stop the scheduler thread
-                    logging.getLogger('app').error(f"Scheduler loop caught error: {e}")
-                finally:
-                    schedule.cancel_job(job)  # Remove the job after execution
+                job.job_func()  # Execute the missed task
+                schedule.cancel_job(job)  # Remove the job after execution
 
-        try:
-            schedule.run_pending()  # Run the pending scheduled tasks
-        except Exception as e:
-            logging.getLogger('app').error(f"Scheduler run_pending caught error: {e}")
+        schedule.run_pending()  # Run the pending scheduled tasks
         time.sleep(1)  # Sleep for 1 second to avoid 100% CPU usage
 
 
@@ -66,12 +56,7 @@ def job(access_token):
             # Execute the task
             print("Executing scheduled task...")
             from app import startrecord
-            try:
-                startrecord(expiry1, expiry2, expiry3, instrumentkey, access_token)
-            except Exception as e:
-                # e.g. internet down: log it, skip this slot, keep the scheduler alive
-                app.logger.error(f"Scheduled job failed at {now.strftime('%H:%M')}, skipping this slot: {e}")
-                app.logger.debug(traceback.format_exc())
+            startrecord(expiry1, expiry2, expiry3, instrumentkey, access_token)
         else:
             print("No access token found. Skipping job.")
 

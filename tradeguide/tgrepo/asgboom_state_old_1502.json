@@ -1,0 +1,24 @@
+{
+ "date": "2026-09-29",
+ "initial_sent": true,
+ "refs": {
+  "NIFTY 50": {
+   "price": 22676.0,
+   "time": "15:01"
+  },
+  "BANK NIFTY": {
+   "price": 54327.0,
+   "time": "15:01"
+  },
+  "MIDCAP": {
+   "price": 13726.0,
+   "time": "15:01"
+  }
+ },
+ "alerted_levels": {
+  "NIFTY 50": [],
+  "BANK NIFTY": [],
+  "MIDCAP": []
+ },
+ "last_ts": "2026-09-29 15:06:05"
+}
