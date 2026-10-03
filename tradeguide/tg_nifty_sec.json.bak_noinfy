@@ -1,0 +1,141 @@
+{
+    "_note": "tg-nifty-sec config. Weights: NSE Nifty 50 factsheet 30 Sep 2026 (sectors, top10) / constituent list 19 Aug 2026 (others). Refresh monthly.",
+    "nifty": {
+        "key": "NSE_INDEX|Nifty 50"
+    },
+    "items": [
+        {
+            "sector": "Financial Services",
+            "name": "NIFTY BANK",
+            "type": "index",
+            "key": "NSE_INDEX|Nifty Bank",
+            "weight": 37.45
+        },
+        {
+            "sector": "Financial Services",
+            "name": "NIFTY FIN SERVICE",
+            "type": "index",
+            "key": "NSE_INDEX|Nifty Fin Service",
+            "weight": 37.45
+        },
+        {
+            "sector": "Information Technology",
+            "name": "NIFTY IT",
+            "type": "index",
+            "key": "NSE_INDEX|Nifty IT",
+            "weight": 7.52
+        },
+        {
+            "sector": "Automobile",
+            "name": "NIFTY AUTO",
+            "type": "index",
+            "key": "NSE_INDEX|Nifty Auto",
+            "weight": 6.65
+        },
+        {
+            "sector": "Financial Services",
+            "name": "HDFC Bank",
+            "type": "stock",
+            "key": "NSE_EQ|INE040A01034",
+            "weight": 10.38
+        },
+        {
+            "sector": "Oil, Gas & Fuels",
+            "name": "Reliance",
+            "type": "stock",
+            "key": "NSE_EQ|INE002A01018",
+            "weight": 7.58
+        },
+        {
+            "sector": "Information Technology",
+            "name": "Infosys",
+            "type": "stock",
+            "key": "NSE_EQ|INE009A01021",
+            "weight": 3.35
+        },
+        {
+            "sector": "Automobile",
+            "name": "M&M",
+            "type": "stock",
+            "key": "NSE_EQ|INE101A01026",
+            "weight": 2.52
+        },
+        {
+            "sector": "FMCG",
+            "name": "ITC",
+            "type": "stock",
+            "key": "NSE_EQ|INE154A01025",
+            "weight": 2.34
+        },
+        {
+            "sector": "Telecommunication",
+            "name": "Bharti Airtel",
+            "type": "stock",
+            "key": "NSE_EQ|INE397D01024",
+            "weight": 5.1
+        },
+        {
+            "sector": "Metals & Mining",
+            "name": "Tata Steel",
+            "type": "stock",
+            "key": "NSE_EQ|INE081A01020",
+            "weight": 1.38
+        },
+        {
+            "sector": "Healthcare",
+            "name": "Sun Pharma",
+            "type": "stock",
+            "key": "NSE_EQ|INE044A01036",
+            "weight": 1.83
+        },
+        {
+            "sector": "Construction",
+            "name": "L&T",
+            "type": "stock",
+            "key": "NSE_EQ|INE018A01030",
+            "weight": 4.2
+        },
+        {
+            "sector": "Consumer Services",
+            "name": "Eternal",
+            "type": "stock",
+            "key": "NSE_EQ|INE758T01015",
+            "weight": 2.1
+        },
+        {
+            "sector": "Consumer Durables",
+            "name": "Titan",
+            "type": "stock",
+            "key": "NSE_EQ|INE280A01028",
+            "weight": 1.9
+        },
+        {
+            "sector": "Power",
+            "name": "NTPC",
+            "type": "stock",
+            "key": "NSE_EQ|INE733E01010",
+            "weight": 1.45
+        },
+        {
+            "sector": "Services",
+            "name": "Adani Ports",
+            "type": "stock",
+            "key": "NSE_EQ|INE742F01042",
+            "weight": 1.13
+        },
+        {
+            "sector": "Construction Materials",
+            "name": "UltraTech Cement",
+            "type": "stock",
+            "key": "NSE_EQ|INE481G01011",
+            "weight": 1.23
+        },
+        {
+            "sector": "Capital Goods",
+            "name": "BEL",
+            "type": "stock",
+            "key": "NSE_EQ|INE263A01024",
+            "weight": 1.33
+        }
+    ]
+}

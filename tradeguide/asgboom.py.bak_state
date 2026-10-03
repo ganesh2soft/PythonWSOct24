@@ -31,7 +31,7 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 MAININDEX = os.path.join(BASE, 'json_output', 'mainindex.json')
 LEVELS = os.path.join(BASE, 'tgrepo', 'due_levels.json')
 ENVFILE = os.path.join(BASE, 'asgboom.env')
-STATEFILE = os.path.join(BASE, 'json_output', 'asgboom_state.json')
+STATEFILE = os.path.join(BASE, 'tgrepo', 'asgboom_state.json')
 LOGFILE = os.path.join(BASE, 'asgboom.log')
 
 START = '09:17'

@@ -1204,12 +1204,12 @@ def sectorsfun(access_token):
             co = pct(q['ltp'], q.get('open'))
             row = {'sector': it['sector'], 'name': it['name'], 'type': it['type'], 'weight': it['weight'],
                    'ltp': q['ltp'], 'chg_open_pct': co, 'chg_prev_pct': cp}
-            if it.get('in_summary', it['type'] == 'stock') and cp is not None and nifty_ltp:
+            if it['type'] == 'stock' and cp is not None and nifty_ltp:
                 # approx Nifty points contributed since yesterday's close
                 row['nifty_pts_prev'] = round(nifty_ltp * it['weight'] / 100 * cp / 100, 1)
             rows.append(row)
 
-        stocks = [r for r in rows if r.get('nifty_pts_prev') is not None]  # stocks + indices flagged in_summary
+        stocks = [r for r in rows if r['type'] == 'stock' and r.get('chg_prev_pct') is not None]
         tot_w = sum(r['weight'] for r in stocks) or 1
         up_w = sum(r['weight'] for r in stocks if r['chg_prev_pct'] > 0)
         nd = nifty.get('chg_prev_pct')

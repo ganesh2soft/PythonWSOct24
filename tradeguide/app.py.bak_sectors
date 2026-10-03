@@ -1166,73 +1166,6 @@ def fewstrikes(access_token,expiry1):
     app.logger.info("Appended to covering.json")
     #print('Dataframe columns',df2)
         ################################################################################################
-
-##################################################################################################
-# tg-nifty-sec: snapshot of sector indices + top peers -> json_output/sectors.json
-def sectorsfun(access_token):
-    from upstoxapiservices import getsectors
-    try:
-        cfgfile = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tg_nifty_sec.json')
-        with open(cfgfile, 'r') as f:
-            cfg = json.load(f)
-        items = cfg['items']
-        nkey = cfg['nifty']['key']
-        keys = [nkey]
-        for it in items:
-            keys.append(it['key'])
-            keys.extend(it.get('alt_keys', []))
-        quotes = getsectors(access_token, keys)
-
-        def pct(a, b):
-            return round((a - b) / b * 100, 2) if (a is not None and b) else None
-
-        nq = quotes.get(nkey, {})
-        nifty_ltp = nq.get('ltp')
-        nifty = {'ltp': nifty_ltp, 'chg_open_pct': pct(nifty_ltp, nq.get('open')),
-                 'chg_prev_pct': pct(nifty_ltp, nq.get('prev_close'))}
-        rows = []
-        for it in items:
-            q = None
-            for k in [it['key']] + it.get('alt_keys', []):
-                if k in quotes:
-                    q = quotes[k]
-                    break
-            if q is None:
-                rows.append({'sector': it['sector'], 'name': it['name'], 'type': it['type'], 'weight': it['weight'], 'ltp': None})
-                continue
-            cp = pct(q['ltp'], q.get('prev_close'))
-            co = pct(q['ltp'], q.get('open'))
-            row = {'sector': it['sector'], 'name': it['name'], 'type': it['type'], 'weight': it['weight'],
-                   'ltp': q['ltp'], 'chg_open_pct': co, 'chg_prev_pct': cp}
-            if it.get('in_summary', it['type'] == 'stock') and cp is not None and nifty_ltp:
-                # approx Nifty points contributed since yesterday's close
-                row['nifty_pts_prev'] = round(nifty_ltp * it['weight'] / 100 * cp / 100, 1)
-            rows.append(row)
-
-        stocks = [r for r in rows if r.get('nifty_pts_prev') is not None]  # stocks + indices flagged in_summary
-        tot_w = sum(r['weight'] for r in stocks) or 1
-        up_w = sum(r['weight'] for r in stocks if r['chg_prev_pct'] > 0)
-        nd = nifty.get('chg_prev_pct')
-        with_w = sum(r['weight'] for r in stocks if nd is not None and r['chg_prev_pct'] * nd > 0)
-        summary = {'peer_weight_up_pct': round(up_w / tot_w * 100), 'peer_weight_with_nifty_pct': round(with_w / tot_w * 100),
-                   'peer_pts_total': round(sum(r.get('nifty_pts_prev', 0) for r in stocks), 1)}
-
-        outfile = os.path.join(OUT_DIR, 'sectors.json')
-        existing = []
-        if os.path.exists(outfile):
-            with open(outfile, 'r') as f:
-                existing = json.load(f)
-                if not isinstance(existing, list):
-                    existing = []
-        existing.append({'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                         'nifty': nifty, 'summary': summary, 'items': rows})
-        with open(outfile, 'w') as f:
-            json.dump(existing, f, indent=4)
-        app.logger.info('Sectors (tg-nifty-sec) completed')
-    except Exception as e:
-        app.logger.error(f"Error in sectorsfun: {str(e)}")
-        traceback.print_exc()
-
 def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
         
         ##### Call the below indiavixcalc  to record the vix
@@ -1243,7 +1176,6 @@ def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
         findmidcaptop(access_token)
         findpremium(access_token)
         mainindexfun(access_token)
-        sectorsfun(access_token)
         fewstrikes(access_token,expiry1)
         expiry1=expiry1
         expiry2=expiry2
