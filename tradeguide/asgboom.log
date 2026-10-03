@@ -1,3 +1,81 @@
 2026-09-29 15:09:58 ASGBOOM started (LIVE), window 09:17-15:12
 2026-09-29 15:09:59 Sent: ASGBOOM | Alert Time 15:06
 2026-09-29 15:13:29 Reached 15:12 - ASGBOOM stopped for today.
+2026-09-30 08:34:21 ASGBOOM started (LIVE), window 09:17-15:12
+2026-09-30 08:37:38 ASGBOOM stopped by user (Ctrl+C).
+2026-09-30 12:18:07 ASGBOOM started (LIVE), window 09:17-15:12
+2026-09-30 12:18:24 Sent: ASGBOOM | Alert Time 12:16
+2026-09-30 12:21:24 Trigger: BN near 54,877; BN near 54,830.61
+2026-09-30 12:21:24 Sent: ASGBOOM | Alert Time 12:21
+2026-09-30 12:26:24 Trigger: BN near 55,115.22; MID near 13,794.14
+2026-09-30 12:26:25 Sent: ASGBOOM | Alert Time 12:26
+2026-09-30 12:36:25 Trigger: NIFTY move +60; BN move +182
+2026-09-30 12:36:26 Sent: ASGBOOM | Alert Time 12:36
+2026-09-30 12:51:26 Trigger: MID move +48
+2026-09-30 12:51:27 Sent: ASGBOOM | Alert Time 12:51
+2026-09-30 13:46:28 Trigger: NIFTY move -50
+2026-09-30 13:46:44 Sent: ASGBOOM | Alert Time 13:46
+2026-09-30 14:26:14 Trigger: NIFTY move -55; BN move -195; MID move -42
+2026-09-30 14:26:15 Sent: ASGBOOM | Alert Time 14:26
+2026-09-30 14:40:15 Trigger: NIFTY move -59; BN move -158
+2026-09-30 14:40:16 Sent: ASGBOOM | Alert Time 14:40
+2026-09-30 15:13:16 Reached 15:12 - ASGBOOM stopped for today.
+2026-10-01 09:14:55 ASGBOOM started (LIVE), window 09:17-15:12
+2026-10-01 09:17:27 Sent: ASGBOOM | Alert Time 09:16
+2026-10-01 09:21:27 Trigger: BN near 54,877; BN near 54,830.61; MID move -38
+2026-10-01 09:21:28 Sent: ASGBOOM | Alert Time 09:21
+2026-10-01 09:26:28 Trigger: MID move -34
+2026-10-01 09:26:43 Sent: ASGBOOM | Alert Time 09:26
+2026-10-01 09:31:13 Trigger: MID move +53
+2026-10-01 09:31:14 Sent: ASGBOOM | Alert Time 09:31
+2026-10-01 09:41:03 ASGBOOM stopped by user (Ctrl+C).
+2026-10-01 09:41:05 ASGBOOM started (LIVE), window 09:17-15:12
+2026-10-01 09:56:06 Trigger: MID move -33
+2026-10-01 09:56:07 Sent: ASGBOOM | Alert Time 09:56 | MID move -33
+2026-10-01 10:01:07 Trigger: MID move +33
+2026-10-01 10:01:08 Sent: ASGBOOM | Alert Time 10:01 | MID move +33
+2026-10-01 10:26:08 Trigger: MID move +43
+2026-10-01 10:26:09 Sent: ASGBOOM | Alert Time 10:26 | MID move +43
+2026-10-01 10:31:09 Trigger: BN move +177; BN near 55,115.22
+2026-10-01 10:31:10 Sent: ASGBOOM | Alert Time 10:31 | BN move +177; BN near 55,115.22
+2026-10-01 11:26:11 Trigger: BN move -164
+2026-10-01 11:26:12 Sent: ASGBOOM | Alert Time 11:26 | BN move -164
+2026-10-01 11:46:12 Trigger: BN move +169
+2026-10-01 11:46:13 Sent: ASGBOOM | Alert Time 11:46 | BN move +169
+2026-10-01 12:11:13 Trigger: NIFTY move -53; BN move -169; MID move -57
+2026-10-01 12:11:14 Sent: ASGBOOM | Alert Time 12:11 | NIFTY move -53; BN move -169; MID move -57
+2026-10-01 12:17:03 ASGBOOM stopped by user (Ctrl+C).
+2026-10-01 12:17:06 ASGBOOM started (LIVE), window 09:17-15:12
+2026-10-01 12:26:06 Trigger: MID move -36
+2026-10-01 12:26:08 Sent: ASGBOOM | Alert Time 12:26 | MID move -36
+2026-10-01 12:31:08 Trigger: BN move -153
+2026-10-01 12:31:09 Sent: ASGBOOM | Alert Time 12:31 | BN move -153
+2026-10-01 12:46:09 Trigger: NIFTY move -91; MID move -50
+2026-10-01 12:46:10 Sent: ASGBOOM | Alert Time 12:46 | NIFTY move -91; MID move -50
+2026-10-01 12:51:10 Trigger: BN move -184; MID move -32
+2026-10-01 12:51:10 Sent: ASGBOOM | Alert Time 12:51 | BN move -184; MID move -32
+2026-10-01 12:56:10 Trigger: NIFTY move -77; MID move -30
+2026-10-01 12:56:26 Sent: ASGBOOM | Alert Time 12:56 | NIFTY move -77; MID move -30
+2026-10-01 13:01:26 Trigger: BN move -173
+2026-10-01 13:01:27 Sent: ASGBOOM | Alert Time 13:01 | BN move -173
+2026-10-01 13:06:27 Trigger: MID move +31
+2026-10-01 13:06:28 Sent: ASGBOOM | Alert Time 13:06 | MID move +31
+2026-10-01 13:31:28 Trigger: MID move -37
+2026-10-01 13:31:44 Sent: ASGBOOM | Alert Time 13:31 | MID move -37
+2026-10-01 13:46:14 Trigger: MID move -40
+2026-10-01 13:46:15 Sent: ASGBOOM | Alert Time 13:46 | MID move -40
+2026-10-01 13:51:15 Trigger: NIFTY move -58
+2026-10-01 13:51:16 Sent: ASGBOOM | Alert Time 13:51 | NIFTY move -58
+2026-10-01 14:06:17 Trigger: BN move -203; MID move -37
+2026-10-01 14:06:17 Sent: ASGBOOM | Alert Time 14:06 | BN move -203; MID move -37
+2026-10-01 14:26:18 Trigger: MID move +33
+2026-10-01 14:26:18 Sent: ASGBOOM | Alert Time 14:26 | MID move +33
+2026-10-01 14:31:19 Trigger: NIFTY move +57; BN move +237; MID move +50
+2026-10-01 14:31:34 Sent: ASGBOOM | Alert Time 14:31 | NIFTY move +57; BN move +237; MID move +50
+2026-10-01 14:51:05 Trigger: MID move +30
+2026-10-01 14:51:06 Sent: ASGBOOM | Alert Time 14:51 | MID move +30
+2026-10-01 14:56:06 Trigger: NIFTY move +66
+2026-10-01 14:56:22 Sent: ASGBOOM | Alert Time 14:56 | NIFTY move +66
+2026-10-01 15:06:22 Trigger: BN move +179
+2026-10-01 15:06:23 Sent: ASGBOOM | Alert Time 15:06 | BN move +179
+2026-10-01 15:13:23 Reached 15:12 - ASGBOOM stopped for today.

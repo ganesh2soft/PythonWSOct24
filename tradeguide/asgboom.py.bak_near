@@ -28,7 +28,7 @@ import time
 from datetime import datetime, date
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-MAININDEX = os.path.join(BASE, 'json_output', 'mainindex.json')
+MAININDEX = os.path.join(BASE, 'mainindex.json')
 LEVELS = os.path.join(BASE, 'tgrepo', 'due_levels.json')
 ENVFILE = os.path.join(BASE, 'asgboom.env')
 STATEFILE = os.path.join(BASE, 'tgrepo', 'asgboom_state.json')
@@ -47,12 +47,6 @@ INDICES = {
 }
 
 DRY_RUN = '--dry-run' in sys.argv
-
-# Nifty / Bank Nifty divergence (separate alert)
-DIV_BETA = 2.6      # expected BN points per Nifty point (Jun-Sep 2026 5-min fit)
-DIV_ON = 250        # |gap| >= this -> DIVERGENCE alert
-DIV_OFF = 100       # |gap| < this  -> RE-CONVERGED alert (hysteresis)
-OPP_N, OPP_B = 25, 80   # opposite-direction: Nifty >= 25 one way AND BN >= 80 the other way
 
 
 def log(msg):
@@ -173,69 +167,20 @@ def closest(levels, price):
     return min(levels, key=lambda l: abs(l['level'] - price))
 
 
-def message(hhmm, prices, levels, reason=''):
-    # ASGBOOM | Alert Time <time> | <reason>
-    # <NAME> Spot <value> | NEAR Category <cat> | Level <lvl> (+dist) [+ more in range]
-    # <NAME> Spot <value> | Nearest Category <cat> | Level <lvl> (+dist)   (when none within range)
-    # dist = level - spot: + means level above spot, - means below
-    head = f'ASGBOOM | Alert Time {hhmm}' + (f' | {reason}' if reason else '')
-    lines = [head]
+def message(hhmm, prices, levels):
+    # User's format:
+    # ASGBOOM | <time>
+    # NIFTY Spot <value> | Near to Category <category> | Level <level>   (same for BN, MID)
+    lines = [f'ASGBOOM | Alert Time {hhmm}']
     for key, (name, step) in INDICES.items():
         p = prices[key]
+        # all levels within the index's range (NIFTY 50 / BN 150 / MID 30); if none, the single closest level
         near = sorted([l for l in levels[key] if abs(l['level'] - p) <= step], key=lambda l: l['level'])
-        tag = 'NEAR'
         if not near:
             near = [closest(levels[key], p)]
-            tag = 'Nearest'
-        parts = ' + '.join(f"Category {c['cat']} | Level {fmt(c['level'])} ({c['level'] - p:+,.0f})" for c in near)
-        lines.append(f"{name} Spot {fmt(p)} | {tag} {parts}")
+        parts = ' + '.join(f"Category {c['cat']} | Level {fmt(c['level'])}" for c in near)
+        lines.append(f"{name} Spot {fmt(p)} | Near to {parts}")
     return '\n'.join(lines)
-
-
-def day_reference(today_prefix):
-    """First mainindex snapshot of today at/after 09:16 -> (time, nifty, bn)."""
-    try:
-        with open(MAININDEX, encoding='utf-8') as f:
-            data = json.load(f)
-        for d in data:
-            ts = str(d.get('timestamp', ''))
-            if ts.startswith(today_prefix) and ts[11:16] >= '09:16':
-                px = {i['index']: float(i['ltp']) for i in d.get('main_index', [])}
-                return ts[11:16], px['NIFTY 50'], px['BANK NIFTY']
-    except Exception:
-        pass
-    return None
-
-
-def check_divergence(st, ts, prices):
-    ref = st.get('div_ref')
-    if not ref:
-        r = day_reference(ts[:10])
-        if not r:
-            return
-        ref = st['div_ref'] = {'time': r[0], 'n': r[1], 'b': r[2]}
-        st.setdefault('div_state', 'CONVERGED')
-    hhmm = ts[11:16]
-    pn, pb = prices['NIFTY 50'], prices['BANK NIFTY']
-    nm, bm = pn - ref['n'], pb - ref['b']
-    exp = DIV_BETA * nm
-    gap = bm - exp
-    opp = (nm >= OPP_N and bm <= -OPP_B) or (nm <= -OPP_N and bm >= OPP_B)
-    state = st.get('div_state', 'CONVERGED')
-    body = (f"NIFTY {nm:+,.0f} since {ref['time']} -> BN expected {exp:+,.0f}, actual {bm:+,.0f} (gap {gap:+,.0f})\n"
-            f"NIFTY Spot {fmt(pn)} | BN Spot {fmt(pb)}")
-    if state == 'CONVERGED' and (abs(gap) >= DIV_ON or opp):
-        if opp:
-            kind = 'OPPOSITE: NIFTY ' + ('up' if nm > 0 else 'down') + ', BN ' + ('up' if bm > 0 else 'down')
-        else:
-            kind = 'BN stronger' if gap > 0 else 'BN weaker'
-        log(f'Divergence: {kind} gap {gap:+.0f}')
-        if send(f'ASGBOOM | Alert Time {hhmm} | DIVERGENCE: {kind}\n' + body):
-            st['div_state'] = 'DIVERGED'
-    elif state == 'DIVERGED' and abs(gap) < DIV_OFF and not opp:
-        log(f'Re-converged gap {gap:+.0f}')
-        if send(f'ASGBOOM | Alert Time {hhmm} | RE-CONVERGED\n' + body):
-            st['div_state'] = 'CONVERGED'
 
 
 def process(st, ts, prices, levels):
@@ -244,10 +189,8 @@ def process(st, ts, prices, levels):
     if not st['initial_sent']:
         for key in INDICES:
             st['refs'][key] = {'price': prices[key], 'time': hhmm}
-        if send(message(hhmm, prices, levels, 'Initial')):
+        if send(message(hhmm, prices, levels)):
             st['initial_sent'] = True
-        st['div_ref'] = {'time': hhmm, 'n': prices['NIFTY 50'], 'b': prices['BANK NIFTY']}
-        st['div_state'] = 'CONVERGED'
         return
 
     fire = []
@@ -264,8 +207,7 @@ def process(st, ts, prices, levels):
                 done.append(l['level'])
     if fire:
         log('Trigger: ' + '; '.join(fire))
-        send(message(hhmm, prices, levels, '; '.join(fire)))
-    check_divergence(st, ts, prices)
+        send(message(hhmm, prices, levels))
 
 
 def main():

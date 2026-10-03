@@ -1,0 +1,42 @@
+[
+    {
+        "timestamp": "2026-10-04 00:25:03",
+        "main_index": [
+            {
+                "index": "NIFTY 50",
+                "symbol": "NSE_INDEX|Nifty 50",
+                "ltp": 22422
+            },
+            {
+                "index": "BANK NIFTY",
+                "symbol": "NSE_INDEX|Nifty Bank",
+                "ltp": 54451
+            },
+            {
+                "index": "MIDCAP",
+                "symbol": "NSE_INDEX|NIFTY MID SELECT",
+                "ltp": 13563
+            },
+            {
+                "index": "FINNIFTY",
+                "symbol": "NSE_INDEX|Nifty Fin Service",
+                "ltp": 24556
+            },
+            {
+                "index": "SENSEX",
+                "symbol": "BSE_INDEX|SENSEX",
+                "ltp": 71910
+            },
+            {
+                "index": "NIFTY NEXT 50",
+                "symbol": "NSE_INDEX|Nifty Next 50",
+                "ltp": 68981
+            },
+            {
+                "index": "BANKEX",
+                "symbol": "BSE_INDEX|BANKEX",
+                "ltp": 61356
+            }
+        ]
+    }
+]

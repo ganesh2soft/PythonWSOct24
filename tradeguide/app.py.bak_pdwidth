@@ -67,9 +67,6 @@ import upstoxapiservices
 import db_read
 from db_config import Config
 import pandas as pd
-# Log full DataFrames (all columns) regardless of terminal window width
-pd.set_option('display.max_columns', None)
-pd.set_option('display.width', 250)
 import json
 from flask_sqlalchemy import SQLAlchemy
 import traceback
@@ -81,9 +78,6 @@ from flask_cors import CORS
 import pytz
 import logging
 data_file = "data.json"
-# All 5-minute output JSON files live in json_output/ (data.json and symbolnamemapping.json stay in root)
-OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'json_output')
-os.makedirs(OUT_DIR, exist_ok=True)
 
 db = SQLAlchemy() 
 
@@ -290,7 +284,7 @@ def feedindicators():
             'stdpivot': sentiment
         }
 
-        trendfile = os.path.join(OUT_DIR, 'trend.json')
+        trendfile = 'trend.json'
 
         # Read the existing file, append the new data, and write it back
         try:
@@ -325,7 +319,7 @@ def feedindicators():
         'usbondyield':usbondyield,
        
         }
-        trendfile = os.path.join(OUT_DIR, 'trend.json')
+        trendfile = 'trend.json'
 
         # Read the existing file, append the new data, and write it back
         try:
@@ -347,7 +341,7 @@ def feedindicators():
 
 @app.route('/api/trend', methods=['GET'])
 def get_trend_data():
-    trendfile = os.path.join(OUT_DIR, 'trend.json')
+    trendfile = 'trend.json'
     if os.path.exists(trendfile):
         # Open the file and read the data
         with open(trendfile, 'r') as f:
@@ -566,7 +560,7 @@ def indiavixcalc(access_token):
             'nifty_futures':nifty_futures
         }
 
-    trendfile = os.path.join(OUT_DIR, 'trend.json')
+    trendfile = 'trend.json'
     try:
         with open(trendfile, 'r') as f:
             existing_data = json.load(f)  # Load existing data
@@ -628,7 +622,7 @@ def niftyohlc5min(access_token):
             }
 
             # Write to JSON file
-            file_name = os.path.join(OUT_DIR, 'nifty5min.json')
+            file_name = 'nifty5min.json'
 
             # Check if the file exists and load the existing data
             try:
@@ -658,7 +652,7 @@ def niftyohlc5min(access_token):
 def banktop5tofrontend():
     try:
         # Read the banktop5.json file
-        with open(os.path.join(OUT_DIR, 'banktop5.json'), 'r') as json_file:
+        with open('banktop5.json', 'r') as json_file:
             banktop_data = json.load(json_file)
         
         # Return the data as JSON response
@@ -672,7 +666,7 @@ def banktop5tofrontend():
 ############################################################################
 @app.route('/api/getpremium', methods=['GET'])
 def premium():
-    datafile = os.path.join(OUT_DIR, 'premium.json')  # Update path if needed
+    datafile = 'premium.json'  # Update path if needed
 
     if not os.path.exists(datafile):
         return jsonify({'error': 'File not found'}), 404
@@ -754,7 +748,7 @@ def findpremium(access_token):
         'sample_call_tot': sample_call_tot,
         'sample_put_tot': sample_put_tot,
     }     
-    premiumfile = os.path.join(OUT_DIR, 'premium.json')
+    premiumfile = 'premium.json'
     try:
         with open(premiumfile, 'r') as f:
             existing_data = json.load(f)  # Load existing data
@@ -831,10 +825,10 @@ def mainindexfun(access_token):
     from datetime import datetime
     try:
         main_index=mainindex(access_token)
-        mainindexfile = os.path.join(OUT_DIR, 'mainindex.json')
+        mainindexfile = 'mainindex.json'
         # Load existing data or create new list
-        if os.path.exists(os.path.join(OUT_DIR, 'mainindex.json')):
-            with open(os.path.join(OUT_DIR, 'mainindex.json'), 'r') as json_file:
+        if os.path.exists('mainindex.json'):
+            with open('mainindex.json', 'r') as json_file:
                 existing_data = json.load(json_file)
                 if not isinstance(existing_data, list):
                     existing_data = []
@@ -851,7 +845,7 @@ def mainindexfun(access_token):
             # Append and save the updated list
         existing_data.append(result)
             
-        with open(os.path.join(OUT_DIR, 'mainindex.json'), 'w') as json_file:
+        with open('mainindex.json', 'w') as json_file:
             json.dump(existing_data, json_file, indent=4)
 
     except Exception as e:
@@ -867,11 +861,11 @@ def mainindexfun(access_token):
 @app.route('/api/getmainindex', methods=['GET'])
 def get_main_index_data():
     try:
-        if not os.path.exists(os.path.join(OUT_DIR, 'mainindex.json')):
+        if not os.path.exists('mainindex.json'):
             return jsonify({'error': 'File not found'}), 404
             # If the file doesn't exist, create an empty list
            
-        with open(os.path.join(OUT_DIR, 'mainindex.json'), 'r') as json_file:
+        with open('mainindex.json', 'r') as json_file:
                 main_index = json.load(json_file)
 
         return jsonify(main_index)
@@ -886,10 +880,10 @@ def midcaptop5tofrontend():
     try:
         
 
-        if not os.path.exists(os.path.join(OUT_DIR, 'midcaptop5.json')):
+        if not os.path.exists('midcaptop5.json'):
             return jsonify({'error': 'Data file not found'}), 404
 
-        with open(os.path.join(OUT_DIR, 'midcaptop5.json'), 'r') as json_file:
+        with open('midcaptop5.json', 'r') as json_file:
             midcap_data = json.load(json_file)
 
         return jsonify(midcap_data)
@@ -919,8 +913,8 @@ def findbanktop(access_token):
                 #stock['company_name'] = "Unknown Company"  # Fallback in case symbol is not found
         
              
-        if os.path.exists(os.path.join(OUT_DIR, 'banktop5.json')):
-            with open(os.path.join(OUT_DIR, 'banktop5.json'), 'r') as json_file:
+        if os.path.exists('banktop5.json'):
+            with open('banktop5.json', 'r') as json_file:
                 existing_data = json.load(json_file)
                 if not isinstance(existing_data, list):  # Ensure it's a list
                     existing_data = []
@@ -935,7 +929,7 @@ def findbanktop(access_token):
                          
                  
         existing_data.append(result)
-        with open(os.path.join(OUT_DIR, 'banktop5.json'), 'w') as json_file:
+        with open('banktop5.json', 'w') as json_file:
             json.dump(existing_data, json_file, indent=4)
         
         
@@ -968,8 +962,8 @@ def findmidcaptop(access_token):
             stock['symbol'] = symbolnamemapping.get(symbol, "Unknown Symbol")
         
         # Load existing data or create new list
-        if os.path.exists(os.path.join(OUT_DIR, 'midcaptop5.json')):
-            with open(os.path.join(OUT_DIR, 'midcaptop5.json'), 'r') as json_file:
+        if os.path.exists('midcaptop5.json'):
+            with open('midcaptop5.json', 'r') as json_file:
                 existing_data = json.load(json_file)
                 if not isinstance(existing_data, list):
                     existing_data = []
@@ -986,7 +980,7 @@ def findmidcaptop(access_token):
         # Append and save the updated list
         existing_data.append(result)
         
-        with open(os.path.join(OUT_DIR, 'midcaptop5.json'), 'w') as json_file:
+        with open('midcaptop5.json', 'w') as json_file:
             json.dump(existing_data, json_file, indent=4)
 
     except Exception as e:
@@ -1020,8 +1014,8 @@ def findniftytop(access_token):
         
         # Log the structure of the modified niftytop_data for debugging purposes
         app.logger.info(f"Structure of modified niftytop_data: {type(niftytop_data)}, {niftytop_data}")
-        if os.path.exists(os.path.join(OUT_DIR, 'niftytop10.json')):
-            with open(os.path.join(OUT_DIR, 'niftytop10.json'), 'r') as json_file:
+        if os.path.exists('niftytop10.json'):
+            with open('niftytop10.json', 'r') as json_file:
                 existing_data = json.load(json_file)
                 if not isinstance(existing_data, list):  # Ensure it's a list
                     existing_data = []
@@ -1036,8 +1030,8 @@ def findniftytop(access_token):
             "top_nifty": niftytop_data
         }
         existing_data.append(result)
-        # Write the modified niftytop_data to os.path.join(OUT_DIR, 'niftytop10.json') file
-        with open(os.path.join(OUT_DIR, 'niftytop10.json'), 'w') as json_file:
+        # Write the modified niftytop_data to 'niftytop10.json' file
+        with open('niftytop10.json', 'w') as json_file:
             json.dump(existing_data, json_file, indent=4)
       
     except Exception as e:
@@ -1052,7 +1046,7 @@ def findniftytop(access_token):
 def niftytop10tofrontend():
     try:
         # Read the niftytop10.json file
-        with open(os.path.join(OUT_DIR, 'niftytop10.json'), 'r') as json_file:
+        with open('niftytop10.json', 'r') as json_file:
             niftytop_data = json.load(json_file)
         
         # Return the data as JSON response
@@ -1144,8 +1138,8 @@ def fewstrikes(access_token,expiry1):
     }
 
     # Load existing data or initialize
-    if os.path.exists(os.path.join(OUT_DIR, 'covering.json')):
-        with open(os.path.join(OUT_DIR, 'covering.json'), "r") as json_file:
+    if os.path.exists("covering.json"):
+        with open("covering.json", "r") as json_file:
             try:
                 existing_data = json.load(json_file)
                 if not isinstance(existing_data, list):
@@ -1159,7 +1153,7 @@ def fewstrikes(access_token,expiry1):
     existing_data.append(new_entry)
 
     # Save back to file
-    with open(os.path.join(OUT_DIR, 'covering.json'), "w") as json_file:
+    with open("covering.json", "w") as json_file:
         json.dump(existing_data, json_file, indent=4)
 
     print("✅ Appended to covering.json")
@@ -1286,7 +1280,7 @@ def processpcr(optdict,exp):
             'pcrtrend':pcrtrend
     }
     
-    trendfile = os.path.join(OUT_DIR, 'trend.json')
+    trendfile = 'trend.json'
     try:
         with open(trendfile, 'r') as f:
             existing_data = json.load(f)  # Load existing data
@@ -1621,7 +1615,7 @@ def testme():
 @app.route('/api/getniftyhl', methods=['GET'])
 def getniftyhl():
     # Read the data from the JSON file
-    file_name = os.path.join(OUT_DIR, 'nifty5min.json')
+    file_name = 'nifty5min.json'
     if os.path.exists(file_name):
         with open(file_name, 'r') as file:
             data = json.load(file)

@@ -179,11 +179,8 @@ def get_india_vix_spot_future(gtok):
        # print("Account ",api_response3)
         # Check if data exists for the future instrument
         # Check if data exists for the future instrument
-        future_inst_price = None
-        # Response is keyed by trading symbol (e.g. 'NSE_FO:NIFTY26OCTFUT'), so take the
-        # single returned entry instead of hard-coding the month (works after every rollover)
-        if api_response3.data:
-            future_inst_price = list(api_response3.data.values())[0].last_price
+        if api_response3.data and 'NSE_FO:NIFTY26SEPFUT' in api_response3.data:
+            future_inst_price = api_response3.data['NSE_FO:NIFTY26SEPFUT'].last_price
             
             # Check if future_inst_price is None or if the data is missing
             if future_inst_price is not None:

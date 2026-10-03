@@ -28,7 +28,7 @@ import time
 from datetime import datetime, date
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-MAININDEX = os.path.join(BASE, 'json_output', 'mainindex.json')
+MAININDEX = os.path.join(BASE, 'mainindex.json')
 LEVELS = os.path.join(BASE, 'tgrepo', 'due_levels.json')
 ENVFILE = os.path.join(BASE, 'asgboom.env')
 STATEFILE = os.path.join(BASE, 'tgrepo', 'asgboom_state.json')
