@@ -31,5 +31,38 @@
                 "ltp": 948
             }
         ]
+    },
+    {
+        "timestamp": "2026-10-04 01:15:01",
+        "top_banks": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 721
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1311
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1217
+            },
+            {
+                "symbol": "Kotak M Bank Ltd.",
+                "ltp": 418
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 954
+            },
+            {
+                "symbol": "Bajaj FinServ",
+                "ltp": 1733
+            },
+            {
+                "symbol": "Bajaj Finance Ltd.",
+                "ltp": 948
+            }
+        ]
     }
 ]
