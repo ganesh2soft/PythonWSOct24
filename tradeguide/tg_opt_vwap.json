@@ -1,0 +1,9 @@
+{
+    "_note": "tg-opt-vwap settings. Read every run, no restart needed.",
+    "strike_step": 50,
+    "use_each_side": 2,
+    "track_each_side": 6,
+    "hold_bars": 4,
+    "min_score": 4,
+    "vol_avg_bars": 10
+}

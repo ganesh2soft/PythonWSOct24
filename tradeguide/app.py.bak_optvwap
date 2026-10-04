@@ -1282,66 +1282,6 @@ def sectorsfun(access_token):
         app.logger.error(f"Error in sectorsfun: {str(e)}")
         traceback.print_exc()
 
-def optvwapfun(access_token, expiry1):
-    """tg-opt-vwap snapshot: 5 CE + 5 PE (2 ITM, ATM, 2 OTM) vs their exchange VWAP, moving ATM,
-    anchored VWAP from every new Nifty day low/high. Logic in optvwap.py, settings in tg_opt_vwap.json."""
-    from upstoxapiservices import getoptquotes
-    import optvwap
-    try:
-        cfgfile = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tg_opt_vwap.json')
-        cfg = {}
-        if os.path.exists(cfgfile):
-            with open(cfgfile, 'r') as f:
-                cfg = {k: v for k, v in json.load(f).items() if not k.startswith('_')}
-        c = dict(optvwap.DEFAULT_CFG)
-        c.update(cfg)
-        step, trk = int(c['strike_step']), int(c['track_each_side'])
-
-        optbook = upstoxapiservices.options_status(access_token, expiry1)
-        if not hasattr(optbook, 'data') or not optbook.data:
-            app.logger.warning('OptVWAP: no option chain data')
-            return
-        chain, spot = {}, None
-        for row in optbook.data:
-            k = int(round(row.strike_price))
-            spot = row.underlying_spot_price or spot
-            chain[k] = {'ce_key': row.call_options.instrument_key, 'pe_key': row.put_options.instrument_key,
-                        'ce_ltp': row.call_options.market_data.ltp, 'pe_ltp': row.put_options.market_data.ltp}
-        atm, _ = optvwap.pick_atm(chain, spot, step)
-        if atm is None:
-            app.logger.warning('OptVWAP: ATM not found')
-            return
-        track = [atm + i * step for i in range(-trk, trk + 1) if (atm + i * step) in chain]
-        nkey = 'NSE_INDEX|Nifty 50'
-        keys = [nkey] + [chain[k]['ce_key'] for k in track] + [chain[k]['pe_key'] for k in track]
-        quotes = getoptquotes(access_token, keys)
-
-        outfile = os.path.join(OUT_DIR, 'optvwap.json')
-        existing = []
-        if os.path.exists(outfile):
-            with open(outfile, 'r') as f:
-                existing = json.load(f)
-                if not isinstance(existing, list):
-                    existing = []
-        now = datetime.now()
-        today = now.strftime('%Y-%m-%d')
-        todays = [s for s in existing if s.get('timestamp', '').startswith(today)]
-        snap = optvwap.build_snapshot(chain, spot, quotes, quotes.get(nkey, {}), todays, c,
-                                      now.strftime('%Y-%m-%d %H:%M:%S'), now.strftime('%H:%M'))
-        if snap is None:
-            app.logger.warning('OptVWAP: snapshot not built')
-            return
-        existing.append(snap)
-        with open(outfile, 'w') as f:
-            json.dump(existing, f, indent=1)
-        sc, sg = snap['scores'], snap['signal']
-        app.logger.info(f"OptVWAP (tg-opt-vwap) completed: ATM={snap['nifty']['atm']} CE above={sc['ce_day']} "
-                        f"PE above={sc['pe_day']} anchor={snap['anchor']['dir']}@{snap['anchor']['time']} "
-                        f"anc_score={sc['anc_score']} call_ok={sg['call_ok']} put_ok={sg['put_ok']} verdict={sg['verdict']}")
-    except Exception as e:
-        app.logger.error(f"Error in optvwapfun: {str(e)}")
-        traceback.print_exc()
-
 def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
         
         ##### Call the below indiavixcalc  to record the vix
@@ -1353,7 +1293,6 @@ def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
         findpremium(access_token)
         mainindexfun(access_token)
         sectorsfun(access_token)
-        optvwapfun(access_token, expiry1)
         fewstrikes(access_token,expiry1)
         expiry1=expiry1
         expiry2=expiry2

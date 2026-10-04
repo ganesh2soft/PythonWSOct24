@@ -46168,3 +46168,247 @@ HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI1087","mess
  'status': 'success'}
 2026-10-04 01:10:07,279 - app - INFO - Found Nifty Futures/SYmbols details 
 2026-10-04 01:10:07,308 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWMxNThmZWRjYmZkMDUwY2FmNjZjOTYiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc5MTA1NjEyNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkxMDY0ODAwfQ.5Ju-sp8fUv_yPGERixatLO0zMh6BbZ-mk3_Gq6pUyCg'})"
+2026-10-04 01:15:00,878 - root - INFO - Future Instrument Price: 22520.0
+2026-10-04 01:15:00,879 - root - INFO - Current India VIX: 14.46
+2026-10-04 01:15:00,884 - app - INFO - IVIX: 14.46, Nifty50: 22421.95, Nifty Futures: 22520.0
+2026-10-04 01:15:00,886 - app - INFO - India VIX completed
+2026-10-04 01:15:01,178 - app - INFO - Nifty OHLC completed
+2026-10-04 01:15:01,819 - root - INFO - Bank Nifty top 5 Upstox Service Completed
+2026-10-04 01:15:01,828 - app - INFO - Bank Top 5 completed
+2026-10-04 01:15:02,606 - root - INFO - Nifty 50 top 10 Upstox Service Completed
+2026-10-04 01:15:02,611 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 721}, {'symbol': 'Reliance Industries.', 'ltp': 1168}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1311}, {'symbol': 'Infosys Ltd.', 'ltp': 1035}, {'symbol': 'ITC Ltd.', 'ltp': 256}, {'symbol': 'Tata TCS', 'ltp': 2075}, {'symbol': 'L&T  Ltd.', 'ltp': 3693}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1217}, {'symbol': 'SBI Bank', 'ltp': 954}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1741}]
+2026-10-04 01:15:02,615 - app - INFO - Nifty Top 10 completed
+2026-10-04 01:15:03,244 - root - INFO - Midcap Upstox Service Completed
+2026-10-04 01:15:03,254 - app - INFO - Midcap Top 5 completed
+2026-10-04 01:15:03,256 - app - DEBUG - Inside premiumstudy with expiry date = 2026-10-06
+2026-10-04 01:15:03,635 - app - INFO - Total Call premium 14370
+2026-10-04 01:15:03,636 - app - INFO - Total Put Premium 99918
+2026-10-04 01:15:03,641 - app - INFO - Lower Apex: 21400
+2026-10-04 01:15:03,642 - app - INFO - Upper Apex: 23400
+2026-10-04 01:15:03,646 - app - DEBUG - Stage1:Dataframe filtered for strike price multiples of 100 and within the apex range
+2026-10-04 01:15:03,648 - app - DEBUG - Samples_Total Call LTP: 6630
+2026-10-04 01:15:03,648 - app - DEBUG - Samples_Total Put LTP: 5540
+2026-10-04 01:15:03,649 - app - INFO - Premium study completed
+2026-10-04 01:15:04,270 - root - INFO - Main Indices Fetched Successfully
+2026-10-04 01:15:04,281 - app - INFO - Main Index completed
+2026-10-04 01:15:04,655 - root - INFO - Sectors fetched: 16 of 16 instruments
+2026-10-04 01:15:04,670 - app - INFO - Sectors (tg-nifty-sec) completed
+2026-10-04 01:15:05,114 - app - DEBUG - Inside Few Strikes Dataframe                                                      0
+0    {'call_options': {'instrument_key': 'NSE_FO|40...
+1    {'call_options': {'instrument_key': 'NSE_FO|40...
+2    {'call_options': {'instrument_key': 'NSE_FO|40...
+3    {'call_options': {'instrument_key': 'NSE_FO|40...
+4    {'call_options': {'instrument_key': 'NSE_FO|40...
+..                                                 ...
+111  {'call_options': {'instrument_key': 'NSE_FO|40...
+112  {'call_options': {'instrument_key': 'NSE_FO|40...
+113  {'call_options': {'instrument_key': 'NSE_FO|40...
+114  {'call_options': {'instrument_key': 'NSE_FO|40...
+115  {'call_options': {'instrument_key': 'NSE_FO|40...
+
+[116 rows x 1 columns]
+2026-10-04 01:15:05,115 - app - DEBUG - Type of opt_df <class 'pandas.core.frame.DataFrame'>
+2026-10-04 01:15:05,115 - app - DEBUG - Print columns of opt_df RangeIndex(start=0, stop=1, step=1)
+2026-10-04 01:15:05,119 - app - DEBUG - !!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-10-04 01:15:05,119 - app - DEBUG - sup04=22000 sup03=22100 sup02=22200 sup01=22300 roundsp=22400 res01=22500 res02=22600 res03=22700 res04=22800
+2026-10-04 01:15:05,120 - app - INFO - Sorted strike Levels: [22000, 22100, 22200, 22300, 22400, 22500, 22600, 22700, 22800]
+2026-10-04 01:15:05,121 - app - DEBUG - End of Few Strikes Dataframe
+2026-10-04 01:15:05,138 - app - DEBUG - Filtered DataFrame with Relevant Data:
+    strike_price    call_oi      put_oi  call_volume  put_volume  call_ltp  put_ltp
+39       22000.0   776425.0  10766795.0      4854200   138225100    472.50    19.00
+41       22100.0   232635.0   3741725.0      3024320    95177875    379.40    28.55
+43       22200.0   863655.0   6582355.0     19214325   143638300    297.30    45.10
+45       22300.0  3235180.0   8348925.0     67756715   185791905    220.80    68.30
+47       22400.0  3635255.0   4369625.0    108326660   176899450    156.95   103.60
+49       22500.0  6903845.0   5007990.0    180177920   228384260    104.05   151.60
+51       22600.0  6140420.0   2630290.0    206398270   145398695     65.85   211.80
+53       22700.0  9734205.0   2740595.0    166351510    47374665     39.95   287.55
+55       22800.0  9154275.0   1834105.0    122405855    16041740     25.10   370.35
+2026-10-04 01:15:05,139 - app - DEBUG - End of Few Strikes Dataframe
+2026-10-04 01:15:05,146 - app - INFO - Appended to covering.json
+2026-10-04 01:15:05,594 - app - INFO - Processed PCR data and saved to JSON file
+2026-10-04 01:15:05,594 - app - INFO - PCR calculation completed
+2026-10-04 01:15:06,100 - app - INFO - Processed PCR data and saved to JSON file
+2026-10-04 01:15:06,101 - app - INFO - PCR calculation completed
+2026-10-04 01:15:06,576 - app - INFO - Processed PCR data and saved to JSON file
+2026-10-04 01:15:06,577 - app - INFO - PCR calculation completed
+2026-10-04 01:15:06,934 - root - DEBUG - Raw response for FUTURESSSSS NSE_FO|48704: {'data': {'NSE_FO:NIFTY26OCTFUT': {'average_price': 22502.34,
+                                   'depth': {'buy': [{'orders': 2,
+                                                      'price': 22515.7,
+                                                      'quantity': 130},
+                                                     {'orders': 1,
+                                                      'price': 22514.2,
+                                                      'quantity': 65},
+                                                     {'orders': 1,
+                                                      'price': 22514.1,
+                                                      'quantity': 65},
+                                                     {'orders': 1,
+                                                      'price': 22513.9,
+                                                      'quantity': 65},
+                                                     {'orders': 2,
+                                                      'price': 22513.7,
+                                                      'quantity': 195}],
+                                             'sell': [{'orders': 4,
+                                                       'price': 22520.0,
+                                                       'quantity': 2600},
+                                                      {'orders': 1,
+                                                       'price': 22524.2,
+                                                       'quantity': 65},
+                                                      {'orders': 5,
+                                                       'price': 22525.0,
+                                                       'quantity': 390},
+                                                      {'orders': 1,
+                                                       'price': 22529.3,
+                                                       'quantity': 65},
+                                                      {'orders': 2,
+                                                       'price': 22529.9,
+                                                       'quantity': 130}]},
+                                   'instrument_token': 'NSE_FO|48704',
+                                   'last_price': 22520.0,
+                                   'last_trade_time': '1790849399778',
+                                   'lower_circuit_limit': 20277.3,
+                                   'net_change': -187.3,
+                                   'ohlc': {'close': 22520.0,
+                                            'high': 22702.4,
+                                            'low': 22321.0,
+                                            'open': 22630.0},
+                                   'oi': 19680440.0,
+                                   'oi_day_high': 19680440.0,
+                                   'oi_day_low': 17996810.0,
+                                   'symbol': 'NIFTY26OCTFUT',
+                                   'timestamp': '2026-10-04T01:15:06.786+05:30',
+                                   'total_buy_quantity': 120640.0,
+                                   'total_sell_quantity': 269555.0,
+                                   'upper_circuit_limit': 24783.3,
+                                   'volume': 5806710}},
+ 'status': 'success'}
+2026-10-04 01:15:06,943 - app - INFO - Found Nifty Futures/SYmbols details 
+2026-10-04 01:15:06,959 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWMxNThmZWRjYmZkMDUwY2FmNjZjOTYiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc5MTA1NjEyNiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkxMDY0ODAwfQ.5Ju-sp8fUv_yPGERixatLO0zMh6BbZ-mk3_Gq6pUyCg'})"
+2026-10-04 22:35:17,055 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-10-04 22:35:17,055 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-10-04 22:36:08,480 - app - INFO - Reached callback
+2026-10-04 22:36:08,713 - root - INFO - Profile Upstox Service progresses
+2026-10-04 22:36:09,100 - app - INFO - Login OK via callback
+2026-10-04 22:36:09,127 - app - INFO - Scheduler start requested from callback
+2026-10-04 22:36:09,181 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2026 22:36:09] "GET /callback?code=bG6XBf HTTP/1.1" 200 -
+2026-10-04 22:36:09,273 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2026 22:36:09] "[36mGET /static/pagehead.jpg HTTP/1.1[0m" 304 -
+2026-10-04 22:36:09,334 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2026 22:36:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-10-04 22:40:00,796 - root - INFO - Future Instrument Price: 22520.0
+2026-10-04 22:40:00,797 - root - INFO - Current India VIX: 14.46
+2026-10-04 22:40:00,799 - app - INFO - IVIX: 14.46, Nifty50: 22421.95, Nifty Futures: 22520.0
+2026-10-04 22:40:00,802 - app - INFO - India VIX completed
+2026-10-04 22:40:01,163 - app - INFO - Nifty OHLC completed
+2026-10-04 22:40:01,749 - root - INFO - Bank Nifty top 5 Upstox Service Completed
+2026-10-04 22:40:01,764 - app - INFO - Bank Top 5 completed
+2026-10-04 22:40:02,543 - root - INFO - Nifty 50 top 10 Upstox Service Completed
+2026-10-04 22:40:02,548 - app - INFO - Structure of modified niftytop_data: <class 'list'>, [{'symbol': 'HDFC Bank Ltd.', 'ltp': 721}, {'symbol': 'Reliance Industries.', 'ltp': 1168}, {'symbol': 'ICICI Bank Ltd.', 'ltp': 1311}, {'symbol': 'Infosys Ltd.', 'ltp': 1035}, {'symbol': 'ITC Ltd.', 'ltp': 256}, {'symbol': 'Tata TCS', 'ltp': 2075}, {'symbol': 'L&T  Ltd.', 'ltp': 3693}, {'symbol': 'Axis Bank Ltd.', 'ltp': 1217}, {'symbol': 'SBI Bank', 'ltp': 954}, {'symbol': 'Bharti Airtel Ltd.', 'ltp': 1741}]
+2026-10-04 22:40:02,551 - app - INFO - Nifty Top 10 completed
+2026-10-04 22:40:03,314 - root - INFO - Midcap Upstox Service Completed
+2026-10-04 22:40:03,328 - app - INFO - Midcap Top 5 completed
+2026-10-04 22:40:03,328 - app - DEBUG - Inside premiumstudy with expiry date = 2026-10-06
+2026-10-04 22:40:03,783 - app - INFO - Total Call premium 14370
+2026-10-04 22:40:03,784 - app - INFO - Total Put Premium 99918
+2026-10-04 22:40:03,894 - app - INFO - Lower Apex: 21400
+2026-10-04 22:40:03,894 - app - INFO - Upper Apex: 23400
+2026-10-04 22:40:03,943 - app - DEBUG - Stage1:Dataframe filtered for strike price multiples of 100 and within the apex range
+2026-10-04 22:40:03,955 - app - DEBUG - Samples_Total Call LTP: 6630
+2026-10-04 22:40:03,955 - app - DEBUG - Samples_Total Put LTP: 5540
+2026-10-04 22:40:03,960 - app - INFO - Premium study completed
+2026-10-04 22:40:04,676 - root - INFO - Main Indices Fetched Successfully
+2026-10-04 22:40:04,689 - app - INFO - Main Index completed
+2026-10-04 22:40:05,029 - root - INFO - Sectors fetched: 16 of 16 instruments
+2026-10-04 22:40:05,049 - app - INFO - Sectors (tg-nifty-sec) completed, base=open
+2026-10-04 22:40:05,880 - root - INFO - Option quotes fetched: 27 of 27 instruments
+2026-10-04 22:40:05,895 - app - INFO - OptVWAP (tg-opt-vwap) completed: ATM=22450 CE above=2 PE above=3 anchor=0@22:40 anc_score=0 call_ok=False put_ok=False verdict=Mixed / sideways
+2026-10-04 22:40:06,299 - app - DEBUG - Inside Few Strikes Dataframe                                                      0
+0    {'call_options': {'instrument_key': 'NSE_FO|40...
+1    {'call_options': {'instrument_key': 'NSE_FO|40...
+2    {'call_options': {'instrument_key': 'NSE_FO|40...
+3    {'call_options': {'instrument_key': 'NSE_FO|40...
+4    {'call_options': {'instrument_key': 'NSE_FO|40...
+..                                                 ...
+111  {'call_options': {'instrument_key': 'NSE_FO|40...
+112  {'call_options': {'instrument_key': 'NSE_FO|40...
+113  {'call_options': {'instrument_key': 'NSE_FO|40...
+114  {'call_options': {'instrument_key': 'NSE_FO|40...
+115  {'call_options': {'instrument_key': 'NSE_FO|40...
+
+[116 rows x 1 columns]
+2026-10-04 22:40:06,299 - app - DEBUG - Type of opt_df <class 'pandas.core.frame.DataFrame'>
+2026-10-04 22:40:06,299 - app - DEBUG - Print columns of opt_df RangeIndex(start=0, stop=1, step=1)
+2026-10-04 22:40:06,325 - app - DEBUG - !!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-10-04 22:40:06,325 - app - DEBUG - sup04=22000 sup03=22100 sup02=22200 sup01=22300 roundsp=22400 res01=22500 res02=22600 res03=22700 res04=22800
+2026-10-04 22:40:06,326 - app - INFO - Sorted strike Levels: [22000, 22100, 22200, 22300, 22400, 22500, 22600, 22700, 22800]
+2026-10-04 22:40:06,326 - app - DEBUG - End of Few Strikes Dataframe
+2026-10-04 22:40:06,384 - app - DEBUG - Filtered DataFrame with Relevant Data:
+    strike_price    call_oi      put_oi  call_volume  put_volume  call_ltp  put_ltp
+39       22000.0   776425.0  10766795.0      4854200   138225100    472.50    19.00
+41       22100.0   232635.0   3741725.0      3024320    95177875    379.40    28.55
+43       22200.0   863655.0   6582355.0     19214325   143638300    297.30    45.10
+45       22300.0  3235180.0   8348925.0     67756715   185791905    220.80    68.30
+47       22400.0  3635255.0   4369625.0    108326660   176899450    156.95   103.60
+49       22500.0  6903845.0   5007990.0    180177920   228384260    104.05   151.60
+51       22600.0  6140420.0   2630290.0    206398270   145398695     65.85   211.80
+53       22700.0  9734205.0   2740595.0    166351510    47374665     39.95   287.55
+55       22800.0  9154275.0   1834105.0    122405855    16041740     25.10   370.35
+2026-10-04 22:40:06,384 - app - DEBUG - End of Few Strikes Dataframe
+2026-10-04 22:40:06,390 - app - INFO - Appended to covering.json
+2026-10-04 22:40:06,932 - app - INFO - Processed PCR data and saved to JSON file
+2026-10-04 22:40:06,933 - app - INFO - PCR calculation completed
+2026-10-04 22:40:07,849 - app - INFO - Processed PCR data and saved to JSON file
+2026-10-04 22:40:07,850 - app - INFO - PCR calculation completed
+2026-10-04 22:40:08,294 - app - INFO - Processed PCR data and saved to JSON file
+2026-10-04 22:40:08,294 - app - INFO - PCR calculation completed
+2026-10-04 22:40:08,698 - root - DEBUG - Raw response for FUTURESSSSS NSE_FO|48704: {'data': {'NSE_FO:NIFTY26OCTFUT': {'average_price': 22502.34,
+                                   'depth': {'buy': [{'orders': 2,
+                                                      'price': 22515.7,
+                                                      'quantity': 130},
+                                                     {'orders': 1,
+                                                      'price': 22514.2,
+                                                      'quantity': 65},
+                                                     {'orders': 1,
+                                                      'price': 22514.1,
+                                                      'quantity': 65},
+                                                     {'orders': 1,
+                                                      'price': 22513.9,
+                                                      'quantity': 65},
+                                                     {'orders': 2,
+                                                      'price': 22513.7,
+                                                      'quantity': 195}],
+                                             'sell': [{'orders': 4,
+                                                       'price': 22520.0,
+                                                       'quantity': 2600},
+                                                      {'orders': 1,
+                                                       'price': 22524.2,
+                                                       'quantity': 65},
+                                                      {'orders': 5,
+                                                       'price': 22525.0,
+                                                       'quantity': 390},
+                                                      {'orders': 1,
+                                                       'price': 22529.3,
+                                                       'quantity': 65},
+                                                      {'orders': 2,
+                                                       'price': 22529.9,
+                                                       'quantity': 130}]},
+                                   'instrument_token': 'NSE_FO|48704',
+                                   'last_price': 22520.0,
+                                   'last_trade_time': '1790849399778',
+                                   'lower_circuit_limit': 20277.3,
+                                   'net_change': -187.3,
+                                   'ohlc': {'close': 22520.0,
+                                            'high': 22702.4,
+                                            'low': 22321.0,
+                                            'open': 22630.0},
+                                   'oi': 19680440.0,
+                                   'oi_day_high': 19680440.0,
+                                   'oi_day_low': 17996810.0,
+                                   'symbol': 'NIFTY26OCTFUT',
+                                   'timestamp': '2026-10-04T22:40:08.614+05:30',
+                                   'total_buy_quantity': 120640.0,
+                                   'total_sell_quantity': 269555.0,
+                                   'upper_circuit_limit': 24783.3,
+                                   'volume': 5806710}},
+ 'status': 'success'}
+2026-10-04 22:40:08,702 - app - INFO - Found Nifty Futures/SYmbols details 
+2026-10-04 22:40:08,723 - schedule - DEBUG - Cancelling job "Job(interval=1, unit=days, do=job, args=(), kwargs={'access_token': 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyVUNSUkgiLCJqdGkiOiI2YWMyODc4MGMyYjI4YTdjNzk5MTdlODYiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc5MTEzMzU2OCwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzkxMTUxMjAwfQ.GKRuSJ0ZDz2pBZNJsGQ47Ya5Z8pS2NkEirm8hLlpHx4'})"

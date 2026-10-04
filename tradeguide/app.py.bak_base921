@@ -1170,8 +1170,6 @@ def fewstrikes(access_token,expiry1):
 ##################################################################################################
 # tg-nifty-sec: snapshot of sector indices + top peers -> json_output/sectors.json
 def sectorsfun(access_token):
-    """tg-nifty-sec snapshot. Baseline for intraday change = today's 09:21 snapshot, else 09:26
-    (09:16 skipped as too noisy); if neither exists (program started late), the day's opening price."""
     from upstoxapiservices import getsectors
     try:
         cfgfile = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tg_nifty_sec.json')
@@ -1185,56 +1183,13 @@ def sectorsfun(access_token):
             keys.extend(it.get('alt_keys', []))
         quotes = getsectors(access_token, keys)
 
-        outfile = os.path.join(OUT_DIR, 'sectors.json')
-        existing = []
-        if os.path.exists(outfile):
-            with open(outfile, 'r') as f:
-                existing = json.load(f)
-                if not isinstance(existing, list):
-                    existing = []
-
-        now = datetime.now()
-        today = now.strftime('%Y-%m-%d')
-        hhmm = now.strftime('%H:%M')
-
-        # Baseline snapshot: earliest of today's 09:21 / 09:26 runs (allow a 1-minute delay)
-        base_snap, base_ref = None, None
-        for want, window in (('09:21', ('09:21', '09:22')), ('09:26', ('09:26', '09:27'))):
-            for s in existing:
-                ts = s.get('timestamp', '')
-                if ts.startswith(today) and ts[11:16] in window:
-                    base_snap, base_ref = s, want
-                    break
-            if base_snap:
-                break
-        if base_snap is None and hhmm in ('09:21', '09:22'):
-            base_ref = '09:21 (this run)'
-        elif base_snap is None and hhmm in ('09:26', '09:27'):
-            base_ref = '09:26 (this run)'
-
         def pct(a, b):
             return round((a - b) / b * 100, 2) if (a is not None and b) else None
 
-        base_ltp = {}
-        base_nifty = None
-        if base_snap is not None:
-            base_nifty = base_snap.get('nifty', {}).get('ltp')
-            for r in base_snap.get('items', []):
-                base_ltp[r['name']] = r.get('ltp')
-
         nq = quotes.get(nkey, {})
         nifty_ltp = nq.get('ltp')
-        if base_snap is not None:
-            nb = base_nifty
-        elif base_ref:  # this run is the 09:21/09:26 run itself
-            nb = nifty_ltp
-        else:
-            nb = nq.get('open')
-            base_ref = 'open'
-        nifty = {'ltp': nifty_ltp, 'base_ref': base_ref, 'base': nb,
-                 'chg_base_pct': pct(nifty_ltp, nb),
+        nifty = {'ltp': nifty_ltp, 'chg_open_pct': pct(nifty_ltp, nq.get('open')),
                  'chg_prev_pct': pct(nifty_ltp, nq.get('prev_close'))}
-
         rows = []
         for it in items:
             q = None
@@ -1245,101 +1200,37 @@ def sectorsfun(access_token):
             if q is None:
                 rows.append({'sector': it['sector'], 'name': it['name'], 'type': it['type'], 'weight': it['weight'], 'ltp': None})
                 continue
-            if base_snap is not None:
-                b = base_ltp.get(it['name']) or q.get('open')   # item added later -> fall back to open
-            elif base_ref != 'open':
-                b = q['ltp']
-            else:
-                b = q.get('open')
-            cb = pct(q['ltp'], b)
             cp = pct(q['ltp'], q.get('prev_close'))
+            co = pct(q['ltp'], q.get('open'))
             row = {'sector': it['sector'], 'name': it['name'], 'type': it['type'], 'weight': it['weight'],
-                   'ltp': q['ltp'], 'base': b, 'chg_base_pct': cb, 'chg_prev_pct': cp}
-            if it.get('in_summary', it['type'] == 'stock') and nifty_ltp:
-                if cb is not None:
-                    row['nifty_pts_base'] = round(nifty_ltp * it['weight'] / 100 * cb / 100, 1)
-                if cp is not None:
-                    row['nifty_pts_prev'] = round(nifty_ltp * it['weight'] / 100 * cp / 100, 1)
+                   'ltp': q['ltp'], 'chg_open_pct': co, 'chg_prev_pct': cp}
+            if it.get('in_summary', it['type'] == 'stock') and cp is not None and nifty_ltp:
+                # approx Nifty points contributed since yesterday's close
+                row['nifty_pts_prev'] = round(nifty_ltp * it['weight'] / 100 * cp / 100, 1)
             rows.append(row)
 
-        def summ(field_pct, field_pts, nd):
-            rs = [r for r in rows if r.get(field_pts) is not None]
-            tot = sum(r['weight'] for r in rs) or 1
-            up = sum(r['weight'] for r in rs if r[field_pct] > 0)
-            withn = sum(r['weight'] for r in rs if nd is not None and r[field_pct] * nd > 0)
-            return {'weight_up_pct': round(up / tot * 100), 'weight_with_nifty_pct': round(withn / tot * 100),
-                    'pts_total': round(sum(r[field_pts] for r in rs), 1)}
+        stocks = [r for r in rows if r.get('nifty_pts_prev') is not None]  # stocks + indices flagged in_summary
+        tot_w = sum(r['weight'] for r in stocks) or 1
+        up_w = sum(r['weight'] for r in stocks if r['chg_prev_pct'] > 0)
+        nd = nifty.get('chg_prev_pct')
+        with_w = sum(r['weight'] for r in stocks if nd is not None and r['chg_prev_pct'] * nd > 0)
+        summary = {'peer_weight_up_pct': round(up_w / tot_w * 100), 'peer_weight_with_nifty_pct': round(with_w / tot_w * 100),
+                   'peer_pts_total': round(sum(r.get('nifty_pts_prev', 0) for r in stocks), 1)}
 
-        summary = {'since_base': summ('chg_base_pct', 'nifty_pts_base', nifty['chg_base_pct']),
-                   'since_prev_close': summ('chg_prev_pct', 'nifty_pts_prev', nifty['chg_prev_pct'])}
-
-        existing.append({'timestamp': now.strftime('%Y-%m-%d %H:%M:%S'),
-                         'nifty': nifty, 'summary': summary, 'items': rows})
-        with open(outfile, 'w') as f:
-            json.dump(existing, f, indent=4)
-        app.logger.info(f'Sectors (tg-nifty-sec) completed, base={base_ref}')
-    except Exception as e:
-        app.logger.error(f"Error in sectorsfun: {str(e)}")
-        traceback.print_exc()
-
-def optvwapfun(access_token, expiry1):
-    """tg-opt-vwap snapshot: 5 CE + 5 PE (2 ITM, ATM, 2 OTM) vs their exchange VWAP, moving ATM,
-    anchored VWAP from every new Nifty day low/high. Logic in optvwap.py, settings in tg_opt_vwap.json."""
-    from upstoxapiservices import getoptquotes
-    import optvwap
-    try:
-        cfgfile = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tg_opt_vwap.json')
-        cfg = {}
-        if os.path.exists(cfgfile):
-            with open(cfgfile, 'r') as f:
-                cfg = {k: v for k, v in json.load(f).items() if not k.startswith('_')}
-        c = dict(optvwap.DEFAULT_CFG)
-        c.update(cfg)
-        step, trk = int(c['strike_step']), int(c['track_each_side'])
-
-        optbook = upstoxapiservices.options_status(access_token, expiry1)
-        if not hasattr(optbook, 'data') or not optbook.data:
-            app.logger.warning('OptVWAP: no option chain data')
-            return
-        chain, spot = {}, None
-        for row in optbook.data:
-            k = int(round(row.strike_price))
-            spot = row.underlying_spot_price or spot
-            chain[k] = {'ce_key': row.call_options.instrument_key, 'pe_key': row.put_options.instrument_key,
-                        'ce_ltp': row.call_options.market_data.ltp, 'pe_ltp': row.put_options.market_data.ltp}
-        atm, _ = optvwap.pick_atm(chain, spot, step)
-        if atm is None:
-            app.logger.warning('OptVWAP: ATM not found')
-            return
-        track = [atm + i * step for i in range(-trk, trk + 1) if (atm + i * step) in chain]
-        nkey = 'NSE_INDEX|Nifty 50'
-        keys = [nkey] + [chain[k]['ce_key'] for k in track] + [chain[k]['pe_key'] for k in track]
-        quotes = getoptquotes(access_token, keys)
-
-        outfile = os.path.join(OUT_DIR, 'optvwap.json')
+        outfile = os.path.join(OUT_DIR, 'sectors.json')
         existing = []
         if os.path.exists(outfile):
             with open(outfile, 'r') as f:
                 existing = json.load(f)
                 if not isinstance(existing, list):
                     existing = []
-        now = datetime.now()
-        today = now.strftime('%Y-%m-%d')
-        todays = [s for s in existing if s.get('timestamp', '').startswith(today)]
-        snap = optvwap.build_snapshot(chain, spot, quotes, quotes.get(nkey, {}), todays, c,
-                                      now.strftime('%Y-%m-%d %H:%M:%S'), now.strftime('%H:%M'))
-        if snap is None:
-            app.logger.warning('OptVWAP: snapshot not built')
-            return
-        existing.append(snap)
+        existing.append({'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                         'nifty': nifty, 'summary': summary, 'items': rows})
         with open(outfile, 'w') as f:
-            json.dump(existing, f, indent=1)
-        sc, sg = snap['scores'], snap['signal']
-        app.logger.info(f"OptVWAP (tg-opt-vwap) completed: ATM={snap['nifty']['atm']} CE above={sc['ce_day']} "
-                        f"PE above={sc['pe_day']} anchor={snap['anchor']['dir']}@{snap['anchor']['time']} "
-                        f"anc_score={sc['anc_score']} call_ok={sg['call_ok']} put_ok={sg['put_ok']} verdict={sg['verdict']}")
+            json.dump(existing, f, indent=4)
+        app.logger.info('Sectors (tg-nifty-sec) completed')
     except Exception as e:
-        app.logger.error(f"Error in optvwapfun: {str(e)}")
+        app.logger.error(f"Error in sectorsfun: {str(e)}")
         traceback.print_exc()
 
 def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
@@ -1353,7 +1244,6 @@ def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
         findpremium(access_token)
         mainindexfun(access_token)
         sectorsfun(access_token)
-        optvwapfun(access_token, expiry1)
         fewstrikes(access_token,expiry1)
         expiry1=expiry1
         expiry2=expiry2
