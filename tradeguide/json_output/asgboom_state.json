@@ -1,34 +1,34 @@
 {
- "date": "2026-10-01",
+ "date": "2026-10-05",
  "initial_sent": true,
  "refs": {
   "NIFTY 50": {
-   "price": 22403.0,
-   "time": "14:56"
+   "price": 22548.0,
+   "time": "13:41"
   },
   "BANK NIFTY": {
-   "price": 54534.0,
-   "time": "15:06"
+   "price": 54716.0,
+   "time": "14:56"
   },
   "MIDCAP": {
-   "price": 13553.0,
-   "time": "14:51"
+   "price": 13637.0,
+   "time": "14:06"
   }
  },
  "alerted_levels": {
   "NIFTY 50": [],
   "BANK NIFTY": [
+   55115.22,
    54877.0,
-   54830.61,
-   55115.22
+   54830.61
   ],
   "MIDCAP": []
  },
- "last_ts": "2026-10-01 15:11:05",
+ "last_ts": "2026-10-05 15:11:04",
  "div_ref": {
   "time": "09:16",
-  "n": 22559.0,
-  "b": 54818.0
+  "n": 22544.0,
+  "b": 55046.0
  },
- "div_state": "CONVERGED"
+ "div_state": "DIVERGED"
 }

@@ -18,7 +18,7 @@ Pure functions only (no Flask / Upstox imports) so the logic can be tested offli
 LIVE_FROM = '09:16'   # runs before this are pre-open: stored, not used in signals
 
 DEFAULT_CFG = {'strike_step': 50, 'track_each_side': 6, 'use_each_side': 2,
-               'hold_bars': 4, 'min_score': 4, 'vol_avg_bars': 10, 'confirm_runs': 2}
+               'hold_bars': 4, 'min_score': 4, 'vol_avg_bars': 10}
 
 
 def pick_atm(chain, spot, step):
@@ -146,36 +146,12 @@ def build_snapshot(chain, spot, quotes, nifty_q, todays, cfg, ts, hhmm):
         return d.get('vol5') is not None and d.get('vol5_avg') is not None and d['vol5'] > d['vol5_avg']
 
     tot = ce_day + pe_day
-
-    # --- Reversal latch (fix 5 Oct 2026): a reversal is confirmed at most once per anchor and then
-    # stays confirmed until it completes (day score turns to the new side, |day| >= 3) or fails
-    # (anchored score on the wrong side for confirm_runs runs in a row). Stops the confirmed / NOT confirmed flicker.
-    rev = None
-    if prev is not None and prev.get('anchor', {}).get('time') == anchor['time'] and not prev.get('preopen'):
-        rev = prev.get('reversal')
-    if rev is None and not preopen:
-        if day_score < 3 and anchor['dir'] == 1 and held_up and vol_ok('CE'):
-            rev = {'dir': 'up', 'since': hhmm, 'state': 'active'}
-        elif day_score > -3 and anchor['dir'] == -1 and held_dn and vol_ok('PE'):
-            rev = {'dir': 'down', 'since': hhmm, 'state': 'active'}
-    elif rev is not None and rev.get('state') == 'active':
-        rev = dict(rev)
-        # fails only if the anchored score stays on the wrong side for confirm_runs runs in a row
-        # (a new day low/high also ends it, because the anchor itself resets)
-        need_fail = max(1, int(c.get('confirm_runs', 2)))
-        wrong = anc_score < 0 if rev['dir'] == 'up' else anc_score > 0
-        rev['wrong_runs'] = rev.get('wrong_runs', 0) + 1 if wrong else 0
-        if (rev['dir'] == 'up' and day_score >= 3) or (rev['dir'] == 'down' and day_score <= -3):
-            rev['state'] = 'done'
-        elif rev['wrong_runs'] >= need_fail:
-            rev['state'] = 'failed'
-        if rev['state'] != 'active':
-            rev['ended'] = hhmm
-
     if preopen:
         verdict = 'Pre-open - data only'
-    elif rev is not None and rev['state'] == 'active':
-        verdict = f"REVERSAL {rev['dir'].upper()} - confirmed (since {rev['since']})"
+    elif day_score < 3 and anchor['dir'] == 1 and held_up and vol_ok('CE'):
+        verdict = 'REVERSAL UP - confirmed'
+    elif day_score > -3 and anchor['dir'] == -1 and held_dn and vol_ok('PE'):
+        verdict = 'REVERSAL DOWN - confirmed'
     elif day_score <= -3 and anchor['dir'] == 1 and anc_score > 0:
         verdict = 'Bounce - NOT confirmed'
     elif day_score >= 3 and anchor['dir'] == -1 and anc_score < 0:
@@ -191,14 +167,6 @@ def build_snapshot(chain, spot, quotes, nifty_q, todays, cfg, ts, hhmm):
     else:
         verdict = 'Mixed / sideways'
 
-    # --- CALL ok / PUT ok need 5/5 for confirm_runs consecutive runs (fix 5 Oct 2026)
-    need = max(1, int(c.get('confirm_runs', 2)))
-    past = [x['scores'] for x in todays[-(need - 1):]] if need > 1 else []
-    ce_hist = [x['ce_day'] for x in past] + [ce_day]
-    pe_hist = [x['pe_day'] for x in past] + [pe_day]
-    call_ok = (not preopen) and len(ce_hist) == need and all(v == nuse for v in ce_hist)
-    put_ok = (not preopen) and len(pe_hist) == need and all(v == nuse for v in pe_hist)
-
     return {
         'timestamp': ts,
         'nifty': {'ltp': nifty_q.get('ltp'), 'spot_chain': spot, 'fwd': fwd, 'atm': atm,
@@ -208,9 +176,8 @@ def build_snapshot(chain, spot, quotes, nifty_q, todays, cfg, ts, hhmm):
                    'ce_anc': ce_anc, 'pe_anc': pe_anc, 'anc_score': anc_score,
                    'anc_hold': len(hist), 'held_up': held_up, 'held_down': held_dn},
         'preopen': preopen,
-        'reversal': rev,
-        'signal': {'call_ok': call_ok, 'put_ok': put_ok, 'verdict': verdict,
-                   'ce_5of5': ce_day == nuse, 'pe_5of5': pe_day == nuse},
+        'signal': {'call_ok': (not preopen) and ce_day == nuse, 'put_ok': (not preopen) and pe_day == nuse,
+                   'verdict': verdict},
         'strikes': rows,
         'cum': cum,
     }
