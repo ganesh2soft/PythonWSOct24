@@ -376,8 +376,8 @@ def get_options_data():
     expdatelist = [expiry1, expiry2, expiry3]
             
     calloption_data, putoption_data = findtrend()
-    calloption_data.to_csv('calloption_data.csv', index=False)
-    putoption_data.to_csv('putoption_data.csv', index=False)
+    # calloption_data.to_csv('calloption_data.csv', index=False)   # CSV debug dump removed 10 Oct 2026
+    # putoption_data.to_csv('putoption_data.csv', index=False)   # CSV debug dump removed 10 Oct 2026
     print('!!!!!!!!!! returned back from findtrend, Control flow in  /api/options at get_options_data')    
     app.logger.debug('!!!!!!!!!! returned back from findtrend, Control flow in  /api/options at get_options_data')
     print('Type of calloption_data and putoption_data inside get_options_data')
@@ -447,11 +447,16 @@ def get_options_data():
     app.logger.debug(f"put_options_list length: {len(put_options_list)}")
     
     
+    result = {'expiry_dates': expdatelist,
+              'call_options': call_options_list,
+              'put_options': put_options_list}
+    try:   # 10 Oct 2026: JSON copy of this response (replaces the old CSV dumps) for the future Angular rewrite
+        with open(os.path.join(OUT_DIR, 'options_api.json'), 'w', encoding='utf-8') as f:
+            json.dump(result, f, default=lambda o: o.item() if hasattr(o, 'item') else str(o))
+    except Exception as e:
+        app.logger.error(f"Error writing options_api.json: {str(e)[:200]}")
     # Return the data as a JSON response with separate fields for call and put options
-    return jsonify({'expiry_dates': expdatelist,
-                    'call_options': call_options_list,
-                    'put_options': put_options_list
-                    })
+    return jsonify(result)
 ###########################################################################################################
 
 # Angular side api get for futures data 
@@ -1678,7 +1683,7 @@ def findtrend():
 
     df = pd.concat([opt1_df, opt2_df, opt3_df], ignore_index=True)
     #print(df.shape)
-    df.to_csv('df.csv', index=False)
+    # df.to_csv('df.csv', index=False)   # CSV debug dump removed 10 Oct 2026
    
 
     # Check if the necessary columns are in the DataFrame
@@ -1715,7 +1720,7 @@ def findtrend():
             #print(filtered_df)
     
         # Ensure the 'date_entry' column is in datetime format
-    filtered_df.to_csv('filtered_df.csv', index=False)
+    # filtered_df.to_csv('filtered_df.csv', index=False)   # CSV debug dump removed 10 Oct 2026
     #print(filtered_df.shape)
     #filtered_df['date_entry'] = pd.to_datetime(filtered_df['date_entry'])
     filtered_df.loc[:, 'date_entry'] = pd.to_datetime(filtered_df['date_entry'])
@@ -1748,14 +1753,14 @@ def findtrend():
         #print('Stage2:Filtered DataFrame for today or the last date')
         #print('Testing ')
         #print(filtered_df2.shape)
-        filtered_df2.to_csv('filtered_df2.csv', index=False)
+        pass   # filtered_df2.to_csv('filtered_df2.csv', index=False) - CSV debug dump removed 10 Oct 2026
     
     call_df = filtered_df2[['date_entry', 'strike_price', 'call_writer_oi', 'call_wri_oi_prev','call_volume', 'call_ltp','expiry_date','nifty_spot_price']]
     
     # Create the DataFrame for Puts
     put_df = filtered_df2[['date_entry', 'strike_price', 'put_writer_oi','put_wri_oi_prev', 'put_volume', 'put_ltp','expiry_date','nifty_spot_price']]
     
-    put_df.to_csv('put_df.csv', index=False)
+    # put_df.to_csv('put_df.csv', index=False)   # CSV debug dump removed 10 Oct 2026
 
     # Group by 'strike_price' and display all rows without aggregation
     call_group_df = call_df.groupby('strike_price', as_index=False).apply(lambda x: x)
@@ -1766,7 +1771,7 @@ def findtrend():
     #print('############################## Alert ##############################')
     #print(call_group_df.columns)
     #print(put_group_df.columns)
-    put_group_df.to_csv('put_group_df.csv', index=False)
+    # put_group_df.to_csv('put_group_df.csv', index=False)   # CSV debug dump removed 10 Oct 2026
     #correct till now
     #print('Stage3:Group by strike price done')
     
