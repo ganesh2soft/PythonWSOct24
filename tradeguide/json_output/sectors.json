@@ -17746,5 +17746,413 @@
                 "nifty_pts_prev": 0.7
             }
         ]
+    },
+    {
+        "timestamp": "2026-10-10 00:30:05",
+        "nifty": {
+            "ltp": 22520.45,
+            "base_ref": "open",
+            "base": 22314.95,
+            "chg_base_pct": 0.92,
+            "chg_prev_pct": 1.3
+        },
+        "summary": {
+            "since_base": {
+                "weight_up_pct": 91,
+                "weight_with_nifty_pct": 91,
+                "pts_total": 191.2
+            },
+            "since_prev_close": {
+                "weight_up_pct": 91,
+                "weight_with_nifty_pct": 91,
+                "pts_total": 249.3
+            }
+        },
+        "items": [
+            {
+                "sector": "Financial Services",
+                "name": "NIFTY FIN SERVICE",
+                "type": "index",
+                "weight": 37.45,
+                "ltp": 24968.5,
+                "base": 24722.15,
+                "chg_base_pct": 1.0,
+                "chg_prev_pct": 1.33,
+                "nifty_pts_base": 84.3,
+                "nifty_pts_prev": 112.2
+            },
+            {
+                "sector": "Information Technology",
+                "name": "NIFTY IT",
+                "type": "index",
+                "weight": 7.52,
+                "ltp": 28574.9,
+                "base": 27905.85,
+                "chg_base_pct": 2.4,
+                "chg_prev_pct": 3.02,
+                "nifty_pts_base": 40.6,
+                "nifty_pts_prev": 51.1
+            },
+            {
+                "sector": "Automobile",
+                "name": "NIFTY AUTO",
+                "type": "index",
+                "weight": 6.65,
+                "ltp": 24859.9,
+                "base": 24608.95,
+                "chg_base_pct": 1.02,
+                "chg_prev_pct": 1.42,
+                "nifty_pts_base": 15.3,
+                "nifty_pts_prev": 21.3
+            },
+            {
+                "sector": "Oil, Gas & Fuels",
+                "name": "Reliance",
+                "type": "stock",
+                "weight": 7.58,
+                "ltp": 1170.3,
+                "base": 1179.0,
+                "chg_base_pct": -0.74,
+                "chg_prev_pct": -0.65,
+                "nifty_pts_base": -12.6,
+                "nifty_pts_prev": -11.1
+            },
+            {
+                "sector": "FMCG",
+                "name": "ITC",
+                "type": "stock",
+                "weight": 2.34,
+                "ltp": 266.0,
+                "base": 255.45,
+                "chg_base_pct": 4.13,
+                "chg_prev_pct": 4.31,
+                "nifty_pts_base": 21.8,
+                "nifty_pts_prev": 22.7
+            },
+            {
+                "sector": "Telecommunication",
+                "name": "Bharti Airtel",
+                "type": "stock",
+                "weight": 5.1,
+                "ltp": 1805.1,
+                "base": 1804.6,
+                "chg_base_pct": 0.03,
+                "chg_prev_pct": 0.03,
+                "nifty_pts_base": 0.3,
+                "nifty_pts_prev": 0.3
+            },
+            {
+                "sector": "Metals & Mining",
+                "name": "Tata Steel",
+                "type": "stock",
+                "weight": 1.38,
+                "ltp": 173.8,
+                "base": 171.0,
+                "chg_base_pct": 1.64,
+                "chg_prev_pct": 1.07,
+                "nifty_pts_base": 5.1,
+                "nifty_pts_prev": 3.3
+            },
+            {
+                "sector": "Healthcare",
+                "name": "Sun Pharma",
+                "type": "stock",
+                "weight": 1.83,
+                "ltp": 1760.0,
+                "base": 1756.2,
+                "chg_base_pct": 0.22,
+                "chg_prev_pct": 0.01,
+                "nifty_pts_base": 0.9,
+                "nifty_pts_prev": 0.0
+            },
+            {
+                "sector": "Construction",
+                "name": "L&T",
+                "type": "stock",
+                "weight": 4.2,
+                "ltp": 3703.3,
+                "base": 3648.0,
+                "chg_base_pct": 1.52,
+                "chg_prev_pct": 2.16,
+                "nifty_pts_base": 14.4,
+                "nifty_pts_prev": 20.4
+            },
+            {
+                "sector": "Consumer Services",
+                "name": "Eternal",
+                "type": "stock",
+                "weight": 2.1,
+                "ltp": 323.45,
+                "base": 322.1,
+                "chg_base_pct": 0.42,
+                "chg_prev_pct": 1.38,
+                "nifty_pts_base": 2.0,
+                "nifty_pts_prev": 6.5
+            },
+            {
+                "sector": "Consumer Durables",
+                "name": "Titan",
+                "type": "stock",
+                "weight": 1.9,
+                "ltp": 4410.0,
+                "base": 4375.1,
+                "chg_base_pct": 0.8,
+                "chg_prev_pct": 1.16,
+                "nifty_pts_base": 3.4,
+                "nifty_pts_prev": 5.0
+            },
+            {
+                "sector": "Power",
+                "name": "NTPC",
+                "type": "stock",
+                "weight": 1.45,
+                "ltp": 312.0,
+                "base": 309.75,
+                "chg_base_pct": 0.73,
+                "chg_prev_pct": 0.74,
+                "nifty_pts_base": 2.4,
+                "nifty_pts_prev": 2.4
+            },
+            {
+                "sector": "Services",
+                "name": "Adani Ports",
+                "type": "stock",
+                "weight": 1.13,
+                "ltp": 1761.0,
+                "base": 1710.1,
+                "chg_base_pct": 2.98,
+                "chg_prev_pct": 3.1,
+                "nifty_pts_base": 7.6,
+                "nifty_pts_prev": 7.9
+            },
+            {
+                "sector": "Construction Materials",
+                "name": "UltraTech Cement",
+                "type": "stock",
+                "weight": 1.23,
+                "ltp": 10675.0,
+                "base": 10485.0,
+                "chg_base_pct": 1.81,
+                "chg_prev_pct": 2.39,
+                "nifty_pts_base": 5.0,
+                "nifty_pts_prev": 6.6
+            },
+            {
+                "sector": "Capital Goods",
+                "name": "BEL",
+                "type": "stock",
+                "weight": 1.33,
+                "ltp": 368.15,
+                "base": 367.3,
+                "chg_base_pct": 0.23,
+                "chg_prev_pct": 0.23,
+                "nifty_pts_base": 0.7,
+                "nifty_pts_prev": 0.7
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-10 00:35:04",
+        "nifty": {
+            "ltp": 22520.45,
+            "base_ref": "open",
+            "base": 22314.95,
+            "chg_base_pct": 0.92,
+            "chg_prev_pct": 1.3
+        },
+        "summary": {
+            "since_base": {
+                "weight_up_pct": 91,
+                "weight_with_nifty_pct": 91,
+                "pts_total": 191.2
+            },
+            "since_prev_close": {
+                "weight_up_pct": 91,
+                "weight_with_nifty_pct": 91,
+                "pts_total": 249.3
+            }
+        },
+        "items": [
+            {
+                "sector": "Financial Services",
+                "name": "NIFTY FIN SERVICE",
+                "type": "index",
+                "weight": 37.45,
+                "ltp": 24968.5,
+                "base": 24722.15,
+                "chg_base_pct": 1.0,
+                "chg_prev_pct": 1.33,
+                "nifty_pts_base": 84.3,
+                "nifty_pts_prev": 112.2
+            },
+            {
+                "sector": "Information Technology",
+                "name": "NIFTY IT",
+                "type": "index",
+                "weight": 7.52,
+                "ltp": 28574.9,
+                "base": 27905.85,
+                "chg_base_pct": 2.4,
+                "chg_prev_pct": 3.02,
+                "nifty_pts_base": 40.6,
+                "nifty_pts_prev": 51.1
+            },
+            {
+                "sector": "Automobile",
+                "name": "NIFTY AUTO",
+                "type": "index",
+                "weight": 6.65,
+                "ltp": 24859.9,
+                "base": 24608.95,
+                "chg_base_pct": 1.02,
+                "chg_prev_pct": 1.42,
+                "nifty_pts_base": 15.3,
+                "nifty_pts_prev": 21.3
+            },
+            {
+                "sector": "Oil, Gas & Fuels",
+                "name": "Reliance",
+                "type": "stock",
+                "weight": 7.58,
+                "ltp": 1170.3,
+                "base": 1179.0,
+                "chg_base_pct": -0.74,
+                "chg_prev_pct": -0.65,
+                "nifty_pts_base": -12.6,
+                "nifty_pts_prev": -11.1
+            },
+            {
+                "sector": "FMCG",
+                "name": "ITC",
+                "type": "stock",
+                "weight": 2.34,
+                "ltp": 266.0,
+                "base": 255.45,
+                "chg_base_pct": 4.13,
+                "chg_prev_pct": 4.31,
+                "nifty_pts_base": 21.8,
+                "nifty_pts_prev": 22.7
+            },
+            {
+                "sector": "Telecommunication",
+                "name": "Bharti Airtel",
+                "type": "stock",
+                "weight": 5.1,
+                "ltp": 1805.1,
+                "base": 1804.6,
+                "chg_base_pct": 0.03,
+                "chg_prev_pct": 0.03,
+                "nifty_pts_base": 0.3,
+                "nifty_pts_prev": 0.3
+            },
+            {
+                "sector": "Metals & Mining",
+                "name": "Tata Steel",
+                "type": "stock",
+                "weight": 1.38,
+                "ltp": 173.8,
+                "base": 171.0,
+                "chg_base_pct": 1.64,
+                "chg_prev_pct": 1.07,
+                "nifty_pts_base": 5.1,
+                "nifty_pts_prev": 3.3
+            },
+            {
+                "sector": "Healthcare",
+                "name": "Sun Pharma",
+                "type": "stock",
+                "weight": 1.83,
+                "ltp": 1760.0,
+                "base": 1756.2,
+                "chg_base_pct": 0.22,
+                "chg_prev_pct": 0.01,
+                "nifty_pts_base": 0.9,
+                "nifty_pts_prev": 0.0
+            },
+            {
+                "sector": "Construction",
+                "name": "L&T",
+                "type": "stock",
+                "weight": 4.2,
+                "ltp": 3703.3,
+                "base": 3648.0,
+                "chg_base_pct": 1.52,
+                "chg_prev_pct": 2.16,
+                "nifty_pts_base": 14.4,
+                "nifty_pts_prev": 20.4
+            },
+            {
+                "sector": "Consumer Services",
+                "name": "Eternal",
+                "type": "stock",
+                "weight": 2.1,
+                "ltp": 323.45,
+                "base": 322.1,
+                "chg_base_pct": 0.42,
+                "chg_prev_pct": 1.38,
+                "nifty_pts_base": 2.0,
+                "nifty_pts_prev": 6.5
+            },
+            {
+                "sector": "Consumer Durables",
+                "name": "Titan",
+                "type": "stock",
+                "weight": 1.9,
+                "ltp": 4410.0,
+                "base": 4375.1,
+                "chg_base_pct": 0.8,
+                "chg_prev_pct": 1.16,
+                "nifty_pts_base": 3.4,
+                "nifty_pts_prev": 5.0
+            },
+            {
+                "sector": "Power",
+                "name": "NTPC",
+                "type": "stock",
+                "weight": 1.45,
+                "ltp": 312.0,
+                "base": 309.75,
+                "chg_base_pct": 0.73,
+                "chg_prev_pct": 0.74,
+                "nifty_pts_base": 2.4,
+                "nifty_pts_prev": 2.4
+            },
+            {
+                "sector": "Services",
+                "name": "Adani Ports",
+                "type": "stock",
+                "weight": 1.13,
+                "ltp": 1761.0,
+                "base": 1710.1,
+                "chg_base_pct": 2.98,
+                "chg_prev_pct": 3.1,
+                "nifty_pts_base": 7.6,
+                "nifty_pts_prev": 7.9
+            },
+            {
+                "sector": "Construction Materials",
+                "name": "UltraTech Cement",
+                "type": "stock",
+                "weight": 1.23,
+                "ltp": 10675.0,
+                "base": 10485.0,
+                "chg_base_pct": 1.81,
+                "chg_prev_pct": 2.39,
+                "nifty_pts_base": 5.0,
+                "nifty_pts_prev": 6.6
+            },
+            {
+                "sector": "Capital Goods",
+                "name": "BEL",
+                "type": "stock",
+                "weight": 1.33,
+                "ltp": 368.15,
+                "base": 367.3,
+                "chg_base_pct": 0.23,
+                "chg_prev_pct": 0.23,
+                "nifty_pts_base": 0.7,
+                "nifty_pts_prev": 0.7
+            }
+        ]
     }
 ]
