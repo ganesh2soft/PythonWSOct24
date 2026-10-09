@@ -85,6 +85,27 @@ def current_expiry(ul='NIFTY'):
         return None
 
 
+def fut_senti(longbuy, shortsell):
+    """Futures sentiment from buy/sell quantity (copied from db_write.fut_senti so MySQL code is no longer needed)."""
+    try:
+        frefer = float(shortsell) / float(longbuy)
+    except (TypeError, ValueError, ZeroDivisionError):
+        return None
+    if frefer > 3:
+        return "Strong Bearish"
+    elif 2 <= frefer <= 3:
+        return "Bear"
+    elif 1 < frefer <= 1.9:
+        return "Bear-to-SW"
+    elif 0.5 < frefer <= 1:
+        return "SW-to-Bull"
+    elif 0.35 < frefer <= 0.49:
+        return "Bull"
+    elif frefer <= 0.35:
+        return "Strong Bullish"
+    return "Unknown"
+
+
 # ------------------------------------------------------------------ rolling + retention
 _rolled = {}
 
@@ -209,10 +230,6 @@ def write_futures(data, ul='NIFTY', now=None):
             log.warning('FUT %s nothing to write (empty or not a dict)', ul)
             return 0
         now = now or datetime.datetime.now()
-        try:
-            from db_write import fut_senti
-        except Exception:
-            fut_senti = None
         fdir = os.path.join(ROOT, CUR, ul, 'futures')
         written = set()
         for key, q in data.items():
