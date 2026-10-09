@@ -1,0 +1,247 @@
+{
+  "_note": "market-cues history (Method 2 v2). One entry per date; 'actual' filled from news on a later run. Written only by the market-cues skill; not read by tradeguide; not moved by archive_json.py. 'validation' per entry = cross-source checks; 'source_stats' = running reliability per site.",
+  "entries": [
+    {
+      "date": "2026-10-09",
+      "run_time_ist": "09:35",
+      "method": "v2",
+      "expected_open": {
+        "gift_nifty": 22355,
+        "gift_chg_pts": 80,
+        "gift_chg_pct": 0.36,
+        "gift_vs_nifty_close_pts": 123.2,
+        "gift_vs_nifty_close_pct": 0.55,
+        "call": "Mild gap-up (+0.36% vs own close; +0.55% vs Nifty spot close)"
+      },
+      "bucket_a": {
+        "drivers": [
+          {
+            "id": "A1",
+            "name": "US equities",
+            "value": "S&P 500 -0.47%, Nasdaq -1.25% (avg -0.86%); Dow +0.10%",
+            "score": -5,
+            "weight": 1
+          },
+          {
+            "id": "A2",
+            "name": "Asia",
+            "value": "Nikkei -1.07%, Hang Seng -1.43%, KOSPI -2.62% (avg -1.71%)",
+            "score": -10,
+            "weight": 0.5
+          },
+          {
+            "id": "A3",
+            "name": "US 10Y yield",
+            "value": "5.231%, -0.4 bp (level >= 5% => -5)",
+            "score": -5,
+            "weight": 1
+          },
+          {
+            "id": "A4",
+            "name": "Brent crude",
+            "value": "$103.62, -0.48%",
+            "score": -10,
+            "weight": 2
+          },
+          {
+            "id": "A5",
+            "name": "USD/INR",
+            "value": "96.78 close 8 Oct; opened 96.74 (+4 paise, +0.04%) at 09:01",
+            "score": 0,
+            "weight": 1
+          }
+        ],
+        "composite": -6.36,
+        "band": "Bearish to Neutral",
+        "arithmetic": "(-5x1 -10x0.5 -5x1 -10x2 +0x1)/5.5 = -35/5.5"
+      },
+      "bucket_b": {
+        "drivers": [
+          {
+            "id": "B1",
+            "name": "FII cash (prev day)",
+            "value": "DSIJ: FII -12,943.58 cr, DII +10,703.11 cr (\"latest\", date unstated; likely 8 Oct). 7 Oct (HDFC Sky): FII -6,121 cr, DII +4,597 cr. 8 Oct not confirmed by a 2nd site as of 09:35",
+            "score": -15,
+            "weight": 2
+          },
+          {
+            "id": "B2",
+            "name": "Banks/financials",
+            "value": "no bank-specific news found (BS live blog, HDFC Sky) as of 09:35",
+            "score": null,
+            "weight": 2
+          },
+          {
+            "id": "B3",
+            "name": "Heavyweights",
+            "value": "TCS Q2 strong (+15% YoY profit, Rs12 dividend) vs US PERM suspension for TCS/Infosys/Wipro (details limited); net balanced",
+            "score": 0,
+            "weight": 1
+          },
+          {
+            "id": "B4",
+            "name": "Domestic macro/policy",
+            "value": "RBI repo 5.50% (+25 bp), inflation forecast 5.2%; Rs1.5 lakh cr VRRR 09:30-10:00 drains surplus liquidity",
+            "score": -10,
+            "weight": 1
+          },
+          {
+            "id": "B5",
+            "name": "Momentum (prev session)",
+            "value": "Nifty -1.64% to 22,231.80 (8 Oct)",
+            "score": -5,
+            "weight": 0.5
+          }
+        ],
+        "composite": -9.44,
+        "band": "Bearish",
+        "arithmetic": "(-15x2 +0x1 -10x1 -5x0.5)/4.5 = -42.5/4.5"
+      },
+      "driving_harder": "B",
+      "events": [
+        "TCS post-results + PERM suspension news (IT)",
+        "RBI Rs1.5 lakh cr VRRR 09:30-10:00",
+        "Crude/Iran headlines",
+        "Weekly expiry 13 Oct (Tue)"
+      ],
+      "sources": [
+        "https://insights.dsij.in/dsijarticledetail/pre-market-update-gift-nifty-signals-100-point-firm-start-after-sell-off-it-earnings-crude-oil-and-rbi-liquidity-in-focus-59923",
+        "https://www.business-standard.com/markets/news/stock-market-live-october-9-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-it-stocks-today-126100900099_1.html",
+        "https://hdfcsky.com/news/market-close-report-today-october-8-2026-sensex-nifty-melt-down-as-rbi-oil-weigh"
+      ],
+      "v1_scores": {
+        "bucket_a": -3.6,
+        "bucket_b": -6.0,
+        "note": "same morning, old Method 2 (plain average)"
+      },
+      "actual": {
+        "nifty_prev_close": 22231.8,
+        "open": 22314,
+        "high": null,
+        "low": null,
+        "close": null,
+        "chg_pct": null,
+        "filled": false,
+        "open_note": "Nifty pre-open equilibrium 09:11 (+83, +0.37%), Business Standard live blog"
+      },
+      "revisions": [
+        "08:00 first v2 run: A -8.89, B -3.89 (FII estimated, rupee n/a, Asia partial)",
+        "08:15 re-run with DSIJ all-in-one page: FII figure, rupee, US10Y change found",
+        "09:25 re-run: no new driver data (FII 8 Oct still not found on BS); rupee opening added; Nifty open 22,314 (+0.37%) filled; scores unchanged",
+        "09:35 Bucket B re-check: B3 -5 -> 0 (TCS results vs PERM judged balanced; PERM details limited); B composite -10.56 -> -9.44; FII 8 Oct still single-source; no bank news"
+      ],
+      "validation": {
+        "type": "daily+deep (first run)",
+        "checks": [
+          {
+            "item": "Nifty prev close",
+            "primary": "DSIJ 22231.80",
+            "other": "BS 22231.80; HDFC Sky 22231.80",
+            "tol": "1 pt",
+            "ok": true
+          },
+          {
+            "item": "GIFT Nifty",
+            "primary": "DSIJ 22355 @06:59",
+            "other": "BS 22374 @07:54",
+            "tol": "0.3%",
+            "ok": true,
+            "diff": "0.08% (time gap)"
+          },
+          {
+            "item": "Brent",
+            "primary": "DSIJ 103.62 @07:00",
+            "other": "BS 103.85 @07:54",
+            "tol": "1.5%",
+            "ok": true,
+            "diff": "0.2%"
+          },
+          {
+            "item": "S&P 500 / Nasdaq",
+            "primary": "DSIJ -0.47% / -1.25%",
+            "other": "BS -0.47% / -1.25%",
+            "tol": "0.1 pt",
+            "ok": true
+          },
+          {
+            "item": "Asia",
+            "primary": "DSIJ Nikkei -1.07%",
+            "other": "BS Nikkei -0.6%",
+            "tol": "same sign",
+            "ok": true,
+            "diff": "different snapshot times"
+          },
+          {
+            "item": "US 10Y",
+            "primary": "DSIJ 5.231% (-0.4 bp)",
+            "other": "BS 5.2%; Mortgage News Daily 7 Oct close 5.306%, live ticker 5.352% (+6.1 bp)",
+            "tol": "5 bp",
+            "ok": false,
+            "note": "MISMATCH ~12 bp; DSIJ may quote an earlier tick. A3 score -5 kept (would be -10 if +6 bp is right)"
+          },
+          {
+            "item": "FII cash",
+            "primary": "DSIJ -12943.58 cr (date not stated)",
+            "other": "HDFC Sky -6121 cr for 7 Oct (different date)",
+            "tol": "exact, same date",
+            "ok": null,
+            "note": "UNVERIFIED - no second source for the same date"
+          },
+          {
+            "item": "GIFT Nifty (re-run)",
+            "primary": "DSIJ 22355 @06:59",
+            "other": "BS 22370 @08:25",
+            "tol": "0.3%",
+            "ok": true,
+            "diff": "0.07%"
+          },
+          {
+            "item": "Rupee",
+            "primary": "DSIJ ~96.78 unchanged",
+            "other": "BS close 96.78, open 96.74",
+            "tol": "0.1",
+            "ok": true
+          },
+          {
+            "item": "FII 8 Oct (re-check)",
+            "primary": "DSIJ -12943.58 cr (date unstated)",
+            "other": "HDFC Sky VIX article: -6121 cr is 7 Oct; HDFC Prime Daily 9 Oct not published yet",
+            "tol": "exact, same date",
+            "ok": null,
+            "note": "still UNVERIFIED"
+          }
+        ]
+      }
+    }
+  ],
+  "source_stats": {
+    "insights.dsij.in": {
+      "checks": 8,
+      "mismatches": 1,
+      "unverified": 2,
+      "last_checked": "2026-10-09",
+      "notes": "US10Y differs from MND; FII date unstated"
+    },
+    "business-standard.com": {
+      "checks": 7,
+      "mismatches": 0,
+      "unverified": 0,
+      "last_checked": "2026-10-09",
+      "notes": "no FII, no rupee"
+    },
+    "hdfcsky.com": {
+      "checks": 2,
+      "mismatches": 0,
+      "unverified": 0,
+      "last_checked": "2026-10-09",
+      "notes": "FPI figure is previous-previous day"
+    },
+    "mortgagenewsdaily.com": {
+      "checks": 1,
+      "mismatches": 1,
+      "unverified": 0,
+      "last_checked": "2026-10-09",
+      "notes": "live ticker vs table differ; no timestamp on ticker"
+    }
+  }
+}

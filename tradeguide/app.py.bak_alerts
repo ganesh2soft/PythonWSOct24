@@ -1355,11 +1355,6 @@ def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
         sectorsfun(access_token)
         optvwapfun(access_token, expiry1)
         fewstrikes(access_token,expiry1)
-        try:   # tg_alerts: entry alerts to the ASG Telegram group (needs optvwap + fewstrikes OI of this run)
-            import tg_alerts
-            app.logger.info(f"TG alerts: {tg_alerts.live(False)} new")
-        except Exception as e:
-            app.logger.error(f"Error in tg_alerts: {str(e)[:200]}")
         expiry1=expiry1
         expiry2=expiry2
         expiry3=expiry3

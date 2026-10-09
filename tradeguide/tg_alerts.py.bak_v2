@@ -1,0 +1,341 @@
+"""tg_alerts.py - entry alerts for an option buyer, built on tradeguide's own files (read-only).
+
+Signals (evaluated on every 5-min optvwap snapshot, entries only 09:21-14:45):
+  CE SETUP   : CALL ok just confirmed (optvwap, 2 runs) AND BN above its 09:16 value AND VIX >= its 09:16 value
+               AND put writing >= MIN_WRITE lakh in the last 30 min at strikes <= spot+50
+  PE SETUP   : mirror (PUT ok, BN below 09:16, VIX >= 09:16, call writing >= MIN_WRITE at strikes >= spot-50)
+  REVERSAL   : optvwap verdict turns "REVERSAL UP/DOWN - confirmed"
+  NEAR WALL  : after a CE (PE) alert, spot within WALL_NEAR pts of a call (put) wall that is still growing -> book/trail
+Each alert carries: stop = opposite OI wall, target = next wall, ATM premium, Rule C gap label.
+One alert per signal; same type not repeated within COOLDOWN minutes.
+
+Usage:
+  python tg_alerts.py --replay 2026-10-06 2026-10-07 ...   # what would have fired + outcome (no sending)
+  python tg_alerts.py --live                               # evaluate today, send NEW alerts via asgboom.send (Telegram)
+  python tg_alerts.py --live --dry-run                     # same, print instead of send
+State of sent alerts: json_output/tg_alerts_state.json. Never prints tokens/secrets.
+"""
+import json, os, re, sys, datetime
+
+BASE = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.join(BASE, 'json_output')
+CFG = {'MIN_WRITE': 40.0, 'WALL_NEAR': 15, 'COOLDOWN': 30, 'ENTRY_FROM': '09:21', 'ENTRY_TO': '14:45',
+       'BN_TOL_PCT': 0.15,        # BN may be up to 0.15% against the trade vs its 09:16 value
+       'VIX_FILTER_CE': '--no-vix-ce' not in sys.argv,   # user rule: VIX >= 09:16 for buying; switchable for CE
+       'VIX_FILTER_PE': True}
+BAD = re.compile(r'token|secret|authoriz|bearer|code=', re.I)
+
+
+def hm(ts):
+    return str(ts)[11:16]
+
+
+def mins(t):
+    h, m = map(int, t.split(':'))
+    return h * 60 + m
+
+
+def tstr(x):
+    x = max(x, 0)
+    return '%02d:%02d' % (x // 60, x % 60)
+
+
+def ts_of(x):
+    return x.get('timestamp') or x.get('recdate') or x.get('vixts') or ''
+
+
+def load(name, day):
+    for p in (os.path.join(OUT, name + '.json'), os.path.join(OUT, 'archive', day, name + '.json')):
+        if not os.path.exists(p):
+            continue
+        try:
+            d = json.load(open(p))
+        except Exception:
+            continue
+        if isinstance(d, list):
+            r = [x for x in d if isinstance(x, dict) and str(ts_of(x))[:10] == day]
+            if r:
+                return r
+        elif isinstance(d, dict):
+            r = {k: [x for x in v if isinstance(x, dict) and str(ts_of(x))[:10] == day] for k, v in d.items() if isinstance(v, list)}
+            if any(r.values()):
+                return r
+    return {} if name == 'trend' else []
+
+
+def parse_oi(day):
+    snaps, spot, cur = [], {}, None
+    p = os.path.join(BASE, 'tradelogger.log')
+    if not os.path.exists(p):
+        return snaps
+    with open(p, 'r', errors='ignore') as f:
+        for l in f:
+            l = l.rstrip('\r\n')
+            if l[:10] == day:
+                t = l[11:16]
+                m = re.search(r'IVIX: ([\d.]+), Nifty50: ([\d.]+), Nifty Futures: ([\d.]+)', l)
+                if m:
+                    spot[t] = float(m.group(2))
+                if 'Filtered DataFrame with Relevant Data' in l:
+                    cur = {'t': t, 'rows': {}}
+                    continue
+                if 'End of Few Strikes Dataframe' in l and cur is not None:
+                    if cur['rows']:
+                        snaps.append(cur)
+                    cur = None
+                continue
+            if cur is not None:
+                q = l.split()
+                if len(q) == 8:
+                    try:
+                        cur['rows'][int(float(q[1]))] = (float(q[2]) / 1e5, float(q[3]) / 1e5)   # (call OI, put OI) in lakh
+                    except ValueError:
+                        pass
+    for s in snaps:
+        s['spot'] = spot.get(s['t'])
+    return snaps
+
+
+def at_or_before(rows, t, key):
+    c = [r for r in rows if key(r) <= t]
+    return c[-1] if c else None
+
+
+def idx(snap, name):
+    for i in (snap or {}).get('main_index', []):
+        if i.get('index') == name:
+            return i.get('ltp')
+    return None
+
+
+def walls(oi, spot):
+    above = [k for k in oi['rows'] if k >= spot]
+    below = [k for k in oi['rows'] if k <= spot]
+    cw = sorted(above, key=lambda k: -oi['rows'][k][0])
+    pw = sorted(below, key=lambda k: -oi['rows'][k][1])
+    # nearest of the two biggest walls first (stop/target = closest strong wall, not a far one)
+    cw = sorted(cw[:2], key=lambda k: k - spot) + cw[2:]
+    pw = sorted(pw[:2], key=lambda k: spot - k) + pw[2:]
+    return cw, pw
+
+
+def evaluate_day(day):
+    """Return (alerts, context) for one day. Pure: reads files only."""
+    OV = [x for x in load('optvwap', day) if not x.get('preopen')]
+    MI = load('mainindex', day)
+    TR = load('trend', day)
+    SEC = load('sectors', day)
+    OI = parse_oi(day)
+    if not OV or not MI or not OI:
+        return [], {'error': 'missing data (optvwap %d, mainindex %d, OI %d)' % (len(OV), len(MI), len(OI))}
+    vs = TR.get('vix_set', []) if isinstance(TR, dict) else []
+    mi0 = next((m for m in MI if hm(m['timestamp']) >= '09:16'), MI[0])
+    bn0 = idx(mi0, 'BANK NIFTY')
+    v0 = next((v for v in vs if hm(v['vixts']) >= '09:16'), vs[0] if vs else None)
+    vix0 = v0['ivix'] if v0 else None
+    gap_lbl = 'n/a'
+    if SEC:
+        s0 = SEC[0]['nifty']
+        prev = s0['ltp'] / (1 + s0['chg_prev_pct'] / 100.0) if s0.get('chg_prev_pct') is not None else None
+        n5 = [e for e in load('nifty5min', day) if e.get('ohlc', {}).get('open')]
+        n0 = n5[0]['ohlc']['open'] if n5 else idx(mi0, 'NIFTY 50')
+        if prev and n0:
+            g = n0 - prev
+            gap_lbl = ('SKIP (gap-up %+.0f)' % g) if g >= 50 else ('gap-down %+.0f (use run-start ref)' % g) if g <= -50 else 'ok (gap %+.0f)' % g
+    alerts, last_type, active = [], {}, None
+    open_side = {}   # side -> {'stop','target','state'}: no new same-side alert while one is open
+    prev = None
+    wall_warned = set()
+    for x in OV:
+        t = hm(x['timestamp'])
+        sg = x['signal']
+        spot = x['nifty']['ltp']
+        mi = at_or_before(MI, t, lambda r: hm(r['timestamp']))
+        bn = idx(mi, 'BANK NIFTY')
+        v = at_or_before(vs, t, lambda r: hm(r['vixts']))
+        vix = v['ivix'] if v else None
+        oi = at_or_before(OI, t, lambda r: r['t'])
+        oi30 = at_or_before(OI, tstr(mins(t) - 30), lambda r: r['t']) or (OI[0] if OI else None)
+        if not oi or spot is None:
+            prev = x
+            continue
+        dput = sum(max(0, oi['rows'][k][1] - oi30['rows'][k][1]) for k in oi['rows'] if k <= spot + 50 and k in oi30['rows'])
+        dcall = sum(max(0, oi['rows'][k][0] - oi30['rows'][k][0]) for k in oi['rows'] if k >= spot - 50 and k in oi30['rows'])
+        cw, pw = walls(oi, spot)
+        atm = next((r for r in x.get('strikes', []) if r['CE'].get('role') == 'ATM'), None)
+        base = {'day': day, 't': t, 'spot': spot, 'bn': bn, 'bn0': bn0, 'vix': vix, 'vix0': vix0,
+                'put_write30': round(dput, 1), 'call_write30': round(dcall, 1), 'rule_c_gap': gap_lbl,
+                'call_walls': [(k, round(oi['rows'][k][0], 1)) for k in cw[:2]], 'put_walls': [(k, round(oi['rows'][k][1], 1)) for k in pw[:2]],
+                'atm': atm['strike'] if atm else None, 'atm_ce': atm['CE']['ltp'] if atm else None, 'atm_pe': atm['PE']['ltp'] if atm else None}
+        in_window = CFG['ENTRY_FROM'] <= t <= CFG['ENTRY_TO']
+        for sd, o in open_side.items():   # update open alerts on this run's spot (5-min close logic)
+            if o['state'] != 'open':
+                continue
+            if o['stop'] and ((sd == 'CE' and spot < o['stop']) or (sd == 'PE' and spot > o['stop'])):
+                o['state'] = 'stopped'
+                last_type.pop(o['kind'], None)   # allow a fresh setup right after a stop
+            elif o['target'] and ((sd == 'CE' and spot >= o['target']) or (sd == 'PE' and spot <= o['target'])):
+                o['state'] = 'target'
+        p_sg = prev['signal'] if prev else {'call_ok': False, 'put_ok': False, 'verdict': ''}
+
+        def cooled(kind):
+            return kind not in last_type or mins(t) - mins(last_type[kind]) >= CFG['COOLDOWN']
+
+        def emit(kind, side, conds, stop, target, extra=''):
+            ok = all(c[1] for c in conds)
+            busy = kind.endswith('SETUP') or kind.startswith('REVERSAL')
+            is_open = busy and open_side.get(side, {}).get('state') == 'open'
+            a = dict(base, kind=kind, side=side, conds=conds, sent=ok and cooled(kind) and not is_open, stop=stop, target=target, extra=extra,
+                     note='same-side alert still open' if (ok and is_open) else '')
+            alerts.append(a)
+            if a['sent']:
+                last_type[kind] = t
+                if busy:
+                    open_side[side] = {'stop': stop, 'target': target, 'state': 'open', 'kind': kind}
+                    other = 'PE' if side == 'CE' else 'CE'
+                    if open_side.get(other, {}).get('state') == 'open':
+                        open_side[other]['state'] = 'flipped'
+            return a
+
+        # CE / PE setups (on the run CALL ok / PUT ok first becomes true)
+        if in_window and sg['call_ok'] and not p_sg['call_ok']:
+            conds = [('BN not below 09:16 by >%.2f%%' % CFG['BN_TOL_PCT'], bn is not None and bn0 is not None and bn >= bn0 * (1 - CFG['BN_TOL_PCT'] / 100)),
+                     ('VIX >= 09:16', (not CFG['VIX_FILTER_CE']) or (vix is not None and vix0 is not None and vix >= vix0)),
+                     ('put writing >= %.0fL/30m' % CFG['MIN_WRITE'], dput >= CFG['MIN_WRITE'])]
+            a = emit('CE SETUP', 'CE', conds, pw[0] if pw else None, cw[0] if cw else None)
+            if a['sent']:
+                active = a
+        if in_window and sg['put_ok'] and not p_sg['put_ok']:
+            conds = [('BN not above 09:16 by >%.2f%%' % CFG['BN_TOL_PCT'], bn is not None and bn0 is not None and bn <= bn0 * (1 + CFG['BN_TOL_PCT'] / 100)),
+                     ('VIX >= 09:16', (not CFG['VIX_FILTER_PE']) or (vix is not None and vix0 is not None and vix >= vix0)),
+                     ('call writing >= %.0fL/30m' % CFG['MIN_WRITE'], dcall >= CFG['MIN_WRITE'])]
+            a = emit('PE SETUP', 'PE', conds, cw[0] if cw else None, pw[0] if pw else None)
+            if a['sent']:
+                active = a
+        # reversal confirmations (sent whenever they first appear; conditions shown for information)
+        v_now, v_prev = sg.get('verdict', ''), p_sg.get('verdict', '')
+        if in_window and v_now.startswith('REVERSAL') and 'confirmed' in v_now and not v_prev.startswith(v_now[:14]):
+            up = 'UP' in v_now
+            conds = [('BN %s 09:16' % ('above' if up else 'below'), bn is not None and bn0 is not None and ((bn > bn0) if up else (bn < bn0))),
+                     ('VIX >= 09:16', vix is not None and vix0 is not None and vix >= vix0)]
+            vgate = CFG['VIX_FILTER_CE'] if up else CFG['VIX_FILTER_PE']
+            a = emit('REVERSAL ' + ('UP' if up else 'DOWN'), 'CE' if up else 'PE', [('verdict confirmed', True), ('VIX >= 09:16', (not vgate) or conds[1][1])],
+                     (pw[0] if pw else None) if up else (cw[0] if cw else None), (cw[0] if cw else None) if up else (pw[0] if pw else None),
+                     extra='; '.join('%s %s' % (c, 'yes' if ok else 'NO') for c, ok in conds))
+            if a['sent']:
+                active = a
+        # near-wall warnings for the active alert
+        if active and active['sent']:
+            if active['side'] == 'CE' and cw:
+                w = cw[0]
+                grow = oi['rows'][w][0] - oi30['rows'].get(w, oi['rows'][w])[0]
+                if 0 <= w - spot <= CFG['WALL_NEAR'] and grow > 0 and ('C', w) not in wall_warned:
+                    wall_warned.add(('C', w))
+                    emit('NEAR CALL WALL', 'CE', [('wall growing', True)], None, None, extra='%d calls %.0fL (+%.0fL/30m): book or trail' % (w, oi['rows'][w][0], grow))
+            if active['side'] == 'PE' and pw:
+                w = pw[0]
+                grow = oi['rows'][w][1] - oi30['rows'].get(w, oi['rows'][w])[1]
+                if 0 <= spot - w <= CFG['WALL_NEAR'] and grow > 0 and ('P', w) not in wall_warned:
+                    wall_warned.add(('P', w))
+                    emit('NEAR PUT WALL', 'PE', [('wall growing', True)], None, None, extra='%d puts %.0fL (+%.0fL/30m): book or trail' % (w, oi['rows'][w][1], grow))
+        prev = x
+    return alerts, {'gap': gap_lbl, 'bn0': bn0, 'vix0': vix0, 'runs': len(OV)}
+
+
+def message(a):
+    em = {'CE': '\U0001F7E2', 'PE': '\U0001F534'}.get(a['side'], '')
+    lines = ['%s %s %s | Nifty %.0f' % (em, a['kind'], a['t'], a['spot'])]
+    if a['kind'].endswith('SETUP') or a['kind'].startswith('REVERSAL'):
+        lines.append('BN %s (09:16 %s) | VIX %s (09:16 %s) | put wr %.0fL, call wr %.0fL /30m' % (
+            a['bn'], a['bn0'], a['vix'], a['vix0'], a['put_write30'], a['call_write30']))
+        if a['atm']:
+            lines.append('ATM %s CE %.1f / PE %.1f' % (a['atm'], a['atm_ce'] or 0, a['atm_pe'] or 0))
+        lines.append('Stop: Nifty %s %s | Target: %s' % ('<' if a['side'] == 'CE' else '>', a['stop'], a['target']))
+        lines.append('Walls C %s | P %s' % (a['call_walls'], a['put_walls']))
+        lines.append('Rule C: %s' % a['rule_c_gap'])
+    if a.get('extra'):
+        lines.append(a['extra'])
+    lines.append('Info only, not advice.')
+    return '\n'.join(lines)
+
+
+def outcome(a, day):
+    """Replay only: what Nifty did after the alert, from nifty5min candles."""
+    n5 = [e for e in load('nifty5min', day) if e.get('ohlc', {}).get('high')]
+    after = [e for e in n5 if hm(e['timestamp']) > a['t'] and hm(e['timestamp']) <= '15:15']
+    if not after:
+        return {}
+    s = 1 if a['side'] == 'CE' else -1
+    hi = [e['ohlc']['high'] for e in after]
+    lo = [e['ohlc']['low'] for e in after]
+    mfe = (max(hi) - a['spot']) if s == 1 else (a['spot'] - min(lo))
+    mae = (a['spot'] - min(lo)) if s == 1 else (max(hi) - a['spot'])
+    first = None
+    for e in after:
+        if a.get('stop') and ((s == 1 and e['last_price'] < a['stop']) or (s == -1 and e['last_price'] > a['stop'])):   # stop on 5-min close
+            first = 'STOP %s' % hm(e['timestamp']); break
+        if a.get('target') and ((s == 1 and e['ohlc']['high'] >= a['target']) or (s == -1 and e['ohlc']['low'] <= a['target'])):
+            first = 'TARGET %s' % hm(e['timestamp']); break
+    t60 = [e for e in after if mins(hm(e['timestamp'])) <= mins(a['t']) + 60]
+    r60 = (t60[-1]['last_price'] - a['spot']) * s if t60 else None
+    return {'mfe': round(mfe), 'mae': round(mae), 'first': first or 'neither', 'pts_60m': round(r60) if r60 is not None else None,
+            'pts_close': round((after[-1]['last_price'] - a['spot']) * s)}
+
+
+def replay(days):
+    for d in days:
+        al, ctx = evaluate_day(d)
+        print('==== %s  %s' % (d, ctx))
+        for a in al:
+            tag = 'SENT    ' if a['sent'] else 'filtered'
+            why = '' if a['sent'] else ' (failed: %s)' % ', '.join(c for c, ok in a['conds'] if not ok) if any(not ok for c, ok in a['conds']) else ' (%s)' % (a.get('note') or 'cooldown')
+            o = outcome(a, d) if a['kind'].endswith('SETUP') or a['kind'].startswith('REVERSAL') else {}
+            print('%s %s %-15s Nifty %.0f stop %s tgt %s | putwr %.0f callwr %.0f | %s%s %s' % (
+                tag, a['t'], a['kind'], a['spot'], a['stop'], a['target'], a['put_write30'], a['call_write30'],
+                a.get('extra', ''), why, o))
+
+
+def live(dry):
+    day = datetime.datetime.now().strftime('%Y-%m-%d')
+    al, ctx = evaluate_day(day)
+    sp = os.path.join(OUT, 'tg_alerts_state.json')
+    try:
+        st = json.load(open(sp))
+    except Exception:
+        st = {}
+    sent = set(st.get(day, []))
+    now = datetime.datetime.now().strftime('%H:%M')
+    fresh = [a for a in al if a['sent'] and '%s %s' % (a['t'], a['kind']) not in sent]
+    for a in fresh:   # never send stale alerts (e.g. after a mid-day restart): older than 10 min are only marked
+        if mins(now) - mins(a['t']) > 10:
+            sent.add('%s %s' % (a['t'], a['kind']))
+    new = [a for a in fresh if '%s %s' % (a['t'], a['kind']) not in sent]
+    for a in new:
+        txt = message(a)
+        if dry:
+            print(txt + '\n')
+        else:
+            try:
+                sys.path.insert(0, BASE)
+                import asgboom
+                asgboom.send(txt)
+            except Exception as e:
+                print('send failed: %s' % str(e)[:120])
+                continue
+        sent.add('%s %s' % (a['t'], a['kind']))
+    if not dry:
+        st = {k: v for k, v in st.items() if k >= (datetime.date.today() - datetime.timedelta(days=7)).isoformat()}
+        st[day] = sorted(sent)
+        json.dump(st, open(sp, 'w'), indent=1)
+    return len(new)
+
+
+if __name__ == '__main__':
+    a = sys.argv[1:]
+    if '--replay' in a:
+        replay([x for x in a if re.match(r'\d{4}-\d{2}-\d{2}$', x)])
+    elif '--live' in a:
+        n = live('--dry-run' in a)
+        print('new alerts: %d' % n)
+    else:
+        print(__doc__)
