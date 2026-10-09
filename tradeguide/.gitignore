@@ -26,3 +26,6 @@ Thumbs.db
 
 # Files kept only until deleted (not for GitHub)
 _to_delete/
+
+# Claude backups (restore point, delete later; not for GitHub)
+claude_bak_del_later/
