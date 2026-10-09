@@ -3,6 +3,4 @@ rem Archive the 5-min output JSONs into json_output\archive\<date>, one folder p
 rem Logic is in archive_json.py. optvwap.json and the ASGBOOM state files are kept in place.
 cd /d "%~dp0"
 tg-flask-venv\Scripts\python archive_json.py
-rem Option/futures files (db_migrate_json): roll expired folders and delete data past retention (opt 21 days, fut 92 days)
-tg-flask-venv\Scripts\python db_migrate_json\retention.py
 pause

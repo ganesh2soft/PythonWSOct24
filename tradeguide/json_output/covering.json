@@ -4814,5 +4814,2671 @@
                 "put_ltp": 368.1
             }
         ]
+    },
+    {
+        "timestamp": "2026-10-09T13:51:07.177135",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 478985.0,
+                "put_oi": 7187440.0,
+                "call_volume": 3885700,
+                "put_volume": 87803300,
+                "call_ltp": 468.8,
+                "put_ltp": 15.95
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1890720.0,
+                "put_oi": 12605840.0,
+                "call_volume": 25553775,
+                "put_volume": 147006405,
+                "call_ltp": 377.4,
+                "put_ltp": 24.15
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 3402880.0,
+                "put_oi": 16706755.0,
+                "call_volume": 92537315,
+                "put_volume": 235796535,
+                "call_ltp": 291.0,
+                "put_ltp": 37.65
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 5552105.0,
+                "put_oi": 18889975.0,
+                "call_volume": 208668265,
+                "put_volume": 280798895,
+                "call_ltp": 212.65,
+                "put_ltp": 58.7
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 14888900.0,
+                "put_oi": 18522725.0,
+                "call_volume": 399444240,
+                "put_volume": 304330845,
+                "call_ltp": 145.05,
+                "put_ltp": 90.9
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 14286935.0,
+                "put_oi": 5201885.0,
+                "call_volume": 269673430,
+                "put_volume": 69572620,
+                "call_ltp": 91.05,
+                "put_ltp": 136.25
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 12645945.0,
+                "put_oi": 3618940.0,
+                "call_volume": 183094275,
+                "put_volume": 20102745,
+                "call_ltp": 52.25,
+                "put_ltp": 197.75
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10884640.0,
+                "put_oi": 1350310.0,
+                "call_volume": 141385530,
+                "put_volume": 7303790,
+                "call_ltp": 27.5,
+                "put_ltp": 273.2
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9086415.0,
+                "put_oi": 593970.0,
+                "call_volume": 84270485,
+                "put_volume": 1443390,
+                "call_ltp": 13.6,
+                "put_ltp": 359.0
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T13:56:06.785170",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 473330.0,
+                "put_oi": 7216300.0,
+                "call_volume": 3905785,
+                "put_volume": 88664485,
+                "call_ltp": 461.0,
+                "put_ltp": 16.25
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1882010.0,
+                "put_oi": 12590110.0,
+                "call_volume": 25690925,
+                "put_volume": 148971745,
+                "call_ltp": 370.65,
+                "put_ltp": 24.9
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 3255980.0,
+                "put_oi": 16922230.0,
+                "call_volume": 93222805,
+                "put_volume": 238081870,
+                "call_ltp": 284.35,
+                "put_ltp": 38.7
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 5456035.0,
+                "put_oi": 19134115.0,
+                "call_volume": 210348580,
+                "put_volume": 284263915,
+                "call_ltp": 206.6,
+                "put_ltp": 60.3
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 14820260.0,
+                "put_oi": 19447220.0,
+                "call_volume": 405571335,
+                "put_volume": 311525175,
+                "call_ltp": 139.75,
+                "put_ltp": 93.25
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 14166880.0,
+                "put_oi": 5300035.0,
+                "call_volume": 275344745,
+                "put_volume": 71223945,
+                "call_ltp": 87.0,
+                "put_ltp": 140.4
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 12629305.0,
+                "put_oi": 3615040.0,
+                "call_volume": 186579315,
+                "put_volume": 20590375,
+                "call_ltp": 49.2,
+                "put_ltp": 202.2
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10907325.0,
+                "put_oi": 1201720.0,
+                "call_volume": 144246700,
+                "put_volume": 7610915,
+                "call_ltp": 25.5,
+                "put_ltp": 279.0
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9121905.0,
+                "put_oi": 594425.0,
+                "call_volume": 85948070,
+                "put_volume": 1477645,
+                "call_ltp": 12.5,
+                "put_ltp": 366.6
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T14:01:06.326172",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 459680.0,
+                "put_oi": 7065240.0,
+                "call_volume": 3950960,
+                "put_volume": 90128675,
+                "call_ltp": 472.7,
+                "put_ltp": 15.7
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1788410.0,
+                "put_oi": 12486955.0,
+                "call_volume": 26042900,
+                "put_volume": 151823815,
+                "call_ltp": 380.0,
+                "put_ltp": 23.5
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 3064165.0,
+                "put_oi": 16274700.0,
+                "call_volume": 94443505,
+                "put_volume": 242154705,
+                "call_ltp": 292.2,
+                "put_ltp": 36.35
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 5435560.0,
+                "put_oi": 18460650.0,
+                "call_volume": 213347485,
+                "put_volume": 290569500,
+                "call_ltp": 213.35,
+                "put_ltp": 56.35
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 14080950.0,
+                "put_oi": 19478095.0,
+                "call_volume": 415723815,
+                "put_volume": 321715875,
+                "call_ltp": 145.2,
+                "put_ltp": 87.7
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 14090375.0,
+                "put_oi": 5595005.0,
+                "call_volume": 284257935,
+                "put_volume": 74110140,
+                "call_ltp": 90.3,
+                "put_ltp": 133.55
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 12646205.0,
+                "put_oi": 3679910.0,
+                "call_volume": 192024430,
+                "put_volume": 21409960,
+                "call_ltp": 50.95,
+                "put_ltp": 193.95
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10811710.0,
+                "put_oi": 1232855.0,
+                "call_volume": 148109000,
+                "put_volume": 7893860,
+                "call_ltp": 26.2,
+                "put_ltp": 269.65
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9218690.0,
+                "put_oi": 597870.0,
+                "call_volume": 88211240,
+                "put_volume": 1513200,
+                "call_ltp": 12.75,
+                "put_ltp": 355.95
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T14:06:05.488298",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 453375.0,
+                "put_oi": 7104695.0,
+                "call_volume": 3965780,
+                "put_volume": 91139880,
+                "call_ltp": 477.0,
+                "put_ltp": 14.95
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1687985.0,
+                "put_oi": 12682150.0,
+                "call_volume": 26231855,
+                "put_volume": 153119395,
+                "call_ltp": 387.25,
+                "put_ltp": 22.35
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2874560.0,
+                "put_oi": 16554655.0,
+                "call_volume": 95080570,
+                "put_volume": 244193235,
+                "call_ltp": 299.35,
+                "put_ltp": 34.8
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 5548335.0,
+                "put_oi": 18495555.0,
+                "call_volume": 214829160,
+                "put_volume": 293355790,
+                "call_ltp": 218.4,
+                "put_ltp": 54.05
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 14079910.0,
+                "put_oi": 20100730.0,
+                "call_volume": 421027230,
+                "put_volume": 327058485,
+                "call_ltp": 149.05,
+                "put_ltp": 84.45
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 14355185.0,
+                "put_oi": 5704920.0,
+                "call_volume": 289232450,
+                "put_volume": 75821785,
+                "call_ltp": 93.2,
+                "put_ltp": 128.75
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 12701195.0,
+                "put_oi": 3674190.0,
+                "call_volume": 194788295,
+                "put_volume": 21834605,
+                "call_ltp": 52.85,
+                "put_ltp": 188.35
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10837190.0,
+                "put_oi": 1301755.0,
+                "call_volume": 150625995,
+                "put_volume": 8129355,
+                "call_ltp": 27.3,
+                "put_ltp": 263.0
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9735440.0,
+                "put_oi": 606255.0,
+                "call_volume": 90214605,
+                "put_volume": 1537900,
+                "call_ltp": 13.1,
+                "put_ltp": 348.65
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T14:11:05.079118",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 436995.0,
+                "put_oi": 7002450.0,
+                "call_volume": 4022785,
+                "put_volume": 92853085,
+                "call_ltp": 483.75,
+                "put_ltp": 14.3
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1622855.0,
+                "put_oi": 12652575.0,
+                "call_volume": 26460720,
+                "put_volume": 155347920,
+                "call_ltp": 390.65,
+                "put_ltp": 21.45
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2641600.0,
+                "put_oi": 16325400.0,
+                "call_volume": 96011760,
+                "put_volume": 248065545,
+                "call_ltp": 302.0,
+                "put_ltp": 33.15
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 5331820.0,
+                "put_oi": 18557435.0,
+                "call_volume": 217111570,
+                "put_volume": 298637625,
+                "call_ltp": 220.25,
+                "put_ltp": 51.5
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 13092690.0,
+                "put_oi": 20082270.0,
+                "call_volume": 430609400,
+                "put_volume": 335224305,
+                "call_ltp": 150.05,
+                "put_ltp": 81.2
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 13613145.0,
+                "put_oi": 6590155.0,
+                "call_volume": 300386190,
+                "put_volume": 79649310,
+                "call_ltp": 94.05,
+                "put_ltp": 124.6
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 12736295.0,
+                "put_oi": 3802565.0,
+                "call_volume": 200979285,
+                "put_volume": 22665630,
+                "call_ltp": 52.5,
+                "put_ltp": 183.45
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10718630.0,
+                "put_oi": 1415180.0,
+                "call_volume": 155149215,
+                "put_volume": 8486465,
+                "call_ltp": 26.95,
+                "put_ltp": 257.15
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9909575.0,
+                "put_oi": 612690.0,
+                "call_volume": 92439685,
+                "put_volume": 1606345,
+                "call_ltp": 12.8,
+                "put_ltp": 342.9
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T14:16:06.529603",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 431080.0,
+                "put_oi": 6960785.0,
+                "call_volume": 4107545,
+                "put_volume": 93540655,
+                "call_ltp": 483.35,
+                "put_ltp": 14.0
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1629745.0,
+                "put_oi": 12652055.0,
+                "call_volume": 26534755,
+                "put_volume": 156844285,
+                "call_ltp": 390.4,
+                "put_ltp": 21.25
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2630745.0,
+                "put_oi": 16386175.0,
+                "call_volume": 96370820,
+                "put_volume": 249985775,
+                "call_ltp": 301.5,
+                "put_ltp": 32.95
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 5271825.0,
+                "put_oi": 18784285.0,
+                "call_volume": 218049260,
+                "put_volume": 300954810,
+                "call_ltp": 221.1,
+                "put_ltp": 51.8
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 13392275.0,
+                "put_oi": 20467590.0,
+                "call_volume": 434438680,
+                "put_volume": 339756950,
+                "call_ltp": 150.3,
+                "put_ltp": 81.7
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 13670020.0,
+                "put_oi": 6762470.0,
+                "call_volume": 304965505,
+                "put_volume": 81714685,
+                "call_ltp": 93.9,
+                "put_ltp": 125.1
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 13039390.0,
+                "put_oi": 3864120.0,
+                "call_volume": 203997690,
+                "put_volume": 23105940,
+                "call_ltp": 52.9,
+                "put_ltp": 184.15
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10875930.0,
+                "put_oi": 1368575.0,
+                "call_volume": 157218620,
+                "put_volume": 8624135,
+                "call_ltp": 27.05,
+                "put_ltp": 258.5
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9739275.0,
+                "put_oi": 605995.0,
+                "call_volume": 93662335,
+                "put_volume": 1633775,
+                "call_ltp": 12.95,
+                "put_ltp": 343.75
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T14:21:06.482140",
+        "quickdata": [
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1554865.0,
+                "put_oi": 12213305.0,
+                "call_volume": 26752570,
+                "put_volume": 160233905,
+                "call_ltp": 409.1,
+                "put_ltp": 19.3
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2533310.0,
+                "put_oi": 15313155.0,
+                "call_volume": 97253195,
+                "put_volume": 255145020,
+                "call_ltp": 321.7,
+                "put_ltp": 29.35
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 4916145.0,
+                "put_oi": 18177900.0,
+                "call_volume": 220433785,
+                "put_volume": 307718645,
+                "call_ltp": 237.35,
+                "put_ltp": 46.25
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 11668410.0,
+                "put_oi": 19630390.0,
+                "call_volume": 444786875,
+                "put_volume": 351035425,
+                "call_ltp": 164.0,
+                "put_ltp": 73.15
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 12385295.0,
+                "put_oi": 7434375.0,
+                "call_volume": 319820475,
+                "put_volume": 87965735,
+                "call_ltp": 105.0,
+                "put_ltp": 112.65
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 12744810.0,
+                "put_oi": 4014270.0,
+                "call_volume": 213338775,
+                "put_volume": 24579035,
+                "call_ltp": 59.15,
+                "put_ltp": 168.4
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10255115.0,
+                "put_oi": 1462240.0,
+                "call_volume": 163920705,
+                "put_volume": 9158565,
+                "call_ltp": 30.85,
+                "put_ltp": 238.6
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9780420.0,
+                "put_oi": 585975.0,
+                "call_volume": 98254130,
+                "put_volume": 1744665,
+                "call_ltp": 14.1,
+                "put_ltp": 322.0
+            },
+            {
+                "strike_price": 23000.0,
+                "call_oi": 15829125.0,
+                "put_oi": 914160.0,
+                "call_volume": 117039260,
+                "put_volume": 2057315,
+                "call_ltp": 7.1,
+                "put_ltp": 414.45
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T14:26:06.568677",
+        "quickdata": [
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1546025.0,
+                "put_oi": 12155455.0,
+                "call_volume": 26836680,
+                "put_volume": 161741255,
+                "call_ltp": 411.8,
+                "put_ltp": 19.3
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2412995.0,
+                "put_oi": 15310425.0,
+                "call_volume": 97904300,
+                "put_volume": 257298535,
+                "call_ltp": 321.9,
+                "put_ltp": 29.65
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 4876300.0,
+                "put_oi": 18384405.0,
+                "call_volume": 221775840,
+                "put_volume": 310993670,
+                "call_ltp": 238.55,
+                "put_ltp": 46.1
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 11477570.0,
+                "put_oi": 20031960.0,
+                "call_volume": 450064810,
+                "put_volume": 356465265,
+                "call_ltp": 165.2,
+                "put_ltp": 73.05
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 12406095.0,
+                "put_oi": 7972575.0,
+                "call_volume": 329339790,
+                "put_volume": 92258595,
+                "call_ltp": 104.95,
+                "put_ltp": 112.7
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 12882350.0,
+                "put_oi": 4073355.0,
+                "call_volume": 219950250,
+                "put_volume": 25506260,
+                "call_ltp": 59.9,
+                "put_ltp": 168.0
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 9983545.0,
+                "put_oi": 1494220.0,
+                "call_volume": 168640290,
+                "put_volume": 9498515,
+                "call_ltp": 30.75,
+                "put_ltp": 239.2
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 10956205.0,
+                "put_oi": 584480.0,
+                "call_volume": 101658375,
+                "put_volume": 1822405,
+                "call_ltp": 14.2,
+                "put_ltp": 321.25
+            },
+            {
+                "strike_price": 23000.0,
+                "call_oi": 15863770.0,
+                "put_oi": 930280.0,
+                "call_volume": 120319420,
+                "put_volume": 2139150,
+                "call_ltp": 7.05,
+                "put_ltp": 415.3
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T14:31:06.536873",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 399555.0,
+                "put_oi": 6762990.0,
+                "call_volume": 4239885,
+                "put_volume": 98273175,
+                "call_ltp": 484.0,
+                "put_ltp": 14.05
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1542450.0,
+                "put_oi": 12228645.0,
+                "call_volume": 26913185,
+                "put_volume": 163195370,
+                "call_ltp": 391.4,
+                "put_ltp": 21.35
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2385565.0,
+                "put_oi": 15531685.0,
+                "call_volume": 98216820,
+                "put_volume": 259981930,
+                "call_ltp": 303.25,
+                "put_ltp": 32.9
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 4848415.0,
+                "put_oi": 18391100.0,
+                "call_volume": 222699555,
+                "put_volume": 314661230,
+                "call_ltp": 222.45,
+                "put_ltp": 51.45
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 11241100.0,
+                "put_oi": 20363590.0,
+                "call_volume": 453755640,
+                "put_volume": 362694085,
+                "call_ltp": 151.5,
+                "put_ltp": 80.7
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 12823655.0,
+                "put_oi": 7991230.0,
+                "call_volume": 335914540,
+                "put_volume": 96606575,
+                "call_ltp": 94.5,
+                "put_ltp": 124.05
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 13144105.0,
+                "put_oi": 4037930.0,
+                "call_volume": 224508700,
+                "put_volume": 26435435,
+                "call_ltp": 52.95,
+                "put_ltp": 182.0
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 9962420.0,
+                "put_oi": 1468480.0,
+                "call_volume": 171731820,
+                "put_volume": 9817015,
+                "call_ltp": 26.7,
+                "put_ltp": 256.25
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 11282115.0,
+                "put_oi": 576030.0,
+                "call_volume": 104031200,
+                "put_volume": 1866215,
+                "call_ltp": 12.15,
+                "put_ltp": 341.85
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T14:36:06.433760",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 394225.0,
+                "put_oi": 6941740.0,
+                "call_volume": 4246385,
+                "put_volume": 99487310,
+                "call_ltp": 482.7,
+                "put_ltp": 14.05
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1522560.0,
+                "put_oi": 12350975.0,
+                "call_volume": 27062945,
+                "put_volume": 164642270,
+                "call_ltp": 389.0,
+                "put_ltp": 21.25
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2390310.0,
+                "put_oi": 15521740.0,
+                "call_volume": 98490015,
+                "put_volume": 262705755,
+                "call_ltp": 300.8,
+                "put_ltp": 33.0
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 4913675.0,
+                "put_oi": 18740280.0,
+                "call_volume": 223620410,
+                "put_volume": 318138925,
+                "call_ltp": 219.9,
+                "put_ltp": 51.45
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 11576760.0,
+                "put_oi": 20647380.0,
+                "call_volume": 457420925,
+                "put_volume": 368949815,
+                "call_ltp": 149.6,
+                "put_ltp": 81.25
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 13187720.0,
+                "put_oi": 7680790.0,
+                "call_volume": 340635750,
+                "put_volume": 99984040,
+                "call_ltp": 93.0,
+                "put_ltp": 123.95
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 13498745.0,
+                "put_oi": 4028505.0,
+                "call_volume": 227955845,
+                "put_volume": 27114815,
+                "call_ltp": 51.55,
+                "put_ltp": 183.1
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10110815.0,
+                "put_oi": 1430715.0,
+                "call_volume": 174005000,
+                "put_volume": 10068435,
+                "call_ltp": 26.0,
+                "put_ltp": 257.6
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 11404380.0,
+                "put_oi": 581035.0,
+                "call_volume": 105656785,
+                "put_volume": 1911650,
+                "call_ltp": 11.9,
+                "put_ltp": 344.35
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T14:40:06.676474",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 394290.0,
+                "put_oi": 6963515.0,
+                "call_volume": 4250285,
+                "put_volume": 99908900,
+                "call_ltp": 483.2,
+                "put_ltp": 13.8
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1525030.0,
+                "put_oi": 12319190.0,
+                "call_volume": 27097200,
+                "put_volume": 165342580,
+                "call_ltp": 390.0,
+                "put_ltp": 20.9
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2380040.0,
+                "put_oi": 15594215.0,
+                "call_volume": 98639775,
+                "put_volume": 264090645,
+                "call_ltp": 301.75,
+                "put_ltp": 32.4
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 4961450.0,
+                "put_oi": 18729425.0,
+                "call_volume": 223983435,
+                "put_volume": 319596615,
+                "call_ltp": 220.9,
+                "put_ltp": 50.65
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 11406525.0,
+                "put_oi": 20762430.0,
+                "call_volume": 459679870,
+                "put_volume": 372112845,
+                "call_ltp": 150.5,
+                "put_ltp": 79.9
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 13213200.0,
+                "put_oi": 7586605.0,
+                "call_volume": 342946175,
+                "put_volume": 101578555,
+                "call_ltp": 92.8,
+                "put_ltp": 123.8
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 13704275.0,
+                "put_oi": 4027010.0,
+                "call_volume": 229605415,
+                "put_volume": 27446055,
+                "call_ltp": 51.7,
+                "put_ltp": 181.95
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10161840.0,
+                "put_oi": 1409200.0,
+                "call_volume": 175113640,
+                "put_volume": 10162490,
+                "call_ltp": 26.0,
+                "put_ltp": 257.0
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 11418225.0,
+                "put_oi": 583180.0,
+                "call_volume": 106506790,
+                "put_volume": 1924455,
+                "call_ltp": 11.9,
+                "put_ltp": 342.0
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T14:46:06.812777",
+        "quickdata": [
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1506180.0,
+                "put_oi": 12292410.0,
+                "call_volume": 27253915,
+                "put_volume": 168490075,
+                "call_ltp": 404.2,
+                "put_ltp": 17.95
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2373020.0,
+                "put_oi": 15127710.0,
+                "call_volume": 99252790,
+                "put_volume": 268340800,
+                "call_ltp": 315.0,
+                "put_ltp": 27.9
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 5011695.0,
+                "put_oi": 18315245.0,
+                "call_volume": 225671550,
+                "put_volume": 325228150,
+                "call_ltp": 231.6,
+                "put_ltp": 44.05
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 11263135.0,
+                "put_oi": 19692270.0,
+                "call_volume": 466849890,
+                "put_volume": 382650645,
+                "call_ltp": 158.45,
+                "put_ltp": 71.1
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 13839605.0,
+                "put_oi": 7247825.0,
+                "call_volume": 353522975,
+                "put_volume": 106942160,
+                "call_ltp": 99.25,
+                "put_ltp": 112.0
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 13727870.0,
+                "put_oi": 4013815.0,
+                "call_volume": 236025205,
+                "put_volume": 28625805,
+                "call_ltp": 56.0,
+                "put_ltp": 168.45
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10404290.0,
+                "put_oi": 1428180.0,
+                "call_volume": 179535590,
+                "put_volume": 10558795,
+                "call_ltp": 28.7,
+                "put_ltp": 241.2
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 11186760.0,
+                "put_oi": 582920.0,
+                "call_volume": 109141305,
+                "put_volume": 1975740,
+                "call_ltp": 13.3,
+                "put_ltp": 326.4
+            },
+            {
+                "strike_price": 23000.0,
+                "call_oi": 15828800.0,
+                "put_oi": 902070.0,
+                "call_volume": 128329370,
+                "put_volume": 2373150,
+                "call_ltp": 6.9,
+                "put_ltp": 418.3
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T14:51:05.910941",
+        "quickdata": [
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1511120.0,
+                "put_oi": 11994775.0,
+                "call_volume": 27343290,
+                "put_volume": 170385865,
+                "call_ltp": 397.1,
+                "put_ltp": 18.6
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2351830.0,
+                "put_oi": 15772965.0,
+                "call_volume": 99534175,
+                "put_volume": 270731240,
+                "call_ltp": 308.25,
+                "put_ltp": 29.15
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 4919330.0,
+                "put_oi": 18379140.0,
+                "call_volume": 226262140,
+                "put_volume": 327978560,
+                "call_ltp": 225.6,
+                "put_ltp": 46.1
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 10989680.0,
+                "put_oi": 20046975.0,
+                "call_volume": 469826370,
+                "put_volume": 387123230,
+                "call_ltp": 153.35,
+                "put_ltp": 73.9
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 13520845.0,
+                "put_oi": 7536555.0,
+                "call_volume": 359093345,
+                "put_volume": 109646420,
+                "call_ltp": 95.45,
+                "put_ltp": 115.55
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 13769795.0,
+                "put_oi": 4042870.0,
+                "call_volume": 239766670,
+                "put_volume": 29269435,
+                "call_ltp": 52.9,
+                "put_ltp": 173.5
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10591685.0,
+                "put_oi": 1449175.0,
+                "call_volume": 182266370,
+                "put_volume": 10751715,
+                "call_ltp": 26.85,
+                "put_ltp": 247.15
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 10993840.0,
+                "put_oi": 588185.0,
+                "call_volume": 111106320,
+                "put_volume": 2004535,
+                "call_ltp": 12.4,
+                "put_ltp": 332.2
+            },
+            {
+                "strike_price": 23000.0,
+                "call_oi": 15676830.0,
+                "put_oi": 897390.0,
+                "call_volume": 129758460,
+                "put_volume": 2418520,
+                "call_ltp": 6.55,
+                "put_ltp": 426.95
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T14:56:06.366257",
+        "quickdata": [
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1509365.0,
+                "put_oi": 11746605.0,
+                "call_volume": 27408745,
+                "put_volume": 172019380,
+                "call_ltp": 404.35,
+                "put_ltp": 17.15
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2335385.0,
+                "put_oi": 15735265.0,
+                "call_volume": 99731580,
+                "put_volume": 272424230,
+                "call_ltp": 314.45,
+                "put_ltp": 26.95
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 4911920.0,
+                "put_oi": 18067205.0,
+                "call_volume": 226748535,
+                "put_volume": 330376995,
+                "call_ltp": 230.85,
+                "put_ltp": 43.0
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 10876125.0,
+                "put_oi": 19689540.0,
+                "call_volume": 472069195,
+                "put_volume": 390937820,
+                "call_ltp": 157.65,
+                "put_ltp": 69.65
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 13645515.0,
+                "put_oi": 7507890.0,
+                "call_volume": 363367940,
+                "put_volume": 112242780,
+                "call_ltp": 98.7,
+                "put_ltp": 110.25
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 13873340.0,
+                "put_oi": 4028180.0,
+                "call_volume": 242406385,
+                "put_volume": 29788980,
+                "call_ltp": 55.15,
+                "put_ltp": 166.85
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10645375.0,
+                "put_oi": 1440725.0,
+                "call_volume": 184092740,
+                "put_volume": 10925265,
+                "call_ltp": 27.9,
+                "put_ltp": 240.35
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 11022050.0,
+                "put_oi": 584805.0,
+                "call_volume": 112543795,
+                "put_volume": 2025205,
+                "call_ltp": 13.05,
+                "put_ltp": 325.0
+            },
+            {
+                "strike_price": 23000.0,
+                "call_oi": 15603705.0,
+                "put_oi": 889525.0,
+                "call_volume": 131313650,
+                "put_volume": 2489240,
+                "call_ltp": 6.85,
+                "put_ltp": 421.5
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T15:01:06.936755",
+        "quickdata": [
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1464255.0,
+                "put_oi": 11650145.0,
+                "call_volume": 27504165,
+                "put_volume": 174398120,
+                "call_ltp": 392.0,
+                "put_ltp": 18.15
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2366325.0,
+                "put_oi": 15233790.0,
+                "call_volume": 100175075,
+                "put_volume": 276186690,
+                "call_ltp": 304.3,
+                "put_ltp": 28.6
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 4637360.0,
+                "put_oi": 17432025.0,
+                "call_volume": 227890715,
+                "put_volume": 335159240,
+                "call_ltp": 221.1,
+                "put_ltp": 45.55
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 10849280.0,
+                "put_oi": 19924775.0,
+                "call_volume": 476444800,
+                "put_volume": 398116875,
+                "call_ltp": 148.95,
+                "put_ltp": 73.85
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 13179075.0,
+                "put_oi": 7725510.0,
+                "call_volume": 370902610,
+                "put_volume": 116579775,
+                "call_ltp": 91.2,
+                "put_ltp": 116.45
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 13503620.0,
+                "put_oi": 4004520.0,
+                "call_volume": 246952160,
+                "put_volume": 30817540,
+                "call_ltp": 50.15,
+                "put_ltp": 174.4
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10505755.0,
+                "put_oi": 1454115.0,
+                "call_volume": 187659030,
+                "put_volume": 11277435,
+                "call_ltp": 24.9,
+                "put_ltp": 249.35
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 10824190.0,
+                "put_oi": 579800.0,
+                "call_volume": 114483460,
+                "put_volume": 2066350,
+                "call_ltp": 11.55,
+                "put_ltp": 336.0
+            },
+            {
+                "strike_price": 23000.0,
+                "call_oi": 15629835.0,
+                "put_oi": 904280.0,
+                "call_volume": 133138460,
+                "put_volume": 2563405,
+                "call_ltp": 6.15,
+                "put_ltp": 428.9
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T15:06:06.205535",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 370045.0,
+                "put_oi": 6673615.0,
+                "call_volume": 4344990,
+                "put_volume": 106422680,
+                "call_ltp": 476.15,
+                "put_ltp": 12.4
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1351285.0,
+                "put_oi": 11647870.0,
+                "call_volume": 27758770,
+                "put_volume": 176806955,
+                "call_ltp": 381.1,
+                "put_ltp": 19.0
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2356380.0,
+                "put_oi": 15538185.0,
+                "call_volume": 100656920,
+                "put_volume": 280305350,
+                "call_ltp": 292.35,
+                "put_ltp": 30.05
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 4475445.0,
+                "put_oi": 17088760.0,
+                "call_volume": 229188310,
+                "put_volume": 340658760,
+                "call_ltp": 211.4,
+                "put_ltp": 48.25
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 10710440.0,
+                "put_oi": 20027410.0,
+                "call_volume": 481512265,
+                "put_volume": 409302075,
+                "call_ltp": 140.4,
+                "put_ltp": 77.75
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 12587120.0,
+                "put_oi": 7278700.0,
+                "call_volume": 378606735,
+                "put_volume": 122268120,
+                "call_ltp": 85.35,
+                "put_ltp": 122.35
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 13382785.0,
+                "put_oi": 3776695.0,
+                "call_volume": 253072560,
+                "put_volume": 32088810,
+                "call_ltp": 46.45,
+                "put_ltp": 183.25
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10458890.0,
+                "put_oi": 1171430.0,
+                "call_volume": 191584900,
+                "put_volume": 11831625,
+                "call_ltp": 23.0,
+                "put_ltp": 260.3
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 10511410.0,
+                "put_oi": 573560.0,
+                "call_volume": 117020800,
+                "put_volume": 2112435,
+                "call_ltp": 10.95,
+                "put_ltp": 347.7
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T15:11:06.246334",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 367055.0,
+                "put_oi": 6753175.0,
+                "call_volume": 4363970,
+                "put_volume": 107806855,
+                "call_ltp": 471.95,
+                "put_ltp": 12.95
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1312220.0,
+                "put_oi": 11486215.0,
+                "call_volume": 27850030,
+                "put_volume": 178878245,
+                "call_ltp": 377.75,
+                "put_ltp": 19.8
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2296125.0,
+                "put_oi": 15011165.0,
+                "call_volume": 100911005,
+                "put_volume": 283491975,
+                "call_ltp": 289.85,
+                "put_ltp": 31.4
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 4232475.0,
+                "put_oi": 16213015.0,
+                "call_volume": 230555455,
+                "put_volume": 344759285,
+                "call_ltp": 207.65,
+                "put_ltp": 49.65
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 10816715.0,
+                "put_oi": 19273800.0,
+                "call_volume": 484891355,
+                "put_volume": 416082680,
+                "call_ltp": 136.85,
+                "put_ltp": 79.2
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 12004070.0,
+                "put_oi": 6849245.0,
+                "call_volume": 383682520,
+                "put_volume": 125322925,
+                "call_ltp": 82.65,
+                "put_ltp": 124.35
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 13181480.0,
+                "put_oi": 3711370.0,
+                "call_volume": 256878115,
+                "put_volume": 32709235,
+                "call_ltp": 44.45,
+                "put_ltp": 186.1
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10553335.0,
+                "put_oi": 1171950.0,
+                "call_volume": 194216035,
+                "put_volume": 12056265,
+                "call_ltp": 22.1,
+                "put_ltp": 264.0
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 10364055.0,
+                "put_oi": 566345.0,
+                "call_volume": 118649700,
+                "put_volume": 2142205,
+                "call_ltp": 10.45,
+                "put_ltp": 351.1
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T15:16:06.741697",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 357175.0,
+                "put_oi": 6711640.0,
+                "call_volume": 4456465,
+                "put_volume": 110031025,
+                "call_ltp": 483.1,
+                "put_ltp": 11.7
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1243320.0,
+                "put_oi": 11096930.0,
+                "call_volume": 28055625,
+                "put_volume": 182260650,
+                "call_ltp": 389.9,
+                "put_ltp": 17.65
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2209545.0,
+                "put_oi": 14410955.0,
+                "call_volume": 101405590,
+                "put_volume": 287183000,
+                "call_ltp": 300.3,
+                "put_ltp": 27.4
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 3824600.0,
+                "put_oi": 15143570.0,
+                "call_volume": 232098880,
+                "put_volume": 350757745,
+                "call_ltp": 216.55,
+                "put_ltp": 44.05
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 11393330.0,
+                "put_oi": 17388085.0,
+                "call_volume": 490381060,
+                "put_volume": 427416275,
+                "call_ltp": 143.05,
+                "put_ltp": 71.3
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 11091925.0,
+                "put_oi": 5865015.0,
+                "call_volume": 391328015,
+                "put_volume": 129814425,
+                "call_ltp": 87.3,
+                "put_ltp": 114.4
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 12632295.0,
+                "put_oi": 3548155.0,
+                "call_volume": 262037945,
+                "put_volume": 33832175,
+                "call_ltp": 47.4,
+                "put_ltp": 174.25
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 10195315.0,
+                "put_oi": 1101165.0,
+                "call_volume": 197994745,
+                "put_volume": 12513020,
+                "call_ltp": 23.65,
+                "put_ltp": 250.95
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9954360.0,
+                "put_oi": 586170.0,
+                "call_volume": 121567550,
+                "put_volume": 2254070,
+                "call_ltp": 11.0,
+                "put_ltp": 338.4
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T15:21:06.359502",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 360750.0,
+                "put_oi": 6576830.0,
+                "call_volume": 4526015,
+                "put_volume": 111764055,
+                "call_ltp": 472.65,
+                "put_ltp": 12.95
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1220245.0,
+                "put_oi": 10890750.0,
+                "call_volume": 28153255,
+                "put_volume": 183947660,
+                "call_ltp": 378.2,
+                "put_ltp": 19.35
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2175095.0,
+                "put_oi": 14152515.0,
+                "call_volume": 101807160,
+                "put_volume": 289466580,
+                "call_ltp": 288.75,
+                "put_ltp": 29.85
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 3650725.0,
+                "put_oi": 14570010.0,
+                "call_volume": 232858470,
+                "put_volume": 353846740,
+                "call_ltp": 207.55,
+                "put_ltp": 47.3
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 11228165.0,
+                "put_oi": 16858725.0,
+                "call_volume": 493614420,
+                "put_volume": 432656055,
+                "call_ltp": 135.35,
+                "put_ltp": 76.1
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 10534940.0,
+                "put_oi": 5682495.0,
+                "call_volume": 396058780,
+                "put_volume": 131964430,
+                "call_ltp": 80.45,
+                "put_ltp": 120.5
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 11884860.0,
+                "put_oi": 3480295.0,
+                "call_volume": 265692180,
+                "put_volume": 34249540,
+                "call_ltp": 43.15,
+                "put_ltp": 183.05
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 9657245.0,
+                "put_oi": 1076010.0,
+                "call_volume": 200716685,
+                "put_volume": 12677275,
+                "call_ltp": 21.2,
+                "put_ltp": 261.0
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 10043280.0,
+                "put_oi": 583765.0,
+                "call_volume": 123746480,
+                "put_volume": 2334345,
+                "call_ltp": 10.0,
+                "put_ltp": 349.5
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T15:26:06.837544",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 359060.0,
+                "put_oi": 6593665.0,
+                "call_volume": 4541095,
+                "put_volume": 113313655,
+                "call_ltp": 473.85,
+                "put_ltp": 12.5
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1203215.0,
+                "put_oi": 10158070.0,
+                "call_volume": 28219425,
+                "put_volume": 186255030,
+                "call_ltp": 380.5,
+                "put_ltp": 18.95
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2115425.0,
+                "put_oi": 13654290.0,
+                "call_volume": 102031020,
+                "put_volume": 291793450,
+                "call_ltp": 291.9,
+                "put_ltp": 29.6
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 3585400.0,
+                "put_oi": 13854750.0,
+                "call_volume": 233641655,
+                "put_volume": 356960175,
+                "call_ltp": 209.95,
+                "put_ltp": 46.85
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 10990005.0,
+                "put_oi": 16095040.0,
+                "call_volume": 495904175,
+                "put_volume": 436850050,
+                "call_ltp": 137.65,
+                "put_ltp": 75.1
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 10031385.0,
+                "put_oi": 5337085.0,
+                "call_volume": 399489805,
+                "put_volume": 133361865,
+                "call_ltp": 82.65,
+                "put_ltp": 119.5
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 11334830.0,
+                "put_oi": 3413345.0,
+                "call_volume": 269052160,
+                "put_volume": 34580130,
+                "call_ltp": 44.15,
+                "put_ltp": 180.75
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 9346480.0,
+                "put_oi": 1060670.0,
+                "call_volume": 202767565,
+                "put_volume": 12768535,
+                "call_ltp": 21.8,
+                "put_ltp": 258.45
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9897940.0,
+                "put_oi": 565500.0,
+                "call_volume": 125240245,
+                "put_volume": 2375165,
+                "call_ltp": 10.2,
+                "put_ltp": 346.5
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T15:31:06.246756",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 355485.0,
+                "put_oi": 6664710.0,
+                "call_volume": 4555135,
+                "put_volume": 115217635,
+                "call_ltp": 470.6,
+                "put_ltp": 13.85
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1175460.0,
+                "put_oi": 9530690.0,
+                "call_volume": 28280005,
+                "put_volume": 188687720,
+                "call_ltp": 377.85,
+                "put_ltp": 20.85
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 2015845.0,
+                "put_oi": 12529790.0,
+                "call_volume": 102258650,
+                "put_volume": 294817575,
+                "call_ltp": 289.0,
+                "put_ltp": 31.9
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 3354130.0,
+                "put_oi": 12547015.0,
+                "call_volume": 234247325,
+                "put_volume": 360848410,
+                "call_ltp": 207.55,
+                "put_ltp": 49.7
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 10668645.0,
+                "put_oi": 14846390.0,
+                "call_volume": 498420845,
+                "put_volume": 441523420,
+                "call_ltp": 135.0,
+                "put_ltp": 78.35
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 8959795.0,
+                "put_oi": 4690140.0,
+                "call_volume": 403098280,
+                "put_volume": 135150990,
+                "call_ltp": 80.85,
+                "put_ltp": 123.3
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 10311015.0,
+                "put_oi": 3323710.0,
+                "call_volume": 272002705,
+                "put_volume": 34927230,
+                "call_ltp": 43.35,
+                "put_ltp": 185.6
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 9081085.0,
+                "put_oi": 1053780.0,
+                "call_volume": 204952085,
+                "put_volume": 12870585,
+                "call_ltp": 21.35,
+                "put_ltp": 263.45
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9938695.0,
+                "put_oi": 562770.0,
+                "call_volume": 127033465,
+                "put_volume": 2406365,
+                "call_ltp": 10.0,
+                "put_ltp": 351.7
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T15:36:06.867800",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 350935.0,
+                "put_oi": 6298565.0,
+                "call_volume": 4570085,
+                "put_volume": 116959765,
+                "call_ltp": 472.4,
+                "put_ltp": 13.2
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1155765.0,
+                "put_oi": 9090900.0,
+                "call_volume": 28354430,
+                "put_volume": 191398155,
+                "call_ltp": 378.75,
+                "put_ltp": 20.1
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 1998230.0,
+                "put_oi": 12113985.0,
+                "call_volume": 102449620,
+                "put_volume": 297435125,
+                "call_ltp": 289.95,
+                "put_ltp": 31.25
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 3157895.0,
+                "put_oi": 11436945.0,
+                "call_volume": 234795210,
+                "put_volume": 364523770,
+                "call_ltp": 208.5,
+                "put_ltp": 49.3
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 10350600.0,
+                "put_oi": 13905385.0,
+                "call_volume": 500536400,
+                "put_volume": 445154385,
+                "call_ltp": 136.35,
+                "put_ltp": 77.5
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 8143785.0,
+                "put_oi": 4354545.0,
+                "call_volume": 406008330,
+                "put_volume": 136652230,
+                "call_ltp": 81.85,
+                "put_ltp": 122.85
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 9886305.0,
+                "put_oi": 3240900.0,
+                "call_volume": 274511900,
+                "put_volume": 35363250,
+                "call_ltp": 44.0,
+                "put_ltp": 184.55
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 8817055.0,
+                "put_oi": 1036295.0,
+                "call_volume": 206719175,
+                "put_volume": 13000065,
+                "call_ltp": 21.7,
+                "put_ltp": 261.8
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9725885.0,
+                "put_oi": 555360.0,
+                "call_volume": 128631165,
+                "put_volume": 2426580,
+                "call_ltp": 10.2,
+                "put_ltp": 350.75
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T15:41:06.175127",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 349505.0,
+                "put_oi": 6110130.0,
+                "call_volume": 4590235,
+                "put_volume": 118407250,
+                "call_ltp": 477.0,
+                "put_ltp": 12.9
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1135875.0,
+                "put_oi": 8738795.0,
+                "call_volume": 28457000,
+                "put_volume": 193254685,
+                "call_ltp": 380.1,
+                "put_ltp": 19.15
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 1928810.0,
+                "put_oi": 11560185.0,
+                "call_volume": 102601915,
+                "put_volume": 299201045,
+                "call_ltp": 293.15,
+                "put_ltp": 29.75
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 2939820.0,
+                "put_oi": 10872160.0,
+                "call_volume": 235259115,
+                "put_volume": 366652455,
+                "call_ltp": 208.9,
+                "put_ltp": 46.8
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 9898460.0,
+                "put_oi": 13191165.0,
+                "call_volume": 502417630,
+                "put_volume": 448167720,
+                "call_ltp": 137.05,
+                "put_ltp": 74.7
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 7754955.0,
+                "put_oi": 4138745.0,
+                "call_volume": 408398900,
+                "put_volume": 137583615,
+                "call_ltp": 82.95,
+                "put_ltp": 119.7
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 9573395.0,
+                "put_oi": 3143205.0,
+                "call_volume": 276929055,
+                "put_volume": 35678435,
+                "call_ltp": 44.65,
+                "put_ltp": 180.0
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 8408595.0,
+                "put_oi": 1024920.0,
+                "call_volume": 208529100,
+                "put_volume": 13090740,
+                "call_ltp": 22.3,
+                "put_ltp": 257.3
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9632415.0,
+                "put_oi": 546585.0,
+                "call_volume": 130144625,
+                "put_volume": 2448420,
+                "call_ltp": 10.6,
+                "put_ltp": 345.35
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T22:40:07.774777",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 349505.0,
+                "put_oi": 6110130.0,
+                "call_volume": 4590235,
+                "put_volume": 118407250,
+                "call_ltp": 477.0,
+                "put_ltp": 12.9
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1135875.0,
+                "put_oi": 8738795.0,
+                "call_volume": 28457000,
+                "put_volume": 193254685,
+                "call_ltp": 380.1,
+                "put_ltp": 19.15
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 1928810.0,
+                "put_oi": 11560185.0,
+                "call_volume": 102601915,
+                "put_volume": 299201045,
+                "call_ltp": 293.15,
+                "put_ltp": 29.75
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 2939820.0,
+                "put_oi": 10872160.0,
+                "call_volume": 235259115,
+                "put_volume": 366652455,
+                "call_ltp": 208.9,
+                "put_ltp": 46.8
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 9898460.0,
+                "put_oi": 13191165.0,
+                "call_volume": 502417630,
+                "put_volume": 448167720,
+                "call_ltp": 137.05,
+                "put_ltp": 74.7
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 7754955.0,
+                "put_oi": 4138745.0,
+                "call_volume": 408398900,
+                "put_volume": 137583615,
+                "call_ltp": 82.95,
+                "put_ltp": 119.7
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 9573395.0,
+                "put_oi": 3143205.0,
+                "call_volume": 276929055,
+                "put_volume": 35678435,
+                "call_ltp": 44.65,
+                "put_ltp": 180.0
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 8408595.0,
+                "put_oi": 1024920.0,
+                "call_volume": 208529100,
+                "put_volume": 13090740,
+                "call_ltp": 22.3,
+                "put_ltp": 257.3
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9632415.0,
+                "put_oi": 546585.0,
+                "call_volume": 130144625,
+                "put_volume": 2448420,
+                "call_ltp": 10.6,
+                "put_ltp": 345.35
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T22:55:06.828800",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 349505.0,
+                "put_oi": 6110130.0,
+                "call_volume": 4590235,
+                "put_volume": 118407250,
+                "call_ltp": 477.0,
+                "put_ltp": 12.9
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1135875.0,
+                "put_oi": 8738795.0,
+                "call_volume": 28457000,
+                "put_volume": 193254685,
+                "call_ltp": 380.1,
+                "put_ltp": 19.15
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 1928810.0,
+                "put_oi": 11560185.0,
+                "call_volume": 102601915,
+                "put_volume": 299201045,
+                "call_ltp": 293.15,
+                "put_ltp": 29.75
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 2939820.0,
+                "put_oi": 10872160.0,
+                "call_volume": 235259115,
+                "put_volume": 366652455,
+                "call_ltp": 208.9,
+                "put_ltp": 46.8
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 9898460.0,
+                "put_oi": 13191165.0,
+                "call_volume": 502417630,
+                "put_volume": 448167720,
+                "call_ltp": 137.05,
+                "put_ltp": 74.7
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 7754955.0,
+                "put_oi": 4138745.0,
+                "call_volume": 408398900,
+                "put_volume": 137583615,
+                "call_ltp": 82.95,
+                "put_ltp": 119.7
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 9573395.0,
+                "put_oi": 3143205.0,
+                "call_volume": 276929055,
+                "put_volume": 35678435,
+                "call_ltp": 44.65,
+                "put_ltp": 180.0
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 8408595.0,
+                "put_oi": 1024920.0,
+                "call_volume": 208529100,
+                "put_volume": 13090740,
+                "call_ltp": 22.3,
+                "put_ltp": 257.3
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9632415.0,
+                "put_oi": 546585.0,
+                "call_volume": 130144625,
+                "put_volume": 2448420,
+                "call_ltp": 10.6,
+                "put_ltp": 345.35
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T23:00:06.277165",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 349505.0,
+                "put_oi": 6110130.0,
+                "call_volume": 4590235,
+                "put_volume": 118407250,
+                "call_ltp": 477.0,
+                "put_ltp": 12.9
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1135875.0,
+                "put_oi": 8738795.0,
+                "call_volume": 28457000,
+                "put_volume": 193254685,
+                "call_ltp": 380.1,
+                "put_ltp": 19.15
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 1928810.0,
+                "put_oi": 11560185.0,
+                "call_volume": 102601915,
+                "put_volume": 299201045,
+                "call_ltp": 293.15,
+                "put_ltp": 29.75
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 2939820.0,
+                "put_oi": 10872160.0,
+                "call_volume": 235259115,
+                "put_volume": 366652455,
+                "call_ltp": 208.9,
+                "put_ltp": 46.8
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 9898460.0,
+                "put_oi": 13191165.0,
+                "call_volume": 502417630,
+                "put_volume": 448167720,
+                "call_ltp": 137.05,
+                "put_ltp": 74.7
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 7754955.0,
+                "put_oi": 4138745.0,
+                "call_volume": 408398900,
+                "put_volume": 137583615,
+                "call_ltp": 82.95,
+                "put_ltp": 119.7
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 9573395.0,
+                "put_oi": 3143205.0,
+                "call_volume": 276929055,
+                "put_volume": 35678435,
+                "call_ltp": 44.65,
+                "put_ltp": 180.0
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 8408595.0,
+                "put_oi": 1024920.0,
+                "call_volume": 208529100,
+                "put_volume": 13090740,
+                "call_ltp": 22.3,
+                "put_ltp": 257.3
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9632415.0,
+                "put_oi": 546585.0,
+                "call_volume": 130144625,
+                "put_volume": 2448420,
+                "call_ltp": 10.6,
+                "put_ltp": 345.35
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T23:05:06.379392",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 349505.0,
+                "put_oi": 6110130.0,
+                "call_volume": 4590235,
+                "put_volume": 118407250,
+                "call_ltp": 477.0,
+                "put_ltp": 12.9
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1135875.0,
+                "put_oi": 8738795.0,
+                "call_volume": 28457000,
+                "put_volume": 193254685,
+                "call_ltp": 380.1,
+                "put_ltp": 19.15
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 1928810.0,
+                "put_oi": 11560185.0,
+                "call_volume": 102601915,
+                "put_volume": 299201045,
+                "call_ltp": 293.15,
+                "put_ltp": 29.75
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 2939820.0,
+                "put_oi": 10872160.0,
+                "call_volume": 235259115,
+                "put_volume": 366652455,
+                "call_ltp": 208.9,
+                "put_ltp": 46.8
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 9898460.0,
+                "put_oi": 13191165.0,
+                "call_volume": 502417630,
+                "put_volume": 448167720,
+                "call_ltp": 137.05,
+                "put_ltp": 74.7
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 7754955.0,
+                "put_oi": 4138745.0,
+                "call_volume": 408398900,
+                "put_volume": 137583615,
+                "call_ltp": 82.95,
+                "put_ltp": 119.7
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 9573395.0,
+                "put_oi": 3143205.0,
+                "call_volume": 276929055,
+                "put_volume": 35678435,
+                "call_ltp": 44.65,
+                "put_ltp": 180.0
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 8408595.0,
+                "put_oi": 1024920.0,
+                "call_volume": 208529100,
+                "put_volume": 13090740,
+                "call_ltp": 22.3,
+                "put_ltp": 257.3
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9632415.0,
+                "put_oi": 546585.0,
+                "call_volume": 130144625,
+                "put_volume": 2448420,
+                "call_ltp": 10.6,
+                "put_ltp": 345.35
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T23:10:06.707644",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 349505.0,
+                "put_oi": 6110130.0,
+                "call_volume": 4590235,
+                "put_volume": 118407250,
+                "call_ltp": 477.0,
+                "put_ltp": 12.9
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1135875.0,
+                "put_oi": 8738795.0,
+                "call_volume": 28457000,
+                "put_volume": 193254685,
+                "call_ltp": 380.1,
+                "put_ltp": 19.15
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 1928810.0,
+                "put_oi": 11560185.0,
+                "call_volume": 102601915,
+                "put_volume": 299201045,
+                "call_ltp": 293.15,
+                "put_ltp": 29.75
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 2939820.0,
+                "put_oi": 10872160.0,
+                "call_volume": 235259115,
+                "put_volume": 366652455,
+                "call_ltp": 208.9,
+                "put_ltp": 46.8
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 9898460.0,
+                "put_oi": 13191165.0,
+                "call_volume": 502417630,
+                "put_volume": 448167720,
+                "call_ltp": 137.05,
+                "put_ltp": 74.7
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 7754955.0,
+                "put_oi": 4138745.0,
+                "call_volume": 408398900,
+                "put_volume": 137583615,
+                "call_ltp": 82.95,
+                "put_ltp": 119.7
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 9573395.0,
+                "put_oi": 3143205.0,
+                "call_volume": 276929055,
+                "put_volume": 35678435,
+                "call_ltp": 44.65,
+                "put_ltp": 180.0
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 8408595.0,
+                "put_oi": 1024920.0,
+                "call_volume": 208529100,
+                "put_volume": 13090740,
+                "call_ltp": 22.3,
+                "put_ltp": 257.3
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9632415.0,
+                "put_oi": 546585.0,
+                "call_volume": 130144625,
+                "put_volume": 2448420,
+                "call_ltp": 10.6,
+                "put_ltp": 345.35
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-09T23:15:06.349378",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 349505.0,
+                "put_oi": 6110130.0,
+                "call_volume": 4590235,
+                "put_volume": 118407250,
+                "call_ltp": 477.0,
+                "put_ltp": 12.9
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1135875.0,
+                "put_oi": 8738795.0,
+                "call_volume": 28457000,
+                "put_volume": 193254685,
+                "call_ltp": 380.1,
+                "put_ltp": 19.15
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 1928810.0,
+                "put_oi": 11560185.0,
+                "call_volume": 102601915,
+                "put_volume": 299201045,
+                "call_ltp": 293.15,
+                "put_ltp": 29.75
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 2939820.0,
+                "put_oi": 10872160.0,
+                "call_volume": 235259115,
+                "put_volume": 366652455,
+                "call_ltp": 208.9,
+                "put_ltp": 46.8
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 9898460.0,
+                "put_oi": 13191165.0,
+                "call_volume": 502417630,
+                "put_volume": 448167720,
+                "call_ltp": 137.05,
+                "put_ltp": 74.7
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 7754955.0,
+                "put_oi": 4138745.0,
+                "call_volume": 408398900,
+                "put_volume": 137583615,
+                "call_ltp": 82.95,
+                "put_ltp": 119.7
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 9573395.0,
+                "put_oi": 3143205.0,
+                "call_volume": 276929055,
+                "put_volume": 35678435,
+                "call_ltp": 44.65,
+                "put_ltp": 180.0
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 8408595.0,
+                "put_oi": 1024920.0,
+                "call_volume": 208529100,
+                "put_volume": 13090740,
+                "call_ltp": 22.3,
+                "put_ltp": 257.3
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9632415.0,
+                "put_oi": 546585.0,
+                "call_volume": 130144625,
+                "put_volume": 2448420,
+                "call_ltp": 10.6,
+                "put_ltp": 345.35
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-10T00:10:05.876464",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 349505.0,
+                "put_oi": 6110130.0,
+                "call_volume": 4590235,
+                "put_volume": 118407250,
+                "call_ltp": 477.0,
+                "put_ltp": 12.9
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1135875.0,
+                "put_oi": 8738795.0,
+                "call_volume": 28457000,
+                "put_volume": 193254685,
+                "call_ltp": 380.1,
+                "put_ltp": 19.15
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 1928810.0,
+                "put_oi": 11560185.0,
+                "call_volume": 102601915,
+                "put_volume": 299201045,
+                "call_ltp": 293.15,
+                "put_ltp": 29.75
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 2939820.0,
+                "put_oi": 10872160.0,
+                "call_volume": 235259115,
+                "put_volume": 366652455,
+                "call_ltp": 208.9,
+                "put_ltp": 46.8
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 9898460.0,
+                "put_oi": 13191165.0,
+                "call_volume": 502417630,
+                "put_volume": 448167720,
+                "call_ltp": 137.05,
+                "put_ltp": 74.7
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 7754955.0,
+                "put_oi": 4138745.0,
+                "call_volume": 408398900,
+                "put_volume": 137583615,
+                "call_ltp": 82.95,
+                "put_ltp": 119.7
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 9573395.0,
+                "put_oi": 3143205.0,
+                "call_volume": 276929055,
+                "put_volume": 35678435,
+                "call_ltp": 44.65,
+                "put_ltp": 180.0
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 8408595.0,
+                "put_oi": 1024920.0,
+                "call_volume": 208529100,
+                "put_volume": 13090740,
+                "call_ltp": 22.3,
+                "put_ltp": 257.3
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9632415.0,
+                "put_oi": 546585.0,
+                "call_volume": 130144625,
+                "put_volume": 2448420,
+                "call_ltp": 10.6,
+                "put_ltp": 345.35
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-10T00:15:06.232044",
+        "quickdata": [
+            {
+                "strike_price": 22100.0,
+                "call_oi": 349505.0,
+                "put_oi": 6110130.0,
+                "call_volume": 4590235,
+                "put_volume": 118407250,
+                "call_ltp": 477.0,
+                "put_ltp": 12.9
+            },
+            {
+                "strike_price": 22200.0,
+                "call_oi": 1135875.0,
+                "put_oi": 8738795.0,
+                "call_volume": 28457000,
+                "put_volume": 193254685,
+                "call_ltp": 380.1,
+                "put_ltp": 19.15
+            },
+            {
+                "strike_price": 22300.0,
+                "call_oi": 1928810.0,
+                "put_oi": 11560185.0,
+                "call_volume": 102601915,
+                "put_volume": 299201045,
+                "call_ltp": 293.15,
+                "put_ltp": 29.75
+            },
+            {
+                "strike_price": 22400.0,
+                "call_oi": 2939820.0,
+                "put_oi": 10872160.0,
+                "call_volume": 235259115,
+                "put_volume": 366652455,
+                "call_ltp": 208.9,
+                "put_ltp": 46.8
+            },
+            {
+                "strike_price": 22500.0,
+                "call_oi": 9898460.0,
+                "put_oi": 13191165.0,
+                "call_volume": 502417630,
+                "put_volume": 448167720,
+                "call_ltp": 137.05,
+                "put_ltp": 74.7
+            },
+            {
+                "strike_price": 22600.0,
+                "call_oi": 7754955.0,
+                "put_oi": 4138745.0,
+                "call_volume": 408398900,
+                "put_volume": 137583615,
+                "call_ltp": 82.95,
+                "put_ltp": 119.7
+            },
+            {
+                "strike_price": 22700.0,
+                "call_oi": 9573395.0,
+                "put_oi": 3143205.0,
+                "call_volume": 276929055,
+                "put_volume": 35678435,
+                "call_ltp": 44.65,
+                "put_ltp": 180.0
+            },
+            {
+                "strike_price": 22800.0,
+                "call_oi": 8408595.0,
+                "put_oi": 1024920.0,
+                "call_volume": 208529100,
+                "put_volume": 13090740,
+                "call_ltp": 22.3,
+                "put_ltp": 257.3
+            },
+            {
+                "strike_price": 22900.0,
+                "call_oi": 9632415.0,
+                "put_oi": 546585.0,
+                "call_volume": 130144625,
+                "put_volume": 2448420,
+                "call_ltp": 10.6,
+                "put_ltp": 345.35
+            }
+        ]
     }
 ]

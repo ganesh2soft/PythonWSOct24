@@ -1392,8 +1392,8 @@ def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
                     print(f"Error adding ledger: {e}")
                     app.logger.error(f"Error adding ledger: {e}")
                     traceback.print_exc()
-                try:   # db_migrate_json: dual-write the same option chain to json_output/optionchain/<date>.jsonl
-                    from db_migrate_json.jsonl_store import write_optionchain
+                try:   # dbmigratejson: dual-write the same option chain to json_output/optionchain/<date>.jsonl
+                    from dbmigratejson.jsonl_store import write_optionchain
                     write_optionchain(optbook.data)
                 except Exception as e:
                     app.logger.error(f"Error writing optionchain jsonl: {str(e)[:200]}")
@@ -1422,8 +1422,8 @@ def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
                 print(f"Error adding Nifty Futures/SYmbols rows to DB: {e}")
                 app.logger.error(f"Error adding Nifty Futures/SYmbols rows to DB: {e}")
                 traceback.print_exc()
-            try:   # db_migrate_json: dual-write futures to json_output/futures/<date>.jsonl
-                from db_migrate_json.jsonl_store import write_futures
+            try:   # dbmigratejson: dual-write futures to json_output/futures/<date>.jsonl
+                from dbmigratejson.jsonl_store import write_futures
                 write_futures(future_response.data)
             except Exception as e:
                 app.logger.error(f"Error writing futures jsonl: {str(e)[:200]}")
