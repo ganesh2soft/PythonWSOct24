@@ -557,6 +557,24 @@
             "ivix": 14.38,
             "nifty50": 22520,
             "nifty_futures": 22625
+        },
+        {
+            "vixts": "2026-10-10 01:00:01",
+            "ivix": 14.38,
+            "nifty50": 22520,
+            "nifty_futures": 22625
+        },
+        {
+            "vixts": "2026-10-10 01:05:01",
+            "ivix": 14.38,
+            "nifty50": 22520,
+            "nifty_futures": 22625
+        },
+        {
+            "vixts": "2026-10-10 01:10:01",
+            "ivix": 14.38,
+            "nifty50": 22520,
+            "nifty_futures": 22625
         }
     ],
     "pcr_set": [
@@ -2231,6 +2249,60 @@
         {
             "expiry": "2026-10-27",
             "recdate": "2026-10-10 00:55:08",
+            "tpcr": 0.9765,
+            "pcrtrend": "Bear-to-SW"
+        },
+        {
+            "expiry": "2026-10-13",
+            "recdate": "2026-10-10 01:00:07",
+            "tpcr": 1.2697,
+            "pcrtrend": "Bullish"
+        },
+        {
+            "expiry": "2026-10-19",
+            "recdate": "2026-10-10 01:00:08",
+            "tpcr": 0.9283,
+            "pcrtrend": "Bear-to-SW"
+        },
+        {
+            "expiry": "2026-10-27",
+            "recdate": "2026-10-10 01:00:08",
+            "tpcr": 0.9765,
+            "pcrtrend": "Bear-to-SW"
+        },
+        {
+            "expiry": "2026-10-13",
+            "recdate": "2026-10-10 01:05:07",
+            "tpcr": 1.2697,
+            "pcrtrend": "Bullish"
+        },
+        {
+            "expiry": "2026-10-19",
+            "recdate": "2026-10-10 01:05:07",
+            "tpcr": 0.9283,
+            "pcrtrend": "Bear-to-SW"
+        },
+        {
+            "expiry": "2026-10-27",
+            "recdate": "2026-10-10 01:05:08",
+            "tpcr": 0.9765,
+            "pcrtrend": "Bear-to-SW"
+        },
+        {
+            "expiry": "2026-10-13",
+            "recdate": "2026-10-10 01:10:07",
+            "tpcr": 1.2697,
+            "pcrtrend": "Bullish"
+        },
+        {
+            "expiry": "2026-10-19",
+            "recdate": "2026-10-10 01:10:08",
+            "tpcr": 0.9283,
+            "pcrtrend": "Bear-to-SW"
+        },
+        {
+            "expiry": "2026-10-27",
+            "recdate": "2026-10-10 01:10:08",
             "tpcr": 0.9765,
             "pcrtrend": "Bear-to-SW"
         }

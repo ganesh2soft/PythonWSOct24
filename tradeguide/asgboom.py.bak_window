@@ -11,9 +11,8 @@ so tradeguide (Flask + Upstox login) must be running.
 
 Rules (09:17 to 15:12 IST):
   1. Initial alert at 09:17 (first snapshot of the day): price + nearest level above/below.
-  2. BIG move alert: when an index moves >= STEP points within the last 15 min
-     (current snapshot vs the low/high of the snapshots in the window, any direction).
-     After an alert the window restarts from that price.
+  2. Move alert: when an index moves >= STEP points from its reference (any direction).
+     Rolling reference: after an alert the reference resets to that price.
   3. Near-level alert: when an index comes within STEP points of a level
      (each level alerts once per day).
   STEP: Nifty 75, Bank Nifty 200, Midcap Select 45 (was 50/150/30 until 10 Oct 2026).
@@ -52,7 +51,6 @@ INDICES = {
 }
 
 DRY_RUN = '--dry-run' in sys.argv
-MOVE_WINDOW_MIN = 15  # 10 Oct 2026: BIG move = step reached within the last 15 min (5-min snapshots)
 SHOW_LEVELS = False   # 10 Oct 2026: pending levels handled by ACE -> no level text / near-level alerts
 
 # Nifty / Bank Nifty divergence (separate alert)
@@ -261,28 +259,12 @@ def process(st, ts, prices, levels):
         return
 
     fire = []
-    now_dt = datetime.strptime(ts, '%Y-%m-%d %H:%M:%S')
-    hist_all = st.setdefault('hist', {})
     for key, (name, step) in INDICES.items():
         p = prices[key]
-        # BIG move: p vs the lowest / highest snapshot of the last MOVE_WINDOW_MIN minutes
-        # (+60 s slack for snapshot timing). After an alert the window restarts from this price.
-        hist = [h for h in hist_all.get(key, [])
-                if (now_dt - datetime.strptime(h[0], '%Y-%m-%d %H:%M:%S')).total_seconds() <= MOVE_WINDOW_MIN * 60 + 60]
-        mv = 0
-        if hist:
-            lo, hi = min(h[1] for h in hist), max(h[1] for h in hist)
-            up, dn = p - lo, p - hi
-            if up >= step and up >= -dn:
-                mv = up
-            elif dn <= -step:
-                mv = dn
-        if mv:
-            fire.append(f"{name} BIG move {mv:+,.0f}")
+        ref = st['refs'].get(key)
+        if ref and abs(p - ref['price']) >= step:          # move alert (rolling reference)
+            fire.append(f"{name} BIG move {p - ref['price']:+,.0f}")
             st['refs'][key] = {'price': p, 'time': hhmm}
-            hist = []
-        hist.append([ts, p])
-        hist_all[key] = hist
         done = st['alerted_levels'].setdefault(key, [])
         for l in (levels[key] if SHOW_LEVELS else []):                               # near-level alert, once per level per day
             if abs(p - l['level']) <= step and l['level'] not in done:

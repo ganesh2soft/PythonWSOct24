@@ -4183,5 +4183,140 @@
                 "ltp": 1805
             }
         ]
+    },
+    {
+        "timestamp": "2026-10-10 01:00:03",
+        "top_nifty": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 707
+            },
+            {
+                "symbol": "Reliance Industries.",
+                "ltp": 1170
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1355
+            },
+            {
+                "symbol": "Infosys Ltd.",
+                "ltp": 1023
+            },
+            {
+                "symbol": "ITC Ltd.",
+                "ltp": 266
+            },
+            {
+                "symbol": "Tata TCS",
+                "ltp": 2156
+            },
+            {
+                "symbol": "L&T  Ltd.",
+                "ltp": 3703
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1259
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 959
+            },
+            {
+                "symbol": "Bharti Airtel Ltd.",
+                "ltp": 1805
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-10 01:05:03",
+        "top_nifty": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 707
+            },
+            {
+                "symbol": "Reliance Industries.",
+                "ltp": 1170
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1355
+            },
+            {
+                "symbol": "Infosys Ltd.",
+                "ltp": 1023
+            },
+            {
+                "symbol": "ITC Ltd.",
+                "ltp": 266
+            },
+            {
+                "symbol": "Tata TCS",
+                "ltp": 2156
+            },
+            {
+                "symbol": "L&T  Ltd.",
+                "ltp": 3703
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1259
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 959
+            },
+            {
+                "symbol": "Bharti Airtel Ltd.",
+                "ltp": 1805
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-10 01:10:02",
+        "top_nifty": [
+            {
+                "symbol": "HDFC Bank Ltd.",
+                "ltp": 707
+            },
+            {
+                "symbol": "Reliance Industries.",
+                "ltp": 1170
+            },
+            {
+                "symbol": "ICICI Bank Ltd.",
+                "ltp": 1355
+            },
+            {
+                "symbol": "Infosys Ltd.",
+                "ltp": 1023
+            },
+            {
+                "symbol": "ITC Ltd.",
+                "ltp": 266
+            },
+            {
+                "symbol": "Tata TCS",
+                "ltp": 2156
+            },
+            {
+                "symbol": "L&T  Ltd.",
+                "ltp": 3703
+            },
+            {
+                "symbol": "Axis Bank Ltd.",
+                "ltp": 1259
+            },
+            {
+                "symbol": "SBI Bank",
+                "ltp": 959
+            },
+            {
+                "symbol": "Bharti Airtel Ltd.",
+                "ltp": 1805
+            }
+        ]
     }
 ]
