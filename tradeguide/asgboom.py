@@ -16,7 +16,7 @@ Rules (09:17 to 15:12 IST):
      After an alert the window restarts from that price.
   3. Near-level alert: when an index comes within STEP points of a level
      (each level alerts once per day).
-  STEP: Nifty 75, Bank Nifty 200, Midcap Select 45 (was 50/150/30 until 10 Oct 2026).
+  STEP: Nifty 75, Bank Nifty 200, Midcap Select 60 (was 50/150/30 until 10 Oct 2026).
 
 10 Oct 2026: SHOW_LEVELS = False. ACE now handles pending (tg-due-level) levels, so alerts
 carry no level text and rule 3 is off. The level code stays (levels file may be stale);
@@ -48,7 +48,7 @@ STALE_MINUTES = 11
 INDICES = {
     'NIFTY 50':   ('NIFTY', 75),   # was 50 (10 Oct 2026)
     'BANK NIFTY': ('BN', 200),     # was 150
-    'MIDCAP':     ('MID', 45),     # was 30
+    'MIDCAP':     ('MID', 60),     # was 30, then 45 (10 Oct 2026)
 }
 
 DRY_RUN = '--dry-run' in sys.argv
