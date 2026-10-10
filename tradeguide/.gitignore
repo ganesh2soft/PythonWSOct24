@@ -29,3 +29,6 @@ _to_delete/
 
 # Claude backups (restore point, delete later; not for GitHub)
 claude_bak_del_later/
+
+# Upstox API app credentials (one per PC, never on GitHub)
+upstox.env
