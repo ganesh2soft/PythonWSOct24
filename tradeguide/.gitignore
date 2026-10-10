@@ -32,3 +32,6 @@ claude_bak_del_later/
 
 # Upstox API app credentials (one per PC, never on GitHub)
 upstox.env
+
+# Telegram bot token for ASGBOOM (never on GitHub)
+asgboom.env
