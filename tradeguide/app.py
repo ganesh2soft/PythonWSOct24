@@ -1433,7 +1433,31 @@ def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
         else:
             print(f'Future data writing not done')
             app.logger.warning(f'Future data writing not done')
+
+        try:   # 10 Oct 2026: json_output/status_latest.txt = tg_status --all, for ChatGPT (browser) analysis
+            write_status_latest()
+        except Exception as e:
+            app.logger.error(f"Error writing status_latest.txt: {str(e)[:200]}")
        
+
+def write_status_latest():
+    """Write json_output/status_latest.txt: full tg_status (--all) text + a short header for ChatGPT.
+    Overwritten every 5-minute run. tg_status never prints tokens/secrets."""
+    import subprocess, sys
+    base = os.path.dirname(os.path.abspath(__file__))
+    r = subprocess.run([sys.executable, os.path.join(base, 'tg_status.py'), '--all'], cwd=base,
+                       capture_output=True, text=True, timeout=90, env=dict(os.environ, TZ='Asia/Kolkata'))
+    now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    head = (f"TRADEGUIDE STATUS - written {now} IST (refreshed every 5 minutes, 09:11-15:41)\n"
+            "For ChatGPT: this is read-only market data from tradeguide (Upstox). Explain it for an intraday\n"
+            "Nifty option buyer: trend, OI walls (support/resistance), sectors, option VWAP verdict, alerts.\n"
+            "Information only, not financial advice.\n" + "=" * 78 + "\n")
+    out = r.stdout if r.stdout.strip() else ('tg_status produced no output.\n' + r.stderr[-500:])
+    tmp = os.path.join(OUT_DIR, 'status_latest.txt.tmp')
+    with open(tmp, 'w', encoding='utf-8') as f:
+        f.write(head + out)
+    os.replace(tmp, os.path.join(OUT_DIR, 'status_latest.txt'))
+
 ####################################################################################################
 def processpcr(optdict,exp):
     tcall = 0.1

@@ -4,6 +4,8 @@ Signals (evaluated on every 5-min optvwap snapshot, entries only 09:21-14:45):
   CE SETUP   : CALL ok just confirmed (optvwap, 2 runs) AND BN above its 09:16 value AND VIX >= its 09:16 value
                AND put writing >= MIN_WRITE lakh in the last 30 min at strikes <= spot+50
   PE SETUP   : mirror (PUT ok, BN below 09:16, VIX >= 09:16, call writing >= MIN_WRITE at strikes >= spot-50)
+  LATE VIX   : (12 Oct 2026) if CALL ok / PUT ok was confirmed but only VIX blocked it, alert the setup as soon as
+               VIX >= its 09:16 value while CALL ok / PUT ok is still on (once per streak).
   REVERSAL   : optvwap verdict turns "REVERSAL UP/DOWN - confirmed"
   NEAR WALL  : after a CE (PE) alert, spot within WALL_NEAR pts of a call (put) wall that is still growing -> book/trail
 Each alert carries: stop = opposite OI wall, target = next wall, ATM premium, Rule C gap label.
@@ -156,6 +158,7 @@ def evaluate_day(day):
     open_side = {}   # side -> {'stop','target','state'}: no new same-side alert while one is open
     prev = None
     wall_warned = set()
+    pending = {'CE': None, 'PE': None}   # 12 Oct 2026: side ok confirmed but VIX blocked -> wait for VIX >= 09:16
     for x in OV:
         t = hm(x['timestamp'])
         sg = x['signal']
@@ -215,6 +218,8 @@ def evaluate_day(day):
             a = emit('CE SETUP', 'CE', conds, pw[0] if pw else None, cw[0] if cw else None)
             if a['sent']:
                 active = a
+            elif not conds[1][1]:
+                pending['CE'] = t   # VIX blocked: alert later as soon as VIX >= 09:16 while CALL ok stays on
         if in_window and sg['put_ok'] and not p_sg['put_ok']:
             conds = [('BN not above 09:16 by >%.2f%%' % CFG['BN_TOL_PCT'], bn is not None and bn0 is not None and bn <= bn0 * (1 + CFG['BN_TOL_PCT'] / 100)),
                      ('VIX >= 09:16', (not CFG['VIX_FILTER_PE']) or (vix is not None and vix0 is not None and vix >= vix0)),
@@ -222,6 +227,23 @@ def evaluate_day(day):
             a = emit('PE SETUP', 'PE', conds, cw[0] if cw else None, pw[0] if pw else None)
             if a['sent']:
                 active = a
+            elif not conds[1][1]:
+                pending['PE'] = t   # VIX blocked: alert later as soon as VIX >= 09:16 while PUT ok stays on
+
+        # 12 Oct 2026 (user rule): side ok already confirmed but VIX was below 09:16 -> alert as soon as VIX >= 09:16
+        for sd, okkey in (('CE', 'call_ok'), ('PE', 'put_ok')):
+            if not sg[okkey]:
+                pending[sd] = None          # CALL ok / PUT ok switched off: nothing pending any more
+            elif pending[sd] and pending[sd] != t and in_window and vix is not None and vix0 is not None and vix >= vix0:
+                wr = ('put writing %.0fL/30m' % dput) if sd == 'CE' else ('call writing %.0fL/30m' % dcall)
+                conds = [('%s ok since %s' % ('CALL' if sd == 'CE' else 'PUT', pending[sd]), True), ('VIX now >= 09:16', True)]
+                kind = '%s SETUP' % sd
+                a = emit(kind, sd, conds, (pw[0] if pw else None) if sd == 'CE' else (cw[0] if cw else None),
+                         (cw[0] if cw else None) if sd == 'CE' else (pw[0] if pw else None),
+                         extra='late VIX confirm; %s' % wr)
+                pending[sd] = None
+                if a['sent']:
+                    active = a
         # reversal confirmations (sent whenever they first appear; conditions shown for information)
         v_now, v_prev = sg.get('verdict', ''), p_sg.get('verdict', '')
         if in_window and v_now.startswith('REVERSAL') and 'confirmed' in v_now and not v_prev.startswith(v_now[:14]):

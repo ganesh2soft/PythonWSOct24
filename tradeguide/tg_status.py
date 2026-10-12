@@ -328,8 +328,8 @@ if '--vwap' in SECTIONS and OV:
     for r in x['strikes']:
         c, p = r['CE'], r['PE']
         P('  %s CE %-4s %s/%s/%s %s vol %.1fx | PE %-4s %s/%s/%s %s vol %.1fx' % (
-            r['strike'], c['role'], c['ltp'], c['vwap'], c['anc_vwap'], '^' if c['above_vwap'] else 'v', c['vol5'] / max(c['vol5_avg'] or 1, 1),
-            p['role'], p['ltp'], p['vwap'], p['anc_vwap'], '^' if p['above_vwap'] else 'v', p['vol5'] / max(p['vol5_avg'] or 1, 1)))
+            r['strike'], c['role'], c['ltp'], c['vwap'], c['anc_vwap'], '^' if c['above_vwap'] else 'v', (c['vol5'] or 0) / max(c['vol5_avg'] or 1, 1),
+            p['role'], p['ltp'], p['vwap'], p['anc_vwap'], '^' if p['above_vwap'] else 'v', (p['vol5'] or 0) / max(p['vol5_avg'] or 1, 1)))
     if x.get('reversal'):
         P('reversal latch: ' + json.dumps(x['reversal'])[:200])
 

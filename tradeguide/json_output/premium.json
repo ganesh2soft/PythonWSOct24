@@ -762,6 +762,321 @@
             "totputltp": 76692,
             "sample_call_tot": 6574,
             "sample_put_tot": 5244
+        },
+        {
+            "recdate": "2026-10-12 09:11:03",
+            "totcallltp": 24720,
+            "totputltp": 76692,
+            "sample_call_tot": 5509,
+            "sample_put_tot": 6281
+        },
+        {
+            "recdate": "2026-10-12 09:16:03",
+            "totcallltp": 25836,
+            "totputltp": 74929,
+            "sample_call_tot": 6051,
+            "sample_put_tot": 5352
+        },
+        {
+            "recdate": "2026-10-12 09:21:03",
+            "totcallltp": 25650,
+            "totputltp": 75423,
+            "sample_call_tot": 5944,
+            "sample_put_tot": 5671
+        },
+        {
+            "recdate": "2026-10-12 09:26:03",
+            "totcallltp": 24372,
+            "totputltp": 76931,
+            "sample_call_tot": 6380,
+            "sample_put_tot": 5375
+        },
+        {
+            "recdate": "2026-10-12 09:31:03",
+            "totcallltp": 25102,
+            "totputltp": 75977,
+            "sample_call_tot": 5722,
+            "sample_put_tot": 5953
+        },
+        {
+            "recdate": "2026-10-12 09:36:02",
+            "totcallltp": 24300,
+            "totputltp": 76987,
+            "sample_call_tot": 6372,
+            "sample_put_tot": 5387
+        },
+        {
+            "recdate": "2026-10-12 09:41:03",
+            "totcallltp": 24070,
+            "totputltp": 77476,
+            "sample_call_tot": 6223,
+            "sample_put_tot": 5496
+        },
+        {
+            "recdate": "2026-10-12 09:46:02",
+            "totcallltp": 23994,
+            "totputltp": 77577,
+            "sample_call_tot": 6236,
+            "sample_put_tot": 5477
+        },
+        {
+            "recdate": "2026-10-12 09:51:03",
+            "totcallltp": 23757,
+            "totputltp": 77847,
+            "sample_call_tot": 6128,
+            "sample_put_tot": 5629
+        },
+        {
+            "recdate": "2026-10-12 09:56:02",
+            "totcallltp": 23172,
+            "totputltp": 78475,
+            "sample_call_tot": 5816,
+            "sample_put_tot": 5862
+        },
+        {
+            "recdate": "2026-10-12 10:01:03",
+            "totcallltp": 23665,
+            "totputltp": 77849,
+            "sample_call_tot": 6104,
+            "sample_put_tot": 5557
+        },
+        {
+            "recdate": "2026-10-12 10:06:03",
+            "totcallltp": 23288,
+            "totputltp": 78240,
+            "sample_call_tot": 5891,
+            "sample_put_tot": 5784
+        },
+        {
+            "recdate": "2026-10-12 10:11:03",
+            "totcallltp": 23250,
+            "totputltp": 78291,
+            "sample_call_tot": 5879,
+            "sample_put_tot": 5784
+        },
+        {
+            "recdate": "2026-10-12 10:16:03",
+            "totcallltp": 22990,
+            "totputltp": 78560,
+            "sample_call_tot": 5763,
+            "sample_put_tot": 5904
+        },
+        {
+            "recdate": "2026-10-12 10:21:03",
+            "totcallltp": 22985,
+            "totputltp": 78666,
+            "sample_call_tot": 5772,
+            "sample_put_tot": 5881
+        },
+        {
+            "recdate": "2026-10-12 10:26:03",
+            "totcallltp": 23024,
+            "totputltp": 78743,
+            "sample_call_tot": 5793,
+            "sample_put_tot": 5862
+        },
+        {
+            "recdate": "2026-10-12 10:31:03",
+            "totcallltp": 22490,
+            "totputltp": 79554,
+            "sample_call_tot": 5464,
+            "sample_put_tot": 6278
+        },
+        {
+            "recdate": "2026-10-12 10:36:02",
+            "totcallltp": 22484,
+            "totputltp": 79534,
+            "sample_call_tot": 5546,
+            "sample_put_tot": 6163
+        },
+        {
+            "recdate": "2026-10-12 10:41:03",
+            "totcallltp": 22678,
+            "totputltp": 79237,
+            "sample_call_tot": 5667,
+            "sample_put_tot": 5992
+        },
+        {
+            "recdate": "2026-10-12 10:46:03",
+            "totcallltp": 22366,
+            "totputltp": 79804,
+            "sample_call_tot": 5508,
+            "sample_put_tot": 6222
+        },
+        {
+            "recdate": "2026-10-12 10:51:02",
+            "totcallltp": 22198,
+            "totputltp": 80004,
+            "sample_call_tot": 6460,
+            "sample_put_tot": 5282
+        },
+        {
+            "recdate": "2026-10-12 10:56:03",
+            "totcallltp": 22036,
+            "totputltp": 80246,
+            "sample_call_tot": 6373,
+            "sample_put_tot": 5336
+        },
+        {
+            "recdate": "2026-10-12 11:01:03",
+            "totcallltp": 21732,
+            "totputltp": 80784,
+            "sample_call_tot": 6217,
+            "sample_put_tot": 5552
+        },
+        {
+            "recdate": "2026-10-12 11:06:02",
+            "totcallltp": 21478,
+            "totputltp": 81565,
+            "sample_call_tot": 6039,
+            "sample_put_tot": 5732
+        },
+        {
+            "recdate": "2026-10-12 11:11:03",
+            "totcallltp": 21448,
+            "totputltp": 81631,
+            "sample_call_tot": 6070,
+            "sample_put_tot": 5721
+        },
+        {
+            "recdate": "2026-10-12 11:16:02",
+            "totcallltp": 20878,
+            "totputltp": 82514,
+            "sample_call_tot": 5671,
+            "sample_put_tot": 6105
+        },
+        {
+            "recdate": "2026-10-12 11:21:03",
+            "totcallltp": 20942,
+            "totputltp": 82513,
+            "sample_call_tot": 5743,
+            "sample_put_tot": 6067
+        },
+        {
+            "recdate": "2026-10-12 11:26:03",
+            "totcallltp": 20928,
+            "totputltp": 82668,
+            "sample_call_tot": 5742,
+            "sample_put_tot": 6037
+        },
+        {
+            "recdate": "2026-10-12 11:31:03",
+            "totcallltp": 20872,
+            "totputltp": 82718,
+            "sample_call_tot": 5707,
+            "sample_put_tot": 6064
+        },
+        {
+            "recdate": "2026-10-12 11:36:03",
+            "totcallltp": 20938,
+            "totputltp": 82369,
+            "sample_call_tot": 5757,
+            "sample_put_tot": 5927
+        },
+        {
+            "recdate": "2026-10-12 11:41:02",
+            "totcallltp": 20656,
+            "totputltp": 82728,
+            "sample_call_tot": 5595,
+            "sample_put_tot": 6104
+        },
+        {
+            "recdate": "2026-10-12 11:46:04",
+            "totcallltp": 20540,
+            "totputltp": 82979,
+            "sample_call_tot": 5549,
+            "sample_put_tot": 6182
+        },
+        {
+            "recdate": "2026-10-12 11:51:03",
+            "totcallltp": 20616,
+            "totputltp": 83140,
+            "sample_call_tot": 5593,
+            "sample_put_tot": 6120
+        },
+        {
+            "recdate": "2026-10-12 11:56:03",
+            "totcallltp": 20532,
+            "totputltp": 83277,
+            "sample_call_tot": 5547,
+            "sample_put_tot": 6187
+        },
+        {
+            "recdate": "2026-10-12 12:01:03",
+            "totcallltp": 20518,
+            "totputltp": 83571,
+            "sample_call_tot": 5541,
+            "sample_put_tot": 6192
+        },
+        {
+            "recdate": "2026-10-12 12:06:04",
+            "totcallltp": 20526,
+            "totputltp": 83551,
+            "sample_call_tot": 5552,
+            "sample_put_tot": 6167
+        },
+        {
+            "recdate": "2026-10-12 12:11:03",
+            "totcallltp": 20288,
+            "totputltp": 83947,
+            "sample_call_tot": 5402,
+            "sample_put_tot": 6323
+        },
+        {
+            "recdate": "2026-10-12 12:16:04",
+            "totcallltp": 20496,
+            "totputltp": 83598,
+            "sample_call_tot": 5558,
+            "sample_put_tot": 6146
+        },
+        {
+            "recdate": "2026-10-12 12:21:03",
+            "totcallltp": 20626,
+            "totputltp": 83261,
+            "sample_call_tot": 5638,
+            "sample_put_tot": 6013
+        },
+        {
+            "recdate": "2026-10-12 12:26:04",
+            "totcallltp": 20590,
+            "totputltp": 83309,
+            "sample_call_tot": 5606,
+            "sample_put_tot": 6057
+        },
+        {
+            "recdate": "2026-10-12 12:31:04",
+            "totcallltp": 20626,
+            "totputltp": 83105,
+            "sample_call_tot": 5630,
+            "sample_put_tot": 6029
+        },
+        {
+            "recdate": "2026-10-12 12:36:03",
+            "totcallltp": 20910,
+            "totputltp": 82621,
+            "sample_call_tot": 5779,
+            "sample_put_tot": 5783
+        },
+        {
+            "recdate": "2026-10-12 12:41:03",
+            "totcallltp": 20852,
+            "totputltp": 82713,
+            "sample_call_tot": 5752,
+            "sample_put_tot": 5833
+        },
+        {
+            "recdate": "2026-10-12 12:46:03",
+            "totcallltp": 20826,
+            "totputltp": 82651,
+            "sample_call_tot": 5742,
+            "sample_put_tot": 5861
+        },
+        {
+            "recdate": "2026-10-12 12:51:02",
+            "totcallltp": 20734,
+            "totputltp": 82852,
+            "sample_call_tot": 5672,
+            "sample_put_tot": 5937
         }
     ]
 }

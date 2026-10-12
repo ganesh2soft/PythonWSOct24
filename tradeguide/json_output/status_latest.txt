@@ -1,0 +1,78 @@
+TRADEGUIDE STATUS - written 2026-10-12 12:51:06 IST (refreshed every 5 minutes, 09:11-15:41)
+For ChatGPT: this is read-only market data from tradeguide (Upstox). Explain it for an intraday
+Nifty option buyer: trend, OI walls (support/resistance), sectors, option VWAP verdict, alerts.
+Information only, not financial advice.
+==============================================================================
+== tg_status 2026-10-12 (as of 12:51) ==
+Health : last run 12:51 | -270 min ago | errors 0 | expiry1 2026-10-13 | ASGBOOM: 08:18:35 ASGBOOM started (LIVE), window 09:17-15:12
+Price  : Nifty 22386 (-0.60% vs prev close, -0.87% vs 09:21) | day H 22651.1 L 22352.35 | 30m +2
+BN/MID : BN 54866 (below 09:16 55316, -450) | MID 13619
+VIX    : 15.39 (09:16 14.67, ABOVE open; 30m -0.01)
+OptVWAP: Downtrend continues | PUT ok | day -5 (CE 0/PE 5) | anchor low@12:11 score +0 hold 4 | verdict since 12:51
+OI 12:51 : PCR(9 strikes) 09:21 0.83 -> 0.78 | call wall 22500 (280L) | put wall 22300 (168L) | 30m: 22400P +17L, 22500C +9L, 22800C -8L
+PCR    : expiry 2026-10-13 0.74 Bearish
+Sectors: 98% weight with Nifty (broad), -158 pts since base | drivers NIFTY FIN SERVICE -44, Reliance -33 | resister BEL +0
+Alerts : 09:17 Initial
+
+== OI (lakh) base 09:21 | 30m ref 12:21 | now 12:51 | spot 22386.9 VIX 15.39 (base spot 22586.0 VIX 14.65) ==
+ strike  callOI  dBase   d30m   putOI  dBase   d30m   C ltp   P ltp
+  22000     6.7    new   -0.4   158.6    new   +2.0   391.6     8.7
+  22100     3.7    new   -0.6    87.8    new   +2.1   298.2    15.7
+  22200    13.7   +2.7   -2.3   133.4  +36.0   -5.7   212.1    29.6
+  22300    44.6  +26.1   -3.3   168.3  +52.9   +7.0   137.7    55.7
+  22400   196.0 +168.4   +5.2   189.0  +65.1  +16.5    80.1    98.3
+  22500   279.5 +197.1   +9.5    94.9  -58.6   -1.5    43.4   161.3
+  22600   258.1 +125.6   +0.9    45.2  -52.3   -0.2    23.2   240.3
+  22700   202.2  +48.1   -1.6    25.8  -19.7   +0.6    12.1   329.0
+  22800   169.1  +52.5   -8.3    11.3   -2.8   +0.2     6.5   424.3
+net dOI since base (common strikes): calls +620.6L  puts +20.7L | PCR base 1.19 -> now 0.57 (all 9: 0.78)
+timeline (time spot/PCR): 09:16 22636/0.83  09:46 22530/0.94  10:16 22491/0.86  10:46 22466/0.79  11:16 22383/0.79  11:46 22365/0.82  12:16 22378/0.78  12:46 22395/0.76  12:51 22387/0.78
+
+== Sectors 12:51 | Nifty 22386.1 base 09:21 22581.95 (-0.87%), vs prev close -0.60% ==
+sector                 tracked as            wt  %base  %prev    pts pts30m  dir
+Financial Services     NIFTY FIN SERVICE  37.45  -0.52  -0.41  -43.6   -0.8  with
+Oil, Gas & Fuels       Reliance            7.58  -1.93  -1.12  -32.7   -1.1  with
+Construction           L&T                 4.20  -2.08  -1.66  -19.6   -0.1  with
+Telecommunication      Bharti Airtel       5.10  -1.19  -1.70  -13.6   +0.8  with
+FMCG                   ITC                 2.34  -2.08  -2.80  -10.9   -0.6  with
+Information Technology NIFTY IT            7.52  -0.56  -0.55   -9.4   +0.0  with
+Power                  NTPC                1.45  -1.99  -1.59   -6.5   -0.3  with
+Automobile             NIFTY AUTO          6.65  -0.37  +0.86   -5.5   +1.2  with
+Consumer Durables      Titan               1.90  -0.82  -0.70   -3.5   +1.1  with
+Metals & Mining        Tata Steel          1.38  -1.02  -0.46   -3.2   -0.5  with
+Healthcare             Sun Pharma          1.83  -0.72  -0.02   -2.9   +0.7  with
+Services               Adani Ports         1.13  -0.84  -0.14   -2.1   -0.2  with
+Construction Materials UltraTech Cement    1.23  -0.76  -0.30   -2.1   -1.5  with
+Consumer Services      Eternal             2.10  -0.43  +0.11   -2.0   +0.0  with
+Capital Goods          BEL                 1.33  +0.00  +1.43   +0.0   +1.5  with
+since_base: weight up 0% | with Nifty 98% | tracked pts -157.6
+since_prev_close: weight up 12% | with Nifty 88% | tracked pts -105.7
+
+== OptVWAP 45 snapshots 09:11-12:51 ==
+ time    nifty    atm CE PE  day      anchor  anc hold ok    verdict
+09:11  22593.2  22550  4  0   +4 start@09:11   +0    1 -     Pre-open - data only  [preopen]
+09:16 22624.95  22650  0  5   -5 start@09:16   +0    1 -     Downtrend continues
+09:31 22568.25  22600  0  5   -5   low@09:26   +1    2 PUT   Bounce - NOT confirmed
+09:36 22530.25  22550  0  5   -5   low@09:26   -5    3 PUT   Downtrend continues
+09:46  22528.7  22550  0  5   -5   low@09:41   +5    2 PUT   Bounce - NOT confirmed
+09:51 22507.55  22500  0  5   -5   low@09:51   +0    1 PUT   Downtrend continues
+10:01 22522.75  22550  0  5   -5   low@09:56   +5    2 PUT   Bounce - NOT confirmed
+10:06  22495.0  22500  0  5   -5   low@09:56   -5    3 PUT   Downtrend continues
+10:16 22490.55  22500  0  5   -5   low@09:56   -5    4 PUT   Downtrend continues
+10:36  22476.8  22450  0  5   -5   low@10:31   +5    2 PUT   Bounce - NOT confirmed
+10:46  22464.0  22450  0  5   -5   low@10:31   -5    4 PUT   Downtrend continues
+11:16  22380.7  22350  0  5   -5   low@11:16   +0    1 PUT   Downtrend continues
+11:36 22396.95  22400  0  5   -5   low@11:21   +5    4 PUT   Bounce - NOT confirmed
+11:41 22378.85  22350  0  5   -5   low@11:21   -5    4 PUT   Downtrend continues
+11:46  22364.0  22350  0  5   -5   low@11:46   +0    1 PUT   Downtrend continues
+12:06 22371.55  22350  0  5   -5   low@11:46   +3    4 PUT   Bounce - NOT confirmed
+12:11  22358.6  22350  0  5   -5   low@12:11   +0    1 PUT   Downtrend continues
+12:16  22377.0  22350  0  5   -5   low@12:11   +5    2 PUT   Bounce - NOT confirmed
+12:46  22390.9  22400  0  5   -5   low@12:11   +2    4 PUT   Bounce - NOT confirmed
+12:51 22385.95  22400  0  5   -5   low@12:11   +0    4 PUT   Downtrend continues
+strikes at 12:51 (ltp / vwap / anchored vwap, ^ above vwap, vol5 vs avg):
+  22300 CE ITM2 140.3/161.63/143.44 v vol 1.0x | PE OTM2 54.3/46.2/55.69 ^ vol 1.2x
+  22350 CE ITM1 108.9/121.62/111.42 v vol 0.9x | PE OTM1 73.1/64.53/74.96 ^ vol 1.2x
+  22400 CE ATM  82.25/100.12/85.89 v vol 1.1x | PE ATM  96.45/78.43/98.04 ^ vol 1.4x
+  22450 CE OTM1 60.9/87.08/64.82 v vol 1.1x | PE ITM1 124.65/91.38/126.4 ^ vol 1.4x
+  22500 CE OTM2 44.35/81.16/47.85 v vol 1.2x | PE ITM2 158.05/103.63/158.75 ^ vol 1.4x

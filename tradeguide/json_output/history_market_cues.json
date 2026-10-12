@@ -117,12 +117,13 @@
       "actual": {
         "nifty_prev_close": 22231.8,
         "open": 22314,
-        "high": null,
-        "low": null,
-        "close": null,
-        "chg_pct": null,
-        "filled": false,
-        "open_note": "Nifty pre-open equilibrium 09:11 (+83, +0.37%), Business Standard live blog"
+        "high": 22580.75,
+        "low": 22294.75,
+        "close": 22520.45,
+        "chg_pct": 1.3,
+        "filled": true,
+        "open_note": "Nifty pre-open equilibrium 09:11 (+83, +0.37%), Business Standard live blog",
+        "source": "DSIJ pre-market 12 Oct (close, range); HDFC Sky close report 22,520 +1.30%"
       },
       "revisions": [
         "08:00 first v2 run: A -8.89, B -3.89 (FII estimated, rupee n/a, Asia partial)",
@@ -212,29 +213,219 @@
           }
         ]
       }
+    },
+    {
+      "date": "2026-10-12",
+      "run_time_ist": "11:50",
+      "method": "v2",
+      "expected_open": {
+        "gift_nifty": 22645,
+        "gift_time": "06:58",
+        "gift_chg_pts": 57,
+        "gift_chg_pct": 0.25,
+        "gift_prev_close": 22588,
+        "gift_vs_nifty_close_pts": 124.55,
+        "gift_vs_nifty_close_pct": 0.55,
+        "call": "Mild gap-up (+0.25% vs own close; +0.55% vs Nifty spot close)"
+      },
+      "bucket_a": {
+        "drivers": [
+          {
+            "id": "A1",
+            "name": "US equities",
+            "value": "S&P +0.59%, Nasdaq +0.64% (avg +0.62%)",
+            "score": 5,
+            "weight": 1
+          },
+          {
+            "id": "A2",
+            "name": "Asia",
+            "value": "Nikkei -0.02%, Hang Seng +1.79% (Friday close; KOSPI n/a)",
+            "score": 5,
+            "weight": 0.5
+          },
+          {
+            "id": "A3",
+            "name": "US 10Y",
+            "value": "5.237% unchanged; level >= 5%",
+            "score": -5,
+            "weight": 1
+          },
+          {
+            "id": "A4",
+            "name": "Brent",
+            "value": "$103.20, -1.27%",
+            "score": -10,
+            "weight": 2
+          },
+          {
+            "id": "A5",
+            "name": "USD/INR",
+            "value": "96.72 vs 96.88 (rupee +0.17%, 9 Oct close)",
+            "score": 5,
+            "weight": 1
+          }
+        ],
+        "composite": -2.27,
+        "band": "Neutral",
+        "arithmetic": "(5*1+5*0.5-5*1-10*2+5*1)/5.5 = -12.5/5.5 = -2.27"
+      },
+      "bucket_b": {
+        "drivers": [
+          {
+            "id": "B1",
+            "name": "FII net (9 Oct)",
+            "value": "FII -3,568.90 cr, DII +4,743.26 cr; week >30,000 cr sold",
+            "score": -5,
+            "weight": 2
+          },
+          {
+            "id": "B2",
+            "name": "Banks news",
+            "value": "no specific bank news (RBL Q2 today only)",
+            "score": null,
+            "weight": 2
+          },
+          {
+            "id": "B3",
+            "name": "Heavyweights news",
+            "value": "no heavyweight news; HCLTech Q2 due today",
+            "score": null,
+            "weight": 1
+          },
+          {
+            "id": "B4",
+            "name": "Domestic macro",
+            "value": "RBI OMO sale 25,000 cr on 13 Oct (liquidity absorb), CPI today 17:30",
+            "score": -5,
+            "weight": 1
+          },
+          {
+            "id": "B5",
+            "name": "Momentum",
+            "value": "Nifty 9 Oct +1.30%",
+            "score": 5,
+            "weight": 0.5
+          }
+        ],
+        "composite": -3.57,
+        "band": "Bearish to Neutral",
+        "arithmetic": "(-5*2-5*1+5*0.5)/3.5 = -12.5/3.5 = -3.57"
+      },
+      "driving_harder": "B",
+      "events": [
+        "Sept CPI 17:30 IST",
+        "HCLTech, RBL Bank Q2",
+        "Zetwerk IPO price band",
+        "RBI OMO sale 13 Oct",
+        "Weekly expiry 13 Oct"
+      ],
+      "sources": [
+        "https://insights.dsij.in/dsijarticledetail/pre-market-update-gift-nifty-signals-positive-start-on-october-12-cpi-inflation-fii-selling-and-rbi-omo-sale-in-focus",
+        "https://www.business-standard.com/markets/news/stock-market-live-october-12-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-today-126101200057_1.html",
+        "https://hdfcsky.com/news/gift-nifty-points-to-modestly-higher-opening-for-sensex-nifty-on-monday",
+        "https://hdfcsky.com/news/market-close-report-today-sensex-nifty-post-sharp-rebound-as-investors-snap-up-stocks-after-selloff",
+        "https://upstox.com/news/market-news/latest-updates/rupee-check-domestic-currency-jumps-16-paise-to-close-at-96-72-against-the-us-dollar/article-201619/"
+      ],
+      "validation": {
+        "type": "deep (first run of week)",
+        "checks": [
+          {
+            "item": "Nifty prev close",
+            "primary": 22520.45,
+            "other": "22520.45 (BS implied) / 22520 (HDFC)",
+            "tol": "1 pt",
+            "ok": true
+          },
+          {
+            "item": "Brent",
+            "primary": 103.2,
+            "other": 103.09,
+            "tol": "1.5%",
+            "ok": true,
+            "diff": "0.1%"
+          },
+          {
+            "item": "Asia (HSI, Nikkei)",
+            "primary": "+1.79 / -0.02",
+            "other": "+1.79 / -0.02 (HDFC)",
+            "tol": "same sign",
+            "ok": true
+          },
+          {
+            "item": "Rupee close 9 Oct",
+            "primary": "96.78 'unchanged' (DSIJ)",
+            "other": "96.72 (+16 paise, Upstox/PTI)",
+            "tol": 0.1,
+            "ok": true,
+            "diff": 0.06,
+            "note": "direction differs; used official close"
+          },
+          {
+            "item": "FII net 9 Oct",
+            "primary": -3568.9,
+            "other": "HDFC gives only 8 Oct (-12,944)",
+            "tol": "exact",
+            "ok": null
+          },
+          {
+            "item": "US 10Y",
+            "primary": 5.237,
+            "other": "not in BS/HDFC",
+            "tol": "5 bp",
+            "ok": null
+          },
+          {
+            "item": "Actual 9 Oct close (history)",
+            "primary": 22520.45,
+            "other": 22520,
+            "tol": "1 pt",
+            "ok": true
+          },
+          {
+            "item": "GIFT level",
+            "primary": "22645 @06:58",
+            "other": "22588 Friday close (HDFC)",
+            "tol": "0.3%",
+            "ok": null,
+            "note": "different times, used as own previous close"
+          }
+        ]
+      },
+      "revisions": [],
+      "actual": {
+        "nifty_prev_close": 22520.45,
+        "open": null,
+        "high": null,
+        "low": null,
+        "close": null,
+        "chg_pct": null,
+        "filled": false,
+        "intraday_note": "11:00 Nifty 22,429.25 -0.40% (Business Standard live)"
+      }
     }
   ],
   "source_stats": {
     "insights.dsij.in": {
-      "checks": 8,
+      "checks": 13,
       "mismatches": 1,
-      "unverified": 2,
-      "last_checked": "2026-10-09",
-      "notes": "US10Y differs from MND; FII date unstated"
+      "unverified": 4,
+      "last_checked": "2026-10-12",
+      "notes": "US10Y not cross-checked; FII 9 Oct unverified; rupee 96.78 'unchanged' vs official 96.72 (+16p)"
     },
     "business-standard.com": {
-      "checks": 7,
+      "checks": 8,
       "mismatches": 0,
       "unverified": 0,
-      "last_checked": "2026-10-09",
-      "notes": "no FII, no rupee"
+      "last_checked": "2026-10-12",
+      "notes": "12 Oct live blog: no global/FII data, intraday only"
     },
     "hdfcsky.com": {
-      "checks": 2,
+      "checks": 6,
       "mismatches": 0,
-      "unverified": 0,
-      "last_checked": "2026-10-09",
-      "notes": "FPI figure is previous-previous day"
+      "unverified": 1,
+      "last_checked": "2026-10-12",
+      "notes": "FPI figure is previous-previous day; Monday GIFT preview gives Friday GIFT close"
     },
     "mortgagenewsdaily.com": {
       "checks": 1,
@@ -242,6 +433,13 @@
       "unverified": 0,
       "last_checked": "2026-10-09",
       "notes": "live ticker vs table differ; no timestamp on ticker"
+    },
+    "upstox.com/news": {
+      "checks": 1,
+      "mismatches": 0,
+      "unverified": 0,
+      "last_checked": "2026-10-12",
+      "notes": "rupee close (PTI)"
     }
   }
 }

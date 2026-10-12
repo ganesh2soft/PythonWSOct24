@@ -43,8 +43,16 @@ def token_generate(code, redirect_uri='http://127.0.0.1'):
     #print(response.json())
     # Checking if the token exists and printing it
     if access_token:
-        print("Access Token:", access_token)
+        print("Access Token received (not printed).")
         return access_token
     else:
-        print("Access Token not found.")
+        # 10 Oct 2026: show Upstox's reason (never the secret), e.g. Invalid Credentials / invalid auth code
+        errs = newdata.get('errors') or []
+        why = '; '.join(f"{e.get('errorCode')}: {e.get('message')}" for e in errs if isinstance(e, dict)) or str(newdata)[:200]
+        print(f"Access Token not found. HTTP {response.status_code} - {why}")
+        try:
+            import logging
+            logging.getLogger('app').error(f"Upstox token exchange failed: HTTP {response.status_code} - {why}")
+        except Exception:
+            pass
         return 'no token found'
