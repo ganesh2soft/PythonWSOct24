@@ -1,7 +1,7 @@
 """tg_alerts.py - entry alerts for an option buyer, built on tradeguide's own files (read-only).
 
 Signals (evaluated on every 5-min optvwap snapshot, entries only 09:21-14:45):
-  CE SETUP   : CALL ok just confirmed (optvwap, 2 runs) AND BN above its 09:16 value AND VIX >= its 09:16 value
+  CE SETUP   : CALL ok just confirmed (optvwap, 2 runs) AND BN above its 09:16 value (VIX check OFF for CE since 15 Oct 2026)
                AND put writing >= MIN_WRITE lakh in the last 30 min at strikes <= spot+50
   PE SETUP   : mirror (PUT ok, BN below 09:16, VIX >= 09:16, call writing >= MIN_WRITE at strikes >= spot-50)
   LATE VIX   : (12 Oct 2026) if CALL ok / PUT ok was confirmed but only VIX blocked it, alert the setup as soon as
@@ -23,7 +23,7 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(BASE, 'json_output')
 CFG = {'MIN_WRITE': 40.0, 'WALL_NEAR': 15, 'COOLDOWN': 30, 'ENTRY_FROM': '09:21', 'ENTRY_TO': '14:45',
        'BN_TOL_PCT': 0.15,        # BN may be up to 0.15% against the trade vs its 09:16 value
-       'VIX_FILTER_CE': '--no-vix-ce' not in sys.argv,   # user rule: VIX >= 09:16 for buying; switchable for CE
+       'VIX_FILTER_CE': '--vix-ce' in sys.argv,   # 15 Oct 2026 (user): VIX not required for CE (VIX stays flat/falls in rallies); --vix-ce turns it back on
        'VIX_FILTER_PE': True,
        # sideways (failed covering) settings
        'COV_PCT': 5.0,            # covering event: near-price OI (+-100 pts) falls >= 5% in 5 or 15 min
@@ -213,7 +213,7 @@ def evaluate_day(day):
         # CE / PE setups (on the run CALL ok / PUT ok first becomes true)
         if in_window and sg['call_ok'] and not p_sg['call_ok']:
             conds = [('BN not below 09:16 by >%.2f%%' % CFG['BN_TOL_PCT'], bn is not None and bn0 is not None and bn >= bn0 * (1 - CFG['BN_TOL_PCT'] / 100)),
-                     ('VIX >= 09:16', (not CFG['VIX_FILTER_CE']) or (vix is not None and vix0 is not None and vix >= vix0)),
+                     ('VIX >= 09:16' if CFG['VIX_FILTER_CE'] else 'VIX not required for CE', (not CFG['VIX_FILTER_CE']) or (vix is not None and vix0 is not None and vix >= vix0)),
                      ('put writing >= %.0fL/30m' % CFG['MIN_WRITE'], dput >= CFG['MIN_WRITE'])]
             a = emit('CE SETUP', 'CE', conds, pw[0] if pw else None, cw[0] if cw else None)
             if a['sent']:

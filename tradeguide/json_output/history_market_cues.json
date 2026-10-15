@@ -396,35 +396,389 @@
       "actual": {
         "nifty_prev_close": 22520.45,
         "open": null,
+        "high": 22651.1,
+        "low": 22304.45,
+        "close": 22363.35,
+        "chg_pct": -0.7,
+        "filled": true,
+        "intraday_note": "11:00 Nifty 22,429.25 -0.40% (Business Standard live)",
+        "source": "DSIJ pre-market 13 Oct (close, range); HDFC Sky close report 22,363.35 -0.70%"
+      }
+    },
+    {
+      "date": "2026-10-13",
+      "run_time_ist": "08:38",
+      "method": "v2",
+      "expected_open": {
+        "gift_nifty": 22433,
+        "gift_time": "08:27",
+        "gift_chg_pts": 46,
+        "gift_chg_pct": 0.21,
+        "gift_vs_nifty_close_pts": 69.65,
+        "gift_vs_nifty_close_pct": 0.31,
+        "call": "Mild gap-up (+0.21% vs own close, borderline flat; DSIJ 06:59 22,418 = +54.65 vs Nifty close)"
+      },
+      "bucket_a": {
+        "drivers": [
+          {
+            "id": "A1",
+            "name": "US equities",
+            "value": "S&P -0.06%, Nasdaq -0.44% (avg -0.25%)",
+            "score": 0,
+            "weight": 1
+          },
+          {
+            "id": "A2",
+            "name": "Asia (run time)",
+            "value": "KOSPI -6%+, Nikkei -2.7%, Hang Seng -0.82% (BS 08:27)",
+            "score": -15,
+            "weight": 0.5
+          },
+          {
+            "id": "A3",
+            "name": "US 10Y",
+            "value": "5.214%, -2.3 bp; level >= 5%",
+            "score": -5,
+            "weight": 1
+          },
+          {
+            "id": "A4",
+            "name": "Brent",
+            "value": "$105.4-105.6, -0.5 to -1.2%",
+            "score": -10,
+            "weight": 2
+          },
+          {
+            "id": "A5",
+            "name": "USD/INR",
+            "value": "~95.76 vs 96.72 (rupee ~+1.0%) after RBI rupee measures",
+            "score": 10,
+            "weight": 1
+          }
+        ],
+        "composite": -4.09,
+        "band": "Bearish to Neutral",
+        "arithmetic": "(0*1-15*0.5-5*1-10*2+10*1)/5.5 = -22.5/5.5 = -4.09"
+      },
+      "bucket_b": {
+        "drivers": [
+          {
+            "id": "B1",
+            "name": "FII net (12 Oct)",
+            "value": "FII -1,708.48 cr, DII +3,045.02 cr",
+            "score": -5,
+            "weight": 2
+          },
+          {
+            "id": "B2",
+            "name": "Banks news",
+            "value": "no news for HDFC/ICICI/SBI/Axis/Kotak (RBL Q2 strong, not a heavyweight)",
+            "score": null,
+            "weight": 2
+          },
+          {
+            "id": "B3",
+            "name": "Heavyweights news",
+            "value": "HCLTech Q2 profit +11% QoQ, revenue +3% QoQ, Rs12 dividend",
+            "score": 5,
+            "weight": 1
+          },
+          {
+            "id": "B4",
+            "name": "Domestic macro",
+            "value": "Sept CPI 5.54% (Aug 4.83%), food 7.74% - above RBI target, tightening risk; RBI OMO sale 25,000 cr today; RBI rupee measures (A5)",
+            "score": -10,
+            "weight": 1
+          },
+          {
+            "id": "B5",
+            "name": "Momentum",
+            "value": "Nifty 12 Oct -0.70%",
+            "score": 0,
+            "weight": 0.5
+          }
+        ],
+        "composite": -3.33,
+        "band": "Bearish to Neutral",
+        "arithmetic": "(-5*2+5*1-10*1+0*0.5)/4.5 = -15/4.5 = -3.33"
+      },
+      "driving_harder": "A",
+      "events": [
+        "Weekly Nifty expiry (13 Oct)",
+        "RBI OMO sale 25,000 cr",
+        "Q2: ICICI Pru Life, Hero Motors, Anand Rathi",
+        "IPOs: HD Fire Protect, Vaibhav Vyapaar, Ravita"
+      ],
+      "sources": [
+        "https://insights.dsij.in/dsijarticledetail/pre-market-update-gift-nifty-signals-positive-start-5-stocks-to-watch-on-october-13-59967",
+        "https://www.business-standard.com/amp/markets/news/stock-market-live-october-13-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-ipo-today-126101300081_1.html",
+        "https://hdfcsky.com/news/market-close-report-today-sensex-nifty-slide-as-rbis-rupee-rescue-fails-to-convince",
+        "https://hdfcsky.com/news/gift-nifty-signals-flat-open-for-sensex-nifty-on-tuesday"
+      ],
+      "validation": {
+        "type": "light",
+        "checks": [
+          {
+            "item": "Nifty prev close",
+            "primary": 22363.35,
+            "other": 22363.35,
+            "tol": "1 pt",
+            "ok": true
+          },
+          {
+            "item": "GIFT level",
+            "primary": "22418 @06:59",
+            "other": "22433 @08:27 (BS)",
+            "tol": "0.3%",
+            "ok": true,
+            "diff": "0.07%"
+          },
+          {
+            "item": "Brent",
+            "primary": 105.6,
+            "other": 105.4,
+            "tol": "1.5%",
+            "ok": true
+          },
+          {
+            "item": "S&P / Nasdaq %",
+            "primary": "-0.06 / -0.44",
+            "other": "-0.06 / -0.44",
+            "tol": "0.1 pt",
+            "ok": true
+          },
+          {
+            "item": "Nikkei",
+            "primary": -2.27,
+            "other": -2.7,
+            "tol": "same sign",
+            "ok": true
+          },
+          {
+            "item": "Hang Seng",
+            "primary": "+0.25 (Mon close)",
+            "other": "-0.82 (Tue live)",
+            "tol": "same sign",
+            "ok": null,
+            "note": "different sessions"
+          },
+          {
+            "item": "US 10Y",
+            "primary": 5.214,
+            "other": "n/a",
+            "tol": "5 bp",
+            "ok": null
+          },
+          {
+            "item": "FII 12 Oct",
+            "primary": -1708.48,
+            "other": "n/a",
+            "tol": "exact",
+            "ok": null
+          }
+        ]
+      },
+      "revisions": [],
+      "actual": {
+        "nifty_prev_close": 22363.35,
+        "open": null,
+        "high": null,
+        "low": null,
+        "close": 22721.95,
+        "chg_pct": 1.6,
+        "filled": true,
+        "source": "HDFC Sky close report 13 Oct: 22,721.95 +358.60 (+1.60%); consistent with DSIJ 15 Oct (14 Oct close 22,622.70 -99.25)"
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "run_time_ist": "12:05",
+      "method": "v2",
+      "note": "run after market open (12:05 IST); pre-open sources used for scoring",
+      "expected_open": {
+        "gift_nifty": 22607.5,
+        "gift_chg_pts": null,
+        "gift_chg_pct": null,
+        "gift_vs_nifty_close_pts": -15.2,
+        "gift_vs_nifty_close_pct": -0.07,
+        "call": "Flat (GIFT -0.07% vs Nifty spot close at 06:59; own-close change not given)"
+      },
+      "bucket_a": {
+        "drivers": [
+          {
+            "id": "A1",
+            "name": "US equities avg S&P/Nasdaq",
+            "value": "S&P -1.11%, Nasdaq -1.88% (avg -1.50%), US inflation data revived Fed-hike fears",
+            "score": -10,
+            "weight": 1
+          },
+          {
+            "id": "A2",
+            "name": "Asia avg",
+            "value": "Nikkei -3.90%, Hang Seng -0.13% early trade (avg -2.02%); KOSPI n/a",
+            "score": -15,
+            "weight": 0.5
+          },
+          {
+            "id": "A3",
+            "name": "US 10Y",
+            "value": "5.123%, -6.3 bp (+5) but level >= 5% (-5)",
+            "score": 0,
+            "weight": 1
+          },
+          {
+            "id": "A4",
+            "name": "Brent",
+            "value": "$104.66, -1.36%",
+            "score": -10,
+            "weight": 2
+          },
+          {
+            "id": "A5",
+            "name": "USD/INR",
+            "value": "~95.14 trading, rupee +0.15% (level inconsistent with 96.78 on 13 Oct - unverified)",
+            "score": 5,
+            "weight": 1
+          }
+        ],
+        "composite": -5.91,
+        "band": "Bearish to Neutral",
+        "arithmetic": "(-10x1 + -15x0.5 + 0x1 + -10x2 + 5x1)/5.5 = -32.5/5.5 = -5.91; without A5: -37.5/4.5 = -8.33 (Bearish)"
+      },
+      "bucket_b": {
+        "drivers": [
+          {
+            "id": "B1",
+            "name": "FII net cash",
+            "value": "FII -1,857.44 cr, DII +2,670.44 cr (latest session, date unstated)",
+            "score": -5,
+            "weight": 2
+          },
+          {
+            "id": "B2",
+            "name": "Banks/financials news",
+            "value": "mixed: HDB Fin Q2 +34% profit, UPI MDR 0.4% fee from today vs Canara Bank -7% on Q2, IDBI -6%, PSU banks weakest; no HDFC/ICICI/SBI news",
+            "score": 0,
+            "weight": 2
+          },
+          {
+            "id": "B3",
+            "name": "Other heavyweights news",
+            "value": "Jio Platforms IPO price band set (Reliance positive); IT strong after HCLTech, Wipro results today",
+            "score": 10,
+            "weight": 1
+          },
+          {
+            "id": "B4",
+            "name": "Domestic macro/policy",
+            "value": "UPI MDR on >Rs 2,000 merchant payments from today; no RBI action",
+            "score": 0,
+            "weight": 1
+          },
+          {
+            "id": "B5",
+            "name": "Momentum prev session",
+            "value": "14 Oct Nifty -0.44%",
+            "score": 0,
+            "weight": 0.5
+          }
+        ],
+        "composite": 0.0,
+        "band": "Neutral",
+        "arithmetic": "(-5x2 + 0x2 + 10x1 + 0x1 + 0x0.5)/6.5 = 0/6.5 = 0.00"
+      },
+      "driving_harder": "A",
+      "events": [
+        "Wipro Q2 results today",
+        "IPOs open: Zetwerk, Tonbo Imaging, Bonfiglioli Transmissions",
+        "Jio Platforms IPO 21-23 Oct",
+        "UPI MDR 0.4% effective today",
+        "Nifty weekly expiry Mon 19 Oct (20 Oct holiday)"
+      ],
+      "sources": [
+        "https://insights.dsij.in/dsijarticledetail/gift-nifty-signals-weak-start-us-inflation-asian-sell-off-and-3-ipos-in-focus-on-october-15-60016",
+        "https://www.business-standard.com/markets/news/stock-market-live-october-15-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-ipo-today-126101500089_1.html",
+        "https://hdfcsky.com/news/market-close-report-today-october-14-2026-sensex-nifty-decline-as-crude-oil-fii-selling-weigh-it-shines",
+        "https://hdfcsky.com/news/market-close-report-today-october-13-2026-nifty-sensex-stage-sharp-recovery-as-it-stocks-rally"
+      ],
+      "validation": {
+        "type": "light",
+        "checks": [
+          {
+            "item": "Nifty prev close 14 Oct",
+            "primary": 22622.7,
+            "other": 22622.7,
+            "tol": 1,
+            "ok": true,
+            "note": "DSIJ vs HDFC Sky"
+          },
+          {
+            "item": "Nifty close 13 Oct",
+            "primary": 22721.95,
+            "other": "22,622.70+99.25",
+            "tol": 1,
+            "ok": true,
+            "note": "HDFC Sky vs DSIJ-derived"
+          },
+          {
+            "item": "FII net",
+            "primary": "-1,857.44 cr (date unstated)",
+            "other": "-1,305 cr (13 Oct, HDFC Sky)",
+            "tol": 0,
+            "ok": null,
+            "note": "different dates - unverified"
+          },
+          {
+            "item": "Rupee",
+            "primary": "~95.14 +0.15%",
+            "other": "96.78 (DSIJ 13 Oct)",
+            "tol": 0.1,
+            "ok": null,
+            "note": "level jump implausible without news; change scored, flagged"
+          },
+          {
+            "item": "Brent/GIFT/US",
+            "primary": "DSIJ",
+            "other": "BS live had no pre-open data",
+            "tol": null,
+            "ok": null,
+            "note": "cross-check unavailable"
+          }
+        ]
+      },
+      "revisions": [],
+      "actual": {
+        "nifty_prev_close": 22622.7,
+        "open": null,
         "high": null,
         "low": null,
         "close": null,
         "chg_pct": null,
         "filled": false,
-        "intraday_note": "11:00 Nifty 22,429.25 -0.40% (Business Standard live)"
+        "intraday_note": "11:00 Nifty 22,932.80 +1.37% (Business Standard live)"
       }
     }
   ],
   "source_stats": {
     "insights.dsij.in": {
-      "checks": 13,
+      "checks": 20,
       "mismatches": 1,
-      "unverified": 4,
-      "last_checked": "2026-10-12",
-      "notes": "US10Y not cross-checked; FII 9 Oct unverified; rupee 96.78 'unchanged' vs official 96.72 (+16p)"
+      "unverified": 8,
+      "last_checked": "2026-10-15",
+      "notes": "US10Y not cross-checked; FII 9 Oct unverified; rupee 96.78 'unchanged' vs official 96.72 (+16p); 15 Oct rupee 95.14 vs 96.78 on 13 Oct - check"
     },
     "business-standard.com": {
-      "checks": 8,
+      "checks": 12,
       "mismatches": 0,
       "unverified": 0,
-      "last_checked": "2026-10-12",
-      "notes": "12 Oct live blog: no global/FII data, intraday only"
+      "last_checked": "2026-10-15",
+      "notes": "15 Oct live blog: intraday only, no pre-open global/FII data"
     },
     "hdfcsky.com": {
-      "checks": 6,
+      "checks": 9,
       "mismatches": 0,
-      "unverified": 1,
-      "last_checked": "2026-10-12",
+      "unverified": 2,
+      "last_checked": "2026-10-15",
       "notes": "FPI figure is previous-previous day; Monday GIFT preview gives Friday GIFT close"
     },
     "mortgagenewsdaily.com": {

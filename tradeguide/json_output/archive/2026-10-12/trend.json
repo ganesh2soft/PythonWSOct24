@@ -1,0 +1,1902 @@
+{
+  "vix_set": [
+    {
+      "vixts": "2026-10-12 09:11:00",
+      "ivix": 14.38,
+      "nifty50": 22593,
+      "nifty_futures": 22657
+    },
+    {
+      "vixts": "2026-10-12 09:16:00",
+      "ivix": 14.67,
+      "nifty50": 22636,
+      "nifty_futures": 22700
+    },
+    {
+      "vixts": "2026-10-12 09:21:01",
+      "ivix": 14.65,
+      "nifty50": 22586,
+      "nifty_futures": 22666
+    },
+    {
+      "vixts": "2026-10-12 09:26:00",
+      "ivix": 14.97,
+      "nifty50": 22531,
+      "nifty_futures": 22600
+    },
+    {
+      "vixts": "2026-10-12 09:31:01",
+      "ivix": 14.92,
+      "nifty50": 22570,
+      "nifty_futures": 22622
+    },
+    {
+      "vixts": "2026-10-12 09:36:00",
+      "ivix": 15.0,
+      "nifty50": 22540,
+      "nifty_futures": 22597
+    },
+    {
+      "vixts": "2026-10-12 09:41:00",
+      "ivix": 15.08,
+      "nifty50": 22527,
+      "nifty_futures": 22585
+    },
+    {
+      "vixts": "2026-10-12 09:46:00",
+      "ivix": 15.12,
+      "nifty50": 22530,
+      "nifty_futures": 22580
+    },
+    {
+      "vixts": "2026-10-12 09:51:01",
+      "ivix": 15.14,
+      "nifty50": 22510,
+      "nifty_futures": 22566
+    },
+    {
+      "vixts": "2026-10-12 09:56:00",
+      "ivix": 15.11,
+      "nifty50": 22502,
+      "nifty_futures": 22549
+    },
+    {
+      "vixts": "2026-10-12 10:01:00",
+      "ivix": 14.96,
+      "nifty50": 22529,
+      "nifty_futures": 22582
+    },
+    {
+      "vixts": "2026-10-12 10:06:01",
+      "ivix": 15.06,
+      "nifty50": 22499,
+      "nifty_futures": 22545
+    },
+    {
+      "vixts": "2026-10-12 10:11:00",
+      "ivix": 15.07,
+      "nifty50": 22496,
+      "nifty_futures": 22548
+    },
+    {
+      "vixts": "2026-10-12 10:16:01",
+      "ivix": 15.1,
+      "nifty50": 22491,
+      "nifty_futures": 22545
+    },
+    {
+      "vixts": "2026-10-12 10:21:01",
+      "ivix": 15.06,
+      "nifty50": 22495,
+      "nifty_futures": 22544
+    },
+    {
+      "vixts": "2026-10-12 10:26:00",
+      "ivix": 15.07,
+      "nifty50": 22498,
+      "nifty_futures": 22538
+    },
+    {
+      "vixts": "2026-10-12 10:31:01",
+      "ivix": 15.13,
+      "nifty50": 22459,
+      "nifty_futures": 22507
+    },
+    {
+      "vixts": "2026-10-12 10:36:00",
+      "ivix": 15.1,
+      "nifty50": 22478,
+      "nifty_futures": 22518
+    },
+    {
+      "vixts": "2026-10-12 10:41:00",
+      "ivix": 15.07,
+      "nifty50": 22479,
+      "nifty_futures": 22525
+    },
+    {
+      "vixts": "2026-10-12 10:46:01",
+      "ivix": 15.14,
+      "nifty50": 22466,
+      "nifty_futures": 22510
+    },
+    {
+      "vixts": "2026-10-12 10:51:00",
+      "ivix": 15.16,
+      "nifty50": 22447,
+      "nifty_futures": 22499
+    },
+    {
+      "vixts": "2026-10-12 10:56:00",
+      "ivix": 15.15,
+      "nifty50": 22445,
+      "nifty_futures": 22490
+    },
+    {
+      "vixts": "2026-10-12 11:01:01",
+      "ivix": 15.21,
+      "nifty50": 22421,
+      "nifty_futures": 22470
+    },
+    {
+      "vixts": "2026-10-12 11:06:00",
+      "ivix": 15.31,
+      "nifty50": 22410,
+      "nifty_futures": 22455
+    },
+    {
+      "vixts": "2026-10-12 11:11:01",
+      "ivix": 15.31,
+      "nifty50": 22413,
+      "nifty_futures": 22460
+    },
+    {
+      "vixts": "2026-10-12 11:16:00",
+      "ivix": 15.42,
+      "nifty50": 22383,
+      "nifty_futures": 22428
+    },
+    {
+      "vixts": "2026-10-12 11:21:00",
+      "ivix": 15.46,
+      "nifty50": 22389,
+      "nifty_futures": 22432
+    },
+    {
+      "vixts": "2026-10-12 11:26:01",
+      "ivix": 15.4,
+      "nifty50": 22394,
+      "nifty_futures": 22435
+    },
+    {
+      "vixts": "2026-10-12 11:31:00",
+      "ivix": 15.45,
+      "nifty50": 22388,
+      "nifty_futures": 22432
+    },
+    {
+      "vixts": "2026-10-12 11:36:01",
+      "ivix": 15.41,
+      "nifty50": 22397,
+      "nifty_futures": 22445
+    },
+    {
+      "vixts": "2026-10-12 11:41:00",
+      "ivix": 15.45,
+      "nifty50": 22380,
+      "nifty_futures": 22432
+    },
+    {
+      "vixts": "2026-10-12 11:46:01",
+      "ivix": 15.44,
+      "nifty50": 22365,
+      "nifty_futures": 22415
+    },
+    {
+      "vixts": "2026-10-12 11:51:00",
+      "ivix": 15.45,
+      "nifty50": 22376,
+      "nifty_futures": 22428
+    },
+    {
+      "vixts": "2026-10-12 11:56:00",
+      "ivix": 15.49,
+      "nifty50": 22378,
+      "nifty_futures": 22428
+    },
+    {
+      "vixts": "2026-10-12 12:01:00",
+      "ivix": 15.48,
+      "nifty50": 22371,
+      "nifty_futures": 22421
+    },
+    {
+      "vixts": "2026-10-12 12:06:01",
+      "ivix": 15.49,
+      "nifty50": 22372,
+      "nifty_futures": 22423
+    },
+    {
+      "vixts": "2026-10-12 12:11:00",
+      "ivix": 15.52,
+      "nifty50": 22359,
+      "nifty_futures": 22405
+    },
+    {
+      "vixts": "2026-10-12 12:16:01",
+      "ivix": 15.46,
+      "nifty50": 22378,
+      "nifty_futures": 22425
+    },
+    {
+      "vixts": "2026-10-12 12:21:00",
+      "ivix": 15.4,
+      "nifty50": 22385,
+      "nifty_futures": 22435
+    },
+    {
+      "vixts": "2026-10-12 12:26:01",
+      "ivix": 15.39,
+      "nifty50": 22383,
+      "nifty_futures": 22433
+    },
+    {
+      "vixts": "2026-10-12 12:31:01",
+      "ivix": 15.42,
+      "nifty50": 22384,
+      "nifty_futures": 22435
+    },
+    {
+      "vixts": "2026-10-12 12:36:00",
+      "ivix": 15.3,
+      "nifty50": 22398,
+      "nifty_futures": 22455
+    },
+    {
+      "vixts": "2026-10-12 12:41:00",
+      "ivix": 15.35,
+      "nifty50": 22399,
+      "nifty_futures": 22460
+    },
+    {
+      "vixts": "2026-10-12 12:46:00",
+      "ivix": 15.34,
+      "nifty50": 22395,
+      "nifty_futures": 22449
+    },
+    {
+      "vixts": "2026-10-12 12:51:00",
+      "ivix": 15.39,
+      "nifty50": 22387,
+      "nifty_futures": 22441
+    },
+    {
+      "vixts": "2026-10-12 12:56:01",
+      "ivix": 15.42,
+      "nifty50": 22373,
+      "nifty_futures": 22423
+    },
+    {
+      "vixts": "2026-10-12 13:01:00",
+      "ivix": 15.4,
+      "nifty50": 22384,
+      "nifty_futures": 22439
+    },
+    {
+      "vixts": "2026-10-12 13:06:01",
+      "ivix": 15.38,
+      "nifty50": 22381,
+      "nifty_futures": 22443
+    },
+    {
+      "vixts": "2026-10-12 13:11:00",
+      "ivix": 15.32,
+      "nifty50": 22396,
+      "nifty_futures": 22463
+    },
+    {
+      "vixts": "2026-10-12 13:16:00",
+      "ivix": 15.39,
+      "nifty50": 22369,
+      "nifty_futures": 22431
+    },
+    {
+      "vixts": "2026-10-12 13:21:00",
+      "ivix": 15.4,
+      "nifty50": 22367,
+      "nifty_futures": 22434
+    },
+    {
+      "vixts": "2026-10-12 13:26:01",
+      "ivix": 15.4,
+      "nifty50": 22369,
+      "nifty_futures": 22430
+    },
+    {
+      "vixts": "2026-10-12 13:31:00",
+      "ivix": 15.37,
+      "nifty50": 22379,
+      "nifty_futures": 22445
+    },
+    {
+      "vixts": "2026-10-12 13:36:00",
+      "ivix": 15.4,
+      "nifty50": 22366,
+      "nifty_futures": 22430
+    },
+    {
+      "vixts": "2026-10-12 13:41:01",
+      "ivix": 15.42,
+      "nifty50": 22363,
+      "nifty_futures": 22432
+    },
+    {
+      "vixts": "2026-10-12 13:46:00",
+      "ivix": 15.43,
+      "nifty50": 22357,
+      "nifty_futures": 22417
+    },
+    {
+      "vixts": "2026-10-12 13:51:00",
+      "ivix": 15.41,
+      "nifty50": 22376,
+      "nifty_futures": 22435
+    },
+    {
+      "vixts": "2026-10-12 13:56:01",
+      "ivix": 15.35,
+      "nifty50": 22388,
+      "nifty_futures": 22455
+    },
+    {
+      "vixts": "2026-10-12 14:01:00",
+      "ivix": 15.35,
+      "nifty50": 22371,
+      "nifty_futures": 22435
+    },
+    {
+      "vixts": "2026-10-12 14:06:00",
+      "ivix": 15.35,
+      "nifty50": 22371,
+      "nifty_futures": 22442
+    },
+    {
+      "vixts": "2026-10-12 14:11:00",
+      "ivix": 15.34,
+      "nifty50": 22371,
+      "nifty_futures": 22430
+    },
+    {
+      "vixts": "2026-10-12 14:16:01",
+      "ivix": 15.46,
+      "nifty50": 22343,
+      "nifty_futures": 22403
+    },
+    {
+      "vixts": "2026-10-12 14:21:00",
+      "ivix": 15.37,
+      "nifty50": 22352,
+      "nifty_futures": 22415
+    },
+    {
+      "vixts": "2026-10-12 14:26:00",
+      "ivix": 15.43,
+      "nifty50": 22337,
+      "nifty_futures": 22386
+    },
+    {
+      "vixts": "2026-10-12 14:31:00",
+      "ivix": 15.38,
+      "nifty50": 22331,
+      "nifty_futures": 22391
+    },
+    {
+      "vixts": "2026-10-12 14:36:01",
+      "ivix": 15.38,
+      "nifty50": 22335,
+      "nifty_futures": 22406
+    },
+    {
+      "vixts": "2026-10-12 14:40:00",
+      "ivix": 15.44,
+      "nifty50": 22319,
+      "nifty_futures": 22385
+    },
+    {
+      "vixts": "2026-10-12 14:46:01",
+      "ivix": 15.47,
+      "nifty50": 22322,
+      "nifty_futures": 22395
+    },
+    {
+      "vixts": "2026-10-12 14:51:01",
+      "ivix": 15.41,
+      "nifty50": 22331,
+      "nifty_futures": 22400
+    },
+    {
+      "vixts": "2026-10-12 14:56:01",
+      "ivix": 15.33,
+      "nifty50": 22346,
+      "nifty_futures": 22412
+    },
+    {
+      "vixts": "2026-10-12 15:01:00",
+      "ivix": 15.21,
+      "nifty50": 22329,
+      "nifty_futures": 22400
+    },
+    {
+      "vixts": "2026-10-12 15:06:00",
+      "ivix": 15.23,
+      "nifty50": 22320,
+      "nifty_futures": 22396
+    },
+    {
+      "vixts": "2026-10-12 15:11:01",
+      "ivix": 15.26,
+      "nifty50": 22312,
+      "nifty_futures": 22385
+    },
+    {
+      "vixts": "2026-10-12 15:16:00",
+      "ivix": 15.27,
+      "nifty50": 22317,
+      "nifty_futures": 22388
+    },
+    {
+      "vixts": "2026-10-12 15:21:00",
+      "ivix": 15.26,
+      "nifty50": 22317,
+      "nifty_futures": 22386
+    },
+    {
+      "vixts": "2026-10-12 15:26:01",
+      "ivix": 15.25,
+      "nifty50": 22317,
+      "nifty_futures": 22379
+    },
+    {
+      "vixts": "2026-10-12 15:31:01",
+      "ivix": 15.24,
+      "nifty50": 22363,
+      "nifty_futures": 22387
+    },
+    {
+      "vixts": "2026-10-12 15:36:01",
+      "ivix": 15.27,
+      "nifty50": 22363,
+      "nifty_futures": 22388
+    },
+    {
+      "vixts": "2026-10-12 15:41:01",
+      "ivix": 15.24,
+      "nifty50": 22363,
+      "nifty_futures": 22400
+    }
+  ],
+  "pcr_set": [
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 09:11:06",
+      "tpcr": 1.2697,
+      "pcrtrend": "Bullish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 09:11:06",
+      "tpcr": 0.9283,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 09:11:06",
+      "tpcr": 0.9765,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 09:16:05",
+      "tpcr": 1.2681,
+      "pcrtrend": "Bullish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 09:16:05",
+      "tpcr": 0.9274,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 09:16:06",
+      "tpcr": 0.9736,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 09:21:06",
+      "tpcr": 1.1201,
+      "pcrtrend": "SW-to-Bull"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 09:21:06",
+      "tpcr": 0.9245,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 09:21:06",
+      "tpcr": 0.9773,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 09:26:05",
+      "tpcr": 1.0177,
+      "pcrtrend": "SW-to-Bull"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 09:26:05",
+      "tpcr": 0.8993,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 09:26:06",
+      "tpcr": 0.9746,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 09:31:05",
+      "tpcr": 0.9976,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 09:31:06",
+      "tpcr": 0.8986,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 09:31:06",
+      "tpcr": 0.9747,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 09:36:05",
+      "tpcr": 1.0194,
+      "pcrtrend": "SW-to-Bull"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 09:36:05",
+      "tpcr": 0.9054,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 09:36:05",
+      "tpcr": 0.9757,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 09:41:05",
+      "tpcr": 1.0049,
+      "pcrtrend": "SW-to-Bull"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 09:41:06",
+      "tpcr": 0.889,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 09:41:06",
+      "tpcr": 0.9761,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 09:46:05",
+      "tpcr": 0.9955,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 09:46:05",
+      "tpcr": 0.8785,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 09:46:05",
+      "tpcr": 0.9769,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 09:51:05",
+      "tpcr": 0.9956,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 09:51:06",
+      "tpcr": 0.8707,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 09:51:06",
+      "tpcr": 0.9779,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 09:56:05",
+      "tpcr": 0.9359,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 09:56:05",
+      "tpcr": 0.8549,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 09:56:05",
+      "tpcr": 0.9787,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 10:01:05",
+      "tpcr": 0.9619,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 10:01:06",
+      "tpcr": 0.8617,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 10:01:06",
+      "tpcr": 0.9784,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 10:06:06",
+      "tpcr": 0.9697,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 10:06:06",
+      "tpcr": 0.8707,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 10:06:06",
+      "tpcr": 0.9793,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 10:11:05",
+      "tpcr": 0.9609,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 10:11:05",
+      "tpcr": 0.8682,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 10:11:06",
+      "tpcr": 0.9787,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 10:16:05",
+      "tpcr": 0.9504,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 10:16:06",
+      "tpcr": 0.8583,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 10:16:06",
+      "tpcr": 0.9783,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 10:21:06",
+      "tpcr": 0.9216,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 10:21:06",
+      "tpcr": 0.8534,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 10:21:06",
+      "tpcr": 0.9774,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 10:26:05",
+      "tpcr": 0.9287,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 10:26:05",
+      "tpcr": 0.8517,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 10:26:06",
+      "tpcr": 0.9773,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 10:31:05",
+      "tpcr": 0.8959,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 10:31:06",
+      "tpcr": 0.8391,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 10:31:06",
+      "tpcr": 0.9762,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 10:36:05",
+      "tpcr": 0.8681,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 10:36:05",
+      "tpcr": 0.8319,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 10:36:05",
+      "tpcr": 0.9755,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 10:41:05",
+      "tpcr": 0.888,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 10:41:05",
+      "tpcr": 0.8381,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 10:41:06",
+      "tpcr": 0.9744,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 10:46:05",
+      "tpcr": 0.8953,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 10:46:06",
+      "tpcr": 0.84,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 10:46:06",
+      "tpcr": 0.9739,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 10:51:05",
+      "tpcr": 0.8844,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 10:51:05",
+      "tpcr": 0.8363,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 10:51:05",
+      "tpcr": 0.9733,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 10:56:05",
+      "tpcr": 0.8548,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 10:56:05",
+      "tpcr": 0.8286,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 10:56:06",
+      "tpcr": 0.972,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 11:01:05",
+      "tpcr": 0.8314,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 11:01:06",
+      "tpcr": 0.8146,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 11:01:06",
+      "tpcr": 0.9695,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 11:06:05",
+      "tpcr": 0.8153,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 11:06:05",
+      "tpcr": 0.8082,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 11:06:05",
+      "tpcr": 0.9669,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 11:11:05",
+      "tpcr": 0.7815,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 11:11:06",
+      "tpcr": 0.8029,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 11:11:06",
+      "tpcr": 0.9652,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 11:16:05",
+      "tpcr": 0.7345,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 11:16:05",
+      "tpcr": 0.7952,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 11:16:05",
+      "tpcr": 0.9614,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 11:21:05",
+      "tpcr": 0.7341,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 11:21:06",
+      "tpcr": 0.7887,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 11:21:06",
+      "tpcr": 0.9594,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 11:26:06",
+      "tpcr": 0.7365,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 11:26:06",
+      "tpcr": 0.7938,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 11:26:06",
+      "tpcr": 0.9588,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 11:31:05",
+      "tpcr": 0.7524,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 11:31:05",
+      "tpcr": 0.7922,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 11:31:06",
+      "tpcr": 0.9589,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 11:36:05",
+      "tpcr": 0.7446,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 11:36:06",
+      "tpcr": 0.7964,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 11:36:06",
+      "tpcr": 0.9592,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 11:41:05",
+      "tpcr": 0.7532,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 11:41:05",
+      "tpcr": 0.7984,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 11:41:06",
+      "tpcr": 0.9585,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 11:46:07",
+      "tpcr": 0.7597,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 11:46:08",
+      "tpcr": 0.7997,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 11:46:08",
+      "tpcr": 0.9583,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 11:51:06",
+      "tpcr": 0.7545,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 11:51:07",
+      "tpcr": 0.8021,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 11:51:07",
+      "tpcr": 0.9579,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 11:56:07",
+      "tpcr": 0.7519,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 11:56:07",
+      "tpcr": 0.7995,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 11:56:08",
+      "tpcr": 0.9581,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 12:01:07",
+      "tpcr": 0.7455,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 12:01:07",
+      "tpcr": 0.7974,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 12:01:08",
+      "tpcr": 0.9581,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 12:06:07",
+      "tpcr": 0.7458,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 12:06:08",
+      "tpcr": 0.7954,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 12:06:08",
+      "tpcr": 0.9577,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 12:11:07",
+      "tpcr": 0.7403,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 12:11:07",
+      "tpcr": 0.7939,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 12:11:08",
+      "tpcr": 0.958,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 12:16:07",
+      "tpcr": 0.7357,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 12:16:07",
+      "tpcr": 0.7912,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 12:16:08",
+      "tpcr": 0.9581,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 12:21:07",
+      "tpcr": 0.7244,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 12:21:07",
+      "tpcr": 0.792,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 12:21:08",
+      "tpcr": 0.9572,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 12:26:07",
+      "tpcr": 0.7273,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 12:26:07",
+      "tpcr": 0.7936,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 12:26:08",
+      "tpcr": 0.957,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 12:31:07",
+      "tpcr": 0.7361,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 12:31:08",
+      "tpcr": 0.795,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 12:31:08",
+      "tpcr": 0.9567,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 12:36:06",
+      "tpcr": 0.7212,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 12:36:07",
+      "tpcr": 0.7986,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 12:36:07",
+      "tpcr": 0.9547,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 12:41:07",
+      "tpcr": 0.7267,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 12:41:07",
+      "tpcr": 0.7954,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 12:41:08",
+      "tpcr": 0.9547,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 12:46:06",
+      "tpcr": 0.73,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 12:46:06",
+      "tpcr": 0.7968,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 12:46:07",
+      "tpcr": 0.954,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 12:51:05",
+      "tpcr": 0.7424,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 12:51:05",
+      "tpcr": 0.8027,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 12:51:06",
+      "tpcr": 0.9533,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 12:56:07",
+      "tpcr": 0.7631,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 12:56:08",
+      "tpcr": 0.8058,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 12:56:08",
+      "tpcr": 0.9535,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 13:01:07",
+      "tpcr": 0.7609,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 13:01:07",
+      "tpcr": 0.8062,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 13:01:07",
+      "tpcr": 0.9533,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 13:06:07",
+      "tpcr": 0.7591,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 13:06:08",
+      "tpcr": 0.8083,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 13:06:08",
+      "tpcr": 0.953,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 13:11:07",
+      "tpcr": 0.7377,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 13:11:07",
+      "tpcr": 0.8106,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 13:11:08",
+      "tpcr": 0.9541,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 13:16:06",
+      "tpcr": 0.7571,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 13:16:07",
+      "tpcr": 0.8124,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 13:16:07",
+      "tpcr": 0.9538,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 13:21:07",
+      "tpcr": 0.756,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 13:21:07",
+      "tpcr": 0.8119,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 13:21:08",
+      "tpcr": 0.9527,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 13:26:07",
+      "tpcr": 0.758,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 13:26:08",
+      "tpcr": 0.8145,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 13:26:08",
+      "tpcr": 0.9522,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 13:31:06",
+      "tpcr": 0.7513,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 13:31:07",
+      "tpcr": 0.8137,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 13:31:07",
+      "tpcr": 0.952,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 13:36:07",
+      "tpcr": 0.7538,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 13:36:07",
+      "tpcr": 0.8132,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 13:36:08",
+      "tpcr": 0.9518,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 13:41:07",
+      "tpcr": 0.7543,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 13:41:08",
+      "tpcr": 0.8103,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 13:41:08",
+      "tpcr": 0.9523,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 13:46:06",
+      "tpcr": 0.749,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 13:46:07",
+      "tpcr": 0.8094,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 13:46:07",
+      "tpcr": 0.9524,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 13:51:07",
+      "tpcr": 0.7457,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 13:51:07",
+      "tpcr": 0.8076,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 13:51:08",
+      "tpcr": 0.9526,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 13:56:09",
+      "tpcr": 0.7406,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 13:56:10",
+      "tpcr": 0.8086,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 13:56:10",
+      "tpcr": 0.9523,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 14:01:06",
+      "tpcr": 0.755,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 14:01:07",
+      "tpcr": 0.8103,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 14:01:07",
+      "tpcr": 0.9513,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 14:06:06",
+      "tpcr": 0.7578,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 14:06:07",
+      "tpcr": 0.8148,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 14:06:07",
+      "tpcr": 0.9514,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 14:11:07",
+      "tpcr": 0.75,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 14:11:07",
+      "tpcr": 0.8129,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 14:11:08",
+      "tpcr": 0.9519,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 14:16:07",
+      "tpcr": 0.7369,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 14:16:07",
+      "tpcr": 0.8101,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 14:16:08",
+      "tpcr": 0.9533,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 14:21:06",
+      "tpcr": 0.7225,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 14:21:07",
+      "tpcr": 0.806,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 14:21:07",
+      "tpcr": 0.9523,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 14:26:06",
+      "tpcr": 0.7192,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 14:26:07",
+      "tpcr": 0.8093,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 14:26:07",
+      "tpcr": 0.9525,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 14:31:07",
+      "tpcr": 0.7146,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 14:31:07",
+      "tpcr": 0.8058,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 14:31:08",
+      "tpcr": 0.9519,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 14:36:07",
+      "tpcr": 0.7099,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 14:36:07",
+      "tpcr": 0.8063,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 14:36:08",
+      "tpcr": 0.951,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 14:40:07",
+      "tpcr": 0.7056,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 14:40:07",
+      "tpcr": 0.8066,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 14:40:07",
+      "tpcr": 0.9483,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 14:46:07",
+      "tpcr": 0.6862,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 14:46:07",
+      "tpcr": 0.8105,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 14:46:08",
+      "tpcr": 0.9403,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 14:51:07",
+      "tpcr": 0.6743,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 14:51:07",
+      "tpcr": 0.8109,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 14:51:08",
+      "tpcr": 0.9376,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 14:56:07",
+      "tpcr": 0.6702,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 14:56:07",
+      "tpcr": 0.8138,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 14:56:08",
+      "tpcr": 0.9374,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 15:01:06",
+      "tpcr": 0.6802,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 15:01:07",
+      "tpcr": 0.8177,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 15:01:07",
+      "tpcr": 0.9378,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 15:06:07",
+      "tpcr": 0.6751,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 15:06:07",
+      "tpcr": 0.8166,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 15:06:08",
+      "tpcr": 0.9369,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 15:11:07",
+      "tpcr": 0.6622,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 15:11:08",
+      "tpcr": 0.8199,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 15:11:08",
+      "tpcr": 0.9363,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 15:16:07",
+      "tpcr": 0.6491,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 15:16:08",
+      "tpcr": 0.8214,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 15:16:08",
+      "tpcr": 0.9398,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 15:21:06",
+      "tpcr": 0.6406,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 15:21:07",
+      "tpcr": 0.8199,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 15:21:07",
+      "tpcr": 0.9415,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 15:26:07",
+      "tpcr": 0.6302,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 15:26:07",
+      "tpcr": 0.826,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 15:26:08",
+      "tpcr": 0.9437,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 15:31:07",
+      "tpcr": 0.6211,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 15:31:07",
+      "tpcr": 0.8322,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 15:31:08",
+      "tpcr": 0.9433,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 15:36:07",
+      "tpcr": 0.606,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 15:36:07",
+      "tpcr": 0.837,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 15:36:07",
+      "tpcr": 0.9412,
+      "pcrtrend": "Bear-to-SW"
+    },
+    {
+      "expiry": "2026-10-13",
+      "recdate": "2026-10-12 15:41:07",
+      "tpcr": 0.6012,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-19",
+      "recdate": "2026-10-12 15:41:07",
+      "tpcr": 0.8362,
+      "pcrtrend": "Bearish"
+    },
+    {
+      "expiry": "2026-10-27",
+      "recdate": "2026-10-12 15:41:07",
+      "tpcr": 0.9447,
+      "pcrtrend": "Bear-to-SW"
+    }
+  ]
+}

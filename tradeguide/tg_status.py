@@ -221,7 +221,7 @@ if SUMMARY:
         for a, b in zip(OV, OV[1:]):
             if a['signal']['verdict'] != b['signal']['verdict']:
                 chg = hm(b['timestamp'])
-        okk = 'CALL ok' if sg['call_ok'] else 'PUT ok' if sg['put_ok'] else 'no side ok'
+        okk = 'CALL ok' if sg['call_ok'] else 'PUT ok' if sg['put_ok'] else 'Neither CE nor PE'
         P('OptVWAP: %s | %s | day %+d (CE %d/PE %d) | anchor %s@%s score %+d hold %s%s' % (
             sg['verdict'], okk, sc['day_score'], sc['ce_day'], sc['pe_day'], ANCH.get(an.get('dir'), '?'), an.get('time'),
             sc['anc_score'], sc['anc_hold'], (' | verdict since ' + chg) if chg else ''))

@@ -111,8 +111,15 @@ def fmt(x):
 
 
 def load_levels():
-    with open(LEVELS, encoding='utf-8') as f:
-        return json.load(f)
+    # 15 Oct 2026: levels are only needed when SHOW_LEVELS is on; a missing tgrepo/due_levels.json must not stop ASGBOOM
+    if not SHOW_LEVELS:
+        return {}
+    try:
+        with open(LEVELS, encoding='utf-8') as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError) as e:
+        log(f'Levels file not usable ({type(e).__name__}) - running without level text')
+        return {k: [] for k in INDICES}
 
 
 def latest_snapshot():

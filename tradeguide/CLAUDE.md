@@ -155,9 +155,9 @@ Archived_All/...                                      expired data (git-ignored)
 ## 7. Alert logic (summary)
 
 **tg_alerts.py** (entries only 09:21–14:45, sideways until 15:00; never sends alerts older than 10 min)
-- CE SETUP: optvwap "CALL ok" confirmed (2 runs) + Bank Nifty above its 09:16 value + India VIX ≥ its 09:16 value + put writing ≥ 40 lakh in 30 min at strikes ≤ spot+50.
+- CE SETUP: optvwap "CALL ok" confirmed (2 runs) + Bank Nifty above its 09:16 value + put writing ≥ 40 lakh in 30 min at strikes ≤ spot+50. No VIX check for CE since 15 Oct 2026 (VIX usually stays flat or falls in a bullish market); REVERSAL UP shares this switch.
 - PE SETUP: mirror image (PUT ok, BN below 09:16, VIX ≥ 09:16, call writing ≥ 40 lakh at strikes ≥ spot−50).
-- Late VIX confirm (12 Oct 2026): if CALL ok / PUT ok was confirmed but only VIX (below its 09:16 value) blocked the setup, the CE/PE SETUP is sent as soon as VIX >= its 09:16 value while CALL ok / PUT ok is still on (once per streak).
+- Late VIX confirm (12 Oct 2026): if PUT ok was confirmed but only VIX (below its 09:16 value) blocked the setup, the PE SETUP is sent as soon as VIX >= its 09:16 value while PUT ok is still on (once per streak). Since 15 Oct this applies to PE only.
 - REVERSAL: optvwap verdict "REVERSAL UP/DOWN – confirmed". NEAR WALL warning only while an alert is open and in profit.
 - Stop / target = nearest of the two biggest OI walls; stop checked on 5-min close; 30-min cooldown; one open alert per side.
 - Sideways: `sideways-alert-covering` and `sideways-covering-wall-broken` (naming rule: `sideways-alert-<approach>`, `sideways-<approach>-wall-broken`).
