@@ -752,41 +752,245 @@
         "open": null,
         "high": null,
         "low": null,
+        "close": 22997,
+        "chg_pct": 1.65,
+        "filled": true,
+        "intraday_note": "11:00 Nifty 22,932.80 +1.37% (Business Standard live)",
+        "source": "Business Standard close report 15 Oct headline: Nifty at 22,997 (rounded), Sensex +1,534; chg vs 14 Oct close 22,622.70; open/high/low not captured"
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "run_time_ist": "09:25",
+      "method": "v2",
+      "note": "Run after the 09:15 open (market already open); used pre-open news and the 19 Oct close as setup. 20 Oct was a market holiday (Dussehra), so previous session = 19 Oct.",
+      "expected_open": {
+        "gift_nifty": 23021.5,
+        "gift_chg_pts": 132.55,
+        "gift_chg_pct": 0.58,
+        "gift_vs_nifty_close_pts": 132.55,
+        "gift_vs_nifty_close_pct": 0.58,
+        "call": "Gap-up (+0.58%; BS 08:37 23,012, +116 pts ~ +0.51%)"
+      },
+      "bucket_a": {
+        "drivers": [
+          {
+            "id": "A1",
+            "name": "US equities",
+            "value": "S&P +0.28%, Nasdaq -0.02% (avg +0.13%); Dow +1.02%",
+            "score": 0,
+            "weight": 1
+          },
+          {
+            "id": "A2",
+            "name": "Asia",
+            "value": "Nikkei +1.3%, KOSPI +3.7% (BS; DSIJ text garbled 5.35%), HSI n/a; avg +2.5%",
+            "score": 15,
+            "weight": 0.5
+          },
+          {
+            "id": "A3",
+            "name": "US 10Y",
+            "value": "5.134% (+1.9bp, DSIJ); level >= 5.0% extra -5",
+            "score": -5,
+            "weight": 1
+          },
+          {
+            "id": "A4",
+            "name": "Brent",
+            "value": "~$110 (+0.7% DSIJ / +1.3% BS)",
+            "score": -10,
+            "weight": 2
+          },
+          {
+            "id": "A5",
+            "name": "USD/INR",
+            "value": "94.78 vs 94.92 close (+0.15% stronger, BS)",
+            "score": 5,
+            "weight": 1
+          }
+        ],
+        "composite": -2.27,
+        "band": "Neutral",
+        "arithmetic": "(0*1 + 15*0.5 + -5*1 + -10*2 + 5*1) / 5.5 = -12.5/5.5 = -2.27"
+      },
+      "bucket_b": {
+        "drivers": [
+          {
+            "id": "B1",
+            "name": "FII net cash (prev session)",
+            "value": "-Rs1,148.64 cr on 19 Oct (DSIJ), DII +Rs3,201.19 cr; unverified",
+            "score": -5,
+            "weight": 2
+          },
+          {
+            "id": "B2",
+            "name": "Banks/financials news",
+            "value": "Private banks sold on Q2: Axis -4.2% (narrow miss), ICICI -1.15%, HDFC Bank -2.3%; PSU banks PNB/Union +5%; YES Bank -3.5% on AT1 SC ruling; Bajaj Fin in focus",
+            "score": -5,
+            "weight": 2
+          },
+          {
+            "id": "B3",
+            "name": "Other heavyweights news",
+            "value": "Infosys -2.6%, LTIMindtree/UltraTech profit misses; offset by trade-deal hopes for IT/pharma",
+            "score": 0,
+            "weight": 1
+          },
+          {
+            "id": "B4",
+            "name": "Domestic macro/policy",
+            "value": "India-US trade deal near (Trump 'close to signing', Rubio 'weeks'); US sanctions waiver on Russian oil; Jio Rs30,213 cr IPO opens",
+            "score": 10,
+            "weight": 1
+          },
+          {
+            "id": "B5",
+            "name": "Momentum (prev session)",
+            "value": "19 Oct Nifty -1.11% to 22,888.95",
+            "score": -5,
+            "weight": 0.5
+          }
+        ],
+        "composite": -1.92,
+        "band": "Neutral",
+        "arithmetic": "(-5*2 + -5*2 + 0*1 + 10*1 + -5*0.5) / 6.5 = -12.5/6.5 = -1.92"
+      },
+      "driving_harder": "A",
+      "events": [
+        "Jio Platforms IPO opens (Rs30,213 cr, closes 23 Oct)",
+        "Paras Healthcare IPO opens; HD Fire Protect lists",
+        "Q2 results: Eternal, Adani Green, Indian Hotels, SRF, M&M Fin, KEI, Vishal Mega Mart, ABSL AMC",
+        "India-US trade-deal headlines",
+        "US-Iran diplomacy / crude above $110, Red Sea risk",
+        "Next weekly expiry 27 Oct"
+      ],
+      "sources": [
+        "https://www.business-standard.com/markets/news/stock-market-live-october-21-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-jio-platforms-ipo-today-hd-fire-protect-share-price-126102100078_1.html",
+        "https://insights.dsij.in/dsijarticledetail/gift-nifty-signals-opening-above-23000-for-nifty-jios-mega-ipo-opens-today-60089",
+        "https://hdfcsky.com/news/market-close-report-today-october-19-2026-sensex-nifty-crash-snapping-two-day-winning-streak",
+        "https://hdfcsky.com/news/rupee-falls-3-paise-to-close-at-94-92-against-us-dollar",
+        "https://www.mortgagenewsdaily.com/treasury"
+      ],
+      "validation": {
+        "type": "deep",
+        "checks": [
+          {
+            "item": "Nifty prev close (19 Oct)",
+            "primary": 22888.95,
+            "other": "HDFC Sky 22,888.95; BS headline 22,889",
+            "tol": "1pt",
+            "ok": true
+          },
+          {
+            "item": "GIFT Nifty",
+            "primary": 23021.5,
+            "other": "BS 23,012 (08:37)",
+            "tol": "0.3%",
+            "ok": true,
+            "note": "0.04% apart; times differ"
+          },
+          {
+            "item": "Brent",
+            "primary": ">110",
+            "other": "BS 110.02",
+            "tol": "1.5%",
+            "ok": true
+          },
+          {
+            "item": "Nikkei",
+            "primary": "+1.33%",
+            "other": "BS +1.3%",
+            "tol": "same sign",
+            "ok": true
+          },
+          {
+            "item": "S&P/Nasdaq",
+            "primary": "+0.28/-0.02",
+            "other": "BS +0.28/-0.02",
+            "tol": "0.1pt",
+            "ok": true,
+            "note": "likely same wire"
+          },
+          {
+            "item": "Rupee close 19 Oct",
+            "primary": "BS 94.93",
+            "other": "HDFC Sky 94.92 (provisional)",
+            "tol": "0.1",
+            "ok": true
+          },
+          {
+            "item": "FII net",
+            "primary": "DSIJ -1,148.64 cr (19 Oct)",
+            "other": "HDFC Sky/BS +1,165.92 cr (16 Oct)",
+            "tol": "exact",
+            "ok": null,
+            "note": "different dates; 19 Oct not confirmed elsewhere"
+          },
+          {
+            "item": "US 10Y",
+            "primary": "DSIJ 5.134%",
+            "other": "MND 5.126% (19 Oct); no 20 Oct row; odd 'Oct 18' (Sunday) row",
+            "tol": "5bp",
+            "ok": null,
+            "note": "different days"
+          },
+          {
+            "item": "KOSPI",
+            "primary": "BS +3.7%",
+            "other": "DSIJ text garbled (5.35%)",
+            "tol": "same sign",
+            "ok": null
+          },
+          {
+            "item": "Stale check",
+            "primary": "DSIJ article 60075 is dated 19 Oct -> rejected; 60089 used (metadata time odd, body = 21 Oct pre-market)",
+            "other": "",
+            "tol": "",
+            "ok": true
+          }
+        ]
+      },
+      "revisions": [],
+      "actual": {
+        "nifty_prev_close": 22888.95,
+        "open": null,
+        "high": null,
+        "low": null,
         "close": null,
         "chg_pct": null,
-        "filled": false,
-        "intraday_note": "11:00 Nifty 22,932.80 +1.37% (Business Standard live)"
+        "filled": false
       }
     }
   ],
   "source_stats": {
     "insights.dsij.in": {
-      "checks": 20,
+      "checks": 29,
       "mismatches": 1,
-      "unverified": 8,
-      "last_checked": "2026-10-15",
-      "notes": "US10Y not cross-checked; FII 9 Oct unverified; rupee 96.78 'unchanged' vs official 96.72 (+16p); 15 Oct rupee 95.14 vs 96.78 on 13 Oct - check"
+      "unverified": 11,
+      "last_checked": "2026-10-21",
+      "notes": "21 Oct: article 60075 was a 19 Oct page (rejected); 60089 metadata time odd; KOSPI text garbled; FII 19 Oct unverified"
     },
     "business-standard.com": {
-      "checks": 12,
+      "checks": 18,
       "mismatches": 0,
       "unverified": 0,
-      "last_checked": "2026-10-15",
-      "notes": "15 Oct live blog: intraday only, no pre-open global/FII data"
+      "last_checked": "2026-10-21",
+      "notes": "21 Oct live blog pre-open: no FII/US10Y; Nifty level quoted 3 ways (22,800/23,011/23,016)"
     },
     "hdfcsky.com": {
-      "checks": 9,
+      "checks": 12,
       "mismatches": 0,
-      "unverified": 2,
-      "last_checked": "2026-10-15",
-      "notes": "FPI figure is previous-previous day; Monday GIFT preview gives Friday GIFT close"
+      "unverified": 3,
+      "last_checked": "2026-10-21",
+      "notes": "21 Oct: close report has no FII/rupee; rupee close from separate article"
     },
     "mortgagenewsdaily.com": {
-      "checks": 1,
+      "checks": 2,
       "mismatches": 1,
-      "unverified": 0,
-      "last_checked": "2026-10-09",
-      "notes": "live ticker vs table differ; no timestamp on ticker"
+      "unverified": 1,
+      "last_checked": "2026-10-21",
+      "notes": "21 Oct: /treasury table latest = 19 Oct, no 20 Oct; odd 'Oct 18' Sunday row; newsletter page fetch failed"
     },
     "upstox.com/news": {
       "checks": 1,

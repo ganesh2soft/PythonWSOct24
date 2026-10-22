@@ -1,0 +1,25 @@
+{
+  "premium_set": [
+    {
+      "recdate": "2026-10-17 01:00:04",
+      "totcallltp": 86948,
+      "totputltp": 46036,
+      "sample_call_tot": 5767,
+      "sample_put_tot": 5893
+    },
+    {
+      "recdate": "2026-10-17 01:05:03",
+      "totcallltp": 86948,
+      "totputltp": 46036,
+      "sample_call_tot": 5767,
+      "sample_put_tot": 5893
+    },
+    {
+      "recdate": "2026-10-17 01:30:03",
+      "totcallltp": 86948,
+      "totputltp": 46036,
+      "sample_call_tot": 5767,
+      "sample_put_tot": 5893
+    }
+  ]
+}

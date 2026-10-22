@@ -161,6 +161,7 @@ Archived_All/...                                      expired data (git-ignored)
 - REVERSAL: optvwap verdict "REVERSAL UP/DOWN – confirmed". NEAR WALL warning only while an alert is open and in profit.
 - Stop / target = nearest of the two biggest OI walls; stop checked on 5-min close; 30-min cooldown; one open alert per side.
 - Sideways: `sideways-alert-covering` and `sideways-covering-wall-broken` (naming rule: `sideways-alert-<approach>`, `sideways-<approach>-wall-broken`).
+- 22 Oct 2026 additions: PULLBACK WARNING (yellow) / BOUNCE WARNING when the optvwap verdict turns "Pullback - NOT confirmed" / "Bounce - NOT confirmed" while a CE / PE alert is still open (until 15:15); SELLER ZONE (black) after 2 runs of "Both sides below VWAP - premium decay" (09:21-15:00, once per streak) with 3 points for an option buyer; REVERSAL alerts carry a return-arrow mark. Colours: green CE, red PE, yellow warning, black seller zone, white sideways.
 - Settings are in the `CFG` dict at the top of tg_alerts.py.
 
 **asgboom.py** (09:17–15:12)

@@ -1,32 +1,33 @@
 {
- "2026-10-09": [
-  "09:21 CE SETUP",
-  "10:26 NEAR CALL WALL",
-  "10:56 sideways-alert-covering",
-  "11:26 sideways-covering-wall-broken",
-  "11:46 REVERSAL DOWN",
-  "13:01 NEAR PUT WALL"
- ],
- "2026-10-10": [],
- "2026-10-12": [
-  "09:26 PE SETUP",
-  "09:51 NEAR PUT WALL",
-  "11:06 NEAR PUT WALL"
- ],
- "2026-10-13": [
-  "10:26 sideways-alert-covering",
-  "11:31 sideways-covering-wall-broken",
-  "14:21 sideways-alert-covering",
-  "15:16 sideways-covering-wall-broken"
- ],
- "2026-10-14": [
-  "12:16 REVERSAL UP",
-  "13:06 PE SETUP",
-  "13:51 REVERSAL UP"
- ],
  "2026-10-15": [
   "09:31 CE SETUP",
   "09:51 NEAR CALL WALL",
   "12:36 NEAR CALL WALL"
+ ],
+ "2026-10-16": [
+  "09:21 PE SETUP"
+ ],
+ "2026-10-17": [],
+ "2026-10-19": [
+  "09:31 PE SETUP",
+  "09:41 CE SETUP",
+  "11:06 sideways-alert-covering",
+  "11:46 PE SETUP",
+  "11:56 sideways-covering-wall-broken"
+ ],
+ "2026-10-21": [
+  "09:21 CE SETUP",
+  "09:56 PE SETUP",
+  "10:01 NEAR PUT WALL",
+  "10:41 REVERSAL UP"
+ ],
+ "2026-10-22": [
+  "09:46 CE SETUP",
+  "10:46 PULLBACK WARNING",
+  "11:21 PULLBACK WARNING",
+  "12:21 PE SETUP",
+  "12:36 SELLER ZONE",
+  "13:11 SELLER ZONE",
+  "13:56 SELLER ZONE"
  ]
 }

@@ -8,6 +8,11 @@ Signals (evaluated on every 5-min optvwap snapshot, entries only 09:21-14:45):
                VIX >= its 09:16 value while CALL ok / PUT ok is still on (once per streak).
   REVERSAL   : optvwap verdict turns "REVERSAL UP/DOWN - confirmed"
   NEAR WALL  : after a CE (PE) alert, spot within WALL_NEAR pts of a call (put) wall that is still growing -> book/trail
+  PULLBACK / BOUNCE WARNING (22 Oct 2026): while a CE (PE) alert is still open, optvwap verdict turns
+               "Pullback - NOT confirmed" ("Bounce - NOT confirmed") -> yellow warning (watch the stop, no new entry)
+  SELLER ZONE (22 Oct 2026): verdict "Both sides below VWAP - premium decay" for SZ_RUNS consecutive runs
+               (09:21-15:00) -> black note with 3 points for an option buyer; once per streak
+Colours (22 Oct 2026): green CE, red PE, green/red + return arrow for REVERSAL, yellow warning, black seller zone, white sideways.
 Each alert carries: stop = opposite OI wall, target = next wall, ATM premium, Rule C gap label.
 One alert per signal; same type not repeated within COOLDOWN minutes.
 
@@ -33,7 +38,9 @@ CFG = {'MIN_WRITE': 40.0, 'WALL_NEAR': 15, 'COOLDOWN': 30, 'ENTRY_FROM': '09:21'
        'SW_LOOKBACK': 45,
        'SW_MAX_WIDTH': 100,       # floor-to-ceiling walls at most 100 pts apart
        'SW_END': '15:00',         # no new sideways alert after 15:00 (user, 9 Oct)
-       'SW_BREAK_RUNS': 2}        # wall broken = 2 consecutive 5-min closes beyond the wall         # a failed covering within the last 45 min
+       'SW_BREAK_RUNS': 2,
+       'SZ_RUNS': 2,              # 22 Oct 2026: seller-zone note after 2 consecutive runs
+       'WARN_TO': '15:15'}        # wall broken = 2 consecutive 5-min closes beyond the wall         # a failed covering within the last 45 min
 BAD = re.compile(r'token|secret|authoriz|bearer|code=', re.I)
 
 
@@ -158,6 +165,7 @@ def evaluate_day(day):
     open_side = {}   # side -> {'stop','target','state'}: no new same-side alert while one is open
     prev = None
     wall_warned = set()
+    sz_run, sz_sent = 0, False           # 22 Oct 2026: seller-zone streak
     pending = {'CE': None, 'PE': None}   # 12 Oct 2026: side ok confirmed but VIX blocked -> wait for VIX >= 09:16
     for x in OV:
         t = hm(x['timestamp'])
@@ -272,6 +280,26 @@ def evaluate_day(day):
                 if 0 <= spot - w <= CFG['WALL_NEAR'] and grow > 0 and ('P', w) not in wall_warned:
                     wall_warned.add(('P', w))
                     emit('NEAR PUT WALL', 'PE', [('wall growing', True)], None, None, extra='%d puts %.0fL (+%.0fL/30m): book or trail' % (w, oi['rows'][w][1], grow))
+        # ---- 22 Oct 2026: pullback / bounce warning while a CE / PE alert is open ----
+        v_now2, v_prev2 = sg.get('verdict', ''), p_sg.get('verdict', '')
+        for sd, lbl, kind in (('CE', 'Pullback - NOT confirmed', 'PULLBACK WARNING'), ('PE', 'Bounce - NOT confirmed', 'BOUNCE WARNING')):
+            o = open_side.get(sd, {})
+            if t <= CFG['WARN_TO'] and v_now2.startswith(lbl) and not v_prev2.startswith(lbl) and o.get('state') == 'open':
+                emit(kind, 'WARN', [('%s alert open' % sd, True)], None, None,
+                     extra='%s alert still open (stop Nifty %s %s). OptVWAP: %s. Watch the stop; no new %s entry until the trend resumes.'
+                     % (sd, '<' if sd == 'CE' else '>', o.get('stop'), lbl, sd))
+        # ---- 22 Oct 2026: seller zone (both premiums below VWAP) ----
+        if v_now2.startswith('Both sides below VWAP'):
+            sz_run += 1
+        else:
+            sz_run, sz_sent = 0, False
+        if sz_run >= CFG['SZ_RUNS'] and not sz_sent and CFG['ENTRY_FROM'] <= t <= CFG['SW_END']:
+            sz_sent = True
+            rng = 'put wall %s - call wall %s' % (pw[0] if pw else 'n/a', cw[0] if cw else 'n/a')
+            emit('SELLER ZONE', 'SZ', [('both sides below VWAP %d runs' % CFG['SZ_RUNS'], True)], None, None,
+                 extra='\n'.join(['\u2022 CE and PE premiums are both below their VWAP: time decay is working against option buyers on both sides.',
+                                   '\u2022 For a buyer: no fresh CE/PE entry here; wait for CALL ok or PUT ok to come back.',
+                                   '\u2022 Range now %s: wait for a 5-min close beyond one side with OptVWAP confirming.' % rng]))
         # ---- sideways from failed covering ----
         spots.append((t, spot))
         oi5 = at_or_before(OI, tstr(mins(t) - 5), lambda r: r['t'])
@@ -323,7 +351,9 @@ def evaluate_day(day):
 
 
 def message(a):
-    em = {'CE': '\U0001F7E2', 'PE': '\U0001F534', 'SW': '\u26AA'}.get(a['side'], '')
+    em = {'CE': '\U0001F7E2', 'PE': '\U0001F534', 'SW': '\u26AA', 'WARN': '\U0001F7E1', 'SZ': '\u26AB'}.get(a['side'], '')
+    if a['kind'].startswith('REVERSAL'):
+        em += '\u21A9'   # 22 Oct 2026: return arrow marks a confirmed reversal
     lines = ['%s %s %s | Nifty %.0f' % (em, a['kind'], a['t'], a['spot'])]
     if a['kind'].endswith('SETUP') or a['kind'].startswith('REVERSAL'):
         lines.append('BN %s (09:16 %s) | VIX %s (09:16 %s) | put wr %.0fL, call wr %.0fL /30m' % (
