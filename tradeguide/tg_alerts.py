@@ -12,6 +12,13 @@ Signals (evaluated on every 5-min optvwap snapshot, entries only 09:21-14:45):
                "Pullback - NOT confirmed" ("Bounce - NOT confirmed") -> yellow warning (watch the stop, no new entry)
   SELLER ZONE (22 Oct 2026): verdict "Both sides below VWAP - premium decay" for SZ_RUNS consecutive runs
                (09:21-15:00) -> black note with 3 points for an option buyer; once per streak
+  PREV-DAY LEVELS (26 Oct 2026): NEAR PREV HIGH / NEAR PREV LOW when Nifty is within PREV_NEAR pts of the
+               previous session's high / low (re-armed after moving PREV_REARM pts away); PREV HIGH / PREV LOW BROKEN
+               after PREV_BREAK_RUNS 5-min close(s) at least PREV_BREAK_PTS pts beyond it (user rule 26 Oct: one close,
+               12 pts; once per day). Blue mark. 09:16-15:15.
+  LEVEL GATE (26 Oct 2026, user rule): no CE SETUP while Nifty is within PREV_NEAR pts of yesterday's high, and no
+               PE SETUP within PREV_NEAR pts of yesterday's low, unless that level is already broken. If only the level
+               blocked it, the setup is sent once the level breaks (one 5-min close 12+ pts beyond) while CALL ok / PUT ok is still on.
 Colours (22 Oct 2026): green CE, red PE, green/red + return arrow for REVERSAL, yellow warning, black seller zone, white sideways.
 Each alert carries: stop = opposite OI wall, target = next wall, ATM premium, Rule C gap label.
 One alert per signal; same type not repeated within COOLDOWN minutes.
@@ -40,7 +47,12 @@ CFG = {'MIN_WRITE': 40.0, 'WALL_NEAR': 15, 'COOLDOWN': 30, 'ENTRY_FROM': '09:21'
        'SW_END': '15:00',         # no new sideways alert after 15:00 (user, 9 Oct)
        'SW_BREAK_RUNS': 2,
        'SZ_RUNS': 2,              # 22 Oct 2026: seller-zone note after 2 consecutive runs
-       'WARN_TO': '15:15'}        # wall broken = 2 consecutive 5-min closes beyond the wall         # a failed covering within the last 45 min
+       'WARN_TO': '15:15',
+       'PREV_NEAR': 25,           # 26 Oct 2026: alert when Nifty is within 25 pts of yesterday's high / low
+       'PREV_REARM': 60,          # re-arm the near alert after Nifty moves 60 pts away from the level
+       'PREV_BREAK_RUNS': 1,      # 26 Oct 2026 (user): broken = one 5-min close ...
+       'PREV_BREAK_PTS': 12,      # ... at least 12 pts beyond the level
+       'PREV_HL_OVERRIDE': None}  # optional (high, low) to use instead of tradeguide's own previous-day data        # wall broken = 2 consecutive 5-min closes beyond the wall         # a failed covering within the last 45 min
 BAD = re.compile(r'token|secret|authoriz|bearer|code=', re.I)
 
 
@@ -137,6 +149,28 @@ def walls(oi, spot):
     return cw, pw
 
 
+def prev_day_hl(day):
+    """26 Oct 2026: previous trading session's Nifty high / low from tradeguide's own files.
+    Returns (prev_day, high, low, last_time) or None. last_time < 15:25 means the data may be incomplete."""
+    if CFG['PREV_HL_OVERRIDE']:
+        h, l = CFG['PREV_HL_OVERRIDE']
+        return ('override', h, l, '15:30')
+    d0 = datetime.date.fromisoformat(day)
+    for k in range(1, 8):
+        pd = (d0 - datetime.timedelta(days=k)).isoformat()
+        ov = [x for x in load('optvwap', pd) if not x.get('preopen') and hm(x['timestamp']) <= '15:31']
+        if not ov:
+            continue
+        hs = [x['nifty'].get('day_high') for x in ov if x.get('nifty', {}).get('day_high')]
+        ls = [x['nifty'].get('day_low') for x in ov if x.get('nifty', {}).get('day_low')]
+        n5 = [e for e in load('nifty5min', pd) if e.get('ohlc', {}).get('high') and hm(e['timestamp']) <= '15:31']
+        hs += [e['ohlc']['high'] for e in n5]
+        ls += [e['ohlc']['low'] for e in n5]
+        if hs and ls:
+            return (pd, max(hs), min(ls), hm(ov[-1]['timestamp']))
+    return None
+
+
 def evaluate_day(day):
     """Return (alerts, context) for one day. Pure: reads files only."""
     OV = [x for x in load('optvwap', day) if not x.get('preopen')]
@@ -166,6 +200,9 @@ def evaluate_day(day):
     prev = None
     wall_warned = set()
     sz_run, sz_sent = 0, False           # 22 Oct 2026: seller-zone streak
+    phl = prev_day_hl(day)               # 26 Oct 2026: previous session high / low
+    lvl_state = {'H': {'armed': True, 'out': 0, 'broken': False}, 'L': {'armed': True, 'out': 0, 'broken': False}}
+    pending_lvl = {'CE': None, 'PE': None}   # 26 Oct 2026: setup blocked only by yesterday's high / low
     pending = {'CE': None, 'PE': None}   # 12 Oct 2026: side ok confirmed but VIX blocked -> wait for VIX >= 09:16
     for x in OV:
         t = hm(x['timestamp'])
@@ -189,6 +226,13 @@ def evaluate_day(day):
                 'call_walls': [(k, round(oi['rows'][k][0], 1)) for k in cw[:2]], 'put_walls': [(k, round(oi['rows'][k][1], 1)) for k in pw[:2]],
                 'atm': atm['strike'] if atm else None, 'atm_ce': atm['CE']['ltp'] if atm else None, 'atm_pe': atm['PE']['ltp'] if atm else None}
         in_window = CFG['ENTRY_FROM'] <= t <= CFG['ENTRY_TO']
+        lvl_block = {'CE': None, 'PE': None}   # 26 Oct 2026: CALL ok / PUT ok right at yesterday's high / low is misleading
+        if phl:
+            if abs(spot - phl[1]) <= CFG['PREV_NEAR'] and not lvl_state['H']['broken']:
+                lvl_block['CE'] = 'prev high %.0f' % phl[1]
+            if abs(spot - phl[2]) <= CFG['PREV_NEAR'] and not lvl_state['L']['broken']:
+                lvl_block['PE'] = 'prev low %.0f' % phl[2]
+        base['prev_hl'] = (phl[1], phl[2]) if phl else None
         for sd, o in open_side.items():   # update open alerts on this run's spot (5-min close logic)
             if o['state'] != 'open':
                 continue
@@ -222,19 +266,25 @@ def evaluate_day(day):
         if in_window and sg['call_ok'] and not p_sg['call_ok']:
             conds = [('BN not below 09:16 by >%.2f%%' % CFG['BN_TOL_PCT'], bn is not None and bn0 is not None and bn >= bn0 * (1 - CFG['BN_TOL_PCT'] / 100)),
                      ('VIX >= 09:16' if CFG['VIX_FILTER_CE'] else 'VIX not required for CE', (not CFG['VIX_FILTER_CE']) or (vix is not None and vix0 is not None and vix >= vix0)),
-                     ('put writing >= %.0fL/30m' % CFG['MIN_WRITE'], dput >= CFG['MIN_WRITE'])]
+                     ('put writing >= %.0fL/30m' % CFG['MIN_WRITE'], dput >= CFG['MIN_WRITE']),
+                     ('not within %d pts of %s' % (CFG['PREV_NEAR'], lvl_block['CE'] or 'prev high'), lvl_block['CE'] is None)]
             a = emit('CE SETUP', 'CE', conds, pw[0] if pw else None, cw[0] if cw else None)
             if a['sent']:
                 active = a
+            elif lvl_block['CE'] and all(ok for c, ok in conds[:3]):
+                pending_lvl['CE'] = t   # only yesterday's high blocked it: send once the high is broken
             elif not conds[1][1]:
                 pending['CE'] = t   # VIX blocked: alert later as soon as VIX >= 09:16 while CALL ok stays on
         if in_window and sg['put_ok'] and not p_sg['put_ok']:
             conds = [('BN not above 09:16 by >%.2f%%' % CFG['BN_TOL_PCT'], bn is not None and bn0 is not None and bn <= bn0 * (1 + CFG['BN_TOL_PCT'] / 100)),
                      ('VIX >= 09:16', (not CFG['VIX_FILTER_PE']) or (vix is not None and vix0 is not None and vix >= vix0)),
-                     ('call writing >= %.0fL/30m' % CFG['MIN_WRITE'], dcall >= CFG['MIN_WRITE'])]
+                     ('call writing >= %.0fL/30m' % CFG['MIN_WRITE'], dcall >= CFG['MIN_WRITE']),
+                     ('not within %d pts of %s' % (CFG['PREV_NEAR'], lvl_block['PE'] or 'prev low'), lvl_block['PE'] is None)]
             a = emit('PE SETUP', 'PE', conds, cw[0] if cw else None, pw[0] if pw else None)
             if a['sent']:
                 active = a
+            elif lvl_block['PE'] and all(ok for c, ok in conds[:3]):
+                pending_lvl['PE'] = t   # only yesterday's low blocked it: send once the low is broken
             elif not conds[1][1]:
                 pending['PE'] = t   # VIX blocked: alert later as soon as VIX >= 09:16 while PUT ok stays on
 
@@ -242,7 +292,7 @@ def evaluate_day(day):
         for sd, okkey in (('CE', 'call_ok'), ('PE', 'put_ok')):
             if not sg[okkey]:
                 pending[sd] = None          # CALL ok / PUT ok switched off: nothing pending any more
-            elif pending[sd] and pending[sd] != t and in_window and vix is not None and vix0 is not None and vix >= vix0:
+            elif pending[sd] and pending[sd] != t and in_window and vix is not None and vix0 is not None and vix >= vix0 and not lvl_block[sd]:
                 wr = ('put writing %.0fL/30m' % dput) if sd == 'CE' else ('call writing %.0fL/30m' % dcall)
                 conds = [('%s ok since %s' % ('CALL' if sd == 'CE' else 'PUT', pending[sd]), True), ('VIX now >= 09:16', True)]
                 kind = '%s SETUP' % sd
@@ -288,6 +338,42 @@ def evaluate_day(day):
                 emit(kind, 'WARN', [('%s alert open' % sd, True)], None, None,
                      extra='%s alert still open (stop Nifty %s %s). OptVWAP: %s. Watch the stop; no new %s entry until the trend resumes.'
                      % (sd, '<' if sd == 'CE' else '>', o.get('stop'), lbl, sd))
+        # ---- 26 Oct 2026: previous-day high / low nearby or broken ----
+        if phl and '09:16' <= t <= CFG['WARN_TO']:
+            pd_, ph, pl, plast = phl
+            src = 'prev day %s H %.0f / L %.0f%s' % (pd_, ph, pl, '' if plast >= '15:25' else ' (data only until %s)' % plast)
+            for key, lvl in (('H', ph), ('L', pl)):
+                st = lvl_state[key]
+                dist = (lvl - spot) if key == 'H' else (spot - lvl)   # positive = level not yet reached
+                if abs(spot - lvl) > CFG['PREV_REARM']:
+                    st['armed'] = True
+                if st['armed'] and 0 <= dist <= CFG['PREV_NEAR']:
+                    st['armed'] = False
+                    emit('NEAR PREV %s' % ('HIGH' if key == 'H' else 'LOW'), 'LVL', [('within %d pts' % CFG['PREV_NEAR'], True)], None, None,
+                         extra='%s %.0f is %.0f pts %s (%s). %s' % (
+                             "Yesterday's high" if key == 'H' else "Yesterday's low", lvl, dist, 'above' if key == 'H' else 'below', src,
+                             'Resistance: watch for rejection, or a 5-min close above it.' if key == 'H' else
+                             'Support: watch for a bounce, or a 5-min close below it.'))
+                beyond = (spot >= lvl + CFG['PREV_BREAK_PTS']) if key == 'H' else (spot <= lvl - CFG['PREV_BREAK_PTS'])
+                st['out'] = st['out'] + 1 if beyond else 0
+                if not st['broken'] and st['out'] >= CFG['PREV_BREAK_RUNS']:
+                    st['broken'] = True
+                    emit('PREV %s BROKEN' % ('HIGH' if key == 'H' else 'LOW'), 'LVL', [('5-min close %d+ pts beyond' % CFG['PREV_BREAK_PTS'], True)], None, None,
+                         extra='Nifty %.0f: 5-min close %.0f pts %s yesterday\'s %s %.0f (%s). Check the CE/PE checklist before acting.' % (
+                             spot, abs(spot - lvl), 'above' if key == 'H' else 'below', 'high' if key == 'H' else 'low', lvl, src))
+        # 26 Oct 2026: setup that was blocked only by yesterday's high / low -> send once that level is broken
+        for sd, okkey, key in (('CE', 'call_ok', 'H'), ('PE', 'put_ok', 'L')):
+            if not sg[okkey]:
+                pending_lvl[sd] = None
+            elif pending_lvl[sd] and pending_lvl[sd] != t and in_window and lvl_state[key]['broken']:
+                a = emit('%s SETUP' % sd, sd, [('%s ok since %s' % ('CALL' if sd == 'CE' else 'PUT', pending_lvl[sd]), True),
+                                               ("yesterday's %s broken" % ('high' if sd == 'CE' else 'low'), True)],
+                         (pw[0] if pw else None) if sd == 'CE' else (cw[0] if cw else None),
+                         (cw[0] if cw else None) if sd == 'CE' else (pw[0] if pw else None),
+                         extra="sent after yesterday's %s %.0f broke (5-min close %d+ pts beyond)" % ('high' if sd == 'CE' else 'low', phl[1] if sd == 'CE' else phl[2], CFG['PREV_BREAK_PTS']))
+                pending_lvl[sd] = None
+                if a['sent']:
+                    active = a
         # ---- 22 Oct 2026: seller zone (both premiums below VWAP) ----
         if v_now2.startswith('Both sides below VWAP'):
             sz_run += 1
@@ -351,7 +437,7 @@ def evaluate_day(day):
 
 
 def message(a):
-    em = {'CE': '\U0001F7E2', 'PE': '\U0001F534', 'SW': '\u26AA', 'WARN': '\U0001F7E1', 'SZ': '\u26AB'}.get(a['side'], '')
+    em = {'CE': '\U0001F7E2', 'PE': '\U0001F534', 'SW': '\u26AA', 'WARN': '\U0001F7E1', 'SZ': '\u26AB', 'LVL': '\U0001F535'}.get(a['side'], '')
     if a['kind'].startswith('REVERSAL'):
         em += '\u21A9'   # 22 Oct 2026: return arrow marks a confirmed reversal
     lines = ['%s %s %s | Nifty %.0f' % (em, a['kind'], a['t'], a['spot'])]
@@ -362,6 +448,8 @@ def message(a):
             lines.append('ATM %s CE %.1f / PE %.1f' % (a['atm'], a['atm_ce'] or 0, a['atm_pe'] or 0))
         lines.append('Stop: Nifty %s %s | Target: %s' % ('<' if a['side'] == 'CE' else '>', a['stop'], a['target']))
         lines.append('Walls C %s | P %s' % (a['call_walls'], a['put_walls']))
+        if a.get('prev_hl'):
+            lines.append('Prev day H %.0f / L %.0f' % a['prev_hl'])
         lines.append('Rule C: %s' % a['rule_c_gap'])
     if a.get('extra'):
         lines.append(a['extra'])

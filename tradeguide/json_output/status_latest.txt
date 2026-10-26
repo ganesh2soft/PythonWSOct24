@@ -1,93 +1,65 @@
-TRADEGUIDE STATUS - written 2026-10-22 14:36:09 IST (refreshed every 5 minutes, 09:11-15:41)
+TRADEGUIDE STATUS - written 2026-10-26 10:11:10 IST (refreshed every 5 minutes, 09:11-15:41)
 For ChatGPT: this is read-only market data from tradeguide (Upstox). Explain it for an intraday
 Nifty option buyer: trend, OI walls (support/resistance), sectors, option VWAP verdict, alerts.
 Information only, not financial advice.
 ==============================================================================
-== tg_status 2026-10-22 (as of 14:36) ==
-Health : last run 14:36 | OK | errors 0 | expiry1 2026-10-27 | ASGBOOM: 08:11:40 ASGBOOM started (LIVE), window 09:17-15:12
-Price  : Nifty 22670 (-0.62% vs prev close, +0.30% vs 09:21) | day H 22785.0 L 22554.85 | 30m +48
-BN/MID : BN 54844 (above 09:16 54631, +213) | MID 13299
-VIX    : 15.94 (09:16 16.32, below open; 30m -0.05)
-OptVWAP: Uptrend continues | Neither CE nor PE | day +3 (CE 3/PE 0) | anchor high@11:16 score +3 hold 4 | verdict since 14:36
-OI 14:36 : PCR(9 strikes) 09:21 1.17 -> 0.90 | call wall 23000 (175L) | put wall 22500 (106L) | 30m: 22600P -7L, 22700C +2L, 22800C -2L
-PCR    : expiry 2026-10-27 0.78 Bearish
-Sectors: 73% weight with Nifty (broad), +58 pts since base | drivers NIFTY FIN SERVICE +43, L&T +13 | resister NIFTY IT -20
-Alerts : 11:46 NIFTY BIG move -98; BN BIG move -237; MID BIG move -71 ; 12:21 ðŸ”´ PE SETUP 12:21 | Nifty 22597 ; 12:56 NIFTY BIG move +114; BN BIG move +241; MID BIG move +82
+== tg_status 2026-10-26 (as of 10:11) ==
+Health : last run 10:11 | -270 min ago | errors 0 | expiry1 2026-10-27 | ASGBOOM: 09:24:41 ASGBOOM started (LIVE), window 09:17-15:12
+Price  : Nifty 22692 (+0.41% vs prev close, +1.15% vs 09:21) | day H 22706.15 L 22387.35 | 30m +260
+BN/MID : BN 54346 (above 09:16 54163, +183) | MID 13086
+VIX    : 17.46 (09:16 17.31, ABOVE open; 30m -0.50)
+OptVWAP: Uptrend continues | CALL ok | day +5 (CE 5/PE 0) | anchor high@10:11 score +0 hold 1 | verdict since 09:46
+OI 10:11 : PCR(9 strikes) 09:21 1.58 -> 1.01 | call wall 23000 (205L) | put wall 22500 (209L) | 30m: 22600P +74L, 22500C -67L, 22700P +53L
+PCR    : expiry 2026-10-27 1.06 SW-to-Bull
+Sectors: 100% weight with Nifty (broad), +236 pts since base | drivers NIFTY FIN SERVICE +91, NIFTY IT +30 | resister Sun Pharma +0
+Alerts : 09:46 BN BIG move +222 ; 09:56 NIFTY BIG move +140; MID BIG move +108 ; 10:01 BN BIG move +241
 
-== OI (lakh) base 09:21 | 30m ref 14:06 | now 14:36 | spot 22672.15 VIX 15.94 (base spot 22614.45 VIX 16.44) ==
+== OI (lakh) base 09:21 | 30m ref 09:41 | now 10:11 | spot 22689.5 VIX 17.46 (base spot 22438.7 VIX 17.83) ==
  strike  callOI  dBase   d30m   putOI  dBase   d30m   C ltp   P ltp
-  22300     6.9   -1.2   -0.1    59.7   +0.6   -0.0   449.4    32.2
-  22400     7.6   -0.0   +0.1    61.0  +11.2   -0.1   364.2    47.5
-  22500    33.8   +6.2   -0.3   106.1  +13.2   +0.5   285.1    69.8
-  22600    52.8  +12.6   -0.2   103.7  +29.3   -7.3   215.9   100.4
-  22700    82.2  +15.2   +2.0    82.1  +10.4   -1.2   157.4   141.1
-  22800    89.5   +2.3   -1.9    45.0   -6.1   -1.0   111.0   192.2
-  22900    67.0   -7.5   +0.2    32.4   -4.7   -0.9    75.6   257.7
-  23000   174.6   +6.8   -0.4    48.7  -11.2   -0.9    50.4   331.1
-  23100   103.6    new    new    17.8    new    new    33.0   415.2
-net dOI since base (common strikes): calls +34.4L  puts +42.6L | PCR base 1.03 -> now 1.05 (all 9: 0.90)
-timeline (time spot/PCR): 09:16 22583/1.21  09:46 22663/0.87  10:16 22677/0.89  10:46 22708/0.99  11:16 22777/0.82  11:46 22661/1.02  12:16 22607/1.16  12:46 22628/1.14  13:16 22685/1.01  13:46 22616/1.16  14:16 22629/1.17  14:36 22672/0.90
+  22300    10.2   -1.9   -4.5   110.0  +30.2   +3.8   488.6    23.2
+  22400    30.5   -2.1  -22.2   186.6  +72.5   +6.2   399.7    33.5
+  22500   105.5  -21.9  -67.4   208.7  +54.5  +29.3   311.5    48.3
+  22600    75.5  -16.1  -38.5   150.2  +74.1  +74.2   235.4    69.1
+  22700   119.0   +5.5   -7.4   105.7  +53.9  +52.7   165.4   100.0
+  22800   122.2   +1.4  -12.7    58.8  +14.9  +14.4   108.9   143.3
+  22900   107.7    new    new    29.2    new    new    66.5   200.3
+  23000   204.9    new    new    34.9    new    new    38.0   273.9
+  23100   112.9    new    new    12.7    new    new    20.9   355.2
+net dOI since base (common strikes): calls -35.2L  puts +300.2L | PCR base 1.04 -> now 1.77 (all 9: 1.01)
+timeline (time spot/PCR): 09:16 22477/1.20  09:46 22483/1.12  10:11 22690/1.01
 
-== Sectors 14:36 | Nifty 22669.25 base 09:21 22601.2 (+0.30%), vs prev close -0.62% ==
+== Sectors 10:11 | Nifty 22692.2 base 09:21 22433.15 (+1.15%), vs prev close +0.41% ==
 sector                 tracked as            wt  %base  %prev    pts pts30m  dir
-Information Technology NIFTY IT            7.52  -1.17  -1.27  -19.9   +5.1  AGAINST
-Consumer Services      Eternal             2.10  -3.16  -2.40  -15.0   -0.6  AGAINST
-Oil, Gas & Fuels       Reliance            7.58  -0.42  -1.53   -7.2   +4.3  AGAINST
-FMCG                   ITC                 2.34  -0.50  -1.37   -2.7   +1.7  AGAINST
-Consumer Durables      Titan               1.90  -0.19  -1.07   -0.8   +2.5  AGAINST
-Capital Goods          BEL                 1.33  -0.07  -1.66   -0.2   +0.7  AGAINST
-Services               Adani Ports         1.13  +1.26  -0.32   +3.2   +0.3  with
-Power                  NTPC                1.45  +1.00  -0.28   +3.3   +1.6  with
-Metals & Mining        Tata Steel          1.38  +1.28  -0.84   +4.0   +0.4  with
-Healthcare             Sun Pharma          1.83  +1.25  +0.14   +5.2   +1.2  with
-Construction Materials UltraTech Cement    1.23  +2.56  +1.01   +7.1   +0.9  with
-Automobile             NIFTY AUTO          6.65  +0.82  -0.91  +12.4   +3.2  with
-Telecommunication      Bharti Airtel       5.10  +1.10  +0.75  +12.7   -1.7  with
-Construction           L&T                 4.20  +1.38  +0.51  +13.1   +2.2  with
-Financial Services     NIFTY FIN SERVICE  37.45  +0.51  -0.34  +43.3  +15.3  with
-since_base: weight up 73% | with Nifty 73% | tracked pts +58.5
-since_prev_close: weight up 15% | with Nifty 85% | tracked pts -106.2
+Healthcare             Sun Pharma          1.83  +0.13  +0.98   +0.5   +3.9  with
+Construction Materials UltraTech Cement    1.23  +0.58  -0.11   +1.6   +1.9  with
+Metals & Mining        Tata Steel          1.38  +1.27  +0.97   +4.0   +4.9  with
+Capital Goods          BEL                 1.33  +1.31  +0.14   +4.0   +4.8  with
+Services               Adani Ports         1.13  +1.77  +2.50   +4.5   +5.1  with
+Consumer Durables      Titan               1.90  +1.34  +0.43   +5.8   +4.6  with
+Power                  NTPC                1.45  +1.76  +0.87   +5.8   +6.1  with
+FMCG                   ITC                 2.34  +1.15  +0.56   +6.1   +6.6  with
+Consumer Services      Eternal             2.10  +2.07  +1.20   +9.9   +8.5  with
+Construction           L&T                 4.20  +1.44  +0.93  +13.7  +14.7  with
+Telecommunication      Bharti Airtel       5.10  +1.29  +0.64  +14.9  +13.4  with
+Oil, Gas & Fuels       Reliance            7.58  +1.24  +0.72  +21.3  +23.0  with
+Automobile             NIFTY AUTO          6.65  +1.58  +0.46  +23.8  +26.5  with
+Information Technology NIFTY IT            7.52  +1.74  +0.01  +29.7  +16.9  with
+Financial Services     NIFTY FIN SERVICE  37.45  +1.07  +0.27  +90.9  +86.7  with
+since_base: weight up 100% | with Nifty 100% | tracked pts +236.5
+since_prev_close: weight up 99% | with Nifty 99% | tracked pts +85.8
 
-== OptVWAP 66 snapshots 09:11-14:36 ==
+== OptVWAP 13 snapshots 09:11-10:11 ==
  time    nifty    atm CE PE  day      anchor  anc hold ok    verdict
-09:11 22687.75  22750  0  5   -5 start@09:11   +0    1 -     Pre-open - data only  [preopen]
-09:16 22600.45  22550  5  0   +5 start@09:16   +0    1 -     Uptrend continues
-09:26 22567.75  22600  0  5   -5   low@09:26   +0    1 -     Downtrend continues
-09:31 22618.15  22650  5  0   +5   low@09:26   +5    2 -     Uptrend continues
-09:36 22571.55  22600  0  5   -5   low@09:36   +0    1 -     Downtrend continues
-09:41 22623.55  22650  5  0   +5   low@09:36   +5    2 -     Uptrend continues
-09:46 22662.55  22650  5  0   +5   low@09:36   +5    3 CALL  Uptrend continues
-10:06 22608.95  22600  0  0   +0   low@09:36   -5    4 -     Both sides below VWAP - premium decay (seller zone)
-10:11 22635.45  22650  5  0   +5   low@09:36   +1    4 -     Uptrend continues
-10:16  22674.9  22700  5  0   +5   low@09:36   +5    4 CALL  Uptrend continues
-10:46  22707.3  22750  5  0   +5  high@10:36   -5    3 CALL  Pullback - NOT confirmed
-10:56  22719.2  22750  5  0   +5  high@10:36   +1    4 CALL  Uptrend continues
-11:16  22775.2  22800  5  0   +5  high@11:16   +0    1 CALL  Uptrend continues
-11:21 22751.75  22750  5  0   +5  high@11:16   -5    2 CALL  Pullback - NOT confirmed
-11:31 22759.45  22800  5  0   +5  high@11:16   +5    4 CALL  Uptrend continues
-11:36  22730.8  22750  5  0   +5  high@11:16   -5    4 CALL  Pullback - NOT confirmed
-11:46 22657.65  22700  1  3   -2  high@11:16   -5    4 -     Mixed / sideways
-11:51 22618.15  22650  0  5   -5  high@11:16   -5    4 -     Downtrend continues
-11:56  22647.7  22650  0  2   -2  high@11:16   -5    4 -     REVERSAL DOWN - confirmed (since 11:56)
-12:06  22627.3  22650  0  4   -4  high@11:16   -5    4 -     Downtrend continues
-12:16  22606.8  22650  0  5   -5  high@11:16   -5    4 PUT   Downtrend continues
-12:31 22624.75  22650  0  2   -2  high@11:16   -5    4 -     Both sides below VWAP - premium decay (seller zone)
-12:41 22620.05  22650  0  3   -3  high@11:16   -5    4 -     Downtrend continues
-12:46  22625.2  22650  0  3   -3  high@11:16   -5    4 -     Downtrend continues
-12:51  22645.5  22700  0  2   -2  high@11:16   -1    4 -     Both sides below VWAP - premium decay (seller zone)
-12:56 22731.45  22750  5  0   +5  high@11:16   +5    4 -     Uptrend continues
-13:06 22686.85  22750  2  0   +2  high@11:16   +2    4 -     Both sides below VWAP - premium decay (seller zone)
-13:16 22685.65  22700  3  0   +3  high@11:16   +3    4 -     Uptrend continues
-13:21 22643.85  22700  0  2   -2  high@11:16   -3    4 -     Both sides below VWAP - premium decay (seller zone)
-13:36  22619.6  22650  0  3   -3  high@11:16   -5    4 -     Downtrend continues
-13:46  22617.0  22650  0  3   -3  high@11:16   -5    4 -     Downtrend continues
-13:51 22632.05  22650  0  2   -2  high@11:16   -2    4 -     Both sides below VWAP - premium decay (seller zone)
-14:16 22627.65  22650  0  1   -1  high@11:16   -2    4 -     Both sides below VWAP - premium decay (seller zone)
-14:36  22669.6  22700  3  0   +3  high@11:16   +3    4 -     Uptrend continues
-strikes at 14:36 (ltp / vwap / anchored vwap, ^ above vwap, vol5 vs avg):
-  22600 CE ITM2 216.5/201.92/201.58 ^ vol 2.6x | PE OTM2 99.65/130.42/120.8 v vol 1.8x
-  22650 CE ITM1 185.05/175.7/172.45 ^ vol 2.6x | PE OTM1 119.65/148.68/141.51 v vol 1.5x
-  22700 CE ATM  157.9/157.54/153.14 ^ vol 3.1x | PE ATM  141.25/165.13/158.86 v vol 1.9x
-  22750 CE OTM1 132.5/141.26/134.59 v vol 3.0x | PE ITM1 165.85/181.28/177.89 v vol 2.1x
-  22800 CE OTM2 110.35/115.13/110.55 v vol 2.7x | PE ITM2 193.45/213.84/207.83 v vol 1.6x
-reversal latch: {"dir": "down", "since": "11:56", "state": "done", "wrong_runs": 0, "ended": "12:06"}
+09:11  22524.4  22600  2  2   +0 start@09:11   +0    1 -     Pre-open - data only  [preopen]
+09:16 22500.95  22550  5  0   +5 start@09:16   +0    1 -     Uptrend continues
+09:21 22427.95  22500  0  5   -5   low@09:21   +0    1 -     Downtrend continues
+09:31  22466.8  22550  5  0   +5   low@09:26   +5    2 -     Uptrend continues
+09:36  22425.3  22500  0  5   -5   low@09:26   -5    3 -     Downtrend continues
+09:46 22483.15  22550  5  0   +5   low@09:26   +5    4 -     Uptrend continues
+10:11 22692.25  22750  5  0   +5  high@10:11   +0    1 CALL  Uptrend continues
+strikes at 10:11 (ltp / vwap / anchored vwap, ^ above vwap, vol5 vs avg):
+  22650 CE ITM2 202.85/118.27/None ^ vol 1.6x | PE OTM2 81.45/130.37/None v vol 3.5x
+  22700 CE ITM1 168.9/94.89/None ^ vol 1.7x | PE OTM1 97.9/154.16/None v vol 4.2x
+  22750 CE ATM  138.6/77.02/None ^ vol 1.9x | PE ATM  117.45/171.7/None v vol 4.4x
+  22800 CE OTM1 111.4/63.97/None ^ vol 1.9x | PE ITM1 140.8/211.46/None v vol 4.1x
+  22850 CE OTM2 88.25/49.61/None ^ vol 1.3x | PE ITM2 167.05/227.54/None v vol 3.1x
