@@ -261,6 +261,11 @@ if SUMMARY:
         P('Sectors: %s%% weight with Nifty (%s), %+.0f pts since base | drivers %s %+.0f, %s %+.0f | resister %s %+.0f' % (
             w, 'broad' if w >= 70 else 'narrow' if w <= 40 else 'mixed', sm['pts_total'],
             drv[0]['name'], drv[0]['nifty_pts_base'], drv[1]['name'], drv[1]['nifty_pts_base'], res['name'], res['nifty_pts_base']))
+    try:   # 28 Oct 2026: ACE MASTERLEVEL levels (ace_levels.py)
+        import ace_levels
+        P(ace_levels.status_line(DAY, OV))
+    except Exception as e:
+        P('ACE    : n/a (%s)' % str(e)[:80])
     if asg_alerts:
         P('Alerts : ' + ' ; '.join(asg_alerts[-3:]))
     for e in ERRS[-3:]:

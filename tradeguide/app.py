@@ -1365,6 +1365,11 @@ def startrecord(expiry1,expiry2,expiry3,instrumentkey,access_token):
             app.logger.info(f"TG alerts: {tg_alerts.live(False)} new")
         except Exception as e:
             app.logger.error(f"Error in tg_alerts: {str(e)[:200]}")
+        try:   # 28 Oct 2026: ACE MASTERLEVEL tracking - first 5-min candle + previous-day refs (once per day, after 09:20)
+            import ace_levels
+            ace_levels.capture(access_token)
+        except Exception as e:
+            app.logger.error(f"Error in ace_levels: {str(e)[:200]}")
         expiry1=expiry1
         expiry2=expiry2
         expiry3=expiry3
