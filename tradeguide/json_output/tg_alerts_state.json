@@ -1,11 +1,4 @@
 {
- "2026-10-19": [
-  "09:31 PE SETUP",
-  "09:41 CE SETUP",
-  "11:06 sideways-alert-covering",
-  "11:46 PE SETUP",
-  "11:56 sideways-covering-wall-broken"
- ],
  "2026-10-21": [
   "09:21 CE SETUP",
   "09:56 PE SETUP",
@@ -30,6 +23,29 @@
  ],
  "2026-10-26": [
   "09:26 NEAR PREV LOW",
-  "09:26 PE SETUP"
+  "09:26 PE SETUP",
+  "10:31 REVERSAL DOWN",
+  "13:06 SELLER ZONE"
+ ],
+ "2026-10-27": [
+  "09:31 NEAR PREV HIGH",
+  "10:01 PREV HIGH BROKEN",
+  "10:06 CE SETUP",
+  "10:16 PULLBACK WARNING",
+  "10:41 SELLER ZONE",
+  "11:21 sideways-alert-covering",
+  "12:51 sideways-covering-wall-broken",
+  "13:01 SELLER ZONE",
+  "13:11 NEAR PREV HIGH",
+  "13:46 sideways-alert-covering",
+  "13:56 SELLER ZONE",
+  "13:56 sideways-covering-wall-broken",
+  "14:26 SELLER ZONE",
+  "14:40 NEAR PREV HIGH"
+ ],
+ "2026-10-28": [
+  "09:16 PREV LOW BROKEN",
+  "09:46 CE SETUP",
+  "09:51 NEAR PREV LOW"
  ]
 }

@@ -1,0 +1,3162 @@
+[
+  {
+    "timestamp": "2026-10-26 09:11:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22524
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54250
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 12942
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24374
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 72990
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65572
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61075
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 09:16:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22490
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54163
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 12935
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24317
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 72817
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65294
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60895
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 09:21:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22434
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 53853
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 12904
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24210
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 72643
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65235
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60559
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 09:26:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22394
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 53803
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 12863
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24176
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 72515
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65018
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60486
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 09:31:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22462
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 53970
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 12938
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24269
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 72758
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65455
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60699
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 09:36:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22427
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 53850
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 12932
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24199
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 72629
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65414
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60561
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 09:41:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22432
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 53886
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 12934
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24223
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 72643
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65353
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60590
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 09:46:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22483
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54072
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 12978
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24307
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 72770
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65596
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60801
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 09:51:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22475
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54000
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 12975
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24298
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 72747
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65524
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60727
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 09:56:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22572
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54147
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13042
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24380
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73045
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65862
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60879
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 10:01:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22635
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54241
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13053
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24438
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73275
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66035
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61010
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 10:06:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22629
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54237
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13060
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24425
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73251
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66055
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61017
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 10:11:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22692
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54346
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13086
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24468
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73431
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66186
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61114
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 10:16:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22666
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54288
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13062
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24457
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73372
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66118
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61061
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 10:21:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22664
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54248
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13068
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24442
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73347
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66146
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61015
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 10:26:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22659
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54203
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13052
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24435
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73351
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66097
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60972
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 10:31:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22639
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54165
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13034
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24425
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73269
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66082
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60915
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 10:36:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22648
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54156
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13028
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24446
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73314
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66127
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60912
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 10:41:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22621
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54091
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13024
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24415
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73190
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66106
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60807
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 10:46:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22616
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54063
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13019
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24399
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73192
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66076
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60782
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 10:51:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22641
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54101
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13029
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24412
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73288
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66115
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60846
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 10:56:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22622
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54057
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13017
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24391
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73228
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66052
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60800
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 11:01:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22597
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54021
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13008
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24364
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73142
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65958
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60759
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 11:06:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22592
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54018
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13005
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24369
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73120
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65963
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60749
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 11:11:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22594
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54023
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13014
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24361
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73134
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65981
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60761
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 11:16:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22578
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54001
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 12998
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24344
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73095
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65914
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60725
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 11:21:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22594
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54037
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13011
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24360
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73153
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66003
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60769
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 11:26:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22583
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54024
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13012
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24343
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73106
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66000
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60755
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 11:31:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22575
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54014
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13002
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24335
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73083
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65970
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60741
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 11:36:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22537
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 53934
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 12995
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24297
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 72946
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65905
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60648
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 11:41:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22558
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 53988
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13010
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24321
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 72996
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65971
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60700
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 11:46:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22569
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 53996
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13013
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24335
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73031
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65980
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60705
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 11:51:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22553
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 53971
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13009
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24321
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 72991
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65951
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60674
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 11:56:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22570
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 53993
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13013
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24332
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73051
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 65965
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60727
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 12:01:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22598
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54066
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13040
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24367
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73151
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66109
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60814
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 12:06:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22586
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54030
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13031
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24347
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73105
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66068
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60767
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 12:11:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22589
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54045
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13032
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24356
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73094
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66092
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60759
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 12:16:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22596
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54069
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13040
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24362
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73116
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66151
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60805
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 12:21:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22580
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54034
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13031
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24344
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73059
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66095
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60751
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 12:26:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22599
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54028
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13046
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24350
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73134
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66167
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60754
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 12:31:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22621
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54092
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13054
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24382
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73209
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66243
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60826
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 12:36:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22634
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54133
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13074
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24395
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73251
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66284
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60861
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 12:41:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22602
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54047
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13058
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24366
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73161
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66225
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60778
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 12:46:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22583
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54016
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13045
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24346
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73086
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66155
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60748
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 12:51:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22581
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54005
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13045
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24336
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73062
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66126
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60709
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 12:56:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22582
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 53996
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13044
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24329
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73087
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66101
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60721
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 13:01:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22601
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54035
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13050
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24348
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73139
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66136
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60761
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 13:06:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22604
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54046
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13059
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24352
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73152
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66139
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60755
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 13:11:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22606
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54053
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13062
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24355
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73169
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66128
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60784
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 13:16:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22623
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54080
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13070
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24370
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73214
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66178
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60805
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 13:21:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22642
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54123
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13086
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24387
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73289
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66241
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60867
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 13:26:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22655
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54157
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13094
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24390
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73321
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66284
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60889
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 13:31:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22650
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54112
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13092
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24378
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73307
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66253
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60857
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 13:36:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22649
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54105
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13085
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24374
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73292
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66241
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60833
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 13:41:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22647
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54090
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13081
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24364
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73290
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66241
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60821
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 13:46:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22660
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54130
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13092
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24378
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73339
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66305
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60876
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 13:51:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22653
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54115
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13082
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24365
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73298
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66231
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60844
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 13:56:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22658
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54147
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13077
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24378
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73316
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66222
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60873
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 14:01:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22650
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54123
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13073
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24363
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73296
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66205
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60858
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 14:06:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22666
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54154
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13084
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24383
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73329
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66280
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60892
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 14:11:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22692
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54253
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13103
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24422
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73442
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66373
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61017
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 14:16:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22691
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54292
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13109
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24430
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73427
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66382
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61055
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 14:21:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22671
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54232
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13096
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24406
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73361
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66319
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 60988
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 14:26:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22678
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54289
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13097
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24428
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73390
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66297
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61059
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 14:31:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22692
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54308
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13109
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24443
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73422
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66324
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61074
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 14:36:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22695
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54306
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13113
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24440
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73428
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66331
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61064
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 14:40:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22686
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54277
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13107
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24424
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73404
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66315
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61036
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 14:46:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22693
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54282
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13102
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24430
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73428
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66289
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61041
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 14:51:05",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22702
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54308
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13106
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24443
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73460
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66280
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61071
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 14:56:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22708
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54336
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13116
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24452
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73474
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66317
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61092
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 15:01:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22693
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54282
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13119
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24428
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73428
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66286
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61042
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 15:06:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22698
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54261
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13132
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24425
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73434
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66353
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61027
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 15:11:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22712
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54290
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13137
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24438
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73482
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66375
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61058
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 15:16:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22717
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54318
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13134
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24452
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73496
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66343
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61046
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 15:21:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22717
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54318
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13134
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24452
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73496
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66336
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61046
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 15:26:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22717
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54318
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13134
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24452
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73496
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66331
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61046
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 15:31:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22753
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54367
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13167
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24454
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73607
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66465
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61144
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 15:36:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22753
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54367
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13167
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24454
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73607
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66477
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61144
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-10-26 15:41:04",
+    "main_index": [
+      {
+        "index": "NIFTY 50",
+        "symbol": "NSE_INDEX|Nifty 50",
+        "ltp": 22753
+      },
+      {
+        "index": "BANK NIFTY",
+        "symbol": "NSE_INDEX|Nifty Bank",
+        "ltp": 54367
+      },
+      {
+        "index": "MIDCAP",
+        "symbol": "NSE_INDEX|NIFTY MID SELECT",
+        "ltp": 13167
+      },
+      {
+        "index": "FINNIFTY",
+        "symbol": "NSE_INDEX|Nifty Fin Service",
+        "ltp": 24454
+      },
+      {
+        "index": "SENSEX",
+        "symbol": "BSE_INDEX|SENSEX",
+        "ltp": 73607
+      },
+      {
+        "index": "NIFTY NEXT 50",
+        "symbol": "NSE_INDEX|Nifty Next 50",
+        "ltp": 66477
+      },
+      {
+        "index": "BANKEX",
+        "symbol": "BSE_INDEX|BANKEX",
+        "ltp": 61144
+      }
+    ]
+  }
+]
