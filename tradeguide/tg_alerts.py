@@ -264,6 +264,12 @@ def evaluate_day(day):
                 last_type.pop(o['kind'], None)   # allow a fresh setup right after a stop
             elif o['target'] and ((sd == 'CE' and spot >= o['target']) or (sd == 'PE' and spot <= o['target'])):
                 o['state'] = 'target'
+            # 30 Oct 2026 (user): a target touched between runs counts. Use today's running high / low,
+            # but only a NEW extreme made after the alert (hi0 / lo0 = day high / low when the alert fired).
+            elif o['target'] and sd == 'CE' and dh is not None and o.get('hi0') is not None and dh > o['hi0'] and dh >= o['target']:
+                o['state'] = 'target'
+            elif o['target'] and sd == 'PE' and dl is not None and o.get('lo0') is not None and dl < o['lo0'] and dl <= o['target']:
+                o['state'] = 'target'
         p_sg = prev['signal'] if prev else {'call_ok': False, 'put_ok': False, 'verdict': ''}
 
         def cooled(kind):
@@ -279,7 +285,7 @@ def evaluate_day(day):
             if a['sent']:
                 last_type[kind] = t
                 if busy:
-                    open_side[side] = {'stop': stop, 'target': target, 'state': 'open', 'kind': kind}
+                    open_side[side] = {'stop': stop, 'target': target, 'state': 'open', 'kind': kind, 'hi0': dh, 'lo0': dl}
                     other = 'PE' if side == 'CE' else 'CE'
                     if open_side.get(other, {}).get('state') == 'open':
                         open_side[other]['state'] = 'flipped'
