@@ -55,5 +55,24 @@
    "src": "upstox sdk v2 1min"
   },
   "fetched_at": "09:21:24"
+ },
+ "2026-11-02": {
+  "first5": {
+   "o": 23222.3,
+   "h": 23292.55,
+   "l": 23211.8,
+   "c": 23266.95,
+   "src": "upstox sdk v2 1min x5"
+  },
+  "prev": {
+   "date": "2026-10-30",
+   "close1515": 23010.75,
+   "last_o": 23010.0,
+   "last_c": 23053.1,
+   "high": 23118.1,
+   "low": 22905.1,
+   "src": "upstox sdk v2 1min"
+  },
+  "fetched_at": "09:21:09"
  }
 }
